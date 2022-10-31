@@ -4,6 +4,7 @@ import Link from 'react-router-dom'
 
 import PageLayout from './components/PageLayout'
 import Navbar from './components/Navbar'
+import aboutCss from './css/about.module.scss'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -15,7 +16,7 @@ export default function About() {
 
   return(
     <PageLayout>
-      <section>
+      <section id={aboutCss.about}>
         <Navbar />
         TO DO: about page
       </section>
