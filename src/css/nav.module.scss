@@ -1,17 +1,20 @@
 @import './main.scss';
 
+
+
 nav{
   position: fixed;
-  top: 0;
+  top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 15rem;
-  height: 3.125rem;
+  width: 14rem;
+  height: 2.6rem;
   background-color: white;
+  border-radius: 100px;
+  animation: fadein 1.0s ease-in-out;
 }
-
 
 .nav_prop{
   text-decoration: none;

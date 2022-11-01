@@ -27,27 +27,30 @@ export default function About() {
           </div>
         </div>
 
-        <div>
-          <div>
-            <span>見慣れていたあのポスターも、</span>
-            <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
-            <span>ビジュアルなもの、そうではないもの、</span>
-            <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
-            <span>実は全てがデザインされています。</span>
+        <div className={aboutCss.about_paragragh_container}>
+          <div className={aboutCss.about_paragraph_contents}>
+            <div className={aboutCss.about_paragragh_contents_sec}>
+              <span>見慣れていたあのポスターも、</span>
+              <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
+              <span>ビジュアルなもの、そうではないもの、</span>
+              <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
+              <span>実は全てがデザインされています。</span>
+            </div>
+            <div className={aboutCss.about_paragragh_contents_sec}>
+              <span>だから私は信じている。</span>
+              <span>物事をデザインするのによって私たちの生活をよくすること。</span>
+            </div>
+            <div className={aboutCss.about_paragragh_contents_sec}>
+              <span>だから私は考えている。</span>
+              <span>何かブラッシュアップできることがないか。</span>
+              <span>何か新しいアイデアを生み出せるではないか。</span>
+            </div>
+            <div className={aboutCss.about_paragragh_contents_sec}>
+              <span>今までも、これからも、もっとよくなる明日のために、</span>
+              <span>精度と質の高いデザインを追求し続けます。</span>
+            </div>
           </div>
-          <div>
-            <span>だから私は信じている。</span>
-            <span>物事をデザインするのによって私たちの生活をよくすること。</span>
-          </div>
-          <div>
-            <span>だから私は考えている。</span>
-            <span>何かブラッシュアップできることがないか。</span>
-            <span>何か新しいアイデアを生み出せるではないか。</span>
-          </div>
-          <div>
-            <span>今までも、これからも、もっとよくなる明日のために、</span>
-            <span>精度と質の高いデザインを追求し続けます。</span>
-          </div>
+          
         </div>
 
       <div>
