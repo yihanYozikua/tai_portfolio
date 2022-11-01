@@ -9,8 +9,8 @@ const Navbar = ({wrapperComponent, ...props}) => {
   const Wrapper = wrapperComponent;
   return(
     <Wrapper {...props}>
-      <Link to="/about" className={navCss.nav_prop}>about</Link>
-      <Link to="/works" className={navCss.nav_prop}>works</Link>
+      <Link to="/about" className={navCss.nav_prop}>About</Link>
+      <Link to="/works" className={navCss.nav_prop}>Works</Link>
     </Wrapper>
   )
 }

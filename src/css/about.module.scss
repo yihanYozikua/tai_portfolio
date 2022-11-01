@@ -1,6 +1,36 @@
 @import './main.scss';
+$ABOUT_BG_COLOR: #F5F5F5;
+$COLOR_KV_TEXT: #282D2F;
 
 #about{
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+
+  .about_kv_container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+
+    .about_kv_contents{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 95%;
+      height: 100%;
+      background-color: $ABOUT_BG_COLOR;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 3.6rem;
+      color: $COLOR_KV_TEXT;
+
+      .about_kv_contents_prop{
+        margin-left: 4.16rem;
+      }
+    }
+  }
 }
