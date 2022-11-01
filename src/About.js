@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'react-router-dom'
+import AOS from 'aos'
 
 import PageLayout from './components/PageLayout'
 import Navbar from './components/Navbar'
@@ -29,7 +30,7 @@ export default function About() {
 
         <div className={aboutCss.about_paragragh_container}>
           <div className={aboutCss.about_paragraph_contents}>
-            <div className={aboutCss.about_paragragh_contents_sec}>
+            <div className={aboutCss.about_paragragh_contents_sec}  data-aos="fade-in">
               <span>見慣れていたあのポスターも、</span>
               <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
               <span>ビジュアルなもの、そうではないもの、</span>
