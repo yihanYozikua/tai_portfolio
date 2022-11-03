@@ -12,6 +12,16 @@ import { images } from './images.ts'
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
 
+const Exp = ({year, exp_contents}) => {
+  var expRender = exp_contents.map(item => <div>{item}</div>);
+  return(
+    <div className={aboutCss.about_experience_contents}>
+      <div className={aboutCss.about_experience_contents_prop}>{ year }</div>
+      <div className={aboutCss.about_experience_contents_prop}>{ expRender }</div>
+    </div>
+  )
+}
+
 export default function About() {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -56,26 +66,35 @@ export default function About() {
           
         </div>
 
-      <div className={aboutCss.about_self_intro_container}>
-        <div className={aboutCss.about_self_intro_contents}>
-          <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img}></img>
-          <div className={aboutCss.about_self_intro_right_section_container}>
-            <div className={aboutCss.about_self_intro_circle_container}>
-              <div className={aboutCss.about_self_intro_circle_prop}>日本語</div>
-              <div className={aboutCss.about_self_intro_circle_prop}>ものづくり</div>
-            </div>
-            <div className={aboutCss.about_self_intro_paragraph_container}>
-              <div className={aboutCss.about_self_intro_paragraph_name}>Tai, Tung-En</div>
-              <div className={aboutCss.about_self_intro_paragraph_description_container}>
-                <span>1997年台湾生まれ。日本語への熱意で来日。</span>
-                <span>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
-                <span>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
-                <span>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
+        <div className={aboutCss.about_self_intro_container}>
+          <div className={aboutCss.about_self_intro_contents}>
+            <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img}></img>
+            <div className={aboutCss.about_self_intro_right_section_container}>
+              <div className={aboutCss.about_self_intro_circle_container}>
+                <div className={aboutCss.about_self_intro_circle_prop}>日本語</div>
+                <div className={aboutCss.about_self_intro_circle_prop}>ものづくり</div>
+              </div>
+              <div className={aboutCss.about_self_intro_paragraph_container}>
+                <div className={aboutCss.about_self_intro_paragraph_name}>Tai, Tung-En</div>
+                <div className={aboutCss.about_self_intro_paragraph_description_container}>
+                  <span>1997年台湾生まれ。日本語への熱意で来日。</span>
+                  <span>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
+                  <span>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
+                  <span>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
+                </div>
+              </div>
+              <div className={aboutCss.about_underline_div}></div>
+              <div className={aboutCss.about_experience_container}>
+                <Exp year="2021年" exp_contents={["ウィルスタイル株式会社","Webデザイナー新卒入社"]}/>
+                <Exp year="2020年" exp_contents={["台湾国立政治大学卒業","広告学科､デジタルコンテンツ学位取得"]}/>
+                <Exp year="2019年" exp_contents={["京都同志社大学留学"]}/>
+                <Exp year="2018年" exp_contents={["出版社 ハースト・コーポレーション", "コスモポリタン編集部インターンシップ", <br></br>, "メディア代理店 dentsu X","企画部インターンシップ"]}/>
+                <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
 
       </section>
     </PageLayout>

@@ -6,6 +6,7 @@ $COLOR_CIRCLE_TEXT: #858A8B66;
 $COLOR_CIRCLE_BORDER: #858A8B66;
 $COLOR_NAME: #282D2F;
 $COLOR_DESCRIPTION: #282D2F;
+$COLOR_EXPERIENCE_TEXT: #858A8B;
 
 #about{
   width: 100vw;
@@ -143,6 +144,36 @@ $COLOR_DESCRIPTION: #282D2F;
             font-weight: 400;
             color: $COLOR_DESCRIPTION;
             line-height: 1.7rem;
+          }
+        }
+
+        .about_underline_div{
+          border: 1px $COLOR_CIRCLE_BORDER solid;
+          width: 1.2rem;
+          margin: 2rem 2.75rem;
+        }
+        
+        .about_experience_container{
+          display: flex;
+          flex-direction: column;
+
+          .about_experience_contents{
+            display: flex;
+            flex-direction: row;
+            margin: .6rem 0;
+            br {
+              content: "";
+              margin: 2em;
+              display: block;
+              font-size: 24%;
+            }
+
+            .about_experience_contents_prop{
+              font-size: .75rem;
+              color: $COLOR_EXPERIENCE_TEXT;
+              line-height: 1.4rem;
+              margin-left: 2.75rem;
+            }
           }
         }
       }
