@@ -5,6 +5,7 @@ import AOS from 'aos'
 
 import PageLayout from './components/PageLayout'
 import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 import aboutCss from './css/about.module.scss'
 import { images } from './images.ts'
 
@@ -20,6 +21,7 @@ export default function About() {
     <PageLayout>
       <section id={aboutCss.about}>
         <Navbar />
+        <Sidebar />
 
         <div className={aboutCss.about_kv_container}>
           <div className={aboutCss.about_kv_contents}>
