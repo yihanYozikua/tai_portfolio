@@ -21,7 +21,7 @@ $COLOR_PARAGRAPH_TEXT: #282D2F;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 94%;
+      width: 100%;
       height: 100%;
       background-color: $ABOUT_BG_COLOR;
       font-family: 'Outfit', sans-serif;
@@ -30,7 +30,7 @@ $COLOR_PARAGRAPH_TEXT: #282D2F;
       color: $COLOR_KV_TEXT;
 
       .about_kv_contents_prop{
-        margin-left: 5rem;
+        margin-left: 11rem;
         animation: fadein 1.6s ease-in-out;
       }
     }
@@ -46,7 +46,7 @@ $COLOR_PARAGRAPH_TEXT: #282D2F;
     .about_paragraph_contents{
       display: flex;
       flex-direction: column;
-      width: 94%;
+      width: 100%;
       height: 100%;
       background-color: $ABOUT_BG_COLOR;
       font-family: 'BIZ UDGothic', sans-serif;
@@ -56,11 +56,48 @@ $COLOR_PARAGRAPH_TEXT: #282D2F;
       line-height: 2.8rem;
 
       .about_paragragh_contents_sec{
-        margin-left: 5rem;
+        margin-left: 11rem;
         display: flex;
         flex-direction: column;
         margin-top: .75rem;
         margin-bottom: .75rem;
+      }
+    }
+  }
+
+  .about_self_intro_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    
+    .about_self_intro_contents{
+      width: 100%;
+      height: 100%;
+      background-color: $ABOUT_BG_COLOR;
+      
+      .about_self_intro_img{
+
+      }
+  
+      .about_self_intro_right_section_container{
+  
+        .about_self_intro_circle_container{
+  
+          .about_self_intro_circle_prop{
+  
+          }
+        }
+  
+        .about_self_intro_paragraph_container{
+  
+          .about_self_intro_paragraph_name{
+            
+          }
+          .about_self_intro_paragraph_description_container{
+  
+          }
+        }
       }
     }
   }
