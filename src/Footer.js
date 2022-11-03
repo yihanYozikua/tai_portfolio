@@ -10,38 +10,40 @@ import githubIcon from './static/icons/github.svg'
 export default function Footer(){
   return(
     <section id={footerCss.footer}>
-      <div>
-        <div>
-          <div>After design</div>
-          <div>All will be</div>
-          <div>beautiful days</div>
+      <div className={footerCss.upper_section_container}>
+        <div className={footerCss.upper_left_container}>
+          <div className={footerCss.upper_left_contents_prop}>After design</div>
+          <div className={footerCss.upper_left_contents_prop}>All will be</div>
+          <div className={footerCss.upper_left_contents_prop}>beautiful days</div>
         </div>
-        <div>
-          <div>About</div>
-          <div>Special content-#hashtags of me</div>
-          <div>Works</div>
-          <div>Back to top</div>
+        <div className={footerCss.upper_right_container}>
+          <div className={footerCss.upper_right_contents_prop}>About</div>
+          <div className={footerCss.upper_right_contents_prop}>Special content-#hashtags of me</div>
+          <div className={footerCss.upper_right_contents_prop}>Works</div>
+          <div className={footerCss.upper_right_contents_prop}>Back to top</div>
         </div>
       </div>
-      <div>underline here</div>
-      <div>
-        <div>©2022Tai, Tung-En</div>
-        <div>
-          <div>
-            <div>Presented by</div>
-            <div>
-              <span>🤭</span>
-              <span>Tai, Tung-En (Direction/Design)</span>
-              <img src={mailIcon} alt=""></img>
-              <img src={mediumIcon} alt=""></img>
+
+      <div className={footerCss.underline_prop}>underline here</div>
+      
+      <div className={footerCss.bottom_section_container}>
+        <div className={footerCss.copyright_prop}>©2022Tai, Tung-En</div>
+        <div className={footerCss.bottom_right_container}>
+          <div className={footerCss.author_container}>
+            <div className={footerCss.responsibility_prop}>Presented by</div>
+            <div className={footerCss.author_contents}>
+              <span className={footerCss.author_emoji}>🤭</span>
+              <span className={footerCss.author_name}>Tai, Tung-En (Direction/Design)</span>
+              <img src={mailIcon} alt="" className={footerCss.author_img}></img>
+              <img src={mediumIcon} alt="" className={footerCss.author_img}></img>
             </div>
           </div>
-          <div>
-          <div>Especially thanks</div>
-            <div>
-              <span>🥸</span>
-              <span>Hsiao, Yi-Han (Engineering)</span>
-              <img src={githubIcon} alt=""></img>
+          <div className={footerCss.author_container}>
+            <div className={footerCss.responsibility_prop}>Especially thanks</div>
+            <div className={footerCss.author_contents}>
+              <span className={footerCss.author_emoji}>🥸</span>
+              <span className={footerCss.author_name}>Hsiao, Yi-Han (Engineering)</span>
+              <img src={githubIcon} alt="" className={footerCss.author_img}></img>
             </div>
           </div>
         </div>

@@ -1,5 +1,73 @@
 @import './main.scss';
+$FOOTER_BG: url("../static/img/footer_bg.svg");
+
 
 #footer{
-  
+  width: 100vw;
+  height: 100vh;
+  background-image: $FOOTER_BG;
+  background-size: cover;
+  z-index: 100 !important;
+
+  .upper_section_container{
+    padding-top: 7.85rem;
+    display: flex;
+    flex-direction: row;
+
+    .upper_left_container{
+
+      .upper_left_contents_prop{
+        font-size: 4rem;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+        color: white;
+      }
+    }
+    .upper_right_container{
+      display: flex;
+      flex-direction: column;
+      .upper_right_contents_prop{
+        font-size: 1.2rem;
+        color: white;
+
+        &:nth-child(2), &:nth-child(4){
+          font-size: .8rem;
+        }
+
+      }
+    }
+  }
+
+  .underline_prop{
+
+  }
+
+  .bottom_section_container{
+
+    .copyright_prop{
+
+    }
+    .bottom_right_container{
+
+      .author_container{
+
+        .responsibility_prop{
+
+        }
+        .author_contents{
+
+          .author_emoji{
+
+          }
+          .author_name{
+
+          }
+          .author_img{
+
+          }
+        }
+      }
+    }
+
+  }
 }
