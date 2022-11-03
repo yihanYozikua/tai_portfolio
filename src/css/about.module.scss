@@ -7,6 +7,7 @@ $COLOR_CIRCLE_BORDER: #858A8B66;
 $COLOR_NAME: #282D2F;
 $COLOR_DESCRIPTION: #282D2F;
 $COLOR_EXPERIENCE_TEXT: #858A8B;
+$COLOR_SPECIAL_CONTENT_TITLE: #282D2F;
 
 #about{
   width: 100vw;
@@ -177,7 +178,38 @@ $COLOR_EXPERIENCE_TEXT: #858A8B;
             }
           }
         }
+
+        
       }
+      
+    }
+    
+  }
+  .about_special_contents_container{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: $ABOUT_BG_COLOR;
+    // margin-left: 11rem;
+
+    .about_special_contents_title{
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      width: 52rem;
+      color: $COLOR_SPECIAL_CONTENT_TITLE;
+      font-size: 1rem;
+      margin-bottom: .75rem;
+    }
+    .about_special_contents_white_box_sec_container{
+      width: 52rem;
+      height: 15rem;
+      background-color: white;
+      box-shadow:-10px 10px 50px -20px rgb(176, 176, 176);
     }
   }
 }

@@ -95,6 +95,11 @@ export default function About() {
           </div>
         </div>
 
+        <div className={aboutCss.about_special_contents_container}>
+          
+          <div className={aboutCss.about_special_contents_title}>Special content</div>
+          <div className={aboutCss.about_special_contents_white_box_sec_container}></div>
+        </div>
 
       </section>
     </PageLayout>
