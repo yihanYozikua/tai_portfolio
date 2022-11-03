@@ -216,7 +216,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
 
   .about_view_my_works_button_container{
     width: 100vw;
-    height: 40vh;
+    height: 60vh;
+    margin-top: -20vh;
     display: flex;
     background-color: $ABOUT_BG_COLOR;
     justify-content: center;
