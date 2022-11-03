@@ -21,7 +21,7 @@ export default function About() {
     <PageLayout>
       <section id={aboutCss.about}>
         <Navbar />
-        <Sidebar />
+        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
 
         <div className={aboutCss.about_kv_container}>
           <div className={aboutCss.about_kv_contents}>

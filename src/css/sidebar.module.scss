@@ -3,5 +3,38 @@ $SIDEBAR_BG_COLOR: white;
 $COLOR_SIDEBAR_TEXT: black;
 
 #sidebar{
-  
+  width: 4rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $SIDEBAR_BG_COLOR;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  .title_prop{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 0.6rem;
+    margin: 0.6rem 0;
+    color: #858A8B;
+  }
+  .emoji_container{
+    margin-top: 0.3rem;
+    margin-bottom: .1rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+
+    .emoji_prop{
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    .emoji_text_prop{
+      font-size: 0.7rem;
+      margin-top: -.2rem;
+    }
+  }
 }
