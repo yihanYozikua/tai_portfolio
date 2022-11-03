@@ -96,9 +96,15 @@ export default function About() {
         </div>
 
         <div className={aboutCss.about_special_contents_container}>
-          
           <div className={aboutCss.about_special_contents_title}>Special content</div>
           <div className={aboutCss.about_special_contents_white_box_sec_container}></div>
+        </div>
+
+        <div className={aboutCss.about_view_my_works_button_container}>
+          <div className={aboutCss.about_view_my_works_contents}>
+            <div className={aboutCss.about_view_my_works_contents_prop}>Hover to</div>
+            <div className={aboutCss.about_view_my_works_contents_prop}>View my Works</div>
+          </div>
         </div>
 
       </section>

@@ -8,6 +8,7 @@ $COLOR_NAME: #282D2F;
 $COLOR_DESCRIPTION: #282D2F;
 $COLOR_EXPERIENCE_TEXT: #858A8B;
 $COLOR_SPECIAL_CONTENT_TITLE: #282D2F;
+$COLOR_VIEW_WORKS_BUTTON: #282D2F;
 
 #about{
   width: 100vw;
@@ -185,6 +186,7 @@ $COLOR_SPECIAL_CONTENT_TITLE: #282D2F;
     }
     
   }
+
   .about_special_contents_container{
     display: flex !important;
     flex-direction: column;
@@ -193,7 +195,6 @@ $COLOR_SPECIAL_CONTENT_TITLE: #282D2F;
     width: 100vw;
     height: 50vh;
     background-color: $ABOUT_BG_COLOR;
-    // margin-left: 11rem;
 
     .about_special_contents_title{
       display: flex;
@@ -210,6 +211,38 @@ $COLOR_SPECIAL_CONTENT_TITLE: #282D2F;
       height: 15rem;
       background-color: white;
       box-shadow:-10px 10px 50px -20px rgb(176, 176, 176);
+    }
+  }
+
+  .about_view_my_works_button_container{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    background-color: $ABOUT_BG_COLOR;
+    justify-content: center;
+    align-items: center;
+
+    .about_view_my_works_contents{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 12rem;
+      height: 12rem;
+      background-color: $COLOR_VIEW_WORKS_BUTTON;
+      border-radius: 500px;
+      border: 10px white solid;
+
+      .about_view_my_works_contents_prop{
+        color: white;
+        width: 8.5rem;
+        &:nth-child(1){
+          font-size: .75rem;
+        }
+        &:nth-child(2){
+          font-size: 1.25rem;
+        }
+      }
     }
   }
 }
