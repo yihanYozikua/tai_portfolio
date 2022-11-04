@@ -24,7 +24,7 @@ export default function Footer(){
         </div>
       </div>
 
-      <div className={footerCss.underline_prop}>underline here</div>
+      <div className={footerCss.underline_prop}></div>
       
       <div className={footerCss.bottom_section_container}>
         <div className={footerCss.copyright_prop}>©2022Tai, Tung-En</div>

@@ -1,8 +1,14 @@
 @import './main.scss';
 $FOOTER_BG: url("../static/img/footer_bg.svg");
+$COLOR_UNDERLINE: #858A8B;
+$COLOR_BOTTOM_TEXT: #858A8B;
 
 
 #footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-image: $FOOTER_BG;
@@ -13,6 +19,8 @@ $FOOTER_BG: url("../static/img/footer_bg.svg");
     padding-top: 7.85rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
 
     .upper_left_container{
 
@@ -39,30 +47,52 @@ $FOOTER_BG: url("../static/img/footer_bg.svg");
   }
 
   .underline_prop{
+    margin: 3rem 0;
+    border-bottom: 1px $COLOR_UNDERLINE solid;
+    width: 65%;
 
   }
 
   .bottom_section_container{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 
     .copyright_prop{
-
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: $COLOR_BOTTOM_TEXT;
+      font-family: 'Outfit', sans-serif;
     }
     .bottom_right_container{
 
       .author_container{
+        margin: 1rem 0;
 
         .responsibility_prop{
-
+          font-size: 0.8rem;
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          color: $COLOR_BOTTOM_TEXT;
         }
         .author_contents{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
 
           .author_emoji{
-
+            margin-right: .3rem;
           }
           .author_name{
-
+            font-size: 0.8rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            color: $COLOR_BOTTOM_TEXT;
           }
           .author_img{
+            margin-left: .5rem;
 
           }
         }
