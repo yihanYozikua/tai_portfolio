@@ -4,6 +4,7 @@ import AOS from 'aos';
 import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
 import About from './About'
+import Works from './Works'
 
 const App = () => {
 
@@ -34,7 +35,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<><About /></>}></Route>
         <Route path="/about" element={<><About /></>}></Route>
-        <Route path="/works"></Route>
+        <Route path="/works" element={<><Works /></>}></Route>
         <Route path="/keywords"></Route>
       </Routes>
     </Router>
