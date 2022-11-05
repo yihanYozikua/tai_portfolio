@@ -57,6 +57,7 @@ export default function About() {
       console.log(`old scroll: ${this.oldScroll}`)
       console.log(`current scroll: ${this.scrollY}`)
 
+      /* kv animation */
       // limit the scroll distance for the first time
       if(prev_oldScroll == undefined){
         window.scrollTo({top: 20})
@@ -67,14 +68,15 @@ export default function About() {
         console.log('down');
         [].forEach.call(kv_list, function(el){
           el.style.opacity = '0';
-          el.style.transition = 'all .7s ease-in-out';
+          el.style.transition = 'all 1s ease-in-out';
         });
         setTimeout(() => {
           [].forEach.call(paragraph_list, function(pa){
             pa.style.transform = 'translateY(-70vh)';
-            pa.style.transition = 'all .3s ease-in-out';
+            pa.style.transition = 'all .7s ease-in-out';
           })
           paragraph.style.height = '30vh';
+          paragraph.style.transition = 'all .5s ease-in-out';
         }, 100);
       }
       else if(this.oldScroll > this.scrollY){
@@ -84,6 +86,7 @@ export default function About() {
           pa.style.transition = 'all .5s ease-in-out';
         });
         paragraph.style.height = '100vh';
+        paragraph.style.transition = 'all .5s ease-in-out';
         
         setTimeout(() => {
           [].forEach.call(kv_list, function(el){
@@ -95,6 +98,9 @@ export default function About() {
       else{
         console.log('not moving');
       }
+
+
+
       this.oldScroll = this.scrollY;
     }
   }, [])
