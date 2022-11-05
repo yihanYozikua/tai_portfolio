@@ -52,12 +52,6 @@ export default function About() {
       // if scroll for the first time
       if( prev_oldScroll == undefined ){
         console.log('scroll for the first time');
-        // paragraph.scrollIntoView(
-        //   {
-        //     behavior: 'smooth',
-        //     block: 'start',
-        //   }
-        // );
         window.scroll({
           top: paragraph,
           behavior: "smooth"
