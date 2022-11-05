@@ -83,6 +83,7 @@ export default function About() {
           pa.style.transform = 'unset';
           pa.style.transition = 'all .5s ease-in-out';
         });
+        paragraph.style.height = '100vh';
         
         setTimeout(() => {
           [].forEach.call(kv_list, function(el){
