@@ -7,6 +7,8 @@ import navCss from '../css/nav.module.scss'
 
 const Navbar = ({wrapperComponent, ...props}) => {
   const Wrapper = wrapperComponent;
+  
+
   return(
     <Wrapper {...props}>
       <Link to="/about" className={navCss.nav_prop}>About</Link>

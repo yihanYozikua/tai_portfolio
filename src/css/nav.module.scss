@@ -1,5 +1,5 @@
 @import './main.scss';
-
+$COLOR_BG: #282D2F;
 
 
 nav{
@@ -10,7 +10,7 @@ nav{
   justify-content: center;
   align-items: center;
   width: 14rem;
-  height: 2.6rem;
+  height: 3.2rem;
   background-color: white;
   border-radius: 100px;
   animation: fadein 1.0s ease-in-out;
@@ -20,12 +20,26 @@ nav{
 
 .nav_prop{
   text-decoration: none;
-  width: 6rem;
-  height: 2.5rem;
+  width: 6.5rem;
+  height: 2.6rem;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: fadein 1.6s ease-in-out;
+
+  background-color: $COLOR_BG;
+  color: white;
+  border-radius: 100px;
+
+  // color: white;
+  // content: "";
+  // position: absolute;
+  // top: 0.3125rem;
+  // left: 0.5rem;
+  // width: 5rem;
+  // height: 1.875rem;
+  // background-color: #121212;
+  // border-radius: 6.25rem;
 }
 
