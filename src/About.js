@@ -23,9 +23,56 @@ const Exp = ({year, exp_contents}) => {
 }
 
 export default function About() {
+  const kv_ref = useRef(null);
+  const kv_ref_1 = useRef(null);
+  const kv_ref_2 = useRef(null);
+  const paragraph_ref_1 = useRef(null);
+  const paragraph_ref_2 = useRef(null);
+  const paragraph_ref_3 = useRef(null);
+  const paragraph_ref_4 = useRef(null);
+
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, []);
+
+  // if scroll down
+  useEffect(() => {
+    const kv = kv_ref.current;
+    const kv_list = [ kv_ref_1.current, kv_ref_2.current ];
+    const paragraph_list = [ paragraph_ref_1.current, paragraph_ref_2.current, paragraph_ref_3.current, paragraph_ref_4.current ]
+
+    window.onscroll = function(e) {
+      if(this.oldScroll < this.scrollY){ 
+        console.log('down');
+        [].forEach.call(kv_list, function(el){
+          el.style.opacity = '0';
+          el.style.transition = 'all .7s ease-in-out';
+        });
+        // setTimeout(() => {
+          [].forEach.call(paragraph_list, function(pa){
+            pa.style.transform = 'translateY(-70vh)';
+            pa.style.transition = 'all .7s ease-in-out';
+          });
+        // }, 500);
+      }
+      else if(this.oldScroll > this.scrollY){
+        console.log('up');
+        [].forEach.call(paragraph_list, function(pa){
+          pa.style.transform = 'unset';
+          pa.style.transition = 'all .5s ease-in-out';
+        });
+        
+        setTimeout(() => {
+          [].forEach.call(kv_list, function(el){
+            el.style.opacity = '1';
+            el.style.transition = 'all .3s ease-in-out';
+          });
+        }, 500);
+      }
+      this.oldScroll = this.scrollY;
+    }
+  }, [])
 
   return(
     <PageLayout>
@@ -33,32 +80,32 @@ export default function About() {
         <Navbar />
         <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
 
-        <div className={aboutCss.about_kv_container}>
+        <div className={aboutCss.about_kv_container} ref={kv_ref}>
           <div className={aboutCss.about_kv_contents}>
-            <span className={aboutCss.about_kv_contents_prop}>All in design</span>
-            <span className={aboutCss.about_kv_contents_prop}>All for our beautiful days</span>
+            <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_1}>All in design</span>
+            <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_2}>All for our beautiful days</span>
           </div>
         </div>
 
         <div className={aboutCss.about_paragragh_container}>
           <div className={aboutCss.about_paragraph_contents}>
-            <div className={aboutCss.about_paragragh_contents_sec}  data-aos="fade-in">
+            <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
               <span>見慣れていたあのポスターも、</span>
               <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
               <span>ビジュアルなもの、そうではないもの、</span>
               <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
               <span>実は全てがデザインされています。</span>
             </div>
-            <div className={aboutCss.about_paragragh_contents_sec}>
+            <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
               <span>だから私は信じている。</span>
               <span>物事をデザインするのによって私たちの生活をよくすること。</span>
             </div>
-            <div className={aboutCss.about_paragragh_contents_sec}>
+            <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
               <span>だから私は考えている。</span>
               <span>何かブラッシュアップできることがないか。</span>
               <span>何か新しいアイデアを生み出せるではないか。</span>
             </div>
-            <div className={aboutCss.about_paragragh_contents_sec}>
+            <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
               <span>今までも、これからも、もっとよくなる明日のために、</span>
               <span>精度と質の高いデザインを追求し続けます。</span>
             </div>

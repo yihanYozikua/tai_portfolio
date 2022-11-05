@@ -42,6 +42,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       color: $COLOR_KV_TEXT;
 
       .about_kv_contents_prop{
+        opacity: 1;
         margin-left: 11rem;
         animation: fadein 1.6s ease-in-out;
       }
