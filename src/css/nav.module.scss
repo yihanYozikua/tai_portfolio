@@ -1,12 +1,18 @@
 @import './main.scss';
 $COLOR_BG: #282D2F;
 
-@keyframes nav_anim {
-  from{
-    width: 8rem;
-  }
-  to{
+@keyframes nav_anim_to_works {
+  0%{
     width: 6.5rem;
+    margin-left: .5rem;
+  }
+  30%{
+    width: 8rem;
+    margin-left: 3rem;
+  }
+  100%{
+    width: 6.5rem;
+    margin-left: 7rem;
   }
 }
 
@@ -29,7 +35,7 @@ nav{
   text-decoration: none;
   width: 6.5rem;
   height: 2.6rem;
-  color: black;
+  // color: black;
   display: flex;
   justify-content: center;
   align-items: center;

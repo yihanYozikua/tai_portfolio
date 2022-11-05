@@ -27,7 +27,6 @@ const Exp = ({year, exp_contents}) => {
 function isInViewPort(element) {
   // Get the bounding client rectangle position in the viewport
   var bounding = element.getBoundingClientRect();
-  console.log(bounding);
 
   // Checking part. Here the code checks if it's *fully* visible
   // Edit this part if you just want a partial visibility
@@ -37,13 +36,14 @@ function isInViewPort(element) {
       // && bounding.right <= (window.innerwidth || document.documentElement.clientWidth) 
       && ((bounding.top + bounding.bottom) / 2.8) <= (window.innerHeight || document.documentElement.clientHeight)
   ) {
-      console.log(`In the viewport! :)`);
+      // console.log(`In the viewport! :)`);
       return true;
   } else {
-      console.log(`Not in the viewport. :(`);
+      // console.log(`Not in the viewport. :(`);
       return false;
   }
 }
+
 
 export default function About() {
   const kv_ref = useRef(null);
@@ -62,6 +62,7 @@ export default function About() {
   const view_works_button_ref = useRef(null);
   const view_works_button_text_1_ref = useRef(null);
   const view_works_button_text_2_ref = useRef(null);
+  let isFirstScrollDown = true;
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -71,7 +72,7 @@ export default function About() {
   useEffect(() => {
     const kv = kv_ref.current;
     const kv_list = [ kv_ref_1.current, kv_ref_2.current ];
-    // const paragraph_anchor = paragraph_ref_1.current.getBoundingClientRect().top + window.scrollY
+    const paragraph_anchor = paragraph_ref_1.current.getBoundingClientRect().top + window.scrollY
     const paragraph = paragraph_ref.current
     const paragraph_list = [ paragraph_ref_1.current, paragraph_ref_2.current, paragraph_ref_3.current, paragraph_ref_4.current ]
     const self_intro_img_anchor = self_intro_img_ref.current
@@ -100,15 +101,28 @@ export default function About() {
 
     window.onscroll = function(e) {
       prev_oldScroll = this.oldScroll;
-      console.log(`old scroll: ${this.oldScroll}`)
+      // console.log(`old scroll: ${this.oldScroll}`)
       console.log(`current scroll: ${this.scrollY}`)
 
-      /* kv animation */
-      if(prev_oldScroll == undefined){
-
+      // if is first scroll down, then directly scroll to paragraph
+      const paragraph_anchor_get_by_document = document.getElementsByClassName(`${aboutCss.about_paragragh_container}`)[0]
+      console.log(isFirstScrollDown);
+      if(isFirstScrollDown == true){ // if detected scroll down for the first time
+        console.log('scroll down first time')
+        if(this.scrollY > 100){ window.scrollTo({top: 100}) }
+        window.scrollTo({
+          top: paragraph_anchor_get_by_document,
+          behavior: 'smooth'
+        })
+        // setTimeout(() => {
+        isFirstScrollDown = false;
+        // }, 3000)
+        
       }
+
       if(this.oldScroll < this.scrollY){ 
-        console.log('down');
+
+        // console.log('down');
         [].forEach.call(kv_list, function(el){
           el.style.opacity = '0';
           el.style.transition = 'all 1s ease-in-out';
@@ -123,7 +137,7 @@ export default function About() {
         }, 100);
       }
       else if(this.oldScroll > this.scrollY){
-        console.log('up');
+        // console.log('up');
         [].forEach.call(paragraph_list, function(pa){
           pa.style.transform = 'unset';
           pa.style.transition = 'all .5s ease-in-out';
@@ -139,7 +153,7 @@ export default function About() {
         }, 500);
       }
       else{
-        console.log('not moving');
+        // console.log('not moving');
       }
 
       /* circle animation */
