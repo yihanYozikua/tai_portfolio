@@ -12,9 +12,9 @@ export default function Footer(){
     <section id={footerCss.footer}>
       <div className={footerCss.upper_section_container}>
         <div className={footerCss.upper_left_container}>
-          <div className={footerCss.upper_left_contents_prop}>After design</div>
-          <div className={footerCss.upper_left_contents_prop}>All will be</div>
-          <div className={footerCss.upper_left_contents_prop}>beautiful days</div>
+          <span className={footerCss.upper_left_contents_prop}>After design</span>
+          <span className={footerCss.upper_left_contents_prop}>All will be</span>
+          <span className={footerCss.upper_left_contents_prop}>beautiful days</span>
         </div>
         <div className={footerCss.upper_right_container}>
           <div className={footerCss.upper_right_contents_prop}>About</div>
