@@ -1,6 +1,14 @@
 @import './main.scss';
 $COLOR_BG: #282D2F;
 
+@keyframes nav_anim {
+  from{
+    width: 8rem;
+  }
+  to{
+    width: 6.5rem;
+  }
+}
 
 nav{
   position: fixed;
@@ -13,7 +21,6 @@ nav{
   height: 3.2rem;
   background-color: white;
   border-radius: 100px;
-  // animation: fadein 1.0s ease-in-out;
   font-family: 'Outfit', sans-serif;
   z-index: 15;
 }
@@ -26,20 +33,18 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  // animation: fadein 1.6s ease-in-out;
-
-  background-color: $COLOR_BG;
-  color: white;
-  border-radius: 100px;
-
-  // color: white;
-  // content: "";
-  // position: absolute;
-  // top: 0.3125rem;
-  // left: 0.5rem;
-  // width: 5rem;
-  // height: 1.875rem;
-  // background-color: #121212;
-  // border-radius: 6.25rem;
+  z-index: 10;
 }
+.nav_bar_container{
+  width: 14rem;
+  position: absolute;
 
+  .nav_bar_bg{
+    width: 6.5rem;
+    height: 2.6rem;
+    margin-left: .5rem;
+    background-color: $COLOR_BG;
+    color: white;
+    border-radius: 100px;
+  }
+}
