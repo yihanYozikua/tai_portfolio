@@ -26,6 +26,7 @@ export default function About() {
   const kv_ref = useRef(null);
   const kv_ref_1 = useRef(null);
   const kv_ref_2 = useRef(null);
+  const paragraph_ref = useRef(null);
   const paragraph_ref_1 = useRef(null);
   const paragraph_ref_2 = useRef(null);
   const paragraph_ref_3 = useRef(null);
@@ -40,35 +41,36 @@ export default function About() {
   useEffect(() => {
     const kv = kv_ref.current;
     const kv_list = [ kv_ref_1.current, kv_ref_2.current ];
+    const paragraph = paragraph_ref.current.getBoundingClientRect().top + window.scrollY;
     const paragraph_list = [ paragraph_ref_1.current, paragraph_ref_2.current, paragraph_ref_3.current, paragraph_ref_4.current ]
+    let prev_oldScroll;
 
     window.onscroll = function(e) {
-      if(this.oldScroll < this.scrollY){ 
-        console.log('down');
-        [].forEach.call(kv_list, function(el){
-          el.style.opacity = '0';
-          el.style.transition = 'all .7s ease-in-out';
-        });
-        // setTimeout(() => {
-          [].forEach.call(paragraph_list, function(pa){
-            pa.style.transform = 'translateY(-70vh)';
-            pa.style.transition = 'all .7s ease-in-out';
-          });
-        // }, 500);
+      prev_oldScroll = this.oldScroll;
+      console.log(prev_oldScroll);
+
+      // if scroll for the first time
+      if( prev_oldScroll == undefined ){
+        console.log('scroll for the first time');
+        // paragraph.scrollIntoView(
+        //   {
+        //     behavior: 'smooth',
+        //     block: 'start',
+        //   }
+        // );
+        window.scroll({
+          top: paragraph,
+          behavior: "smooth"
+        })
       }
-      else if(this.oldScroll > this.scrollY){
-        console.log('up');
-        [].forEach.call(paragraph_list, function(pa){
-          pa.style.transform = 'unset';
-          pa.style.transition = 'all .5s ease-in-out';
-        });
-        
-        setTimeout(() => {
-          [].forEach.call(kv_list, function(el){
-            el.style.opacity = '1';
-            el.style.transition = 'all .3s ease-in-out';
-          });
-        }, 500);
+
+      else{
+        if(this.oldScroll < this.scrollY){ 
+          console.log('down');
+        }
+        else if(this.oldScroll > this.scrollY){
+          console.log('up');
+        }
       }
       this.oldScroll = this.scrollY;
     }
@@ -87,7 +89,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className={aboutCss.about_paragragh_container}>
+        <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
           <div className={aboutCss.about_paragraph_contents}>
             <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
               <span>見慣れていたあのポスターも、</span>

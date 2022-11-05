@@ -55,6 +55,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    scroll-behavior: smooth;
 
     .about_paragraph_contents{
       display: flex;
