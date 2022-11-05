@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
-import Link from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from './components/PageLayout'
@@ -21,6 +21,8 @@ const Exp = ({year, exp_contents}) => {
     </div>
   )
 }
+
+
 
 function isInViewPort(element) {
   // Get the bounding client rectangle position in the viewport
@@ -56,7 +58,10 @@ export default function About() {
   const self_intro_img_ref = useRef(null);
   const circle_1_ref = useRef(null);
   const circle_2_ref = useRef(null);
-
+  const view_works_button_container_ref = useRef(null);
+  const view_works_button_ref = useRef(null);
+  const view_works_button_text_1_ref = useRef(null);
+  const view_works_button_text_2_ref = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -72,10 +77,26 @@ export default function About() {
     const self_intro_img_anchor = self_intro_img_ref.current
     const circle_1 = circle_1_ref.current
     const circle_2 = circle_2_ref.current
+    const view_works_button_bg = view_works_button_ref.current
+    const view_works_button_text_1 = view_works_button_text_1_ref.current
+    const view_works_button_text_2 = view_works_button_text_2_ref.current
 
     let prev_oldScroll;
 
-    
+    document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseover', ()=>{
+      view_works_button_bg.style.width = '12rem';
+      view_works_button_bg.style.height = '12rem';
+      view_works_button_text_1.style.color = 'white';
+      view_works_button_text_2.style.color = 'white';
+      view_works_button_bg.style.transition = 'all .4s ease-in-out'
+    })
+    document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseleave', ()=>{
+      view_works_button_bg.style.width = '0rem';
+      view_works_button_bg.style.height = '0rem';
+      view_works_button_text_1.style.color = 'black';
+      view_works_button_text_2.style.color = 'black';
+      view_works_button_bg.style.transition = 'all .4s ease-in-out'
+    })
 
     window.onscroll = function(e) {
       prev_oldScroll = this.oldScroll;
@@ -225,11 +246,21 @@ export default function About() {
           <div className={aboutCss.about_special_contents_white_box_sec_container}></div>
         </div>
 
-        <div className={aboutCss.about_view_my_works_button_container}>
-          <div className={aboutCss.about_view_my_works_contents}>
+        {/* <div className={aboutCss.about_view_my_works_button_container}>
+          <div className={aboutCss.about_view_my_works_contents} onMouseOver={HoverOnViewWorksButton} onMouseLeave={HoverLeaveViewWorksButton}>
             <div className={aboutCss.about_view_my_works_contents_prop}>Hover to</div>
             <div className={aboutCss.about_view_my_works_contents_prop}>View my Works</div>
           </div>
+        </div> */}
+
+        <div className={aboutCss.about_view_my_works_button_container}>
+          <Link to="/works" className={aboutCss.about_view_my_works_button_link}>
+            <div className={aboutCss.about_view_my_works_contents}>
+              <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_1_ref}>Hover to</div>
+              <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_2_ref}>View my Works</div>
+            </div>
+            <div className={aboutCss.about_view_my_works_button_hover_bg} ref={view_works_button_ref}></div>
+          </Link>
         </div>
 
       </section>
