@@ -238,11 +238,14 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
   .about_view_my_works_button_container{
     width: 100vw;
     height: 60vh;
-    // margin-top: -20vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: $ABOUT_BG_COLOR_5;
     justify-content: center;
     align-items: center;
+
 
     .about_view_my_works_contents{
       display: flex;
