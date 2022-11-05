@@ -27,6 +27,7 @@ export default function About() {
   const kv_ref_1 = useRef(null);
   const kv_ref_2 = useRef(null);
   const paragraph_ref = useRef(null);
+  const paragraph_anchor_ref = useRef(null);
   const paragraph_ref_1 = useRef(null);
   const paragraph_ref_2 = useRef(null);
   const paragraph_ref_3 = useRef(null);
@@ -41,26 +42,40 @@ export default function About() {
   useEffect(() => {
     const kv = kv_ref.current;
     const kv_list = [ kv_ref_1.current, kv_ref_2.current ];
+    // const paragraph_anchor = paragraph_ref_1.current.getBoundingClientRect().top + window.scrollY
+    const paragraph = paragraph_ref.current
     const paragraph_list = [ paragraph_ref_1.current, paragraph_ref_2.current, paragraph_ref_3.current, paragraph_ref_4.current ]
+    const paragraph_anchor = paragraph_anchor_ref.current.getBoundingClientRect().top + window.scrollY
+
+    let prev_oldScroll;
+
+    
 
     window.onscroll = function(e) {
+      prev_oldScroll = this.oldScroll;
+      // console.log(`previous scroll: ${prev_oldScroll}`);
+      console.log(`old scroll: ${this.oldScroll}`)
+      console.log(`current scroll: ${this.scrollY}`)
+
+      // limit the scroll distance for the first time
+      if(prev_oldScroll == undefined){
+        window.scrollTo({top: 20})
+
+      }
+
       if(this.oldScroll < this.scrollY){ 
         console.log('down');
         [].forEach.call(kv_list, function(el){
           el.style.opacity = '0';
           el.style.transition = 'all .7s ease-in-out';
         });
-
-        [].forEach.call(paragraph_list, function(pa){
-          pa.style.transform = 'translateY(-70vh)';
-          pa.style.transition = 'all .7s ease-in-out';
-        });
-
-        const paragraph = paragraph_ref.current.getBoundingClientRect().top + window.scrollY
-        // window.scroll({
-        //   top: paragraph,
-        //   behavior: "smooth"
-        // })
+        setTimeout(() => {
+          [].forEach.call(paragraph_list, function(pa){
+            pa.style.transform = 'translateY(-70vh)';
+            pa.style.transition = 'all .3s ease-in-out';
+          })
+          paragraph.style.height = '30vh';
+        }, 100);
       }
       else if(this.oldScroll > this.scrollY){
         console.log('up');
@@ -75,6 +90,9 @@ export default function About() {
             el.style.transition = 'all .3s ease-in-out';
           });
         }, 500);
+      }
+      else{
+        console.log('not moving');
       }
       this.oldScroll = this.scrollY;
     }
@@ -96,7 +114,7 @@ export default function About() {
         <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
           <div className={aboutCss.about_paragraph_contents}>
             <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
-              <span>見慣れていたあのポスターも、</span>
+              <span ref={paragraph_anchor_ref}>見慣れていたあのポスターも、</span>
               <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
               <span>ビジュアルなもの、そうではないもの、</span>
               <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
