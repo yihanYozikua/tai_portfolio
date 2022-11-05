@@ -93,14 +93,13 @@ export default function About() {
     document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseleave', ()=>{
       view_works_button_bg.style.width = '0rem';
       view_works_button_bg.style.height = '0rem';
-      view_works_button_text_1.style.color = 'black';
-      view_works_button_text_2.style.color = 'black';
+      view_works_button_text_1.style.color = '#282D2F';
+      view_works_button_text_2.style.color = '#282D2F';
       view_works_button_bg.style.transition = 'all .4s ease-in-out'
     })
 
     window.onscroll = function(e) {
       prev_oldScroll = this.oldScroll;
-      // console.log(`previous scroll: ${prev_oldScroll}`);
       console.log(`old scroll: ${this.oldScroll}`)
       console.log(`current scroll: ${this.scrollY}`)
 
