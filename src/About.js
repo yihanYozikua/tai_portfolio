@@ -22,6 +22,27 @@ const Exp = ({year, exp_contents}) => {
   )
 }
 
+function isInViewPort(element) {
+  // Get the bounding client rectangle position in the viewport
+  var bounding = element.getBoundingClientRect();
+  console.log(bounding);
+
+  // Checking part. Here the code checks if it's *fully* visible
+  // Edit this part if you just want a partial visibility
+  if (
+      bounding.top >= 0 &&
+      bounding.left >= 0
+      // && bounding.right <= (window.innerwidth || document.documentElement.clientWidth) 
+      && ((bounding.top + bounding.bottom) / 2.8) <= (window.innerHeight || document.documentElement.clientHeight)
+  ) {
+      console.log(`In the viewport! :)`);
+      return true;
+  } else {
+      console.log(`Not in the viewport. :(`);
+      return false;
+  }
+}
+
 export default function About() {
   const kv_ref = useRef(null);
   const kv_ref_1 = useRef(null);
@@ -32,6 +53,9 @@ export default function About() {
   const paragraph_ref_2 = useRef(null);
   const paragraph_ref_3 = useRef(null);
   const paragraph_ref_4 = useRef(null);
+  const self_intro_img_ref = useRef(null);
+  const circle_1_ref = useRef(null);
+  const circle_2_ref = useRef(null);
 
 
   useEffect(() => {
@@ -45,7 +69,9 @@ export default function About() {
     // const paragraph_anchor = paragraph_ref_1.current.getBoundingClientRect().top + window.scrollY
     const paragraph = paragraph_ref.current
     const paragraph_list = [ paragraph_ref_1.current, paragraph_ref_2.current, paragraph_ref_3.current, paragraph_ref_4.current ]
-    const paragraph_anchor = paragraph_anchor_ref.current.getBoundingClientRect().top + window.scrollY
+    const self_intro_img_anchor = self_intro_img_ref.current
+    const circle_1 = circle_1_ref.current
+    const circle_2 = circle_2_ref.current
 
     let prev_oldScroll;
 
@@ -58,12 +84,9 @@ export default function About() {
       console.log(`current scroll: ${this.scrollY}`)
 
       /* kv animation */
-      // limit the scroll distance for the first time
       if(prev_oldScroll == undefined){
-        window.scrollTo({top: 20})
 
       }
-
       if(this.oldScroll < this.scrollY){ 
         console.log('down');
         [].forEach.call(kv_list, function(el){
@@ -99,7 +122,31 @@ export default function About() {
         console.log('not moving');
       }
 
-
+      /* circle animation */
+      if(isInViewPort(self_intro_img_anchor)){
+        circle_1.style.transform = 'rotate(0deg)';
+        circle_1.style.marginLeft = '0';
+        circle_1.style.opacity = '1';
+        circle_1.style.transition = 'all 1s ease-in-out'
+        setTimeout(()=>{
+          circle_2.style.transform = 'rotate(0deg)';
+          circle_2.style.marginLeft = '-6rem';
+          circle_2.style.opacity = '1';
+          circle_2.style.transition = 'all 1s ease-in-out' 
+        }, 200)
+      }
+      else{
+        circle_1.style.transform = 'rotate(-45deg)';
+        circle_1.style.marginLeft = '-5rem';
+        circle_1.style.opacity = '0';
+        circle_1.style.transition = 'all .3s ease-in-out'
+        setTimeout(()=>{
+          circle_2.style.transform = 'rotate(-45deg)';
+          circle_2.style.marginLeft = '-8rem';
+          circle_2.style.opacity = '0';
+          circle_2.style.transition = 'all .3s ease-in-out'
+        }, 200)
+      }
 
       this.oldScroll = this.scrollY;
     }
@@ -149,11 +196,11 @@ export default function About() {
             <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img}></img>
             <div className={aboutCss.about_self_intro_right_section_container}>
               <div className={aboutCss.about_self_intro_circle_container}>
-                <div className={aboutCss.about_self_intro_circle_prop}>日本語</div>
-                <div className={aboutCss.about_self_intro_circle_prop}>ものづくり</div>
+                <div className={aboutCss.about_self_intro_circle_prop} ref={circle_1_ref}>日本語</div>
+                <div className={aboutCss.about_self_intro_circle_prop} ref={circle_2_ref}>ものづくり</div>
               </div>
               <div className={aboutCss.about_self_intro_paragraph_container}>
-                <div className={aboutCss.about_self_intro_paragraph_name}>Tai, Tung-En</div>
+                <div className={aboutCss.about_self_intro_paragraph_name} ref={self_intro_img_ref}>Tai, Tung-En</div>
                 <div className={aboutCss.about_self_intro_paragraph_description_container}>
                   <span>1997年台湾生まれ。日本語への熱意で来日。</span>
                   <span>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
