@@ -1,5 +1,10 @@
 @import './main.scss';
-$ABOUT_BG_COLOR: #F5F5F5;
+// $ABOUT_BG_COLOR: linear-gradient(#F6F6F6, #DBDEE0);
+$ABOUT_BG_COLOR_1: linear-gradient(#F6F6F6, #e1e1e1);
+$ABOUT_BG_COLOR_2: linear-gradient(#e1e1e1, #e4e4e4);
+$ABOUT_BG_COLOR_3: linear-gradient(#e4e4e4, #e0dbdb);
+$ABOUT_BG_COLOR_4: linear-gradient(#e0dbdb, #e2e5e7);
+$ABOUT_BG_COLOR_5: linear-gradient(#e2e5e7, #DBDEE0);
 $COLOR_KV_TEXT: #282D2F;
 $COLOR_PARAGRAPH_TEXT: #282D2F;
 $COLOR_CIRCLE_TEXT: #858A8B66;
@@ -30,7 +35,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       justify-content: center;
       width: 100%;
       height: 100%;
-      background-color: $ABOUT_BG_COLOR;
+      background: $ABOUT_BG_COLOR_1;
       font-family: 'Outfit', sans-serif;
       font-weight: 300;
       font-size: 3.6rem;
@@ -55,7 +60,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       flex-direction: column;
       width: 100%;
       height: 100%;
-      background-color: $ABOUT_BG_COLOR;
+      background: $ABOUT_BG_COLOR_2;
       font-family: 'BIZ UDGothic', sans-serif;
       font-weight: 400;
       font-size: 1.2rem;
@@ -81,7 +86,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     .about_self_intro_contents{
       width: 100%;
       height: 100%;
-      background-color: $ABOUT_BG_COLOR;
+      background: $ABOUT_BG_COLOR_3;
       padding-left: 15rem;
       padding-top: 4rem;
       display: flex;
@@ -194,7 +199,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     align-items: center;
     width: 100vw;
     height: 50vh;
-    background-color: $ABOUT_BG_COLOR;
+    background: $ABOUT_BG_COLOR_4;
 
     .about_special_contents_title{
       display: flex;
@@ -219,7 +224,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     height: 60vh;
     // margin-top: -20vh;
     display: flex;
-    background-color: $ABOUT_BG_COLOR;
+    background: $ABOUT_BG_COLOR_5;
     justify-content: center;
     align-items: center;
 
