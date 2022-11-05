@@ -35,14 +35,14 @@ $COLOR_BOTTOM_TEXT: #858A8B;
         font-family: 'Outfit', sans-serif;
         font-weight: 300;
         color: white;
-        line-height: 3rem;
-        margin-bottom: 1.8rem;
+        // line-height: 3rem;
+        // margin-bottom: 1.8rem;
       }
     }
     .upper_right_container{
       display: flex;
       flex-direction: column;
-      margin-top: 1rem;
+      margin-top: 2rem;
       width: 30%;
 
       .upper_right_contents_prop{
@@ -59,7 +59,7 @@ $COLOR_BOTTOM_TEXT: #858A8B;
         }
         &:nth-child(3){
           font-size: 1.1rem;
-          margin-bottom: 5.5rem;
+          margin-bottom: 6rem;
         }
         &:nth-child(4){
           font-size: .7rem;
