@@ -26,6 +26,7 @@ export default function About() {
   const kv_ref = useRef(null);
   const kv_ref_1 = useRef(null);
   const kv_ref_2 = useRef(null);
+  const paragraph_ref = useRef(null);
   const paragraph_ref_1 = useRef(null);
   const paragraph_ref_2 = useRef(null);
   const paragraph_ref_3 = useRef(null);
@@ -49,12 +50,17 @@ export default function About() {
           el.style.opacity = '0';
           el.style.transition = 'all .7s ease-in-out';
         });
-        // setTimeout(() => {
-          [].forEach.call(paragraph_list, function(pa){
-            pa.style.transform = 'translateY(-70vh)';
-            pa.style.transition = 'all .7s ease-in-out';
-          });
-        // }, 500);
+
+        [].forEach.call(paragraph_list, function(pa){
+          pa.style.transform = 'translateY(-70vh)';
+          pa.style.transition = 'all .7s ease-in-out';
+        });
+
+        const paragraph = paragraph_ref.current.getBoundingClientRect().top + window.scrollY
+        // window.scroll({
+        //   top: paragraph,
+        //   behavior: "smooth"
+        // })
       }
       else if(this.oldScroll > this.scrollY){
         console.log('up');
@@ -87,7 +93,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className={aboutCss.about_paragragh_container}>
+        <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
           <div className={aboutCss.about_paragraph_contents}>
             <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
               <span>見慣れていたあのポスターも、</span>
