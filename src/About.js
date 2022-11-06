@@ -44,11 +44,24 @@ function isInViewPort(element) {
   }
 }
 
-function scrollToParagraph( scrollToSection, callback ){
+function scrollToParagraph( scrollToSection, kv_list, paragraph_list, paragraph, callback ){
   window.scrollTo({
     top: scrollToSection,
     behavior: 'smooth',
-  })
+  });
+
+  [].forEach.call(kv_list, function(el){
+    el.style.opacity = '0';
+    el.style.transition = 'all 1s ease-in-out';
+  });
+  setTimeout(() => {
+    [].forEach.call(paragraph_list, function(pa){
+      pa.style.transform = 'translateY(-70vh)';
+      pa.style.transition = 'all .7s ease-in-out';
+    })
+    paragraph.style.height = '30vh';
+    paragraph.style.transition = 'all .5s ease-in-out';
+  }, 100);
 
   callback();
 }
@@ -110,22 +123,53 @@ export default function About() {
     const paragraph_offsetTop = document.getElementsByClassName(`${aboutCss.about_paragragh_container}`)[0].offsetTop;
     console.log(paragraph_offsetTop)
 
-    // window.scrollTo({
-    //   top: paragraph_offsetTop - 100,
-    //   behavior: 'smooth',
-    // })
-    window.onscroll = function(e){
-      // if first scroll down, then direactly scroll to paragraph
+    window.onscroll = function (e) {
+      /* if first scroll down, then direactly scroll to paragraph */ 
       if(isFirstScrollDown){
         console.log('first scroll');
-        scrollToParagraph(paragraph_offsetTop - 100, () => {
+        scrollToParagraph(300, kv_list, paragraph_list, paragraph, () => {
           isFirstScrollDown = false;
           console.log(isFirstScrollDown);
         });
       }
 
-      console.log(this.oldScroll)
-
+      /* kv animation */
+      if(this.oldScroll < this.scrollY){ 
+        console.log('down');
+        [].forEach.call(kv_list, function(el){
+          el.style.opacity = '0';
+          el.style.transition = 'all 1s ease-in-out';
+        });
+        setTimeout(() => {
+          [].forEach.call(paragraph_list, function(pa){
+            pa.style.transform = 'translateY(-70vh)';
+            pa.style.transition = 'all .7s ease-in-out';
+          })
+          paragraph.style.height = '30vh';
+          paragraph.style.transition = 'all .5s ease-in-out';
+        }, 100);
+      }
+      else if(this.oldScroll > this.scrollY){
+        console.log('up');
+        [].forEach.call(paragraph_list, function(pa){
+          pa.style.transform = 'unset';
+          pa.style.transition = 'all .5s ease-in-out';
+        });
+        paragraph.style.height = '100vh';
+        paragraph.style.transition = 'all .5s ease-in-out';
+        
+        setTimeout(() => {
+          [].forEach.call(kv_list, function(el){
+            el.style.opacity = '1';
+            el.style.transition = 'all .3s ease-in-out';
+          });
+        }, 500);
+      }
+      else{
+        console.log('not moving');
+      }
+      this.oldScroll = this.scrollY;
+      
       /* circle animation */
       if(isInViewPort(self_intro_img_anchor)){
         circle_1.style.transform = 'rotate(0deg)';
