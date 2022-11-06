@@ -138,34 +138,18 @@ export default function About() {
           el.style.opacity = '0';
           el.style.transition = 'all 1s ease-in-out';
         });
-        // setTimeout(() => {
-        //   [].forEach.call(paragraph_list, function(pa){
-        //     pa.style.transform = 'translateY(-70vh)';
-        //     pa.style.transition = 'all .7s ease-in-out';
-        //   })
-        //   paragraph.style.height = '30vh';
-        //   paragraph.style.transition = 'all .5s ease-in-out';
-        // }, 100);
       }
-      // else if(this.oldScroll > this.scrollY){
-      //   console.log('up');
-      //   [].forEach.call(paragraph_list, function(pa){
-      //     pa.style.transform = 'unset';
-      //     pa.style.transition = 'all .5s ease-in-out';
-      //   });
-      //   paragraph.style.height = '100vh';
-      //   paragraph.style.transition = 'all .5s ease-in-out';
+      else if(this.oldScroll > this.scrollY){
+        console.log('up');
         
-      //   setTimeout(() => {
-      //     [].forEach.call(kv_list, function(el){
-      //       el.style.opacity = '1';
-      //       el.style.transition = 'all .3s ease-in-out';
-      //     });
-      //   }, 500);
-      // }
-      // else{
-      //   console.log('not moving');
-      // }
+        [].forEach.call(kv_list, function(el){
+          el.style.opacity = '1';
+          el.style.transition = 'all .3s ease-in-out';
+        });
+      }
+      else{
+        console.log('not moving');
+      }
       this.oldScroll = this.scrollY;
       
       /* circle animation */
@@ -210,9 +194,9 @@ export default function About() {
         </div>
 
         <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
-          <div className={aboutCss.about_paragraph_contents}>
+          <Parallax className={aboutCss.about_paragraph_contents} translateY={[0, -300]} speed={-10}>
             <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
-              <Parallax ref={paragraph_anchor_ref} translateY={[0, -1000]} speed={-10}>見慣れていたあのポスターも、</Parallax>
+              <span ref={paragraph_anchor_ref}>見慣れていたあのポスターも、</span>
               <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
               <span>ビジュアルなもの、そうではないもの、</span>
               <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
@@ -231,7 +215,7 @@ export default function About() {
               <span>今までも、これからも、もっとよくなる明日のために、</span>
               <span>精度と質の高いデザインを追求し続けます。</span>
             </div>
-          </div>
+          </Parallax>
         </div>
 
         <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
