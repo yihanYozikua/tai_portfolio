@@ -89,7 +89,6 @@ export default function About() {
     const view_works_button_bg = view_works_button_ref.current
     const view_works_button_text_1 = view_works_button_text_1_ref.current
     const view_works_button_text_2 = view_works_button_text_2_ref.current
-    let prev_oldScroll;
 
     // ========== view my works button animation =========
     document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseover', ()=>{
