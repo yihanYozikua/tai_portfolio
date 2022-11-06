@@ -145,25 +145,25 @@ export default function About() {
           paragraph.style.transition = 'all .5s ease-in-out';
         }, 100);
       }
-      else if(this.oldScroll > this.scrollY){
-        console.log('up');
-        [].forEach.call(paragraph_list, function(pa){
-          pa.style.transform = 'unset';
-          pa.style.transition = 'all .5s ease-in-out';
-        });
-        paragraph.style.height = '100vh';
-        paragraph.style.transition = 'all .5s ease-in-out';
+      // else if(this.oldScroll > this.scrollY){
+      //   console.log('up');
+      //   [].forEach.call(paragraph_list, function(pa){
+      //     pa.style.transform = 'unset';
+      //     pa.style.transition = 'all .5s ease-in-out';
+      //   });
+      //   paragraph.style.height = '100vh';
+      //   paragraph.style.transition = 'all .5s ease-in-out';
         
-        setTimeout(() => {
-          [].forEach.call(kv_list, function(el){
-            el.style.opacity = '1';
-            el.style.transition = 'all .3s ease-in-out';
-          });
-        }, 500);
-      }
-      else{
-        console.log('not moving');
-      }
+      //   setTimeout(() => {
+      //     [].forEach.call(kv_list, function(el){
+      //       el.style.opacity = '1';
+      //       el.style.transition = 'all .3s ease-in-out';
+      //     });
+      //   }, 500);
+      // }
+      // else{
+      //   console.log('not moving');
+      // }
       this.oldScroll = this.scrollY;
       
       /* circle animation */
