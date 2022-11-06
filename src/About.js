@@ -44,6 +44,14 @@ function isInViewPort(element) {
   }
 }
 
+function scrollToParagraph( scrollToSection, callback ){
+  window.scrollTo({
+    top: scrollToSection,
+    behavior: 'smooth',
+  })
+
+  callback();
+}
 
 export default function About() {
   const kv_ref = useRef(null);
@@ -103,12 +111,19 @@ export default function About() {
     const paragraph_offsetTop = document.getElementsByClassName(`${aboutCss.about_paragragh_container}`)[0].offsetTop;
     console.log(paragraph_offsetTop)
 
-    window.scrollTo({
-      top: paragraph_offsetTop - 100,
-      behavior: 'smooth',
-    })
+    // window.scrollTo({
+    //   top: paragraph_offsetTop - 100,
+    //   behavior: 'smooth',
+    // })
     window.onscroll = function(e){
-      
+      // if first scroll down, then direactly scroll to paragraph
+      if(isFirstScrollDown){
+        console.log('first scroll');
+        scrollToParagraph(paragraph_offsetTop - 100, () => {
+          isFirstScrollDown = false;
+          console.log(isFirstScrollDown);
+        });
+      }
     }
 
     // window.onscroll = function(e) {
