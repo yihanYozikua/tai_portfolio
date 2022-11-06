@@ -79,7 +79,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     }
   }
 
+  // v
   .about_self_intro_container{
+    // display: none !important;
     width: 100vw;
     height: 160vh;
     display: flex;
@@ -199,8 +201,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     
   }
 
+  // v
   .about_special_contents_container{
     display: flex !important;
+    // display: none !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -226,7 +230,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     }
   }
 
+  // v
   .about_view_my_works_button_container{
+    // display: none !important;
     width: 100vw;
     height: 60vh;
     display: flex;

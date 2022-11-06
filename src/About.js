@@ -44,24 +44,12 @@ function isInViewPort(element) {
   }
 }
 
-function scrollToParagraph( scrollToSection, kv_list, paragraph_list, paragraph, callback ){
+function scrollToParagraph( scrollToSection, callback ){
+  console.log('scroll to paragraph: ', scrollToSection);
   window.scrollTo({
     top: scrollToSection,
     behavior: 'smooth',
   });
-
-  [].forEach.call(kv_list, function(el){
-    el.style.opacity = '0';
-    el.style.transition = 'all 1s ease-in-out';
-  });
-  setTimeout(() => {
-    [].forEach.call(paragraph_list, function(pa){
-      pa.style.transform = 'translateY(-70vh)';
-      pa.style.transition = 'all .7s ease-in-out';
-    })
-    paragraph.style.height = '30vh';
-    paragraph.style.transition = 'all .5s ease-in-out';
-  }, 100);
 
   callback();
 }
@@ -83,6 +71,10 @@ export default function About() {
   const view_works_button_ref = useRef(null);
   const view_works_button_text_1_ref = useRef(null);
   const view_works_button_text_2_ref = useRef(null);
+
+  const self_intro_ref = useRef(null);
+  const special_contents_ref = useRef(null);
+  const view_works_ref = useRef(null);
   let isFirstScrollDown = true;
 
   useEffect(() => {
@@ -91,6 +83,7 @@ export default function About() {
 
   // if scroll down
   useEffect(() => {
+    console.log(isFirstScrollDown);
     const kv = kv_ref.current;
     const kv_list = [ kv_ref_1.current, kv_ref_2.current ];
     const paragraph_anchor = paragraph_ref_1.current.getBoundingClientRect().top + window.scrollY
@@ -102,6 +95,10 @@ export default function About() {
     const view_works_button_bg = view_works_button_ref.current
     const view_works_button_text_1 = view_works_button_text_1_ref.current
     const view_works_button_text_2 = view_works_button_text_2_ref.current
+
+    const self_intro = self_intro_ref.current
+    const special_contents = special_contents_ref.current
+    const view_works = view_works_ref.current
 
     // ========== view my works button animation =========
     document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseover', ()=>{
@@ -120,19 +117,18 @@ export default function About() {
     })
 
     // ========== paragraph scroll to animation ==========
-    const paragraph_offsetTop = document.getElementsByClassName(`${aboutCss.about_paragragh_container}`)[0].offsetTop;
-    console.log(paragraph_offsetTop)
+    const paragraph_offsetTop = document.getElementsByClassName(`${aboutCss.about_paragragh_contents_sec}`)[0].offsetTop;
+    console.log(paragraph_offsetTop);
+
 
     window.onscroll = function (e) {
       /* if first scroll down, then direactly scroll to paragraph */ 
       if(isFirstScrollDown){
         console.log('first scroll');
-        scrollToParagraph(300, kv_list, paragraph_list, paragraph, () => {
+        scrollToParagraph(300, () => {
           isFirstScrollDown = false;
-          console.log(isFirstScrollDown);
         });
       }
-
       /* kv animation */
       if(this.oldScroll < this.scrollY){ 
         console.log('down');
@@ -237,7 +233,7 @@ export default function About() {
           
         </div>
 
-        <div className={aboutCss.about_self_intro_container}>
+        <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
           <div className={aboutCss.about_self_intro_contents}>
             <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img}></img>
             <div className={aboutCss.about_self_intro_right_section_container}>
@@ -266,19 +262,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className={aboutCss.about_special_contents_container}>
+        <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
           <div className={aboutCss.about_special_contents_title}>Special content</div>
           <div className={aboutCss.about_special_contents_white_box_sec_container}></div>
         </div>
 
-        {/* <div className={aboutCss.about_view_my_works_button_container}>
-          <div className={aboutCss.about_view_my_works_contents} onMouseOver={HoverOnViewWorksButton} onMouseLeave={HoverLeaveViewWorksButton}>
-            <div className={aboutCss.about_view_my_works_contents_prop}>Hover to</div>
-            <div className={aboutCss.about_view_my_works_contents_prop}>View my Works</div>
-          </div>
-        </div> */}
-
-        <div className={aboutCss.about_view_my_works_button_container}>
+        <div className={aboutCss.about_view_my_works_button_container} ref={view_works_ref}>
           <Link to="/works" className={aboutCss.about_view_my_works_button_link}>
             <div className={aboutCss.about_view_my_works_contents}>
               <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_1_ref}>Hover to</div>
