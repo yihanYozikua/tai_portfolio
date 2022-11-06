@@ -9,14 +9,10 @@ import mediumIcon from './static/icons/medium.svg'
 import githubIcon from './static/icons/github.svg'
 
 export default function Footer(){
-  const footer_ref = useParallax<HTMLDivElement>({
-    easing: 'easeOutQuad',
-    translateY: [-100, 0],
-  });
   
   return(
     <ParallaxProvider>
-      <Parallax id={footerCss.footer} ref={footer_ref.ref} translateY={[50, -50]} speed={1}>
+      <Parallax id={footerCss.footer} translateY={[50, -50]} speed={-10}>
         <div className={footerCss.upper_section_container}>
           <div className={footerCss.upper_left_container}>
             <span className={footerCss.upper_left_contents_prop}>After design</span>
