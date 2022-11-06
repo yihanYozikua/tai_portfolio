@@ -81,9 +81,9 @@ export default function About() {
     const view_works_button_bg = view_works_button_ref.current
     const view_works_button_text_1 = view_works_button_text_1_ref.current
     const view_works_button_text_2 = view_works_button_text_2_ref.current
-
     let prev_oldScroll;
 
+    // ========== view my works button animation =========
     document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseover', ()=>{
       view_works_button_bg.style.width = '12rem';
       view_works_button_bg.style.height = '12rem';
@@ -99,91 +99,103 @@ export default function About() {
       view_works_button_bg.style.transition = 'all .4s ease-in-out'
     })
 
-    window.onscroll = function(e) {
-      prev_oldScroll = this.oldScroll;
-      // console.log(`old scroll: ${this.oldScroll}`)
-      console.log(`current scroll: ${this.scrollY}`)
+    // ========== paragraph scroll to animation ==========
+    const paragraph_offsetTop = document.getElementsByClassName(`${aboutCss.about_paragragh_container}`)[0].offsetTop;
+    console.log(paragraph_offsetTop)
 
-      // if is first scroll down, then directly scroll to paragraph
-      const paragraph_anchor_get_by_document = document.getElementsByClassName(`${aboutCss.about_paragragh_container}`)[0]
-      console.log(isFirstScrollDown);
-      if(isFirstScrollDown == true){ // if detected scroll down for the first time
-        console.log('scroll down first time')
-        if(this.scrollY > 100){ window.scrollTo({top: 100}) }
-        window.scrollTo({
-          top: paragraph_anchor_get_by_document,
-          behavior: 'smooth'
-        })
-        // setTimeout(() => {
-        isFirstScrollDown = false;
-        // }, 3000)
-        
-      }
-
-      if(this.oldScroll < this.scrollY){ 
-
-        // console.log('down');
-        [].forEach.call(kv_list, function(el){
-          el.style.opacity = '0';
-          el.style.transition = 'all 1s ease-in-out';
-        });
-        setTimeout(() => {
-          [].forEach.call(paragraph_list, function(pa){
-            pa.style.transform = 'translateY(-70vh)';
-            pa.style.transition = 'all .7s ease-in-out';
-          })
-          paragraph.style.height = '30vh';
-          paragraph.style.transition = 'all .5s ease-in-out';
-        }, 100);
-      }
-      else if(this.oldScroll > this.scrollY){
-        // console.log('up');
-        [].forEach.call(paragraph_list, function(pa){
-          pa.style.transform = 'unset';
-          pa.style.transition = 'all .5s ease-in-out';
-        });
-        paragraph.style.height = '100vh';
-        paragraph.style.transition = 'all .5s ease-in-out';
-        
-        setTimeout(() => {
-          [].forEach.call(kv_list, function(el){
-            el.style.opacity = '1';
-            el.style.transition = 'all .3s ease-in-out';
-          });
-        }, 500);
-      }
-      else{
-        // console.log('not moving');
-      }
-
-      /* circle animation */
-      if(isInViewPort(self_intro_img_anchor)){
-        circle_1.style.transform = 'rotate(0deg)';
-        circle_1.style.marginLeft = '0';
-        circle_1.style.opacity = '1';
-        circle_1.style.transition = 'all 1s ease-in-out'
-        setTimeout(()=>{
-          circle_2.style.transform = 'rotate(0deg)';
-          circle_2.style.marginLeft = '-6rem';
-          circle_2.style.opacity = '1';
-          circle_2.style.transition = 'all 1s ease-in-out' 
-        }, 200)
-      }
-      else{
-        circle_1.style.transform = 'rotate(-45deg)';
-        circle_1.style.marginLeft = '-5rem';
-        circle_1.style.opacity = '0';
-        circle_1.style.transition = 'all .3s ease-in-out'
-        setTimeout(()=>{
-          circle_2.style.transform = 'rotate(-45deg)';
-          circle_2.style.marginLeft = '-8rem';
-          circle_2.style.opacity = '0';
-          circle_2.style.transition = 'all .3s ease-in-out'
-        }, 200)
-      }
-
-      this.oldScroll = this.scrollY;
+    window.scrollTo({
+      top: paragraph_offsetTop - 100,
+      behavior: 'smooth',
+    })
+    window.onscroll = function(e){
+      
     }
+
+    // window.onscroll = function(e) {
+    //   prev_oldScroll = this.oldScroll;
+    //   // console.log(`old scroll: ${this.oldScroll}`)
+    //   console.log(`current scroll: ${this.scrollY}`)
+
+    //   // if is first scroll down, then directly scroll to paragraph
+    //   const paragraph_anchor_get_by_document = document.getElementsByClassName(`${aboutCss.about_paragragh_container}`)[0]
+    //   console.log(isFirstScrollDown);
+    //   if(isFirstScrollDown == true){ // if detected scroll down for the first time
+    //     console.log('scroll down first time')
+    //     if(this.scrollY > 100){ window.scrollTo({top: 100}) }
+    //     window.scrollTo({
+    //       top: paragraph_anchor_get_by_document,
+    //       behavior: 'smooth'
+    //     })
+    //     // setTimeout(() => {
+    //     isFirstScrollDown = false;
+    //     // }, 3000)
+        
+    //   }
+
+    //   if(this.oldScroll < this.scrollY){ 
+
+    //     // console.log('down');
+    //     [].forEach.call(kv_list, function(el){
+    //       el.style.opacity = '0';
+    //       el.style.transition = 'all 1s ease-in-out';
+    //     });
+    //     setTimeout(() => {
+    //       [].forEach.call(paragraph_list, function(pa){
+    //         pa.style.transform = 'translateY(-70vh)';
+    //         pa.style.transition = 'all .7s ease-in-out';
+    //       })
+    //       paragraph.style.height = '30vh';
+    //       paragraph.style.transition = 'all .5s ease-in-out';
+    //     }, 100);
+    //   }
+    //   else if(this.oldScroll > this.scrollY){
+    //     // console.log('up');
+    //     [].forEach.call(paragraph_list, function(pa){
+    //       pa.style.transform = 'unset';
+    //       pa.style.transition = 'all .5s ease-in-out';
+    //     });
+    //     paragraph.style.height = '100vh';
+    //     paragraph.style.transition = 'all .5s ease-in-out';
+        
+    //     setTimeout(() => {
+    //       [].forEach.call(kv_list, function(el){
+    //         el.style.opacity = '1';
+    //         el.style.transition = 'all .3s ease-in-out';
+    //       });
+    //     }, 500);
+    //   }
+    //   else{
+    //     // console.log('not moving');
+    //   }
+
+    //   /* circle animation */
+    //   if(isInViewPort(self_intro_img_anchor)){
+    //     circle_1.style.transform = 'rotate(0deg)';
+    //     circle_1.style.marginLeft = '0';
+    //     circle_1.style.opacity = '1';
+    //     circle_1.style.transition = 'all 1s ease-in-out'
+    //     setTimeout(()=>{
+    //       circle_2.style.transform = 'rotate(0deg)';
+    //       circle_2.style.marginLeft = '-6rem';
+    //       circle_2.style.opacity = '1';
+    //       circle_2.style.transition = 'all 1s ease-in-out' 
+    //     }, 200)
+    //   }
+    //   else{
+    //     circle_1.style.transform = 'rotate(-45deg)';
+    //     circle_1.style.marginLeft = '-5rem';
+    //     circle_1.style.opacity = '0';
+    //     circle_1.style.transition = 'all .3s ease-in-out'
+    //     setTimeout(()=>{
+    //       circle_2.style.transform = 'rotate(-45deg)';
+    //       circle_2.style.marginLeft = '-8rem';
+    //       circle_2.style.opacity = '0';
+    //       circle_2.style.transition = 'all .3s ease-in-out'
+    //     }, 200)
+    //   }
+
+    //   this.oldScroll = this.scrollY;
+    // }
   }, [])
 
   return(

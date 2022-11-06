@@ -21,7 +21,7 @@ const Navbar = ({wrapperComponent, ...props}) => {
       setTimeout(()=>{
         nav_bar_ref.current.style.transform = 'translateX(0rem)';
         nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
-      }, 10);
+      }, 5);
       
     }
     else if(location.pathname == '/works'){
@@ -30,9 +30,7 @@ const Navbar = ({wrapperComponent, ...props}) => {
       setTimeout(()=>{
         nav_bar_ref.current.style.transform = 'translateX(6.5rem)';
         nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
-        // nav_bar_ref.current.style.marginLeft = '7rem';
-        // nav_bar_ref.current.style.animation = 'nav_anim_to_works 2s ease-in-out';
-      }, 10)
+      }, 5)
       
     }
   }, [location.pathname]);
