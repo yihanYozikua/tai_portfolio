@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import AOS from 'aos';
 import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
@@ -33,8 +34,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<><About /></>}></Route>
-        <Route path="/about" element={<><About /></>}></Route>
+        <Route path="/" element={<ParallaxProvider><About /></ParallaxProvider>}></Route>
+        <Route path="/about" element={<ParallaxProvider><About /></ParallaxProvider>}></Route>
         <Route path="/works" element={<><Works /></>}></Route>
         <Route path="/keywords"></Route>
       </Routes>
