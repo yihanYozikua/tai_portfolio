@@ -34,8 +34,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ParallaxProvider><About /></ParallaxProvider>}></Route>
-        <Route path="/about" element={<ParallaxProvider><About /></ParallaxProvider>}></Route>
+        <Route path="/" element={<><About /></>}></Route>
+        <Route path="/about" element={<><About /></>}></Route>
         <Route path="/works" element={<><Works /></>}></Route>
         <Route path="/keywords"></Route>
       </Routes>
