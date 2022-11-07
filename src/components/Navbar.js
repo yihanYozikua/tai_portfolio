@@ -17,7 +17,7 @@ const Navbar = ({wrapperComponent, ...props}) => {
   const nav_bar = nav_bar_ref.current;
 
   useEffect(() => {
-        console.log(document.getElementsByClassName(`${navCss.nav_bar_bg}`)[0].style.marginLeft);
+    console.log(document.getElementsByClassName(`${navCss.nav_bar_bg}`)[0].style.marginLeft);
     if((location.pathname == '/about') || (location.pathname == '/')){
       nav_about_ref.current.style.color = 'white';
       nav_works_ref.current.style.color = COLOR_NAV_BG;
@@ -41,14 +41,16 @@ const Navbar = ({wrapperComponent, ...props}) => {
   }, [location.pathname]);
 
   return(
-    <Wrapper {...props}>
-      <Link to="/about" className={navCss.nav_prop} ref={nav_about_ref}>About</Link>
-      <Link to="/works" className={navCss.nav_prop} ref={nav_works_ref}>Works</Link>
-      <div className={navCss.nav_bar_container}>
-        <div className={navCss.nav_bar_bg} ref={nav_bar_ref}></div>
-      </div>
+        <Wrapper {...props}>
+          <Link to="/about" className={navCss.nav_prop} ref={nav_about_ref}>About</Link>
+          <Link to="/works" className={navCss.nav_prop} ref={nav_works_ref}>Works</Link>
+          <div className={navCss.nav_bar_container}>
+            <div className={navCss.nav_bar_bg} ref={nav_bar_ref}></div>
+          </div>
+          
+        </Wrapper>
       
-    </Wrapper>
+    
   )
 }
 
