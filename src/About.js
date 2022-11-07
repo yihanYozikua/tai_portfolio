@@ -131,7 +131,7 @@ export default function About() {
         });
       }
       /* kv animation */
-      if(this.oldScroll < this.scrollY){ 
+      if((window.scrollY > '300')){ 
         console.log('down');
 
         [].forEach.call(kv_list, function(el){
@@ -219,7 +219,7 @@ export default function About() {
         </div>
 
         <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
-          <div className={aboutCss.about_self_intro_contents}>
+          <Parallax className={aboutCss.about_self_intro_contents}>
             <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img}></img>
             <div className={aboutCss.about_self_intro_right_section_container}>
               <div className={aboutCss.about_self_intro_circle_container}>
@@ -244,7 +244,7 @@ export default function About() {
                 <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
               </div>
             </div>
-          </div>
+          </Parallax>
         </div>
 
         <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>

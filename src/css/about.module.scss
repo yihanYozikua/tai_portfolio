@@ -86,11 +86,11 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     height: 160vh;
     display: flex;
     justify-content: flex-end;
+    background: $ABOUT_BG_COLOR_3;
     
     .about_self_intro_contents{
       width: 100%;
       height: 100%;
-      background: $ABOUT_BG_COLOR_3;
       padding-left: 15rem;
       padding-top: 4rem;
       display: flex;
