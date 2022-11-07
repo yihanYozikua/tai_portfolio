@@ -55,6 +55,19 @@ function scrollToParagraph( scrollToSection, callback ){
   callback();
 }
 
+function isKvScrollThrough(element){
+  var bounding = element.getBoundingClientRect();
+  if(
+    bounding.top >= 0 &&
+    bounding.left >= 0
+    && ((bounding.top + bounding.bottom)/2) <= (window.innerHeight / 6 || document.documentElement.clientHeight / 6)
+  ){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 export default function About() {
   const kv_ref = useRef(null);
   const kv_ref_1 = useRef(null);
@@ -131,8 +144,8 @@ export default function About() {
         });
       }
       /* kv animation */
-      if((window.scrollY > '300')){ 
-        console.log('down');
+      if(isKvScrollThrough(kv_list[0])){ 
+        console.log('down & kv through');
 
         [].forEach.call(kv_list, function(el){
           el.style.opacity = '0';
@@ -186,8 +199,8 @@ export default function About() {
         <Navbar />
         <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
 
-        <div className={aboutCss.about_kv_container} ref={kv_ref}>
-          <div className={aboutCss.about_kv_contents}>
+        <div className={aboutCss.about_kv_container}>
+          <div className={aboutCss.about_kv_contents} ref={kv_ref}>
             <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_1}>All in design</span>
             <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_2}>All for our beautiful days</span>
           </div>

@@ -19,8 +19,8 @@ const Navbar = ({wrapperComponent, ...props}) => {
       nav_about_ref.current.style.color = 'white';
       nav_works_ref.current.style.color = COLOR_NAV_BG;
       setTimeout(()=>{
-        nav_bar_ref.current.style.transform = 'translateX(0rem)';
-        nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
+        // nav_bar_ref.current.style.transform = 'translateX(0rem)';
+        // nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
       }, 5);
       
     }
