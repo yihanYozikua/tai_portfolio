@@ -15,6 +15,18 @@ export default function Footer(){
       behavior: 'smooth',
     });
   }
+
+  function Mailto({ email, subject, body, ...props }) {
+    return (
+      <a
+        href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {props.children}
+      </a>
+    );
+  }
   
   return(
     <Parallax id={footerCss.footer} translateY={[50, -50]} speed={-10}>
@@ -42,7 +54,7 @@ export default function Footer(){
             <div className={footerCss.author_contents}>
               <span className={footerCss.author_emoji}>🤭</span>
               <span className={footerCss.author_name}>Tai, Tung-En (Direction/Design)</span>
-              <img src={mailIcon} alt="" className={footerCss.author_img}></img>
+              <Mailto email="chloe981219@gmail.com" subject="Greetings from {Please Enter Your Name Here}" body=""><img src={mailIcon} alt="" className={footerCss.author_img}></img></Mailto>
               <img src={mediumIcon} alt="" className={footerCss.author_img}></img>
             </div>
           </div>
