@@ -27,6 +27,15 @@ export default function Footer(){
       </a>
     );
   }
+  function OpenExternalLink({url, ...props}){
+    return(
+      <a 
+        href={"https://chloe981219.medium.com/"}
+        target="_blank">
+        {props.children}
+      </a>
+    );
+  }
   
   return(
     <Parallax id={footerCss.footer} translateY={[50, -50]} speed={-10}>
@@ -55,7 +64,7 @@ export default function Footer(){
               <span className={footerCss.author_emoji}>🤭</span>
               <span className={footerCss.author_name}>Tai, Tung-En (Direction/Design)</span>
               <Mailto email="chloe981219@gmail.com" subject="Greetings from {Please Enter Your Name Here}" body=""><img src={mailIcon} alt="" className={footerCss.author_img}></img></Mailto>
-              <img src={mediumIcon} alt="" className={footerCss.author_img}></img>
+              <OpenExternalLink url="https://chloe981219.medium.com/"><img src={mediumIcon} alt="" className={footerCss.author_img}></img></OpenExternalLink>
             </div>
           </div>
           <div className={footerCss.author_container}>
@@ -63,7 +72,7 @@ export default function Footer(){
             <div className={footerCss.author_contents}>
               <span className={footerCss.author_emoji}>🥸</span>
               <span className={footerCss.author_name}>Hsiao, Yi-Han (Engineering)</span>
-              <img src={githubIcon} alt="" className={footerCss.author_img}></img>
+              <OpenExternalLink url="https://github.com/yihanYozikua"><img src={githubIcon} alt="" className={footerCss.author_img}></img></OpenExternalLink>
             </div>
           </div>
         </div>
