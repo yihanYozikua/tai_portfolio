@@ -84,6 +84,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       font-size: 1.2rem;
       color: $COLOR_PARAGRAPH_TEXT;
       line-height: 2.8rem;
+      @include sm(){
+        width: 90%;
+        // padding: 1rem 1rem;
+      }
 
       .about_paragragh_contents_sec_container{
         display: flex;

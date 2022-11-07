@@ -17,6 +17,7 @@ $COLOR_SIDEBAR_TEXT: black;
   }
   @include sm(){
     position: absolute;
+    left: 5vw;
     bottom: 0;
     display: flex;
     flex-direction: row;
@@ -29,6 +30,7 @@ $COLOR_SIDEBAR_TEXT: black;
       writing-mode: vertical-rl;
     }
     @include sm(){
+      margin-right: 52vw;
     }
     
     text-orientation: mixed;
@@ -41,6 +43,9 @@ $COLOR_SIDEBAR_TEXT: black;
     margin-bottom: .1rem;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
+    @include sm(){
+      margin: 0 3vw;
+    }
 
     .emoji_prop{
       display: flex;
