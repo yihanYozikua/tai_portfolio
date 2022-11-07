@@ -30,7 +30,7 @@ export default function Footer(){
   function OpenExternalLink({url, ...props}){
     return(
       <a 
-        href={"https://chloe981219.medium.com/"}
+        href={url}
         target="_blank">
         {props.children}
       </a>
