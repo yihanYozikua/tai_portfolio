@@ -9,6 +9,12 @@ import mediumIcon from './static/icons/medium.svg'
 import githubIcon from './static/icons/github.svg'
 
 export default function Footer(){
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth',
+    });
+  }
   
   return(
     <Parallax id={footerCss.footer} translateY={[50, -50]} speed={-10}>
@@ -22,7 +28,7 @@ export default function Footer(){
           <div className={footerCss.upper_right_contents_prop}>About</div>
           <div className={footerCss.upper_right_contents_prop}>Special content-#hashtags of me</div>
           <div className={footerCss.upper_right_contents_prop}>Works</div>
-          <div className={footerCss.upper_right_contents_prop}>Back to top</div>
+          <div className={footerCss.upper_right_contents_prop} onClick={scrollToTop}>Back to top</div>
         </div>
       </div>
 
