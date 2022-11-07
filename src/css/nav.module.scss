@@ -35,7 +35,6 @@ nav{
   text-decoration: none;
   width: 6.5rem;
   height: 2.6rem;
-  // color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,9 +45,9 @@ nav{
   position: absolute;
 
   .nav_bar_bg{
+    margin-left: 3.5rem;
     width: 6.5rem;
     height: 2.6rem;
-    margin-left: .5rem;
     background-color: $COLOR_BG;
     color: white;
     border-radius: 100px;

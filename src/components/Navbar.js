@@ -14,21 +14,25 @@ const Navbar = ({wrapperComponent, ...props}) => {
   const Wrapper = wrapperComponent;
   const location = useLocation();
 
+  const nav_bar = nav_bar_ref.current;
+
   useEffect(() => {
-    if(location.pathname == '/about'){
+        console.log(document.getElementsByClassName(`${navCss.nav_bar_bg}`)[0].style.marginLeft);
+    if((location.pathname == '/about') || (location.pathname == '/')){
       nav_about_ref.current.style.color = 'white';
       nav_works_ref.current.style.color = COLOR_NAV_BG;
       setTimeout(()=>{
-        // nav_bar_ref.current.style.transform = 'translateX(0rem)';
-        // nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
-      }, 5);
+        nav_bar_ref.current.style.transform = 'translateX(-3rem)';
+        nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
+      }, 0);
       
     }
     else if(location.pathname == '/works'){
-      nav_about_ref.current.style.color = COLOR_NAV_BG;
       nav_works_ref.current.style.color = 'white';
+      nav_about_ref.current.style.color = COLOR_NAV_BG;
+
       setTimeout(()=>{
-        nav_bar_ref.current.style.transform = 'translateX(6.5rem)';
+        nav_bar_ref.current.style.transform = 'translateX(3.5rem)';
         nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
       }, 5)
       
