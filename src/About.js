@@ -233,14 +233,14 @@ export default function About() {
 
         <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
           <Parallax className={aboutCss.about_self_intro_contents}>
-            <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img}></img>
+            <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
             <div className={aboutCss.about_self_intro_right_section_container}>
               <div className={aboutCss.about_self_intro_circle_container}>
                 <div className={aboutCss.about_self_intro_circle_prop} ref={circle_1_ref}>日本語</div>
                 <div className={aboutCss.about_self_intro_circle_prop} ref={circle_2_ref}>ものづくり</div>
               </div>
               <div className={aboutCss.about_self_intro_paragraph_container}>
-                <div className={aboutCss.about_self_intro_paragraph_name} ref={self_intro_img_ref}>Tai, Tung-En</div>
+                <div className={aboutCss.about_self_intro_paragraph_name}>Tai, Tung-En</div>
                 <div className={aboutCss.about_self_intro_paragraph_description_container}>
                   <span>1997年台湾生まれ。日本語への熱意で来日。</span>
                   <span>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
