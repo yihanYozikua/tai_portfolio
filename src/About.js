@@ -23,24 +23,32 @@ const Exp = ({year, exp_contents}) => {
   )
 }
 
+/* unused function */
+function addToRef(toBeAddList){
+  [].forEach.call(toBeAddList, function(r){
+    r = useRef(null);
+  });
+  return toBeAddList;
+}
 
-
-function isInViewPort(element) {
+function isInViewPort(element, inViewHeight) {
   // Get the bounding client rectangle position in the viewport
   var bounding = element.getBoundingClientRect();
 
   // Checking part. Here the code checks if it's *fully* visible
   // Edit this part if you just want a partial visibility
   if (
-      bounding.top >= 0 &&
-      bounding.left >= 0
-      // && bounding.right <= (window.innerwidth || document.documentElement.clientWidth) 
-      && ((bounding.top + bounding.bottom) / 2.8) <= (window.innerHeight || document.documentElement.clientHeight)
+      (bounding.top >= 0 &&
+        ((bounding.top + bounding.bottom) / inViewHeight) <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (bounding.top < 0 && bounding.bottom > 0 &&
+        (bounding.bottom) <= (window.innerHeight || document.documentElement.clientHeight))
   ) {
-      // console.log(`In the viewport! :)`);
+      console.log(bounding.top, ', ', bounding.bottom)
+      console.log(window.innerHeight)
       return true;
   } else {
-      // console.log(`Not in the viewport. :(`);
+      console.log(`Not in the viewport. :(`);
       return false;
   }
 }
@@ -81,6 +89,12 @@ export default function About() {
   const self_intro_img_ref = useRef(null);
   const circle_1_ref = useRef(null);
   const circle_2_ref = useRef(null);
+  const name_ref = useRef(null);
+  const description_1_ref = useRef(null);
+  const description_2_ref = useRef(null);
+  const description_3_ref = useRef(null);
+  const description_4_ref = useRef(null);
+  const exp_ref = useRef(null);
   const view_works_button_container_ref = useRef(null);
   const view_works_button_ref = useRef(null);
   const view_works_button_text_1_ref = useRef(null);
@@ -106,6 +120,12 @@ export default function About() {
     const self_intro_img_anchor = self_intro_img_ref.current
     const circle_1 = circle_1_ref.current
     const circle_2 = circle_2_ref.current
+    const name_anchor = name_ref.current
+    const description_1 = description_1_ref.current
+    const description_2 = description_2_ref.current
+    const description_3 = description_3_ref.current
+    const description_4 = description_4_ref.current
+    const exp_anchor = exp_ref.current
     const view_works_button_bg = view_works_button_ref.current
     const view_works_button_text_1 = view_works_button_text_1_ref.current
     const view_works_button_text_2 = view_works_button_text_2_ref.current
@@ -166,7 +186,7 @@ export default function About() {
       this.oldScroll = this.scrollY;
       
       /* circle animation */
-      if(isInViewPort(self_intro_img_anchor)){
+      if(isInViewPort(self_intro_img_anchor, 2.8)){
         circle_1.style.transform = 'rotate(0deg)';
         circle_1.style.marginLeft = '0';
         circle_1.style.opacity = '1';
@@ -189,6 +209,29 @@ export default function About() {
           circle_2.style.opacity = '0';
           circle_2.style.transition = 'all .3s ease-in-out'
         }, 200)
+      }
+
+      /* self intro name */
+      const description_list = [ name_anchor, description_1, description_2, description_3, description_4 ]
+      if(isInViewPort(self_intro_img_anchor, 1.5)){
+        [].forEach.call(description_list, function(des){
+          des.style.opacity = '1';
+          des.style.transition = 'all .7s ease-in-out';
+        })
+      } else{
+        [].forEach.call(description_list, function(des){
+          des.style.opacity = '0';
+          des.style.transition = 'all .7s ease-in-out';
+        })
+      }
+
+      /* exp animation */
+      if(isInViewPort(exp_anchor, 7)){
+        exp_anchor.style.opacity = '1';
+        exp_anchor.style.transition = 'all .7s ease-in-out';
+      }else{
+        exp_anchor.style.opacity = '0';
+        exp_anchor.style.transition = 'all .7s ease-in-out';
       }
     }
   }, [])
@@ -240,16 +283,16 @@ export default function About() {
                 <div className={aboutCss.about_self_intro_circle_prop} ref={circle_2_ref}>ものづくり</div>
               </div>
               <div className={aboutCss.about_self_intro_paragraph_container}>
-                <div className={aboutCss.about_self_intro_paragraph_name}>Tai, Tung-En</div>
+                <div className={aboutCss.about_self_intro_paragraph_name} ref={name_ref}>Tai, Tung-En</div>
                 <div className={aboutCss.about_self_intro_paragraph_description_container}>
-                  <span>1997年台湾生まれ。日本語への熱意で来日。</span>
-                  <span>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
-                  <span>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
-                  <span>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
+                  <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
+                  <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
+                  <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
+                  <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
                 </div>
               </div>
               <div className={aboutCss.about_underline_div}></div>
-              <div className={aboutCss.about_experience_container}>
+              <div className={aboutCss.about_experience_container} ref={exp_ref}>
                 <Exp year="2021年" exp_contents={["ウィルスタイル株式会社","Webデザイナー新卒入社"]}/>
                 <Exp year="2020年" exp_contents={["台湾国立政治大学卒業","広告学科､デジタルコンテンツ学位取得"]}/>
                 <Exp year="2019年" exp_contents={["京都同志社大学留学"]}/>

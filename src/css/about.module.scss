@@ -147,6 +147,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           margin-left: 2.75rem;
   
           .about_self_intro_paragraph_name{
+            // opacity: 0;
             width: 25.3rem;
             font-size: .85rem;
             font-weight: 500;
@@ -161,6 +162,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             font-weight: 400;
             color: $COLOR_DESCRIPTION;
             line-height: 1.7rem;
+            .about_self_intro_paragraph_description_prop{
+              // opacity: 0;
+            }
           }
         }
 
@@ -190,6 +194,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               color: $COLOR_EXPERIENCE_TEXT;
               line-height: 1.4rem;
               margin-left: 2.75rem;
+              opacity: 1;
+              transition: all 1s ease-in-out;
             }
           }
         }
