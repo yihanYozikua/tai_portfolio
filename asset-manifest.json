@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tai_portfolio/static/css/main.4af47896.css",
+    "main.js": "/tai_portfolio/static/js/main.d8d1b9d0.js",
+    "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
+    "static/media/footer_bg.svg": "/tai_portfolio/static/media/footer_bg.6ca46102b5aff4778858.svg",
+    "static/media/footer_bg.png": "/tai_portfolio/static/media/footer_bg.48537ed70b5f81da04c4.png",
+    "static/media/about_avatar.png": "/tai_portfolio/static/media/about_avatar.ee7c9cd79abc88944716.png",
+    "static/media/github.svg": "/tai_portfolio/static/media/github.a9b66ae349e1c06f4aa0327d7a12a87e.svg",
+    "static/media/logo.svg": "/tai_portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/medium.svg": "/tai_portfolio/static/media/medium.f0d67efb7e42375fecbbca17d04c1cb5.svg",
+    "index.html": "/tai_portfolio/index.html",
+    "static/media/envelope.svg": "/tai_portfolio/static/media/envelope.b84036dd72c8508e2fce0e14bfb6b876.svg",
+    "main.4af47896.css.map": "/tai_portfolio/static/css/main.4af47896.css.map",
+    "main.d8d1b9d0.js.map": "/tai_portfolio/static/js/main.d8d1b9d0.js.map",
+    "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4af47896.css",
+    "static/js/main.d8d1b9d0.js"
+  ]
+}
