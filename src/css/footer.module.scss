@@ -23,6 +23,12 @@ $COLOR_BOTTOM_TEXT: #858A8B;
     flex-direction: row;
     justify-content: space-between;
     width: 65%;
+    @include sm(){
+      flex-direction: column;
+      width: 100%;
+      padding-left: 20vw;
+      justify-content: flex-start;
+    }
 
     .upper_left_container{
       display: flex;
@@ -39,6 +45,9 @@ $COLOR_BOTTOM_TEXT: #858A8B;
         color: white;
         // line-height: 3rem;
         // margin-bottom: 1.8rem;
+        @include sm(){
+          font-size: 3.2rem;
+        }
       }
     }
     .upper_right_container{
@@ -54,18 +63,33 @@ $COLOR_BOTTOM_TEXT: #858A8B;
         &:nth-child(1){
           font-size: 1.1rem;
           margin-bottom: .6rem;
+          @include sm(){
+            font-size: 1.7rem;
+          }
         }
         &:nth-child(2){
           font-size: .7rem;
           margin-bottom: 1.5rem;
+          @include sm(){
+            font-size: 1.2rem;
+            margin-bottom: 4.5rem;
+          }
         }
         &:nth-child(3){
           font-size: 1.1rem;
           margin-bottom: 6rem;
+          @include sm(){
+            font-size: 1.7rem;
+          }
         }
         &:nth-child(4){
           text-decoration: underline;
           font-size: .7rem;
+          @include sm(){
+            position: absolute;
+            bottom: 3vh;
+            right: 10vw;
+          }
         }
 
       }
@@ -76,7 +100,9 @@ $COLOR_BOTTOM_TEXT: #858A8B;
     margin: 3rem 0;
     border-bottom: 1px $COLOR_UNDERLINE solid;
     width: 65%;
-
+    @include sm(){
+      width: 80%;
+    }
   }
 
   .bottom_section_container{
@@ -85,6 +111,10 @@ $COLOR_BOTTOM_TEXT: #858A8B;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    @include sm(){
+      width: 80%;
+      flex-direction: column-reverse;
+    }
 
     .copyright_prop{
       font-size: 0.7rem;
@@ -92,9 +122,16 @@ $COLOR_BOTTOM_TEXT: #858A8B;
       color: $COLOR_BOTTOM_TEXT;
       font-family: 'Outfit', sans-serif;
       width: 70%;
+      @include sm(){
+        width: 100%;
+      }
     }
     .bottom_right_container{
       width: 30%;
+      @include sm(){
+        width: 100%;
+        margin-bottom: 10vh;
+      }
 
       .author_container{
         margin: 1rem 0;
