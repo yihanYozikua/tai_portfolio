@@ -116,8 +116,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     .about_self_intro_contents{
       width: 94%;
       height: 100%;
-      // padding-left: 15rem;
-      // padding-top: 4rem;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -129,7 +127,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         flex-direction: row;
         width: 100%;
         justify-content: center;
-        // align-items: center;
         .about_self_intro_img{
           width: 21.2rem;
           height: 32rem;
@@ -295,8 +292,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       align-items: center;
 
       .about_view_my_works_button_link{
-        width: 22%;
-        height: 50%;
+        width: 13rem;
+        height: 13rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
