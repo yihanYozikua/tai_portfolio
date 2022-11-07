@@ -23,17 +23,18 @@ const Navbar = ({wrapperComponent, ...props}) => {
       nav_works_ref.current.style.color = COLOR_NAV_BG;
       setTimeout(()=>{
         nav_bar_ref.current.style.transform = 'translateX(-3rem)';
-        nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
+        nav_bar_ref.current.style.transition = 'all .6s cubic-bezier(0.71, 0.05, 0.19, 1)';
+        nav_bar_ref.current.style.width = '6.5rem';
       }, 0);
       
     }
     else if(location.pathname == '/works'){
       nav_works_ref.current.style.color = 'white';
       nav_about_ref.current.style.color = COLOR_NAV_BG;
-
       setTimeout(()=>{
         nav_bar_ref.current.style.transform = 'translateX(3.5rem)';
-        nav_bar_ref.current.style.transition = 'all 1s ease-in-out';
+        nav_bar_ref.current.style.transition = 'all .6s cubic-bezier(0.71, 0.05, 0.19, 1)';
+        nav_bar_ref.current.style.width = '6.5rem';
       }, 5)
       
     }
