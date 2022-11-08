@@ -51,7 +51,7 @@ $COLOR_BOTTOM_TEXT: #858A8B;
         // line-height: 3rem;
         // margin-bottom: 1.8rem;
         @include sm(){
-          font-size: 3.2rem;
+          font-size: 2.5rem;
         }
       }
     }
@@ -61,6 +61,10 @@ $COLOR_BOTTOM_TEXT: #858A8B;
       margin-top: 2rem;
       width: 30%;
       overflow-x: hidden;
+      @include sm(){
+        width: 100%;
+        overflow-y: hidden;
+      }
 
       .upper_right_contents_prop{
         font-size: 1.2rem;
@@ -70,14 +74,14 @@ $COLOR_BOTTOM_TEXT: #858A8B;
           font-size: 1.1rem;
           margin-bottom: .6rem;
           @include sm(){
-            font-size: 1.7rem;
+            font-size: 1.3rem;
           }
         }
         &:nth-child(2){
           font-size: .7rem;
           margin-bottom: 1.5rem;
           @include sm(){
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-bottom: 4.5rem;
           }
         }
@@ -85,7 +89,7 @@ $COLOR_BOTTOM_TEXT: #858A8B;
           font-size: 1.1rem;
           margin-bottom: 6rem;
           @include sm(){
-            font-size: 1.7rem;
+            font-size: 1.3rem;
           }
         }
         &:nth-child(4){
@@ -130,7 +134,7 @@ $COLOR_BOTTOM_TEXT: #858A8B;
       width: 70%;
       @include sm(){
         position: absolute;
-        width: 100%;
+        width: 40%;
         bottom: 3vh;
         left: 10vw;
       }
