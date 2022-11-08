@@ -88,7 +88,7 @@ export default function Works(){
             <Projects name="Everything’s Gonna Be Alright" type="Music video" 
                       roles={["Design (illustration), Animation"]} 
                       img={images[4]} imgWidth="29.27rem" imgHeight="18.29rem" 
-                      descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_bottom}`}
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
                       url="/"/>
 
             <Projects name="SurfAce Apparel" type="Runway animation" 
@@ -106,7 +106,7 @@ export default function Works(){
             <Projects name="Sleep well" type="Application design (School project)" 
                       roles={["Direction, Project Management, Design"]} 
                       img={images[7]} imgWidth="29.27rem" imgHeight="18.29rem" 
-                      descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_bottom}`}
+                      descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_right}`}
                       url="/"/>
           </div>
         </div>
