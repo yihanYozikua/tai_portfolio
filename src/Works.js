@@ -69,7 +69,7 @@ export default function Works(){
     <PageLayout>
       <section id={worksCss.works}>
         <Navbar />
-        <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" />
+        <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" style={{top: '0'}} />
 
         <div className={worksCss.works_container}>
           <div className={worksCss.works_contents_container}>
