@@ -9,6 +9,30 @@ import mediumIcon from './static/icons/medium.svg'
 import githubIcon from './static/icons/github.svg'
 
 export default function Footer(){
+  const [width, setWidth] = useState(window.innerWidth);
+  const [footerParallax, setFooterParallax] = useState([0, 0]);
+
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+
+  useEffect(()=>{
+    if(!isMobile){
+      console.log('PC');
+      setFooterParallax([50, -50]);
+    }else{
+      console.log('mobile');
+      setFooterParallax([0, 0]);
+    }
+  }, [])
+
   const scrollToTop = () => {
     window.scrollTo({
       top:0,
@@ -38,7 +62,7 @@ export default function Footer(){
   }
   
   return(
-    <Parallax id={footerCss.footer} translateY={[50, -50]} speed={-10}>
+    <Parallax id={footerCss.footer} translateY={footerParallax} speed={-10}>
       <div className={footerCss.upper_section_container}>
         <div className={footerCss.upper_left_container}>
           <span className={footerCss.upper_left_contents_prop}>After design</span>

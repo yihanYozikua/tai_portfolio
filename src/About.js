@@ -107,7 +107,8 @@ export default function About() {
   let isFirstScrollDown = true;
 
   const [width, setWidth] = useState(window.innerWidth);
-  const [kvParallax, setKvParallax] = useState([0, -300]);
+  const [kvParallax, setKvParallax] = useState([0, 0]);
+  const [footerParallax, setFooterParallax] = useState([0, 0]);
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -126,7 +127,7 @@ export default function About() {
       setKvParallax([0, -300]);
     }else{
       console.log('mobile');
-      setKvParallax([0, -100]);
+      setKvParallax([0, 0]);
     }
   }, [])
 

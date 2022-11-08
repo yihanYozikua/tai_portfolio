@@ -14,7 +14,7 @@ $COLOR_BOTTOM_TEXT: #858A8B;
   height: 100vh;
   background-image: $FOOTER_BG;
   background-size: cover;
-  z-index: 100 !important;
+  z-index: 101 !important;
   margin-top: -35vh;
   @include sm(){
     overflow-x: hidden;
