@@ -1,7 +1,7 @@
 @import './main.scss';
 $WORKS_BG_COLOR_1: #D7D2CC;
 $WORKS_BG_COLOR_2: #304352;
-$WORK_BG: linear-gradient($WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
+$WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
 $COLOR_PROJ_NAME: white;
 $COLOR_PROJ_DESCRIP: #DBDFE0;
 
@@ -51,7 +51,7 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
       .project_img_and_name_container{
         margin: 0 2rem;
         .project_img_prop{
-          box-shadow:-10px 10px 50px -25px gray;
+          box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
           object-fit: cover;
   
         }
