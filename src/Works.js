@@ -10,19 +10,9 @@ import worksCss from './css/works.module.scss'
 import { images } from './images.ts'
 
 const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionContainerHeight, descriptionPositonChoice}) => {
-  const [descriptionPosition, setDescriptionPosition] = useState();
-
-  // if(descriptionPositonChoice == 'right'){
-  //   setDescriptionPosition(worksCss.project_container_right);
-  // }else if(descriptionPositonChoice == 'left'){
-  //   setDescriptionPosition(worksCss.project_container_left);
-  // }else if(descriptionPositonChoice == 'bottom'){
-  //   setDescriptionPosition(worksCss.project_container_bottom);
-  // }
-
   var roleRender = roles.map(item => <div className={worksCss.description_contents_prop}>{item}</div>);
   return(
-    <div className={worksCss.project_container_right}>
+    <div className={descriptionPositonChoice}>
       <div className={worksCss.project_img_and_name_container}>
         <img className={worksCss.project_img_prop} src={img} style={{width: imgWidth, height: imgHeight}} alt={name}></img>
         <div className={worksCss.project_name} style={{width: imgWidth}}>{ name }</div>
@@ -55,7 +45,35 @@ export default function Works(){
 
         <div className={worksCss.works_container}>
           <div className={worksCss.works_contents_container}>
-            <Projects name="Anotheries" type="Website (Side project)" roles={["Direction, Writing, Project Management,", "Design, Photography"]} img={images[2]} imgWidth="29.27rem" imgHeight="18.29rem" descriptionContainerHeight="18.29rem" descriptionPositonChoice="right"/>
+            <Projects name="Anotheries" type="Website (Side project)" 
+                      roles={["Direction, Writing, Project Management,", "Design, Photography"]} 
+                      img={images[2]} imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}/>
+
+            <Projects name="Q dinosaur" type="Line sticker (Side project)" 
+                      roles={["Design (illustration)"]} 
+                      img={images[3]} imgWidth="23.41rem" imgHeight="14.63rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}/>
+
+            <Projects name="Everything’s Gonna Be Alright" type="Music video" 
+                      roles={["Design (illustration), Animation"]} 
+                      img={images[4]} imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}/>
+
+            <Projects name="SurfAce Apparel" type="Runway animation" 
+                      roles={["Project Management, Animation"]} 
+                      img={images[5]} imgWidth="23.41rem" imgHeight="14.63rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}/>
+
+            <Projects name="臓器たちの本音" type="Exhibition (School project)" 
+                      roles={["Direction, Project Management,","Design, Photography "]} 
+                      img={images[6]} imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}/>
+
+            <Projects name="Sleep well" type="Application design (School project)" 
+                      roles={["Direction, Project Management, Design"]} 
+                      img={images[7]} imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}/>
           </div>
         </div>
       </section>
