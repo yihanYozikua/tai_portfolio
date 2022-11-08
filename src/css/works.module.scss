@@ -2,6 +2,8 @@
 $WORKS_BG_COLOR_1: #D7D2CC;
 $WORKS_BG_COLOR_2: #304352;
 $WORK_BG: linear-gradient($WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
+$COLOR_PROJ_NAME: white;
+$COLOR_PROJ_DESCRIP: #DBDFE0;
 
 
 #works{
@@ -19,13 +21,23 @@ $WORK_BG: linear-gradient($WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
     justify-content: flex-end;
 
     .works_contents_container{
-      width: 90%;
+      width: 94%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .project_container{
+        width: 75%;
+        margin-top: 3rem;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
 
       }
       .project_container_right{
         @extend .project_container;
+        flex-direction: row;
       }
       .project_container_left{
         @extend .project_container;
@@ -35,10 +47,19 @@ $WORK_BG: linear-gradient($WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
       }
   
       .project_img_and_name_container{
+        margin: 0 2rem;
         .project_img_prop{
+          box-shadow:-10px 10px 50px -25px gray;
+          object-fit: cover;
   
         }
         .project_name{
+          text-align: center;
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: 1.2rem;
+          color: $COLOR_PROJ_NAME;
+          margin-top: 1.5rem;
   
         }
       }
@@ -46,13 +67,28 @@ $WORK_BG: linear-gradient($WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
   
   
       .description_container{
+        // height: 18.29rem; //same as the img height
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
   
         .decription_contents_container{
+          margin: 0.5rem 0;
           .description_title_prop{
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: .75rem;
+            color: $COLOR_PROJ_DESCRIP;
+            margin: .3rem 0;
   
           }
           .description_contents_container{
             .description_contents_prop{
+              font-family: 'Outfit', sans-serif;
+              font-weight: 400;
+              font-size: .75rem;
+              color: $COLOR_PROJ_DESCRIP;
   
             }
           }

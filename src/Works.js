@@ -9,7 +9,7 @@ import Sidebar from './components/Sidebar'
 import worksCss from './css/works.module.scss'
 import { images } from './images.ts'
 
-const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionPositonChoice}) => {
+const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionContainerHeight, descriptionPositonChoice}) => {
   const [descriptionPosition, setDescriptionPosition] = useState();
 
   // if(descriptionPositonChoice == 'right'){
@@ -22,12 +22,12 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionPosit
 
   var roleRender = roles.map(item => <div className={worksCss.description_contents_prop}>{item}</div>);
   return(
-    <div className={worksCss.project_container}>
+    <div className={worksCss.project_container_right}>
       <div className={worksCss.project_img_and_name_container}>
         <img className={worksCss.project_img_prop} src={img} style={{width: imgWidth, height: imgHeight}} alt={name}></img>
-        <div className={worksCss.project_name}>{ name }</div>
+        <div className={worksCss.project_name} style={{width: imgWidth}}>{ name }</div>
       </div>
-      <div className={worksCss.description_container}>
+      <div className={worksCss.description_container} style={{height: descriptionContainerHeight}}>
         <div className={worksCss.decription_contents_container}>
           <div className={worksCss.description_title_prop}>Type.</div>
           <div className={worksCss.description_contents_container}>
@@ -55,7 +55,7 @@ export default function Works(){
 
         <div className={worksCss.works_container}>
           <div className={worksCss.works_contents_container}>
-            <Projects name="" type="" roles={[]} img={images[2]} imgWidth="" imgHeight="" descriptionPositonChoice="right"/>
+            <Projects name="Anotheries" type="Website (Side project)" roles={["Direction, Writing, Project Management,", "Design, Photography"]} img={images[2]} imgWidth="29.27rem" imgHeight="18.29rem" descriptionContainerHeight="18.29rem" descriptionPositonChoice="right"/>
           </div>
         </div>
       </section>
