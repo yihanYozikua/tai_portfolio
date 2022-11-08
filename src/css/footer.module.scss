@@ -6,6 +6,7 @@ $COLOR_BOTTOM_TEXT: #858A8B;
 
 #footer{
   display: flex;
+  position: relative;
   // display: none !important;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +129,10 @@ $COLOR_BOTTOM_TEXT: #858A8B;
       font-family: 'Outfit', sans-serif;
       width: 70%;
       @include sm(){
+        position: absolute;
         width: 100%;
+        bottom: 3vh;
+        left: 10vw;
       }
     }
     .bottom_right_container{
