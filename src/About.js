@@ -344,7 +344,7 @@ export default function About() {
         <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
           <div className={aboutCss.about_special_contents_prop_container}>
             <div className={aboutCss.about_special_contents_title}>Special content</div>
-            <Link to="/hashtags" className={aboutCss.about_special_contents_white_box_sec_container}></Link>
+            <a href="https://yihanyozikua.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}></a>
           </div>
         </div>
 
