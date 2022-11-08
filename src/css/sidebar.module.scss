@@ -23,6 +23,7 @@ $COLOR_SIDEBAR_TEXT: black;
     margin-top: -10rem;
     display: flex;
     flex-direction: row;
+    width: 80%;
   }
   
 
@@ -32,7 +33,7 @@ $COLOR_SIDEBAR_TEXT: black;
       writing-mode: vertical-rl;
     }
     @include sm(){
-      margin-right: 52vw;
+      margin-right: 30vw;
     }
     
     text-orientation: mixed;

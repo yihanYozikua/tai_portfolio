@@ -72,6 +72,13 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     background: $ABOUT_BG_COLOR_2;
     padding-top: 25vh;
     position: relative;
+    @include sm(){
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      height: 140vh;
+      padding-top: 0vh;
+    }
 
     .about_paragraph_contents{
       display: flex;
@@ -86,7 +93,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       color: $COLOR_PARAGRAPH_TEXT;
       line-height: 2.8rem;
       @include sm(){
-        width: 90%;
+        width: 80%;
+        // margin-top: 50vh;
         // padding: 1rem 1rem;
       }
 
@@ -119,6 +127,11 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     justify-content: flex-end;
     background: $ABOUT_BG_COLOR_3;
     position: relative;
+    @include sm(){
+      height: 180vh;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
     
     .about_self_intro_contents{
       width: 94%;
@@ -138,6 +151,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         width: 100%;
         justify-content: center;
         @include sm(){
+          position: relative;
           display: flex;
           flex-direction: column;
         }
@@ -150,6 +164,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           box-shadow:-10px 10px 50px -25px gray;
           @include sm(){
             margin-left: 3rem;
+            width: 18rem;
+            height: 27.29rem;
           }
         }
         .about_self_intro_right_section_container{
@@ -211,6 +227,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             display: flex;
             flex-direction: column;
             margin-left: 2.75rem;
+            @include sm(){
+              margin-left: 0;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+            }
     
             .about_self_intro_paragraph_name{
               // opacity: 0;
@@ -219,6 +241,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               font-weight: 500;
               color: $COLOR_NAME;
               margin: 1rem 0;
+              @include sm(){
+                width: 85%;
+              }
             }
             .about_self_intro_paragraph_description_container{
               width: 25.3rem;
@@ -228,6 +253,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               font-weight: 400;
               color: $COLOR_DESCRIPTION;
               line-height: 1.7rem;
+              @include sm(){
+                width: 85%;
+              }
               .about_self_intro_paragraph_description_prop{
                 // opacity: 0;
               }
@@ -284,6 +312,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     @include sm(){
       height: 30vh;
       padding-top: 10vh;
+      position: relative;
     }
     
     .about_special_contents_prop_container{
