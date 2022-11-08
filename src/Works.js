@@ -11,6 +11,24 @@ import { images } from './images.ts'
 
 const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionContainerHeight, descriptionPositonChoice, url}) => {
   var roleRender = roles.map(item => <div className={worksCss.description_contents_prop}>{item}</div>);
+  const description_ref = useRef(null);
+  const description_anchor = description_ref.current;
+
+  useEffect(() => {
+    const len = document.getElementsByClassName(`${worksCss.project_img_prop}`).length;
+    for(let i = 0; i < len; i++){
+      document.getElementsByClassName(`${worksCss.project_img_prop}`)[i].addEventListener('mouseover', ()=>{
+        document.getElementsByClassName(`${worksCss.description_container}`)[i].style.opacity = '1';
+        document.getElementsByClassName(`${worksCss.description_container}`)[i].style.transition = 'all .3s ease-in-out';
+      })
+      document.getElementsByClassName(`${worksCss.project_img_prop}`)[i].addEventListener('mouseleave', ()=>{
+        document.getElementsByClassName(`${worksCss.description_container}`)[i].style.opacity = '0';
+        document.getElementsByClassName(`${worksCss.description_container}`)[i].style.transition = 'all .3s ease-in-out';
+      })
+    }
+    
+  }, []);
+
   return(
     <div className={descriptionPositonChoice}>
       <div className={worksCss.project_img_and_name_container}>
@@ -19,7 +37,7 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
         </Link>
         <div className={worksCss.project_name} style={{width: imgWidth}}>{ name }</div>
       </div>
-      <div className={worksCss.description_container} style={{height: descriptionContainerHeight}}>
+      <div className={worksCss.description_container} style={{height: descriptionContainerHeight}} ref={description_ref}>
         <div className={worksCss.decription_contents_container}>
           <div className={worksCss.description_title_prop}>Type.</div>
           <div className={worksCss.description_contents_container}>
@@ -44,6 +62,8 @@ export default function Works(){
       behavior: 'smooth'
     });
   }, []);
+
+
 
   return(
     <PageLayout>

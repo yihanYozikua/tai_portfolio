@@ -72,6 +72,7 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
   
       .description_container{
         // height: 18.29rem; //same as the img height
+        opacity: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
