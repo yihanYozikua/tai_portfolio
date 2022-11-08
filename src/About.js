@@ -13,6 +13,7 @@ import { images } from './images.ts'
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
 
+
 const Exp = ({year, exp_contents}) => {
   var expRender = exp_contents.map(item => <div>{item}</div>);
   return(
@@ -104,6 +105,19 @@ export default function About() {
   const special_contents_ref = useRef(null);
   const view_works_ref = useRef(null);
   let isFirstScrollDown = true;
+
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
 
   useEffect(() => {
     window.scrollTo(0, 0)
