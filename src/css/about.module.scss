@@ -71,6 +71,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     align-items: flex-end;
     background: $ABOUT_BG_COLOR_2;
     padding-top: 25vh;
+    position: relative;
 
     .about_paragraph_contents{
       display: flex;
@@ -117,6 +118,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     display: flex;
     justify-content: flex-end;
     background: $ABOUT_BG_COLOR_3;
+    position: relative;
     
     .about_self_intro_contents{
       width: 94%;

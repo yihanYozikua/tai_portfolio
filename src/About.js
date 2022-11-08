@@ -107,6 +107,7 @@ export default function About() {
   let isFirstScrollDown = true;
 
   const [width, setWidth] = useState(window.innerWidth);
+  const [kvParallax, setKvParallax] = useState([0, -300]);
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -118,6 +119,16 @@ export default function About() {
       }
   }, []);
   const isMobile = width <= 768;
+
+  useEffect(()=>{
+    if(!isMobile){
+      console.log('PC');
+      setKvParallax([0, -300]);
+    }else{
+      console.log('mobile');
+      setKvParallax([0, -100]);
+    }
+  }, [])
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -250,6 +261,7 @@ export default function About() {
     }
   }, [])
 
+
   return(
     <PageLayout>
       <section id={aboutCss.about}>
@@ -267,7 +279,7 @@ export default function About() {
         <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
 
         <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
-          <Parallax className={aboutCss.about_paragraph_contents} translateY={[0, -300]} speed={-10}>
+          <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
             <div className={aboutCss.about_paragragh_contents_sec_container}>
               <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
                 <span ref={paragraph_anchor_ref}>見慣れていたあのポスターも、</span>

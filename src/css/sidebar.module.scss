@@ -16,9 +16,10 @@ $COLOR_SIDEBAR_TEXT: black;
     justify-content: flex-end;
   }
   @include sm(){
-    position: absolute;
+    position: relative;
+    background-color: transparent;
     left: 5vw;
-    bottom: 0;
+    margin-top: -10rem;
     display: flex;
     flex-direction: row;
   }
