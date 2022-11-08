@@ -9,9 +9,16 @@ import Sidebar from './components/Sidebar'
 import worksCss from './css/works.module.scss'
 import { images } from './images.ts'
 
-
 const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionPositonChoice}) => {
   const [descriptionPosition, setDescriptionPosition] = useState();
+
+  // if(descriptionPositonChoice == 'right'){
+  //   setDescriptionPosition(worksCss.project_container_right);
+  // }else if(descriptionPositonChoice == 'left'){
+  //   setDescriptionPosition(worksCss.project_container_left);
+  // }else if(descriptionPositonChoice == 'bottom'){
+  //   setDescriptionPosition(worksCss.project_container_bottom);
+  // }
 
   var roleRender = roles.map(item => <div className={worksCss.description_contents_prop}>{item}</div>);
   return(
@@ -44,8 +51,11 @@ export default function Works(){
     <PageLayout>
       <section id={worksCss.works}>
         <Navbar />
+        <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" />
 
-        {/* <div className={worksCss.works_container}> </div> */}
+        <div className={worksCss.works_container}>
+          <Projects name="" type="" roles={[]} img={images[2]} imgWidth="" imgHeight="" descriptionPositonChoice="right"/>
+        </div>
       </section>
     </PageLayout>
   )

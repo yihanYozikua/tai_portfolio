@@ -1,10 +1,7 @@
 @import './main.scss';
-// $ABOUT_BG_COLOR: linear-gradient(#F6F6F6, #DBDEE0);
-$ABOUT_BG_COLOR_1: linear-gradient(#F6F6F6, #e1e1e1);
-$ABOUT_BG_COLOR_2: linear-gradient(#e1e1e1, #e4e4e4);
-$ABOUT_BG_COLOR_3: linear-gradient(#e4e4e4, #e0dbdb);
-$ABOUT_BG_COLOR_4: linear-gradient(#e0dbdb, #e2e5e7);
-$ABOUT_BG_COLOR_5: linear-gradient(#e2e5e7, #DBDEE0);
+$ABOUT_BG_COLOR_1:#F6F6F6;
+$ABOUT_BG_COLOR_2:#DBDEE0;
+$ABOUT_BG_COLOR: linear-gradient($ABOUT_BG_COLOR_1, $ABOUT_BG_COLOR_2);
 $COLOR_KV_TEXT: #282D2F;
 $COLOR_PARAGRAPH_TEXT: #282D2F;
 $COLOR_CIRCLE_TEXT: #858A8B66;
@@ -23,13 +20,13 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
   align-items: center;
   flex-direction: column;
   z-index: 90;
+  background: $ABOUT_BG_COLOR;
 
   .about_kv_container{
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: flex-end;
-    background: $ABOUT_BG_COLOR_1;
 
     .about_kv_contents{
       display: flex;
@@ -69,7 +66,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     justify-content: flex-end;
     flex-direction: column;
     align-items: flex-end;
-    background: $ABOUT_BG_COLOR_2;
     padding-top: 25vh;
     position: relative;
     @include sm(){
@@ -125,7 +121,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     height: 160vh;
     display: flex;
     justify-content: flex-end;
-    background: $ABOUT_BG_COLOR_3;
     position: relative;
     @include sm(){
       height: 180vh;
@@ -308,7 +303,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     align-items: flex-end;
     width: 100vw;
     height: 50vh;
-    background: $ABOUT_BG_COLOR_4;
     @include sm(){
       height: 30vh;
       padding-top: 10vh;
@@ -360,7 +354,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end !important;
-    background: $ABOUT_BG_COLOR_5;
     justify-content: center;
     align-items: center;
     @include sm(){
