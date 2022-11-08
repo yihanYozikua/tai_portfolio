@@ -43,9 +43,12 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
       }
       .project_container_left{
         @extend .project_container;
+        flex-direction: row-reverse
       }
       .project_container_bottom{
         @extend .project_container;
+        flex-direction: column;
+        align-items: center;
       }
   
       .project_img_and_name_container{
