@@ -334,6 +334,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         color: $COLOR_SPECIAL_CONTENT_TITLE;
         font-size: 1rem;
         margin-bottom: .75rem;
+        @include sm(){
+          width: 85%;
+        }
       }
       .about_special_contents_white_box_sec_container{
         width: 52rem;
