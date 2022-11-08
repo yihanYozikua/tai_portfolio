@@ -8,9 +8,17 @@ import { images } from './images.ts'
 
 
 export default function Hashtags(){
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
   return(
     <PageLayout>
-      Hashtag page
+      <section id={hashtagCss.hashtags}>
+        Hashtag page
+      </section>
     </PageLayout>
   )
 }

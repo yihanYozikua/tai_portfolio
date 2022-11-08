@@ -1,0 +1,10 @@
+@import './main.scss';
+$WORKS_BG_COLOR_1: #FDFCFB;
+$WORKS_BG_COLOR_2: #E2DBC3;
+$WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
+
+#hashtags{
+  width: 100vw;
+  height: 100vh;
+  background: $WORK_BG;
+}
