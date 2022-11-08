@@ -27,6 +27,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     width: 100vw;
     height: 100vh;
     justify-content: flex-end;
+    @include sm(){
+      height: 92vh;
+    }
 
     .about_kv_contents{
       display: flex;
