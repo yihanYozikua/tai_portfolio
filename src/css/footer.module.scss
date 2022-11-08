@@ -3,6 +3,9 @@ $FOOTER_BG: url("../static/img/footer_bg.svg");
 $COLOR_UNDERLINE: #858A8B;
 $COLOR_BOTTOM_TEXT: #858A8B;
 
+a{
+  text-decoration: none;
+}
 
 #footer{
   display: flex;
