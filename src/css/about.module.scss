@@ -166,6 +166,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             align-items: center;
             margin-left: -1rem;
             margin-bottom: 1.5rem;
+            @include sm(){
+              position: relative;
+              left: 25%;
+            }
   
             .about_self_intro_circle_prop{
               display: flex;

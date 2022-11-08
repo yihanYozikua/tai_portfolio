@@ -8,20 +8,7 @@ html{
   }
 }
 
-body{
-  // font-family: 'Outfit', sans-serif;
-  // font-family: 'BIZ UDGothic', sans-serif;
-}
-
-@keyframes fadein{
-  0% { opacity:0; }
-  30% { opacity:0;}
-  100% { opacity:1;}
-}
-
 $threshold-width: 768px;
-
-
 @mixin sm(){
   @media all and (max-width: $threshold-width){
     @content;
@@ -33,3 +20,20 @@ $threshold-width: 768px;
     @content;
   }
 }
+
+
+body{
+  // font-family: 'Outfit', sans-serif;
+  // font-family: 'BIZ UDGothic', sans-serif;
+  @include sm(){
+    overflow-x: hidden;
+  }
+}
+
+@keyframes fadein{
+  0% { opacity:0; }
+  30% { opacity:0;}
+  100% { opacity:1;}
+}
+
+
