@@ -67,6 +67,9 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
         .project_img_prop{
           box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
           object-fit: cover;
+          @include sm(){
+            // padding: 1rem 3rem;
+          }
   
         }
         .project_name{
