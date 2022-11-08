@@ -22,10 +22,11 @@ $threshold-width: 768px;
 }
 
 
-body{
+html, body{
   // font-family: 'Outfit', sans-serif;
   // font-family: 'BIZ UDGothic', sans-serif;
   @include sm(){
+    width: 100%;
     overflow-x: hidden;
   }
 }
