@@ -19,6 +19,7 @@ $COLOR_BOTTOM_TEXT: #858A8B;
   margin-top: -35vh;
   @include sm(){
     overflow-x: hidden;
+    margin-top: 0;
   }
 
   .upper_section_container{
@@ -66,42 +67,41 @@ $COLOR_BOTTOM_TEXT: #858A8B;
         overflow-y: hidden;
       }
 
-      .upper_right_contents_prop{
+      .upper_right_contents_prop_about{
         font-size: 1.2rem;
         color: white;
-
-        &:nth-child(1){
-          font-size: 1.1rem;
-          margin-bottom: .6rem;
-          @include sm(){
-            font-size: 1.3rem;
-          }
+        font-size: 1.1rem;
+        margin-bottom: .6rem;
+        @include sm(){
+          font-size: 1.3rem;
         }
-        &:nth-child(2){
-          font-size: .7rem;
-          margin-bottom: 1.5rem;
-          @include sm(){
-            font-size: 1rem;
-            margin-bottom: 4.5rem;
-          }
+      }
+      .upper_right_contents_prop_hashtag{
+        color: white;
+        font-size: .7rem;
+        margin-bottom: 1.5rem;
+        @include sm(){
+          font-size: 1rem;
+          margin-bottom: 4.5rem;
         }
-        &:nth-child(3){
-          font-size: 1.1rem;
-          margin-bottom: 6rem;
-          @include sm(){
-            font-size: 1.3rem;
-          }
+      }
+      .upper_right_contents_prop_works{
+        color: white;
+        font-size: 1.1rem;
+        margin-bottom: 6rem;
+        @include sm(){
+          font-size: 1.3rem;
         }
-        &:nth-child(4){
-          text-decoration: underline;
-          font-size: .7rem;
-          @include sm(){
-            position: absolute;
-            bottom: 3vh;
-            right: 10vw;
-          }
+      }
+      .upper_right_contents_prop_back_to_top{
+        color: white;
+        text-decoration: underline;
+        font-size: .7rem;
+        @include sm(){
+          position: absolute;
+          bottom: 3vh;
+          right: 10vw;
         }
-
       }
     }
   }

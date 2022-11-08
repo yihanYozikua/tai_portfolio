@@ -404,7 +404,11 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     
           .about_view_my_works_contents_prop{
             color: black;
-            width: 8.5rem;
+            width: 10rem;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 2rem;
+            text-align: left;
             z-index: 1;
             &:nth-child(1){
               font-size: .75rem;
