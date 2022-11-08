@@ -54,7 +54,9 @@ export default function Works(){
         <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" />
 
         <div className={worksCss.works_container}>
-          <Projects name="" type="" roles={[]} img={images[2]} imgWidth="" imgHeight="" descriptionPositonChoice="right"/>
+          <div className={worksCss.works_contents_container}>
+            <Projects name="" type="" roles={[]} img={images[2]} imgWidth="" imgHeight="" descriptionPositonChoice="right"/>
+          </div>
         </div>
       </section>
     </PageLayout>
