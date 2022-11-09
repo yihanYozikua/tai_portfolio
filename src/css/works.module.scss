@@ -64,14 +64,29 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
         @include sm(){
           margin: 0 0;
         }
-        .project_img_prop{
+        .project_img_container_prop{
           box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
           object-fit: cover;
+          transition: all .2s ease-in-out;
+          overflow: hidden;
+          display: flex;
+          &:hover{
+            opacity: .5;
+            transition: all .2s ease-in-out;
+          }
           @include sm(){
             // padding: 1rem 3rem;
           }
-  
+
+          .project_img_prop{
+            transition: all .3s ease-in !important;
+            &:hover{
+              transition: all .3s ease-in !important;
+              transform: scale(1.2);
+            }
+          }
         }
+
         .project_name{
           text-align: center;
           font-family: 'Outfit', sans-serif;

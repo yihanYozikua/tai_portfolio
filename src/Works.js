@@ -17,11 +17,11 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
   useEffect(() => {
     const len = document.getElementsByClassName(`${worksCss.project_img_prop}`).length;
     for(let i = 0; i < len; i++){
-      document.getElementsByClassName(`${worksCss.project_img_prop}`)[i].addEventListener('mouseover', ()=>{
+      document.getElementsByClassName(`${worksCss.project_img_container_prop}`)[i].addEventListener('mouseover', ()=>{
         document.getElementsByClassName(`${worksCss.description_container}`)[i].style.opacity = '1';
         document.getElementsByClassName(`${worksCss.description_container}`)[i].style.transition = 'all .3s ease-in-out';
       })
-      document.getElementsByClassName(`${worksCss.project_img_prop}`)[i].addEventListener('mouseleave', ()=>{
+      document.getElementsByClassName(`${worksCss.project_img_container_prop}`)[i].addEventListener('mouseleave', ()=>{
         document.getElementsByClassName(`${worksCss.description_container}`)[i].style.opacity = '0';
         document.getElementsByClassName(`${worksCss.description_container}`)[i].style.transition = 'all .3s ease-in-out';
       })
@@ -32,8 +32,8 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
   return(
     <div className={descriptionPositonChoice}>
       <div className={worksCss.project_img_and_name_container}>
-        <Link to={url}>
-          <img className={worksCss.project_img_prop} src={img} style={{width: imgWidth, height: imgHeight}} alt={name}></img>
+        <Link className={worksCss.project_img_container_prop} style={{width: imgWidth, height: imgHeight}} to={url}>
+          <img src={img} className={worksCss.project_img_prop} style={{width: imgWidth, height: imgHeight}} alt={name}></img>
         </Link>
         <div className={worksCss.project_name} style={{width: imgWidth}}>{ name }</div>
       </div>
