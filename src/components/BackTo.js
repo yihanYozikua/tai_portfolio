@@ -10,10 +10,10 @@ import arrow from '../static/icons/arrow_left.svg'
 export default function BackTo({buttonName, url}){
   return(
     <div className={backCss.back_btn_container}>
-      <div className={backCss.back_btn_contents_container}>
+      <Link className={backCss.back_btn_contents_container} to={url}>
         <img className={backCss.arrow_prop} src={arrow}></img>
-        <Link to={url} className={backCss.btn_prop}>{ buttonName }</Link>
-      </div>
+        <div className={backCss.btn_prop}>{ buttonName }</div>
+      </Link>
     </div>
     
   )

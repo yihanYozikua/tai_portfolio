@@ -7,10 +7,12 @@ $COLOR_PARA_DESCIPTION: black;
 
 #works_dinasour{
   width: 100vw;
-  height: 130vh;
+  // height: 420vh;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
+  padding-bottom: 12rem;
+
   .kv_container{
     width: 94%;
     display: flex;
@@ -20,7 +22,7 @@ $COLOR_PARA_DESCIPTION: black;
 
     .paragraph_1_container{
       width: 75%;
-      height: 50vh;
+      // height: 50vh;
       margin: 3rem 0;
 
       .paragraph_1_title{
@@ -40,6 +42,111 @@ $COLOR_PARA_DESCIPTION: black;
           color: $COLOR_PARA_DESCIPTION;
           line-height: 2rem;
 
+        }
+      }
+    }
+
+    .all_dinasours_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+
+      .all_dinasours_prop{
+        width: 75%;
+      }
+    }
+
+    .design_intro_container{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+
+      .design_intro_contents_container{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        
+        .design_intro_img_container{
+          display: flex;
+          flex-direction: row;
+          .design_intro_img_content_container{
+            display: flex;
+              margin: 0 .5rem;
+  
+            .design_intro_img_prop{
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .design_intro_description_container{
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          margin: 0 3rem;
+  
+          .design_intro_description_prop{
+            font-family: 'BIZ UDGothic', sans-serif;
+            font-weight: 400;
+            font-size: .75rem;
+            color: black;
+            line-height: 1.5rem;
+            
+            &:nth-child(1){
+              font-size: 1rem;
+              margin: 1.5rem 0;
+            }
+            
+          }
+        }
+      }
+    }
+
+    .postscript_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+      
+      .postscript_contents_container{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #F2F2F2;
+        padding: 2.5rem 4rem;
+        box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+
+        .postscript_paragraph_container{
+          display: flex;
+          flex-direction: column;
+          
+          .postscript_paragraph_title_prop{
+            font-family: 'BIZ UDGothic', sans-serif;
+            font-weight: 700;
+            font-size: .75rem;
+            color: black;
+            margin: 1rem 0;
+
+          }
+          .postscript_paragraph_prop{
+            font-family: 'BIZ UDGothic', sans-serif;
+            font-weight: 400;
+            font-size: .75rem;
+            color: black;
+            line-height: 1.5rem;
+
+
+          }
         }
       }
     }

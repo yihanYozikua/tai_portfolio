@@ -14,6 +14,18 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
   const description_ref = useRef(null);
   const description_anchor = description_ref.current;
 
+  const [width, setWidth] = useState(window.innerWidth);
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+
   useEffect(() => {
     const len = document.getElementsByClassName(`${worksCss.project_img_prop}`).length;
     for(let i = 0; i < len; i++){
@@ -26,8 +38,11 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
         document.getElementsByClassName(`${worksCss.description_container}`)[i].style.transition = 'all .3s ease-in-out';
       })
     }
-    
   }, []);
+
+  if(isMobile){
+    positionFinTuning = 0;
+  }
 
   return(
     <div className={descriptionPositonChoice} style={{marginLeft: positionFinTuning}}>
