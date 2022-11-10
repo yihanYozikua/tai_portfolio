@@ -8,7 +8,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
 #works_anotheries{
   width: 100vw;
-  padding-bottom: 12rem;
+  padding-bottom: 8rem;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
@@ -89,6 +89,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               font-size: 1.2rem;
               color: $COLOR_PARA_TITLE;
               line-height: 3rem;
+              margin: 1rem 0;
             }
             .paragraph_2_description{
               font-family: 'BIZ UDGothic', sans-serif;
@@ -105,6 +106,75 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               
             }
           }
+        }
+      }
+    }
+
+    .postscript_container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0;
+      
+      .postscript_contents_container{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #F2F2F2;
+        padding: 2.5rem 4rem;
+        box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+
+        .postscript_paragraph_container{
+          display: flex;
+          flex-direction: column;
+          
+          .postscript_paragraph_title_prop{
+            font-family: 'BIZ UDGothic', sans-serif;
+            font-weight: 700;
+            font-size: .75rem;
+            color: $COLOR_BLACK;
+            margin: 1rem 0;
+
+          }
+          .postscript_paragraph_prop{
+            font-family: 'BIZ UDGothic', sans-serif;
+            font-weight: 400;
+            font-size: .75rem;
+            color: $COLOR_BLACK;
+            line-height: 1.5rem;
+
+
+          }
+        }
+      }
+    }
+
+    .especially_thanks_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .especially_thanks_contents_container{
+        width: calc(40% + 8rem);
+        margin: 2rem 0;
+
+        .especially_thanks_title_prop{
+          color: $COLOR_BLACK;
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: 1rem;
+          margin: 2rem 0;
+        }
+        .especially_thanks_description_prop{
+          color: $COLOR_GRAY;
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: .7rem;
+          line-height: 1.2rem;
         }
       }
     }
