@@ -2,15 +2,50 @@
 $COLOR_BG_1:#FDFCFB 9.44%;
 $COLOR_BG_2:#E2DBC3 92.78%;
 $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
+$COLOR_PARA_TITLE: #282D2F;
+$COLOR_PARA_DESCIPTION: black;
 
 
 #works_anotheries{
   width: 100vw;
-  height: 100vh;
+  padding-bottom: 12rem;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
   .kv_container{
     width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .paragraph_1_container{
+      width: 75%;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .paragraph_1_title{
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $COLOR_PARA_TITLE;
+        margin: 2rem 0;
+
+      }
+      .paragraph_1_description_container{
+
+        .paragraph_1_description_prop{
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: .85rem;
+          color: $COLOR_PARA_DESCIPTION;
+          line-height: 2rem;
+
+        }
+      }
+    }
   }
 }
