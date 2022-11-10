@@ -97,7 +97,7 @@ export default function Works(){
                       descriptionContainerHeight="14.63rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
                       url="/"/>
 
-            <Projects name="臓器たちの本音" type="Exhibition (School project)" 
+            <Projects name="臓器の夜間問診" type="Exhibition (School project)" 
                       roles={["Direction, Project Management,","Design, Photography "]} 
                       img={images[6]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
