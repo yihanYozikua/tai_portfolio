@@ -48,7 +48,7 @@ export default function ProjectKvLayout ({ kv_column_direction, name, type, role
         </div>
         
         <div className={projectKvCss.banner_container}>
-          <img src={ bannerImg } alt={ name }></img>
+          <img src={ bannerImg } alt={ name } className={projectKvCss.banner_img_prop}></img>
         </div>
       </div>
     </div>

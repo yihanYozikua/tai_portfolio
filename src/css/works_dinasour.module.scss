@@ -8,6 +8,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: flex-end;
   background: $COLOR_BG;
-  
+  .kv_container{
+    width: 94%;
+  }
 }

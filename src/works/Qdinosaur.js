@@ -16,11 +16,14 @@ export default function Qdinosaur(){
     <PageLayout>
       <section id={dinasourCss.works_dinasour}>
         <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
-        <ProjectKvLayout 
-          kv_column_direction="column-reverse"
-          name="Q dinosaur 恐恐龍"
-          type="Line sticker (Side project)" role="Design (illustration)" date="2020.10-2020.12" tool="Adobe illustratior" url="https://store.line.me/stickershop/product/14468519" urlTitle="sticker page"
-          bannerImg={banner}/>
+        <div className={dinasourCss.kv_container}>
+          <ProjectKvLayout 
+            kv_column_direction="column-reverse"
+            name="Q dinosaur 恐恐龍"
+            type="Line sticker (Side project)" role="Design (illustration)" date="2020.10-2020.12" tool="Adobe illustratior" url="https://store.line.me/stickershop/product/14468519" urlTitle="sticker page"
+            bannerImg={banner}/>
+        </div>
+        
       </section>
     </PageLayout>
   );
