@@ -70,12 +70,13 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
           transition: all .2s ease-in-out;
           overflow: hidden;
           display: flex;
+
           &:hover{
             opacity: .5;
             transition: all .2s ease-in-out;
           }
           @include sm(){
-            // padding: 1rem 3rem;
+            transform: scale(.9);
           }
 
           .project_img_prop{
