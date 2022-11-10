@@ -10,6 +10,9 @@ import Sidebar from '../components/Sidebar'
 import anotheriesCss from '../css/works_anotheries.module.scss'
 import { images } from '../images.ts'
 import banner from '../static/img/works/cover_anotheries.png'
+import anotheries_1 from '../static/img/works/anotheries_1.png'
+import anotheries_2 from '../static/img/works/anotheries_2.png'
+import anotheries_3 from '../static/img/works/anotheries_3.png'
 
 export default function Anotheries() {
     return (
@@ -33,9 +36,6 @@ export default function Anotheries() {
                         </div>
                     </div>
 
-                    
-
-
 
                     <div className={anotheriesCss.paragraph_1_container}>
                         <div className={anotheriesCss.paragraph_1_title}>旅行サイトほど情報満載ではないけど、SNS投稿より伝えたいことがある</div>
@@ -45,6 +45,50 @@ export default function Anotheries() {
                             <div className={anotheriesCss.paragraph_1_description_prop}>なので、旅行サイトみたいにアクセスからモデルコースまで詳しく紹介するつもりはないです。でも、自分のSNSのようなただの感想シェアにもなりたくありません。インターネットで載せていない､実際に訪れた人だけ知っていること、試して良かったと思う遊び方など、旅をより一層楽しめるように、私たちの経験談でユーザーにとって有意義の情報も提供したいと思います。</div>
                         </div>
                     </div>
+
+                    <div className={anotheriesCss.middleImg}>
+                        <img src={anotheries_1} alt="dinasours" className={anotheriesCss.all_dinasours_prop}></img>
+                    </div>
+
+
+                    <div className={anotheriesCss.paragraph_2_container}>
+                        <div className={anotheriesCss.paragraph_2_contents_container}>
+
+                            <div className={anotheriesCss.paragraph_2_each_container}>
+                                <div className={anotheriesCss.paragraph_2_text_container}>
+                                    <div className={anotheriesCss.paragraph_2_title}>写真を際立たせる余白感</div>
+                                    <div className={anotheriesCss.paragraph_2_description}>
+                                        写真がメインになるサイトをカラフルで見せる一方、
+                                        ごちゃつきにならないように、サイズ感、
+                                        余白の調整に気をつけなければなりません。
+                                        彩りの写真を際立たせながら、旅の余裕感を感じていただきたいと思い、
+                                        背景色は薄くして、余白も多めに取っております。
+                                    </div>
+                                </div>
+                                <div className={anotheriesCss.paragraph_2_img_container}>
+                                    <img src={ anotheries_2 } className={anotheriesCss.paragraph_2_img_prop}></img>
+                                </div>
+                            </div>
+
+                            <div className={anotheriesCss.paragraph_2_each_container}>
+                                <div className={anotheriesCss.paragraph_2_text_container}>
+                                    <div className={anotheriesCss.paragraph_2_title}>さりげない遊び心</div>
+                                    <div className={anotheriesCss.paragraph_2_description}>
+                                        旅の楽しさ・ワクワク感を伝わるために、
+                                        写真の動きにこだわってデザインする他、
+                                        お問い合わせフォームの写真をサイトに未公開のものにして、
+                                        ユーザーにプレゼントするのは私たちささやかな遊び心です。
+                                    </div>
+                                </div>
+                                <div className={anotheriesCss.paragraph_2_img_container}>
+                                    <img src={ anotheries_3 } className={anotheriesCss.paragraph_2_img_prop}></img>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
                 </div>
 
             </section>

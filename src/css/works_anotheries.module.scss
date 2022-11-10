@@ -3,7 +3,7 @@ $COLOR_BG_1:#FDFCFB 9.44%;
 $COLOR_BG_2:#E2DBC3 92.78%;
 $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 $COLOR_PARA_TITLE: #282D2F;
-$COLOR_PARA_DESCIPTION: black;
+$COLOR_PARA_DESCIPTION: #282D2F;
 
 
 #works_anotheries{
@@ -28,7 +28,7 @@ $COLOR_PARA_DESCIPTION: black;
       align-items: flex-start;
 
       .paragraph_1_title{
-        font-family: 'BIZ UDGothic', sans-serif;
+        font-family: 'Outfit', sans-serif;
         font-weight: 400;
         font-size: 1.5rem;
         color: $COLOR_PARA_TITLE;
@@ -44,6 +44,67 @@ $COLOR_PARA_DESCIPTION: black;
           color: $COLOR_PARA_DESCIPTION;
           line-height: 2rem;
 
+        }
+      }
+    }
+
+    .middleImg{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+      .all_dinasours_prop{
+        width: 75%;
+      }
+    }
+
+    .paragraph_2_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .paragraph_2_contents_container{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        .paragraph_2_each_container{
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          margin: 0 1rem;
+
+          .paragraph_2_text_container{
+            width: 100%;
+            height: 20vh;
+            margin-bottom: 5rem;
+
+            .paragraph_2_title{
+              font-family: 'BIZ UDGothic', sans-serif;
+              font-weight: 400;
+              font-size: 1.2rem;
+              color: $COLOR_PARA_TITLE;
+              line-height: 3rem;
+            }
+            .paragraph_2_description{
+              font-family: 'BIZ UDGothic', sans-serif;
+              font-weight: 400;
+              font-size: .75rem;
+              color: $COLOR_PARA_TITLE;
+              line-height: 1.5rem;
+            }
+          }
+          .paragraph_2_img_container{
+            width: 100%;
+            .paragraph_2_img_prop{
+              width: 100%;
+              
+            }
+          }
         }
       }
     }
