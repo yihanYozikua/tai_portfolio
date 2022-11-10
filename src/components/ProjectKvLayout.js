@@ -8,11 +8,12 @@ import Footer from '../Footer'
 import projectKvCss from '../css/project_kv_layout.module.scss'
 import arrow from '../static/icons/arrow_up_right.svg'
 
-export default function ProjectKvLayout ({name, type, role, date, tool, bannerImg, url, urlTitle}){
+export default function ProjectKvLayout ({ kv_column_direction, name, type, role, date, tool, bannerImg, url, urlTitle}){
+  console.log(kv_column_direction);
 
   return(
     <div className={projectKvCss.project_kv}>
-      <div className={projectKvCss.kv_container}>
+      <div className={projectKvCss.kv_container} style={{flexDirection: kv_column_direction}}>
         <div className={projectKvCss.info_container}>
           <div className={projectKvCss.project_name_prop}>{ name }</div>
           <div className={projectKvCss.detailed_info_container}>
