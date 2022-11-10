@@ -1,9 +1,13 @@
 @import './main.scss';
+$COLOR_BG_1:#FDFCFB 9.44%;
+$COLOR_BG_2:#E2DBC3 92.78%;
+$COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
+
 
 #works_dinasour{
-  width: 1000vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
-
+  background: $COLOR_BG;
   
 }

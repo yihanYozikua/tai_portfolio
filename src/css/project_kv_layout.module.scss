@@ -1,20 +1,61 @@
 @import './main.scss';
+$COLOR_NAME: #282D2F;
+$COLOR_DESCRIPTION: #858A8B;
 
 .project_kv{
   width: 100vw;
-  .info_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .kv_container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
 
-    .project_name_prop{
-
-    }
-    .detailed_info_container{
+    .info_container{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      // margin-left: 2rem;
+  
+      .project_name_prop{
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+        font-size: 1.75rem;
+        color: $COLOR_NAME;
+        margin: 1rem 1rem;
+      }
+      .detailed_info_container{
+        display: flex;
+        flex-direction: row;
+        margin: .3rem 0;
+  
+        .detailed_info_each_container{
+          margin: 0 1rem;
+          .detailed_info_prop_title{
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: .73rem;
+            color: $COLOR_DESCRIPTION;
+            margin-top: .3rem;
+    
+          }
+          .detailed_info_prop_contents{
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            font-size: .73rem;
+            color: $COLOR_DESCRIPTION;
+            margin-top: .3rem;
+          }
+        }
+      }
+    }
+    .banner_container{
+  
     }
   }
-  .banner_container{
 
-  }
+  
 }
