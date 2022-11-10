@@ -5,7 +5,7 @@ import Q_dinosaur_img from './static/img/works_2.png'
 import everything_is_gonna_be_alright_img from './static/img/works_3.png'
 import surface_apporel_img from './static/img/works_4.png'
 import organ_voice_img from './static/img/works_5.png'
-import sleep_well_img from './static/img/works_5.png'
+import sleep_well_img from './static/img/works_6.png'
 
 export const images = [
   about_avatar,

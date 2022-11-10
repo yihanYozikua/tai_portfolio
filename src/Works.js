@@ -9,7 +9,7 @@ import Sidebar from './components/Sidebar'
 import worksCss from './css/works.module.scss'
 import { images } from './images.ts'
 
-const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionContainerHeight, descriptionPositonChoice, url}) => {
+const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionContainerHeight, descriptionPositonChoice, url, positionFinTuning}) => {
   var roleRender = roles.map(item => <div className={worksCss.description_contents_prop}>{item}</div>);
   const description_ref = useRef(null);
   const description_anchor = description_ref.current;
@@ -30,7 +30,7 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
   }, []);
 
   return(
-    <div className={descriptionPositonChoice}>
+    <div className={descriptionPositonChoice} style={{marginLeft: positionFinTuning}}>
       <div className={worksCss.project_img_and_name_container}>
         <Link className={worksCss.project_img_container_prop} style={{width: imgWidth, height: imgHeight}} to={url}>
           <img src={img} className={worksCss.project_img_prop} style={{width: imgWidth, height: imgHeight}} alt={name}></img>
@@ -89,7 +89,8 @@ export default function Works(){
                       roles={["Design (illustration), Animation"]} 
                       img={images[4]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
-                      url="/works/everything_is_gonna_be_alright"/>
+                      url="/works/everything_is_gonna_be_alright"
+                      positionFinTuning="10rem"/>
 
             <Projects name="SurfAce Apparel" type="Runway animation" 
                       roles={["Project Management, Animation"]} 
@@ -101,7 +102,8 @@ export default function Works(){
                       roles={["Direction, Project Management,","Design, Photography "]} 
                       img={images[6]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
-                      url="/works/organ_voice"/>
+                      url="/works/organ_voice"
+                      />
 
             <Projects name="Sleep well" type="Application design (School project)" 
                       roles={["Direction, Project Management, Design"]} 
