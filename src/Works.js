@@ -77,37 +77,37 @@ export default function Works(){
                       roles={["Direction, Writing, Project Management,", "Design, Photography"]} 
                       img={images[2]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
-                      url="/"/>
+                      url="/works/anotheries"/>
 
             <Projects name="Q dinosaur" type="Line sticker (Side project)" 
                       roles={["Design (illustration)"]} 
                       img={images[3]} imgWidth="23.41rem" imgHeight="14.63rem" 
                       descriptionContainerHeight="14.63rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
-                      url="/"/>
+                      url="/works/q_dinasour"/>
 
             <Projects name="Everything’s Gonna Be Alright" type="Music video" 
                       roles={["Design (illustration), Animation"]} 
                       img={images[4]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
-                      url="/"/>
+                      url="/works/everything_is_gonna_be_alright"/>
 
             <Projects name="SurfAce Apparel" type="Runway animation" 
                       roles={["Project Management, Animation"]} 
                       img={images[5]} imgWidth="23.41rem" imgHeight="14.63rem" 
                       descriptionContainerHeight="14.63rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
-                      url="/"/>
+                      url="/works/surface_apporel"/>
 
             <Projects name="臓器の夜間問診" type="Exhibition (School project)" 
                       roles={["Direction, Project Management,","Design, Photography "]} 
                       img={images[6]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
-                      url="/"/>
+                      url="/works/organ_voice"/>
 
             <Projects name="Sleep well" type="Application design (School project)" 
                       roles={["Direction, Project Management, Design"]} 
                       img={images[7]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_right}`}
-                      url="/"/>
+                      url="/works/sleep_well"/>
           </div>
         </div>
       </section>
