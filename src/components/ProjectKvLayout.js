@@ -6,20 +6,9 @@ import { Link } from 'react-router-dom'
 import Cursor from '../Cursor'
 import Footer from '../Footer'
 import projectKvCss from '../css/project_kv_layout.module.scss'
+import arrow from '../static/icons/arrow_up_right.svg'
 
 export default function ProjectKvLayout ({name, type, role, date, tool, bannerImg, url, urlTitle}){
-
-  // let urlRender;
-  // if(url){
-  //   urlRender = url.map((item) => {
-  //     <a href={url}>
-  //       <div>Project site</div>
-  //     </a>
-  //   });
-  // }
-  // else{
-  //   urlRender = '';
-  // }
 
   return(
     <div className={projectKvCss.project_kv}>
@@ -47,7 +36,8 @@ export default function ProjectKvLayout ({name, type, role, date, tool, bannerIm
             </div>
             {/* <div>{ urlRender }</div> */}
             <div className={projectKvCss.detailed_info_right_container}>
-              <a href={ url } className={projectKvCss.url_prop}>{ urlTitle }</a>
+              <a href={ url } className={projectKvCss.url_prop} target="_blank">{ urlTitle }</a>
+              <img src={ arrow } className={projectKvCss.arrow_prop}></img>
             </div>
           </div>
           
