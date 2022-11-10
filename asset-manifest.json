@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/tai_portfolio/static/css/main.6a83f7e8.css",
-    "main.js": "/tai_portfolio/static/js/main.d425546e.js",
+    "main.css": "/tai_portfolio/static/css/main.79ed042d.css",
+    "main.js": "/tai_portfolio/static/js/main.882dbd11.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/footer_bg.svg": "/tai_portfolio/static/media/footer_bg.6ca46102b5aff4778858.svg",
     "static/media/footer_bg.png": "/tai_portfolio/static/media/footer_bg.48537ed70b5f81da04c4.png",
+    "static/media/cover_anotheries.png": "/tai_portfolio/static/media/cover_anotheries.34ac9117cb7ec6a14e9b.png",
+    "static/media/cover_sleep.png": "/tai_portfolio/static/media/cover_sleep.f8de85da277da14a4503.png",
+    "static/media/cover_organ.png": "/tai_portfolio/static/media/cover_organ.f67b20a10455fa4b21a6.png",
     "static/media/about_avatar.png": "/tai_portfolio/static/media/about_avatar.ee7c9cd79abc88944716.png",
     "static/media/cover_dinasour.png": "/tai_portfolio/static/media/cover_dinasour.c5cd30a18cb451a30e18.png",
+    "static/media/cover_everything.png": "/tai_portfolio/static/media/cover_everything.06dc42924613f293abcc.png",
     "static/media/github.svg": "/tai_portfolio/static/media/github.a9b66ae349e1c06f4aa0327d7a12a87e.svg",
     "static/media/logo.svg": "/tai_portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/medium.svg": "/tai_portfolio/static/media/medium.f0d67efb7e42375fecbbca17d04c1cb5.svg",
@@ -14,12 +18,12 @@
     "static/media/envelope.svg": "/tai_portfolio/static/media/envelope.b84036dd72c8508e2fce0e14bfb6b876.svg",
     "static/media/arrow_up_right.svg": "/tai_portfolio/static/media/arrow_up_right.554b974330100dbaca9bf273829f16ec.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
-    "main.6a83f7e8.css.map": "/tai_portfolio/static/css/main.6a83f7e8.css.map",
-    "main.d425546e.js.map": "/tai_portfolio/static/js/main.d425546e.js.map",
+    "main.79ed042d.css.map": "/tai_portfolio/static/css/main.79ed042d.css.map",
+    "main.882dbd11.js.map": "/tai_portfolio/static/js/main.882dbd11.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a83f7e8.css",
-    "static/js/main.d425546e.js"
+    "static/css/main.79ed042d.css",
+    "static/js/main.882dbd11.js"
   ]
 }
