@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState }  from 'react'
 import PropTypes from 'prop-types'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom'
@@ -12,6 +12,13 @@ import arrow from '../static/icons/arrow_up_right.svg'
 export default function ProjectKvLayout ({ kv_column_direction, name, type, roles, date, tool, bannerImg, url, urlTitle}){
   console.log(kv_column_direction);
   var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+
 
   return(
     <div className={projectKvCss.project_kv}>
