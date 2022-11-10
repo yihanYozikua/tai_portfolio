@@ -17,7 +17,7 @@ export default function Qdinosaur(){
       <section id={dinasourCss.works_dinasour}>
         <ProjectKvLayout 
           name="Q dinosaur 恐恐龍"
-          type="Line sticker (Side project)" role="Design (illustration)" date="2020.10-2020.12" tool="Adobe illustratior" url="https://store.line.me/stickershop/product/14468519"
+          type="Line sticker (Side project)" role="Design (illustration)" date="2020.10-2020.12" tool="Adobe illustratior" url="https://store.line.me/stickershop/product/14468519" urlTitle="sticker page"
           bannerImg={banner}/>
       </section>
     </PageLayout>

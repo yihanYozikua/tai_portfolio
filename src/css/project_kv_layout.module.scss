@@ -13,7 +13,7 @@ $COLOR_DESCRIPTION: #858A8B;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     .info_container{
       display: flex;
@@ -21,6 +21,7 @@ $COLOR_DESCRIPTION: #858A8B;
       // margin-left: 2rem;
   
       .project_name_prop{
+        width: 53.65rem;
         font-family: 'Outfit', sans-serif;
         font-weight: 300;
         font-size: 1.75rem;
@@ -28,19 +29,24 @@ $COLOR_DESCRIPTION: #858A8B;
         margin: 1rem 1rem;
       }
       .detailed_info_container{
+        width: 53.65rem !important;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         margin: .3rem 0;
-  
-        .detailed_info_each_container{
-          margin: 0 1rem;
-          .detailed_info_prop_title{
-            font-family: 'Outfit', sans-serif;
-            font-weight: 600;
-            font-size: .73rem;
-            color: $COLOR_DESCRIPTION;
-            margin-top: .3rem;
-    
+        .detailed_info_left_container{
+          display: flex;
+          flex-direction: row;
+
+          .detailed_info_each_container{
+            margin: 0 1rem;
+            .detailed_info_prop_title{
+              font-family: 'Outfit', sans-serif;
+              font-weight: 600;
+              font-size: .73rem;
+              color: $COLOR_DESCRIPTION;
+              margin-top: .3rem;
+      
           }
           .detailed_info_prop_contents{
             font-family: 'Outfit', sans-serif;
@@ -49,8 +55,25 @@ $COLOR_DESCRIPTION: #858A8B;
             color: $COLOR_DESCRIPTION;
             margin-top: .3rem;
           }
+          }
+        }
+        .detailed_info_right_container{
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          border-bottom: 1px $COLOR_DESCRIPTION solid;
+          padding: .5rem 0;
+
+          .url_prop{
+            color: $COLOR_DESCRIPTION;
+            font-weight: 600;
+            font-size: .88rem;
+          }
+
         }
       }
+  
+        
     }
     .banner_container{
   

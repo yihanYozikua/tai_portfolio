@@ -7,7 +7,7 @@ import Cursor from '../Cursor'
 import Footer from '../Footer'
 import projectKvCss from '../css/project_kv_layout.module.scss'
 
-export default function ProjectKvLayout ({name, type, role, date, tool, bannerImg, url}){
+export default function ProjectKvLayout ({name, type, role, date, tool, bannerImg, url, urlTitle}){
 
   // let urlRender;
   // if(url){
@@ -27,24 +27,31 @@ export default function ProjectKvLayout ({name, type, role, date, tool, bannerIm
         <div className={projectKvCss.info_container}>
           <div className={projectKvCss.project_name_prop}>{ name }</div>
           <div className={projectKvCss.detailed_info_container}>
-            <div className={projectKvCss.detailed_info_each_container}>
-              <div className={projectKvCss.detailed_info_prop_title}>Type.</div>
-              <div className={projectKvCss.detailed_info_prop_contents}>{ type }</div>
+            <div className={projectKvCss.detailed_info_left_container}>
+              <div className={projectKvCss.detailed_info_each_container}>
+                <div className={projectKvCss.detailed_info_prop_title}>Type.</div>
+                <div className={projectKvCss.detailed_info_prop_contents}>{ type }</div>
+              </div>
+              <div className={projectKvCss.detailed_info_each_container}>
+                <div className={projectKvCss.detailed_info_prop_title}>Role.</div>
+                <div className={projectKvCss.detailed_info_prop_contents}>{ role }</div>
+              </div>
+              <div className={projectKvCss.detailed_info_each_container}>
+                <div className={projectKvCss.detailed_info_prop_title}>Date.</div>
+                <div className={projectKvCss.detailed_info_prop_contents}>{ date }</div>
+              </div>
+              <div className={projectKvCss.detailed_info_each_container}>
+                <div className={projectKvCss.detailed_info_prop_title}>Tool.</div>
+                <div className={projectKvCss.detailed_info_prop_contents}>{ tool }</div>
+              </div>
             </div>
-            <div className={projectKvCss.detailed_info_each_container}>
-              <div className={projectKvCss.detailed_info_prop_title}>Role.</div>
-              <div className={projectKvCss.detailed_info_prop_contents}>{ role }</div>
-            </div>
-            <div className={projectKvCss.detailed_info_each_container}>
-              <div className={projectKvCss.detailed_info_prop_title}>Date.</div>
-              <div className={projectKvCss.detailed_info_prop_contents}>{ date }</div>
-            </div>
-            <div className={projectKvCss.detailed_info_each_container}>
-              <div className={projectKvCss.detailed_info_prop_title}>Tool.</div>
-              <div className={projectKvCss.detailed_info_prop_contents}>{ tool }</div>
+            {/* <div>{ urlRender }</div> */}
+            <div className={projectKvCss.detailed_info_right_container}>
+              <a href={ url } className={projectKvCss.url_prop}>{ urlTitle }</a>
             </div>
           </div>
-          {/* <div>{ urlRender }</div> */}
+          
+          
         </div>
         
         <div className={projectKvCss.banner_container}>
