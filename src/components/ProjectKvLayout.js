@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 import Cursor from '../Cursor'
 import Footer from '../Footer'
+import BackTo from './BackTo';
 import projectKvCss from '../css/project_kv_layout.module.scss'
 import arrow from '../static/icons/arrow_up_right.svg'
 
@@ -13,6 +14,7 @@ export default function ProjectKvLayout ({ kv_column_direction, name, type, role
 
   return(
     <div className={projectKvCss.project_kv}>
+      <BackTo buttonName="Back to list" url="/works"/>
       <div className={projectKvCss.kv_container} style={{flexDirection: kv_column_direction}}>
         <div className={projectKvCss.info_container}>
           <div className={projectKvCss.project_name_prop}>{ name }</div>

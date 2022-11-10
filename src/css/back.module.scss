@@ -1,0 +1,25 @@
+@import './main.scss';
+
+.back_btn_container{
+  width: 53.65rem;
+  .back_btn_contents_container{
+    width: 6rem;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    padding: .7rem 1rem;
+  
+    .arrow_prop{
+      margin: 0 .3rem;
+    }
+    .btn_prop{
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: .75rem;
+      color: #282D2F;
+    }
+  }
+}
