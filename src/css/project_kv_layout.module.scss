@@ -1,0 +1,20 @@
+@import './main.scss';
+
+.project_kv{
+  width: 100vw;
+  .info_container{
+    display: flex;
+    flex-direction: column;
+
+    .project_name_prop{
+
+    }
+    .detailed_info_container{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .banner_container{
+
+  }
+}
