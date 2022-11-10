@@ -42,6 +42,8 @@ $COLOR_DESCRIPTION: #858A8B;
           flex-direction: row;
 
           .detailed_info_each_container{
+            display: flex;
+            flex-direction: column;
             margin: 0 1rem;
             .detailed_info_prop_title{
               font-family: 'Outfit', sans-serif;
@@ -85,7 +87,7 @@ $COLOR_DESCRIPTION: #858A8B;
         
     }
     .banner_container{
-      // width: 63rem;
+      margin: 2rem 0;
       width: 75%;
       .banner_img_prop{
         width: 100%;

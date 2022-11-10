@@ -9,8 +9,9 @@ import BackTo from './BackTo';
 import projectKvCss from '../css/project_kv_layout.module.scss'
 import arrow from '../static/icons/arrow_up_right.svg'
 
-export default function ProjectKvLayout ({ kv_column_direction, name, type, role, date, tool, bannerImg, url, urlTitle}){
+export default function ProjectKvLayout ({ kv_column_direction, name, type, roles, date, tool, bannerImg, url, urlTitle}){
   console.log(kv_column_direction);
+  var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
 
   return(
     <div className={projectKvCss.project_kv}>
@@ -26,7 +27,7 @@ export default function ProjectKvLayout ({ kv_column_direction, name, type, role
               </div>
               <div className={projectKvCss.detailed_info_each_container}>
                 <div className={projectKvCss.detailed_info_prop_title}>Role.</div>
-                <div className={projectKvCss.detailed_info_prop_contents}>{ role }</div>
+                { roleRender }
               </div>
               <div className={projectKvCss.detailed_info_each_container}>
                 <div className={projectKvCss.detailed_info_prop_title}>Date.</div>
