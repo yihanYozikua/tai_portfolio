@@ -124,7 +124,7 @@ export default function About() {
   useEffect(()=>{
     if(!isMobile){
       console.log('PC');
-      setKvParallax([0, -300]);
+      setKvParallax([0, -500]);
     }else{
       console.log('mobile');
       setKvParallax([0, 0]);
@@ -316,8 +316,10 @@ export default function About() {
               <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
               <div className={aboutCss.about_self_intro_right_section_container}>
                 <div className={aboutCss.about_self_intro_circle_container}>
-                  <div className={aboutCss.about_self_intro_circle_prop} ref={circle_1_ref}>日本語</div>
-                  <div className={aboutCss.about_self_intro_circle_prop} ref={circle_2_ref}>ものづくり</div>
+                  <div className={aboutCss.about_self_intro_circle_contents_container}>
+                    <div className={aboutCss.about_self_intro_circle_prop} ref={circle_1_ref}>日本語</div>
+                    <div className={aboutCss.about_self_intro_circle_prop} ref={circle_2_ref}>ものづくり</div>
+                  </div>
                 </div>
                 <div className={aboutCss.about_self_intro_paragraph_container}>
                   <div className={aboutCss.about_self_intro_paragraph_name} ref={name_ref}>Tai, Tung-En</div>
@@ -337,6 +339,7 @@ export default function About() {
                   <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
                 </div>
               </div>
+              
             </div>
           </Parallax>
         </div>

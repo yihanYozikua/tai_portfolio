@@ -64,7 +64,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
 
   .about_paragragh_container{
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -148,13 +148,14 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        align-items: flex-start;
         @include sm(){
           position: relative;
           display: flex;
           flex-direction: column;
         }
-
         .about_self_intro_img{
+          // width: 50%;
           width: 21.2rem;
           height: 32rem;
           object-fit: cover;
@@ -167,6 +168,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           }
         }
         .about_self_intro_right_section_container{
+          // width: 50%;
           display: flex;
           flex-direction: column;
           padding-top: 3rem;
@@ -188,43 +190,50 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               left: 25%;
               overflow-x: hidden !important;
             }
-  
-            .about_self_intro_circle_prop{
+            .about_self_intro_circle_contents_container{
               display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: .7rem;
-              color: $COLOR_CIRCLE_TEXT;
-              width: 18rem;
-              height: 18rem;
-              border: 1px $COLOR_CIRCLE_BORDER solid;
-              border-radius: 1000px;
-              background-color: transparent;
-  
-              // for rotation animation
-              opacity: 0;
-              transform: rotate(-45deg);
-              margin-left: -5rem;
-  
-              &:nth-child(1){
-                @include sm(){
-                  margin-left: 6rem;
+              flex-direction: row;
+              width: 110%;
+              .about_self_intro_circle_prop{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .7rem;
+                color: $COLOR_CIRCLE_TEXT;
+                width: 18rem;
+                height: 18rem;
+                border: 1px $COLOR_CIRCLE_BORDER solid;
+                border-radius: 1000px;
+                background-color: transparent;
+    
+                // for rotation animation
+                opacity: 0;
+                transform: rotate(-45deg);
+                margin-left: -5rem;
+    
+                &:nth-child(1){
+                  @include sm(){
+                    margin-left: 6rem;
+                  }
+                }
+                &:nth-child(2){
+                  margin-left: -6rem;
+                  @include sm(){
+                    margin-left: -3rem;
+                  }
                 }
               }
-              &:nth-child(2){
-                margin-left: -6rem;
-                @include sm(){
-                  margin-left: -3rem;
-                }
-              }
-  
             }
+  
+            
           }
     
           .about_self_intro_paragraph_container{
+            width: 100%;
             display: flex;
             flex-direction: column;
-            margin-left: 2.75rem;
+            margin: 0 2.75rem;
+
             @include sm(){
               margin-left: 0;
               width: 100%;
