@@ -3,10 +3,10 @@
 .back_btn_container{
   width: 85%;
   .back_btn_contents_container{
-    width: 90%;
+    // width: 90%;
     width: 6rem;
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;

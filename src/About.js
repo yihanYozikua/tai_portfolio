@@ -242,16 +242,20 @@ export default function About() {
 
       /* self intro name */
       const description_list = [ name_anchor, description_1, description_2, description_3, description_4 ]
-      if(isInViewPort(self_intro_img_anchor, 1.5)){
-        [].forEach.call(description_list, function(des){
-          des.style.opacity = '1';
-          des.style.transition = 'all .7s ease-in-out';
-        })
-      } else{
-        [].forEach.call(description_list, function(des){
-          des.style.opacity = '0';
-          des.style.transition = 'all .7s ease-in-out';
-        })
+      if(!isMobile){
+        if(isInViewPort(self_intro_img_anchor, 1.5)){
+          [].forEach.call(description_list, function(des){
+            des.style.opacity = '1';
+            des.style.transition = 'all .7s ease-in-out';
+          })
+        } else{
+          [].forEach.call(description_list, function(des){
+            des.style.opacity = '0';
+            des.style.transition = 'all .7s ease-in-out';
+          })
+        }
+      }else{
+
       }
 
       /* exp animation */
