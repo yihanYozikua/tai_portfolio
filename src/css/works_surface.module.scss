@@ -6,11 +6,40 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
 #works_surface{
   width: 100vw;
-  height: 100vh;
+  padding-bottom: 8rem;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
   .kv_container{
     width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .present_img_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
+      
+      .pieces_prop{
+        width: 30%;
+      }
+    }
+
+    .present_description_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+
+      .present_description_prop{
+        width: 50%;
+
+      }
+    }
   }
 }

@@ -7,8 +7,9 @@ import PageLayout from '../components/PageLayout'
 import ProjectKvLayout from '../components/ProjectKvLayout'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import banner from '../static/img/works/cover_everything.png'
+import banner from '../static/img/works/cover_surface.png'
 import surfaceCss from '../css/works_surface.module.scss'
+import suface_1 from '../static/img/works/surface_1.png'
 import { images } from '../images.ts'
 
 export default function SurfaceApporel(){
@@ -17,12 +18,27 @@ export default function SurfaceApporel(){
       <section id={surfaceCss.works_surface}>
         <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
         <div className={surfaceCss.kv_container}>
-        這一頁是 Surface!!!!!
           <ProjectKvLayout 
             kv_column_direction="column"
-            name="Everything’s Gonna Be Alright"
-            type="Music video" roles={["Design (illustration), Animation"]} date="2020.03-2020.12" tool="After Effects, Illustrator, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
+            name="SurfAce Apparel"
+            type="Runway animation" roles={["Project Management, Design , Animation"]} date="2018.10-2018.12" tool="After Effects, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
             bannerImg={banner}/>
+
+
+            <div className={surfaceCss.present_img_container}>
+              <img src={suface_1} alt="SurfAce Present by" className={surfaceCss.pieces_prop}></img>
+            </div>
+
+
+            <div className={surfaceCss.present_description_container}>
+              <div className={surfaceCss.present_description_prop}>
+              CAMPUS COLLECTIONは大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、
+              コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部学生が携わるのが特徴で、
+              大阪をはじめ、海外合わせて15都市での開催実績があります。
+              </div>
+            </div>
+
+
         </div>
         
       </section>
