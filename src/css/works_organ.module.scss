@@ -15,6 +15,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3rem;
   }
 
   .kv_container{
@@ -62,6 +63,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       
       .pieces_prop{
         width: 80%;
+        @include sm(){
+          width: 100%;
+        }
       }
 
 
@@ -77,6 +81,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       .photo_description_container{
         width: 80%;
         margin-top: 3rem;
+        @include sm(){
+          width: 100%;
+        }
         &:nth-child(2){
           display: flex;
           flex-direction: column;
@@ -86,11 +93,17 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
         .photo_prop{
           width: 70%;
+          @include sm(){
+            width: 100%;
+          }
         }
         .description_prop{
           width: 70%;
           line-height: 1.5rem;
-          margin: 1.5rem 0
+          margin: 1.5rem 0;
+          @include sm(){
+            width: 100%;
+          }
 
         }
       }
@@ -103,6 +116,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       justify-content: center;
       align-items: center;
       margin: 3rem 0;
+      @include sm(){
+        margin: 5rem 0;
+      }
       
       .postscript_contents_container{
         width: 70%;
@@ -113,6 +129,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         background-color: #F2F2F2;
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+        @include sm(){
+          padding: 1rem 2.5rem;
+          width: 70%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
