@@ -7,7 +7,6 @@ import sidebarCss from '../css/sidebar.module.scss'
 
 const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text, marginTopSetting }) => {
   const [width, setWidth] = useState(window.innerWidth);
-
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
   }

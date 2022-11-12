@@ -11,6 +11,7 @@ $COLOR_DESCRIPTION: #858A8B;
   margin-top: 5rem;
   @include sm(){
     width: 100vw;
+    margin-top: 0rem;
   }
 
   .kv_container{
@@ -40,14 +41,23 @@ $COLOR_DESCRIPTION: #858A8B;
         flex-direction: row;
         justify-content: space-between;
         margin: .3rem 0;
+        @include sm(){
+          flex-direction: column;
+        }
         .detailed_info_left_container{
           display: flex;
           flex-direction: row;
+          @include sm(){
+            flex-direction: column;
+          }
 
           .detailed_info_each_container{
             display: flex;
             flex-direction: column;
             margin-right: 2rem;
+            @include sm(){
+              margin: 1rem 0;
+            }
 
             .detailed_info_prop_title{
               font-family: 'Outfit', sans-serif;
@@ -73,6 +83,10 @@ $COLOR_DESCRIPTION: #858A8B;
           align-items: flex-end;
           border-bottom: 1px $COLOR_DESCRIPTION solid;
           padding: .5rem 0;
+          @include sm(){
+            width: 25%;
+            margin: 1rem 0;
+          }
 
           .url_prop{
             color: $COLOR_DESCRIPTION;
@@ -93,6 +107,9 @@ $COLOR_DESCRIPTION: #858A8B;
     .banner_container{
       margin: 2rem 0;
       width: 75%;
+      @include sm(){
+        width: 125%;
+      }
       .banner_img_prop{
         width: 100%;
         object-fit: cover;
