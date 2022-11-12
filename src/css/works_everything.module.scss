@@ -15,6 +15,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
   }
 
   .kv_container{
@@ -31,6 +32,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      @include sm(){
+        width: 75%;
+      }
 
       .paragraph_1_title{
         font-family: 'Outfit', sans-serif;
@@ -61,6 +65,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       margin: 2rem 0;
       .all_dinasours_prop{
         width: 80%;
+        @include sm(){
+          width: 100%;
+        }
       }
     }
   
@@ -85,6 +92,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           .lyrics_contents_container{
             width: 50%;
             margin-right: 3rem;
+            @include sm(){
+              width: 100%;
+            }
 
             .lyrics_contents_prop{
               font-family: 'Outfit', sans-serif;
@@ -118,6 +128,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       justify-content: center;
       align-items: center;
       margin: 5rem 0;
+      @include sm(){
+        margin: 5rem 0;
+      }
       
       .postscript_contents_container{
         width: 40%;
@@ -128,6 +141,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         background-color: #F2F2F2;
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+        @include sm(){
+          padding: 1rem 2.5rem;
+          width: 70%;
+        }
 
         .postscript_paragraph_container{
           display: flex;

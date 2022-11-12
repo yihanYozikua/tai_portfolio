@@ -116,44 +116,6 @@ export default function EverythinsIsGonnaBeAlright(){
           </div>
 
           
-          <div className={everythingCss.postscript_container}>
-            <div className={everythingCss.postscript_contents_container}>
-              <div className={everythingCss.postscript_paragraph_container}>
-                <div className={everythingCss.postscript_paragraph_title_prop}>制作の振り返り</div>
-              </div>
-              <div className={everythingCss.postscript_paragraph_container}>
-                <div className={everythingCss.postscript_paragraph_prop}>2020年3月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細い気持ちでおうち生活を過ごしました。そんな時に、大学の友人に「聞いてほしい曲があるだけど」と、この曲が送られました。</div>
-                <div className={everythingCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「あなたは一人じゃない」、どの歌詞も心に刺さる言葉ばかり。この曲に合う愛おしくて、暖かい雰囲気が伝わる動画を作ろうと、友達に提案した。</div>
-                <div className={everythingCss.postscript_paragraph_prop}>中国語では「新年新希望」（新年に新しい希望が与える）という言葉があり、この曲を聞いてくれる人にこれからの日々に希望と期待を感じてもらいたくて公開は新年に合わせました。</div>
-              </div>
-              <br></br>
-              <div className={everythingCss.postscript_paragraph_container}>
-                <div className={everythingCss.postscript_paragraph_prop}>本当は年が替わっても、生活が大した変わらないと知っていたんげど、</div>
-                <div className={everythingCss.postscript_paragraph_prop}>君がそばにいるから、少しだけでも良くなると信じたい。</div>
-                <div className={everythingCss.postscript_paragraph_prop}>これからの日々は、もっと素敵なのもでありますように。</div>
-                <div className={everythingCss.postscript_paragraph_prop}>Everything’s gonna be alright.</div>
-              </div>
-            </div>
-            <div className={everythingCss.especially_thanks_container}>
-              <div className={everythingCss.especially_thanks_contents_container}>
-                <div className={everythingCss.especially_thanks_title_prop}>Especially thanks</div>
-                <div className={everythingCss.author_details_container}>
-                  <div className={everythingCss.especially_thanks_description_prop}>Lyrics and composing</div>
-                  <div className={everythingCss.especially_thanks_description_prop}>Willi</div>
-                </div>
-                <div className={everythingCss.author_details_container}>
-                  <div className={everythingCss.especially_thanks_description_prop}>Beat</div>
-                  <div className={everythingCss.especially_thanks_description_prop}>Lee</div>
-                </div>
-                <div className={everythingCss.author_details_container}>
-                  <div className={everythingCss.especially_thanks_description_prop}>Chorus arrangement</div>
-                  <div className={everythingCss.especially_thanks_description_prop}>501莉莉</div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
         </div>
         
       </section>
