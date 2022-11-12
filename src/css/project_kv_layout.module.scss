@@ -109,6 +109,7 @@ $COLOR_DESCRIPTION: #858A8B;
       width: 75%;
       @include sm(){
         width: 125%;
+        margin: 0 0;
       }
       .banner_img_prop{
         width: 100%;

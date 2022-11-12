@@ -18,6 +18,7 @@ $COLOR_PARA: #282D2F;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3rem;
   }
 
   .kv_container{
@@ -62,6 +63,9 @@ $COLOR_PARA: #282D2F;
 
       .all_dinasours_prop{
         width: 75%;
+        @include sm(){
+          width: 100%;
+        }
       }
     }
 
@@ -72,11 +76,20 @@ $COLOR_PARA: #282D2F;
       justify-content: center;
       align-items: center;
       margin: 3rem 0;
+      @include sm(){
+        margin: 0 0;
+      }
 
       .design_intro_contents_container{
         width: 75%;
         display: flex;
         flex-direction: row;
+        @include sm(){
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
         
         .design_intro_img_container{
           display: flex;
@@ -98,6 +111,10 @@ $COLOR_PARA: #282D2F;
           justify-content: center;
           align-items: flex-start;
           margin: 0 3rem;
+          @include sm(){
+            width: 78%;
+            margin: 2rem 3rem;
+          }
   
           .design_intro_description_prop{
             font-family: 'BIZ UDGothic', sans-serif;
@@ -122,6 +139,9 @@ $COLOR_PARA: #282D2F;
       justify-content: center;
       align-items: center;
       margin: 3rem 0;
+      @include sm(){
+        margin: 5rem 0;
+      }
       
       .postscript_contents_container{
         width: 40%;
@@ -132,6 +152,10 @@ $COLOR_PARA: #282D2F;
         background-color: #F2F2F2;
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+        @include sm(){
+          padding: 1rem 2.5rem;
+          width: 70%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
