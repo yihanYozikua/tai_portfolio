@@ -12,6 +12,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
+  @include sm(){
+    padding-bottom: 3rem;
+  }
 
   @include sm(){
     display: flex;
@@ -65,6 +68,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       margin: 3rem 0;
       .all_dinasours_prop{
         width: 75%;
+        @include sm(){
+          width: 90%;
+        }
       }
     }
 
@@ -80,17 +86,29 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
+        @include sm(){
+          flex-direction: column;
+          align-items: center;
+        }
 
         .paragraph_2_each_container{
           width: 50%;
           display: flex;
           flex-direction: column;
           margin: 0 1rem;
+          @include sm(){
+            width: 100%;
+            margin: 2rem 0;
+          }
 
           .paragraph_2_text_container{
             width: 100%;
             height: 20vh;
             margin-bottom: 5rem;
+            @include sm(){
+              margin-bottom: 1.5rem;
+              height: unset;
+            }
 
             .paragraph_2_title{
               font-family: 'BIZ UDGothic', sans-serif;
@@ -126,6 +144,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       justify-content: center;
       align-items: center;
       margin: 5rem 0;
+      @include sm(){
+        margin: 2rem 0;
+      }
       
       .postscript_contents_container{
         width: 40%;
@@ -136,6 +157,10 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         background-color: #F2F2F2;
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+        @include sm(){
+          padding: 1rem 2.5rem;
+          width: 70%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
