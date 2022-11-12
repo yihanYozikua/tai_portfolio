@@ -15,6 +15,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3rem;
   }
   .kv_container{
     width: 94%;
@@ -68,6 +69,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         .animation_prop{
           width: 75%;
           margin: 2rem 0;
+          @include sm(){
+            width: 100%;
+            margin: 1rem 0;
+          }
         }
       }
     }
@@ -77,6 +82,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       display: flex;
       justify-content: center;
       align-items: center;
+      @include sm(){
+        width: 90%;
+      }
 
       .present_by_text_contents_container{
         width: 80%;
@@ -100,21 +108,35 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         width: 75%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .show_project_row{
           width: 100%;
           display: flex;
           flex-direction: row;
+          @include sm(){
+            flex-direction: column;
+          }
           &:nth-child(1){
             .show_project_img_prop{
               width: 50%;
+              @include sm(){
+                width: 100%;
+              }
               &:nth-child(1){
                 margin-right: .5rem;
                 margin-bottom: .5rem;
+                @include sm(){
+                  margin: .5rem 0;
+                }
               }
               &:nth-child(2){
                 margin-left: .5rem;
                 margin-bottom: .5rem;
+                @include sm(){
+                  margin: .5rem 0;
+                }
 
               }
             }
@@ -122,14 +144,23 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           &:nth-child(2){
             .show_project_img_prop{
               width: 50%;
+              @include sm(){
+                width: 100%;
+              }
               &:nth-child(1){
                 margin-right: .5rem;
                 margin-top: .5rem;
+                @include sm(){
+                  margin: .5rem 0;
+                }
 
               }
               &:nth-child(2){
                 margin-left: .5rem;
                 margin-top: .5rem;
+                @include sm(){
+                  margin: .5rem 0;
+                }
                 
               }
             }
@@ -146,9 +177,15 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       justify-content: center;
       align-items: center;
       margin: 1rem 0;
+      @include sm(){
+        margin: 3rem 0;
+      }
       
       .pieces_prop{
         width: 30%;
+        @include sm(){
+          width: 80%;
+        }
       }
     }
 
@@ -161,7 +198,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
       .present_description_prop{
         width: 50%;
-
       }
     }
 
@@ -173,6 +209,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       justify-content: center;
       align-items: center;
       margin: 5rem 0;
+      @include sm(){
+        margin: 5rem 0;
+      }
       
       .postscript_contents_container{
         width: 40%;
@@ -183,6 +222,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         background-color: #F2F2F2;
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+        @include sm(){
+          padding: 1rem 2.5rem;
+          width: 70%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
