@@ -21,7 +21,7 @@ export default function SleepWell(){
   return(
     <PageLayout>
       <section id={sleepCss.works_sleep}>
-        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
+        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
         <div className={sleepCss.kv_container}>
           <ProjectKvLayout 
             kv_column_direction="column"

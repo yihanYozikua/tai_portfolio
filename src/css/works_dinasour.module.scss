@@ -13,6 +13,12 @@ $COLOR_PARA: #282D2F;
   justify-content: flex-end;
   background: $COLOR_BG;
   padding-bottom: 12rem;
+  @include sm(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .kv_container{
     width: 94%;

@@ -16,7 +16,7 @@ export default function EverythinsIsGonnaBeAlright(){
   return(
     <PageLayout>
       <section id={everythingCss.works_everything}>
-        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
+        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
         <div className={everythingCss.kv_container}>
           <ProjectKvLayout 
             kv_column_direction="column"

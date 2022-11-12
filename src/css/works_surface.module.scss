@@ -10,6 +10,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
+  @include sm(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .kv_container{
     width: 94%;
     display: flex;

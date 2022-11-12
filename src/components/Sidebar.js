@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 import { images } from '../images.ts'
 import sidebarCss from '../css/sidebar.module.scss'
 
-const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text }) => {
+const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text, marginTopSetting }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+
+  let marginTopSize;
+  if(isMobile){
+    marginTopSize = marginTopSetting;
+  }
+
   return(
-    <div id={sidebarCss.sidebar}>
+    <div id={sidebarCss.sidebar} style={{marginTop: marginTopSize}}>
       <div className={sidebarCss.title_prop}>{ sidebarTitle }</div>
       <div className={sidebarCss.emoji_container}>
         <div className={sidebarCss.emoji_prop}>{ emoji_1 }</div>

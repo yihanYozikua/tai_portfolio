@@ -9,6 +9,9 @@ $COLOR_DESCRIPTION: #858A8B;
   align-items: center;
   flex-direction: column;
   margin-top: 5rem;
+  @include sm(){
+    width: 100vw;
+  }
 
   .kv_container{
     width: 100%;
