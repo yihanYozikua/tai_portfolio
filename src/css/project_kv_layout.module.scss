@@ -80,25 +80,30 @@ $COLOR_DESCRIPTION: #858A8B;
           display: flex;
           flex-direction: row;
           justify-content: center;
-          align-items: flex-end;
-          border-bottom: 1px $COLOR_DESCRIPTION solid;
-          padding: .5rem 0;
+          align-items: center;
           @include sm(){
             width: 25%;
             margin: 1rem 0;
           }
-
-          .url_prop{
-            color: $COLOR_DESCRIPTION;
-            font-weight: 600;
-            font-size: .88rem;
-            margin: 0 .3rem;
+          .detailed_info_right_contents_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px $COLOR_DESCRIPTION solid;
+            padding: .75rem 0;
+            margin-top: -0.75rem;
+            .url_prop{
+              color: $COLOR_DESCRIPTION;
+              font-weight: 600;
+              font-size: .88rem;
+              margin: 0 .3rem;
+            }
+            .arrow_prop{
+              width: 1.2rem;
+              margin: 0 .3rem;
+            }
           }
-          .arrow_prop{
-            width: 1.2rem;
-            margin: 0 .3rem;
-          }
-
         }
       }
   

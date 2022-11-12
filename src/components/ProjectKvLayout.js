@@ -47,8 +47,10 @@ export default function ProjectKvLayout ({ kv_column_direction, name, type, role
             </div>
             {/* <div>{ urlRender }</div> */}
             <div className={projectKvCss.detailed_info_right_container}>
-              <a href={ url } className={projectKvCss.url_prop} target="_blank">{ urlTitle }</a>
-              <img src={ arrow } className={projectKvCss.arrow_prop}></img>
+              <div className={projectKvCss.detailed_info_right_contents_container}>
+                <a href={ url } className={projectKvCss.url_prop} target="_blank">{ urlTitle }</a>
+                <img src={ arrow } className={projectKvCss.arrow_prop}></img>
+              </div>
             </div>
           </div>
           
