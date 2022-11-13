@@ -49,7 +49,7 @@ a{
 
       .upper_left_contents_prop{
         font-size: 4rem;
-        font-family: 'Outfit', sans-serif;
+        font-family: $FONT_EN;
         font-weight: 300;
         color: white;
         // line-height: 3rem;
@@ -136,7 +136,7 @@ a{
       font-size: 0.7rem;
       font-weight: 400;
       color: $COLOR_BOTTOM_TEXT;
-      font-family: 'Outfit', sans-serif;
+      font-family: $FONT_EN;
       width: 70%;
       @include sm(){
         position: absolute;
@@ -157,7 +157,7 @@ a{
 
         .responsibility_prop{
           font-size: 0.8rem;
-          font-family: 'Outfit', sans-serif;
+          font-family: $FONT_EN;
           font-weight: 400;
           color: $COLOR_BOTTOM_TEXT;
         }
@@ -171,7 +171,7 @@ a{
           }
           .author_name{
             font-size: 0.8rem;
-            font-family: 'Outfit', sans-serif;
+            font-family: $FONT_EN;
             font-weight: 400;
             color: $COLOR_BOTTOM_TEXT;
           }

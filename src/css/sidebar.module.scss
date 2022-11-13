@@ -44,7 +44,7 @@ $COLOR_SIDEBAR_TEXT: black;
   .emoji_container{
     margin-top: 0.3rem;
     margin-bottom: .1rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: $FONT_EN;
     font-weight: 300;
     @include sm(){
       margin: 0 3vw;
