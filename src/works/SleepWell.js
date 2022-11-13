@@ -118,7 +118,12 @@ export default function SleepWell(){
             </div>
           </div>
 
-          <iframe className={sleepCss.prototype_container} width="375" height="667" src="https://xd.adobe.com/embed/c82ed3f5-d277-4d05-8ee5-67f4a493fe9e-9d7d/" frameborder="0" allowfullscreen></iframe>
+          <div className={sleepCss.prototype_container}>
+            <div className={sleepCss.prototype_contents_container}>
+              <div className={sleepCss.prototype_title_prop}>Prototype</div>
+              <iframe className={sleepCss.prototype_prop} width="375" height="667" src="https://xd.adobe.com/embed/c82ed3f5-d277-4d05-8ee5-67f4a493fe9e-9d7d/" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
 
           <div className={sleepCss.postscript_container}>
             <div className={sleepCss.postscript_contents_container}>
