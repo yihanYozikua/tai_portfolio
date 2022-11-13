@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tai_portfolio/static/css/main.ec1fa8b5.css",
-    "main.js": "/tai_portfolio/static/js/main.25772fb9.js",
+    "main.css": "/tai_portfolio/static/css/main.c7cdd3f1.css",
+    "main.js": "/tai_portfolio/static/js/main.696887d4.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/footer_bg.svg": "/tai_portfolio/static/media/footer_bg.6ca46102b5aff4778858.svg",
     "static/media/footer_bg.png": "/tai_portfolio/static/media/footer_bg.48537ed70b5f81da04c4.png",
@@ -26,11 +26,14 @@
     "static/media/organ_7.png": "/tai_portfolio/static/media/organ_7.66e22c5df9c732c59cc9.png",
     "static/media/surface_1.png": "/tai_portfolio/static/media/surface_1.72d8f3646243e1cd6e93.png",
     "static/media/works_4.png": "/tai_portfolio/static/media/works_4.552e675b396b50a8c4c5.png",
+    "static/media/anotheries_photo_1.png": "/tai_portfolio/static/media/anotheries_photo_1.20e94977fc8b72a4fba4.png",
     "static/media/works_5.png": "/tai_portfolio/static/media/works_5.75deb71d5d9455a39bd0.png",
     "static/media/surface_2.png": "/tai_portfolio/static/media/surface_2.4f97437b778f25ed4300.png",
     "static/media/bg_reason_contents_container.png": "/tai_portfolio/static/media/bg_reason_contents_container.dadc517e6eb478288b45.png",
     "static/media/everything_1_anim.png": "/tai_portfolio/static/media/everything_1_anim.14cc664ac36a1c87ded8.png",
     "static/media/organ_8.png": "/tai_portfolio/static/media/organ_8.93227d4695f194f83d35.png",
+    "static/media/anotheries_photo_3.png": "/tai_portfolio/static/media/anotheries_photo_3.4bcd43ed244585a2da45.png",
+    "static/media/anotheries_photo_2.png": "/tai_portfolio/static/media/anotheries_photo_2.042dcad2b016d490c083.png",
     "static/media/cover_dinasour.png": "/tai_portfolio/static/media/cover_dinasour.c5cd30a18cb451a30e18.png",
     "static/media/works_2.png": "/tai_portfolio/static/media/works_2.6085c2cf8dc0d0859b7c.png",
     "static/media/anotheries_3.png": "/tai_portfolio/static/media/anotheries_3.33c949bdb4f0cd9a6d33.png",
@@ -53,12 +56,12 @@
     "static/media/envelope.svg": "/tai_portfolio/static/media/envelope.b84036dd72c8508e2fce0e14bfb6b876.svg",
     "static/media/arrow_up_right.svg": "/tai_portfolio/static/media/arrow_up_right.554b974330100dbaca9bf273829f16ec.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
-    "main.ec1fa8b5.css.map": "/tai_portfolio/static/css/main.ec1fa8b5.css.map",
-    "main.25772fb9.js.map": "/tai_portfolio/static/js/main.25772fb9.js.map",
+    "main.c7cdd3f1.css.map": "/tai_portfolio/static/css/main.c7cdd3f1.css.map",
+    "main.696887d4.js.map": "/tai_portfolio/static/js/main.696887d4.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec1fa8b5.css",
-    "static/js/main.25772fb9.js"
+    "static/css/main.c7cdd3f1.css",
+    "static/js/main.696887d4.js"
   ]
 }
