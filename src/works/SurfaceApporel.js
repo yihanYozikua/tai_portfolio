@@ -41,10 +41,6 @@ export default function SurfaceApporel(){
           <div className={surfaceCss.show_project_container}>
             <div className={surfaceCss.show_project_contents_container}>
               <div className={surfaceCss.show_project_row}>
-                <img src={surface_1} className={surfaceCss.show_project_img_prop}></img>
-                <img src={surface_2} className={surfaceCss.show_project_img_prop}></img>
-              </div>
-              <div className={surfaceCss.show_project_row}>
                 <img src={surface_3} className={surfaceCss.show_project_img_prop}></img>
                 <img src={surface_4} className={surfaceCss.show_project_img_prop}></img>
               </div>
@@ -57,6 +53,15 @@ export default function SurfaceApporel(){
             <div className={surfaceCss.paragraph_1_description_container}>
               <div className={surfaceCss.paragraph_1_description_prop}>動画ではカラフルな水着を引き立てるために､爽やかな白と水色をメインカラーとして使用しました。海、青い空、砂浜の要素を入れることで夏を連想させ、そこでSurfAce Apparelの水着を着用しているモデルさんが登場し、背景の動画合わせたら、まるで夏の海辺が目の前に広がっているようなステージになりました。</div>
               <div className={surfaceCss.paragraph_1_description_prop}>動きにはロゴのデザインに合わせて、手書きのエフェクトと流動性のある波のあしらいを加えました。後半では海で開催される夏の音楽祭をイメージし、オーディオウェブとネオンカラーを使用し、夏ならではの賑やかさを表現しています。</div>
+            </div>
+          </div>
+
+          <div className={surfaceCss.show_project_container}>
+            <div className={surfaceCss.show_project_contents_container} style={{width:'55%'}}>
+              <div className={surfaceCss.show_project_row}>
+                <img src={surface_1} className={surfaceCss.show_project_img_prop}></img>
+                <img src={surface_2} className={surfaceCss.show_project_img_prop}></img>
+              </div>
             </div>
           </div>
         
@@ -95,24 +100,6 @@ export default function SurfaceApporel(){
               <div className={surfaceCss.postscript_paragraph_prop}>君がそばにいるから、少しだけでも良くなると信じたい。</div>
               <div className={surfaceCss.postscript_paragraph_prop}>これからの日々は、もっと素敵なのもでありますように。</div>
               <div className={surfaceCss.postscript_paragraph_prop}>Everything’s gonna be alright.</div>
-            </div>
-          </div>
-          <div className={surfaceCss.especially_thanks_container}>
-            <div className={surfaceCss.especially_thanks_contents_container}>
-              <div className={surfaceCss.especially_thanks_title_prop}>Especially thanks</div>
-              <div className={surfaceCss.author_details_container}>
-                <div className={surfaceCss.especially_thanks_description_prop}>Lyrics and composing</div>
-                <div className={surfaceCss.especially_thanks_description_prop}>Willi</div>
-              </div>
-              <div className={surfaceCss.author_details_container}>
-                <div className={surfaceCss.especially_thanks_description_prop}>Beat</div>
-                <div className={surfaceCss.especially_thanks_description_prop}>Lee</div>
-              </div>
-              <div className={surfaceCss.author_details_container}>
-                <div className={surfaceCss.especially_thanks_description_prop}>Chorus arrangement</div>
-                <div className={surfaceCss.especially_thanks_description_prop}>501莉莉</div>
-              </div>
-              
             </div>
           </div>
         </div>
