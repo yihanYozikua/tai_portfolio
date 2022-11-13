@@ -13,6 +13,9 @@ import banner from '../static/img/works/cover_anotheries.png'
 import anotheries_1 from '../static/img/works/anotheries_1.png'
 import anotheries_2 from '../static/img/works/anotheries_2.png'
 import anotheries_3 from '../static/img/works/anotheries_3.png'
+import anotheries_photo_1 from '../static/img/works/anotheries_photo_1.png'
+import anotheries_photo_2 from '../static/img/works/anotheries_photo_2.png'
+import anotheries_photo_3 from '../static/img/works/anotheries_photo_3.png'
 
 export default function Anotheries() {
     return (
@@ -48,6 +51,22 @@ export default function Anotheries() {
 
                     <div className={anotheriesCss.middleImg}>
                         <img src={anotheries_1} alt="dinasours" className={anotheriesCss.all_dinasours_prop}></img>
+                    </div>
+
+
+                    <div className={anotheriesCss.paragraph_1_container}>
+                        <div className={anotheriesCss.paragraph_1_title}>目の前に広がる景色がそのまま</div>
+                        <div className={anotheriesCss.paragraph_1_description_container}>
+                            <div className={anotheriesCss.paragraph_1_description_prop}>サイトに掲載する写真は全て私たち自ら撮影したものになります。リアルさを伝えつつ、ちゃんとした綺麗な写真を撮ることを心掛けして、主体と周りのバランスを意識しながら、ストーリー性のある構図を考えたり、その場で感じた光や空気感をできるたげ残せるようにレタッチの力加減を調整したり、一枚一枚をしっかりこだわってきました。</div>
+                        </div>
+                    </div>
+
+                    <div className={anotheriesCss.photo_container}>
+                        <div className={anotheriesCss.photo_contents_container}>
+                            <img src={anotheries_photo_1} className={anotheriesCss.photo_prop}></img>
+                            <img src={anotheries_photo_2} className={anotheriesCss.photo_prop}></img>
+                            <img src={anotheries_photo_3} className={anotheriesCss.photo_prop}></img>
+                        </div>
                     </div>
 
 
