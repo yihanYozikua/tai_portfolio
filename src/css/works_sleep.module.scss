@@ -170,6 +170,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            line-height: 1.8rem;
             @include sm(){
               margin: 1rem 0;
               width: 80%;
