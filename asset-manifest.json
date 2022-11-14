@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tai_portfolio/static/css/main.4441477f.css",
-    "main.js": "/tai_portfolio/static/js/main.181349ed.js",
+    "main.css": "/tai_portfolio/static/css/main.e16efee2.css",
+    "main.js": "/tai_portfolio/static/js/main.b352b2d1.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/surface_stage.mp4": "/tai_portfolio/static/media/surface_stage.33ed018d1c035a5b6de1.mp4",
     "static/media/footer_bg.svg": "/tai_portfolio/static/media/footer_bg.6ca46102b5aff4778858.svg",
@@ -57,12 +57,12 @@
     "static/media/envelope.svg": "/tai_portfolio/static/media/envelope.b84036dd72c8508e2fce0e14bfb6b876.svg",
     "static/media/arrow_up_right.svg": "/tai_portfolio/static/media/arrow_up_right.554b974330100dbaca9bf273829f16ec.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
-    "main.4441477f.css.map": "/tai_portfolio/static/css/main.4441477f.css.map",
-    "main.181349ed.js.map": "/tai_portfolio/static/js/main.181349ed.js.map",
+    "main.e16efee2.css.map": "/tai_portfolio/static/css/main.e16efee2.css.map",
+    "main.b352b2d1.js.map": "/tai_portfolio/static/js/main.b352b2d1.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4441477f.css",
-    "static/js/main.181349ed.js"
+    "static/css/main.e16efee2.css",
+    "static/js/main.b352b2d1.js"
   ]
 }
