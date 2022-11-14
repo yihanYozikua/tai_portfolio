@@ -113,9 +113,11 @@ export default function Anotheries() {
                                 <div className={anotheriesCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                             </div>
                             <div className={anotheriesCss.postscript_paragraph_container}>
-                                <div className={anotheriesCss.postscript_paragraph_prop}>実は、留学に行く前の私は普段全然メッセージをしない人でした。</div>
-                                <div className={anotheriesCss.postscript_paragraph_prop}>直接会って話す方が自分の素性と合うと思っていました。しかし、留学の時に家族や友達と直接会えることができないため、コミュニケーションを取るには、ほぼメッセージ一択でした。</div>
-                                <div className={anotheriesCss.postscript_paragraph_prop}>元々口下手の私は、表情が見えない文字のやりとりがとても苦手で、「ちゃんと伝えているのかな」と、メッセージ送る度心配していました。その時、私に助けてくれてのはスタンプでした。表情豊かなスタンプをつけることで、より私の口調や表情が伝わるような気がします。</div>
+                                <div className={anotheriesCss.postscript_paragraph_prop}>どこに行っても、カメラを持っている私たちがいる。</div>
+                                <div className={anotheriesCss.postscript_paragraph_prop}>せっかくたくさん調べて行ってきた旅だから、せっかくたくさんの写真を撮っていた旅だから。</div>
+                                <div className={anotheriesCss.postscript_paragraph_prop}>なんか面白いことができないかなと。思わず手を動かしてみたら、今のAnotheriesが生まれた。</div>
+                                <div className={anotheriesCss.postscript_paragraph_prop}>ここで紹介したのは、人々が憧れる絶景ではない、でも、心を揺さぶる景色。</div>
+                                <div className={anotheriesCss.postscript_paragraph_prop}>私たちの旅先との出会い、かけがえのない思い出はあなたの素敵な旅のきっかけになりますように。</div>
                             </div>
                         </div>
                     <div className={anotheriesCss.especially_thanks_container}>
@@ -132,3 +134,9 @@ export default function Anotheries() {
         </PageLayout>
     )
 }
+
+
+
+
+
+
