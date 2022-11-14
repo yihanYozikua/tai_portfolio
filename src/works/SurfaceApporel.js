@@ -99,16 +99,16 @@ export default function SurfaceApporel(){
               <div className={surfaceCss.postscript_paragraph_title_prop}>制作の振り返り</div>
             </div>
             <div className={surfaceCss.postscript_paragraph_container}>
-              <div className={surfaceCss.postscript_paragraph_prop}>2020年3月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細い気持ちでおうち生活を過ごしました。そんな時に、大学の友人に「聞いてほしい曲があるだけど」と、この曲が送られました。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「あなたは一人じゃない」、どの歌詞も心に刺さる言葉ばかり。この曲に合う愛おしくて、暖かい雰囲気が伝わる動画を作ろうと、友達に提案した。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>中国語では「新年新希望」（新年に新しい希望が与える）という言葉があり、この曲を聞いてくれる人にこれからの日々に希望と期待を感じてもらいたくて公開は新年に合わせました。</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>SurfAce Apparelの動画を制作していた日々を思い返せば、ショーで登場されるモデルさんと服の雰囲気の確認しながら、音楽のを聞き倒してリズムを把握し、如何に服、音楽、動画を調和し、このステージを映えさせるのかをひたすら考えて、After Effectsで秒刻みの手作業をする時間でした。</div>
+              <br></br>
+              <div className={surfaceCss.postscript_paragraph_prop}>イベント当日、ステージはまだ暗いまま音楽が流され、</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>パッと後ろのクリーンに映された動画で会場を照らし、ショーが始まる。</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>なんていう幸せな光景だなあ、その時の感動はきっと一生忘れません。</div>
             </div>
             <br></br>
             <div className={surfaceCss.postscript_paragraph_container}>
-              <div className={surfaceCss.postscript_paragraph_prop}>本当は年が替わっても、生活が大した変わらないと知っていたんげど、</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>君がそばにいるから、少しだけでも良くなると信じたい。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>これからの日々は、もっと素敵なのもでありますように。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>Everything’s gonna be alright.</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>当時はとても誇らしく、納得した作品だと思いましたが、今見返してみると海と夏だけではなく、もっとブランドのコンセプトに沿って、サーフィンなどマリンスポーツの要素を入れたらいいではないかなど、いくつかの反省点がありました。</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>過去の作品を見ながら「こうすればよかった」「今ならこうもできる」など、ブラッシュアップのアイデアを次々と生み出す。これがものづくりの人たち、誰かも通る道でしょうか。</div>
             </div>
           </div>
         </div>
@@ -120,6 +120,13 @@ export default function SurfaceApporel(){
     </PageLayout>
   );
 }
+
+
+
+
+
+
+
 
 
 
