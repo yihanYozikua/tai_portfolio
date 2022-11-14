@@ -49,6 +49,7 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
       <div className={worksCss.project_img_and_name_container}>
         <Link className={worksCss.project_img_container_prop} style={{width: imgWidth, height: imgHeight}} to={url}>
           <img src={img} className={worksCss.project_img_prop} style={{width: imgWidth, height: imgHeight}} alt={name}></img>
+          <div className={worksCss.bg_white} style={{width: imgWidth, height: imgHeight}}></div>
         </Link>
         <div className={worksCss.project_name} style={{width: imgWidth}}>{ name }</div>
       </div>
@@ -120,7 +121,7 @@ export default function Works(){
                       url="/works/organ_voice"
                       />
 
-            <Projects name="Sleep well" type="Application design (School project)" 
+            <Projects name="SLEEP WELL" type="Application design (School project)" 
                       roles={["Direction, Project Management, Design"]} 
                       img={images[7]} imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_right}`}

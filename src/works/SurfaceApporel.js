@@ -16,6 +16,8 @@ import surface_4 from '../static/img/works/surface_4.png'
 import surface_5 from '../static/img/works/surface_5.png'
 import surface_6 from '../static/img/works/surface_6.png'
 import surface_7 from '../static/img/works/surface_7.png'
+// import surface_video_1 from '../static/img/videos/surface_stage.mp4'
+// import surface_video_2 from '../static/img/videos/main_comp.mov'
 import { images } from '../images.ts'
 
 export default function SurfaceApporel(){
@@ -67,8 +69,14 @@ export default function SurfaceApporel(){
         
           <div className={surfaceCss.animation_container}>
             <div className={surfaceCss.animation_contents_container}>
-              <img src={surface_5} className={surfaceCss.animation_prop}></img>
-              <img src={surface_6} className={surfaceCss.animation_prop}></img>
+              {/* <video controls muted className={surfaceCss.animation_prop}>
+                <source src={surface_video_2} type="video/mp4"/>
+              </video> */}
+              {/* <video controls muted className={surfaceCss.animation_prop}>
+                <source src={surface_video_1} type="video/mp4"/>
+              </video> */}
+              <img className={surfaceCss.animation_prop} src={surface_6}></img>
+              <img className={surfaceCss.animation_prop} src={surface_7}></img>
             </div>
           </div>
 

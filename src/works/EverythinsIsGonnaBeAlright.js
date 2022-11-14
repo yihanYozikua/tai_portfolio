@@ -10,6 +10,7 @@ import Sidebar from '../components/Sidebar'
 import banner from '../static/img/works/cover_everything.png'
 import everything_1_anim from '../static/img/works/everything_1_anim.png'
 import everythingCss from '../css/works_everything.module.scss'
+// import mv from '../static/img/videos/Everything_is_gonna_be_alright.mov'
 import { images } from '../images.ts'
 
 export default function EverythinsIsGonnaBeAlright(){
@@ -43,6 +44,9 @@ export default function EverythinsIsGonnaBeAlright(){
             </div>
             
             <div className={everythingCss.middleImg}>
+              {/* <video controls muted className={everythingCss.all_dinasours_prop}>
+                <source src={mv} type="video/mp4"/>
+              </video> */}
               <img src={everything_1_anim} alt="everything is gonna be alright" className={everythingCss.all_dinasours_prop}></img>
             </div>
 
