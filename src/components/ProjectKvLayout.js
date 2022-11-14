@@ -9,7 +9,7 @@ import BackTo from './BackTo';
 import projectKvCss from '../css/project_kv_layout.module.scss'
 import arrow from '../static/icons/arrow_up_right.svg'
 
-export default function ProjectKvLayout ({ kv_column_direction, name, type, roles, date, tool, bannerImg, url, urlTitle}){
+export default function ProjectKvLayout ({ kv_column_direction, name, type, roles, date, tool, bannerImg, url, urlTitle, urlNeed}){
   console.log(kv_column_direction);
   var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
   useEffect(() => {
@@ -19,6 +19,12 @@ export default function ProjectKvLayout ({ kv_column_direction, name, type, role
     });
   }, []);
 
+  useEffect(() => {
+    if(urlNeed == 'false'){
+      document.getElementsByClassName(`${projectKvCss.detailed_info_right_container}`)[0].style.display = 'none';
+    }
+  }, []);
+  
 
   return(
     <div className={projectKvCss.project_kv}>

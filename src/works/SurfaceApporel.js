@@ -30,7 +30,8 @@ export default function SurfaceApporel(){
             kv_column_direction="column"
             name="SurfAce Apparel"
             type="Runway animation" roles={["Project Management, Design , Animation"]} date="2018.10-2018.12" tool="After Effects, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
-            bannerImg={banner}/>
+            bannerImg={banner}
+            urlNeed='false'/>
 
           <div className={surfaceCss.paragraph_1_container}>
             <div className={surfaceCss.paragraph_1_title}>サーフィンをはじめ､マリンスポーツのための水着</div>
