@@ -67,10 +67,10 @@ export default function Qdinosaur(){
               </div>
               <div className={dinasourCss.design_intro_img_container}>
                 <div className={dinasourCss.design_intro_img_content_container}>
-                  <img src={dinasour_2} className={dinasourCss.design_intro_img_prop}></img>
+                  <img src={dinasour_4} className={dinasourCss.design_intro_img_prop}></img>
                 </div>
                 <div className={dinasourCss.design_intro_img_content_container}>
-                  <img src={dinasour_3} className={dinasourCss.design_intro_img_prop}></img>
+                  <img src={dinasour_5} className={dinasourCss.design_intro_img_prop}></img>
                 </div>
               </div>
             </div>
