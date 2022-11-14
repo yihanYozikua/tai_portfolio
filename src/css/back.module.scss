@@ -13,6 +13,9 @@
     border-radius: 100px;
     padding: .7rem 1rem;
     box-shadow:-3px 4px 100px -11px grey;
+    @include sm(){
+      box-shadow: -3px 4px 37px -10px grey;
+    }
   
     .arrow_prop{
       margin: 0 .3rem;
