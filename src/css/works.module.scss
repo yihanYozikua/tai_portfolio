@@ -71,20 +71,24 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
           overflow: hidden;
           display: flex;
 
-          &:hover{
-            opacity: .5;
-            transition: all .2s ease-in-out;
-          }
           @include sm(){
             transform: scale(.9);
           }
 
           .project_img_prop{
             transition: all .3s ease-in !important;
+            z-index: 5;
             &:hover{
               transition: all .3s ease-in !important;
+              opacity: .5;
               transform: scale(1.2);
             }
+          }
+          .bg_white{
+            position: absolute;
+            display: flex;
+            background-color: white;
+            z-index: 3;
           }
         }
 
