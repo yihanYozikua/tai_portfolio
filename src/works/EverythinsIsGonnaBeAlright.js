@@ -49,10 +49,11 @@ export default function EverythinsIsGonnaBeAlright(){
             </div>
             
             <div className={everythingCss.middleImg}>
+              <iframe src="https://drive.google.com/file/d/1ZUUAko2XSh4vspxxYAzZTHuM-ZOicqlz/preview" className={everythingCss.all_dinasours_prop} allow="autoplay"></iframe>
               {/* <video controls muted className={everythingCss.all_dinasours_prop}>
                 <source src={mv} type="video/mp4"/>
               </video> */}
-              <img src={everything_1_anim} alt="everything is gonna be alright" className={everythingCss.all_dinasours_prop}></img>
+              {/* <img src={everything_1_anim} alt="everything is gonna be alright" className={everythingCss.all_dinasours_prop}></img> */}
             </div>
 
             <div className={everythingCss.paragraph_2_container}>
