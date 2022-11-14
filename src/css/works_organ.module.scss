@@ -101,6 +101,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           width: 70%;
           line-height: 1.5rem;
           margin: 1.5rem 0;
+          font-family: $FONT_JP;
+          font-weight: 400;
+          font-size: .75rem;
+          color: $COLOR_BLACK;
           @include sm(){
             width: 100%;
           }
