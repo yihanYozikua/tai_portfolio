@@ -112,7 +112,7 @@ export default function Works(){
                       roles={["Project Management, Animation"]} 
                       img={images[5]} imgWidth="23.41rem" imgHeight="14.63rem" 
                       descriptionContainerHeight="14.63rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
-                      url="/works/surface_apporel"/>
+                      url="/works/surface_apparel"/>
 
             <Projects name="臓器の夜間問診" type="Exhibition (School project)" 
                       roles={["Direction, Project Management,","Design, Photography "]} 
