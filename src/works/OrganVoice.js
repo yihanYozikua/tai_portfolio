@@ -20,6 +20,8 @@ import organ_8 from '../static/img/works/organ_8.png'
 import { images } from '../images.ts'
 
 export default function OrganVoice(){
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
   return(
     <PageLayout>
       <section id={organCss.works_organ}>
@@ -105,8 +107,8 @@ export default function OrganVoice(){
               <div className={organCss.especially_thanks_container}>
                 <div className={organCss.especially_thanks_contents_container}>
                   <div className={organCss.especially_thanks_title_prop}>Especially thanks</div>
-                  <div className={organCss.especially_thanks_description_prop}>Engineering</div>
-                  <div className={organCss.especially_thanks_description_prop}>Hsiao, Yi-Han</div>
+                  <div className={organCss.especially_thanks_description_prop}>Illustration</div>
+                  <div className={organCss.especially_thanks_description_prop}>Willi</div>
                 </div>
               </div>
             </div>

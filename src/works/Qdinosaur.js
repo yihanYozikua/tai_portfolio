@@ -17,6 +17,8 @@ import dinasour_4 from '../static/img/works/dinasour_4.png'
 import dinasour_5 from '../static/img/works/dinasour_5.png'
 
 export default function Qdinosaur(){
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
   return(
     <PageLayout>
       <section id={dinasourCss.works_dinasour}>
@@ -29,7 +31,7 @@ export default function Qdinosaur(){
             bannerImg={banner}/>
         
           <div className={dinasourCss.paragraph_1_container}>
-            <div className={dinasourCss.paragraph_1_title}>Q dinosaur makes chat room a cozy place</div>
+            <div className={dinasourCss.paragraph_1_title} style={{fontFamily: FONT_EN}}>Q dinosaur makes chat room a cozy place</div>
             <div className={dinasourCss.paragraph_1_description_container}>
               <div className={dinasourCss.paragraph_1_description_prop}>「恐恐」は台湾語でちょっと天然バカで愛おしいと思われる人です。</div>
               <div className={dinasourCss.paragraph_1_description_prop}>「できない子ほど可愛い」という言葉のように､「恐恐」は豊かな表情と天然さが溢れるポーズで癒しの存在になり、メッセージのやりとりにスパイスを加える役割を果たします。</div>

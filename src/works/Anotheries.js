@@ -18,6 +18,8 @@ import anotheries_photo_2 from '../static/img/works/anotheries_photo_2.png'
 import anotheries_photo_3 from '../static/img/works/anotheries_photo_3.png'
 
 export default function Anotheries() {
+    const FONT_EN = "'Outfit', sans-serif";
+    const FONT_JP = "'BIZ UDGothic', sans-serif";
     return (
         <PageLayout>
             <section id={anotheriesCss.works_anotheries}>
@@ -34,14 +36,19 @@ export default function Anotheries() {
                     <div className={anotheriesCss.paragraph_1_container}>
                         <div className={anotheriesCss.paragraph_1_title}>思い出からもう一つの旅へ</div>
                         <div className={anotheriesCss.paragraph_1_description_container}>
-                            <div className={anotheriesCss.paragraph_1_description_prop}>AnotheriesはAnotherとmemoriesの意味と合わせた造語です。一つ一つ旅の思い出を集め、「思い出からもう一つの旅へ」をコンセプトに。</div>
+                            <div className={anotheriesCss.paragraph_1_description_prop}>
+                                <span style={{fontFamily: FONT_EN}}>Anotheries</span> は <span style={{fontFamily: FONT_EN}}>Another</span> と <span style={{fontFamily: FONT_EN}}>memories</span> の 意味と合わせた造語です。一つ一つ旅の思い出を集め、「思い出からもう一つの旅へ」をコンセプトに。</div>
                             <div className={anotheriesCss.paragraph_1_description_prop}>写真を通して私たちが旅先で見たもの・感じたことを共有し、共感を持ってもらい、人々と繋ぎたいと思います。</div>
                         </div>
                     </div>
 
 
                     <div className={anotheriesCss.paragraph_1_container}>
-                        <div className={anotheriesCss.paragraph_1_title}>旅行サイトほど情報満載ではないけど、SNS投稿より伝えたいことがある</div>
+                        <div className={anotheriesCss.paragraph_1_title}>
+                            旅行サイトほど情報満載ではないけど、
+                            <span style={{fontFamily: FONT_EN}}>SNS</span>
+                            投稿より伝えたいことがある
+                        </div>
                         <div className={anotheriesCss.paragraph_1_description_container}>
                             <div className={anotheriesCss.paragraph_1_description_prop}>綺麗な景色、美味しいご飯、友達との楽しいお時間、旅行に求めるもの、人それぞれ。</div>
                             <div className={anotheriesCss.paragraph_1_description_prop}>大事なのは、気持ちを共有すること。</div>
@@ -115,7 +122,9 @@ export default function Anotheries() {
                             <div className={anotheriesCss.postscript_paragraph_container}>
                                 <div className={anotheriesCss.postscript_paragraph_prop}>どこに行っても、カメラを持っている私たちがいる。</div>
                                 <div className={anotheriesCss.postscript_paragraph_prop}>せっかくたくさん調べて行ってきた旅だから、せっかくたくさんの写真を撮っていた旅だから。</div>
-                                <div className={anotheriesCss.postscript_paragraph_prop}>なんか面白いことができないかなと。思わず手を動かしてみたら、今のAnotheriesが生まれた。</div>
+                                <div className={anotheriesCss.postscript_paragraph_prop}>
+                                    なんか面白いことができないかなと。思わず手を動かしてみたら、今の <span style={{fontFamily: FONT_EN}}>Anotheries</span> が生まれた。
+                                </div>
                                 <div className={anotheriesCss.postscript_paragraph_prop}>ここで紹介したのは、人々が憧れる絶景ではない、でも、心を揺さぶる景色。</div>
                                 <div className={anotheriesCss.postscript_paragraph_prop}>私たちの旅先との出会い、かけがえのない思い出はあなたの素敵な旅のきっかけになりますように。</div>
                             </div>
