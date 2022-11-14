@@ -20,6 +20,10 @@ $COLOR_DESCRIPTION: #858A8B;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
+    @include sm(){
+      margin-top: 1.5rem;
+    }
 
     .info_container{
       display: flex;
