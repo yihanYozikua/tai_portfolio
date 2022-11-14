@@ -16,8 +16,8 @@ import surface_4 from '../static/img/works/surface_4.png'
 import surface_5 from '../static/img/works/surface_5.png'
 import surface_6 from '../static/img/works/surface_6.png'
 import surface_7 from '../static/img/works/surface_7.png'
-import surface_video_1 from '../static/img/videos/surface_stage.mp4'
-import surface_video_2 from '../static/img/videos/main_comp.mov'
+// import surface_video_1 from '../static/img/videos/surface_stage.mp4'
+// import surface_video_2 from '../static/img/videos/main_comp.mov'
 import { images } from '../images.ts'
 
 export default function SurfaceApporel(){
@@ -72,12 +72,14 @@ export default function SurfaceApporel(){
         
           <div className={surfaceCss.animation_container}>
             <div className={surfaceCss.animation_contents_container}>
-              <video controls muted className={surfaceCss.animation_prop}>
+              {/* <video controls muted className={surfaceCss.animation_prop}>
                 <source src={surface_video_2} type="video/mp4"/>
-              </video>
-              <video controls className={surfaceCss.animation_prop}>
+              </video> */}
+              <iframe src="https://drive.google.com/file/d/17pT-U0VNCCBptGg4N-o_ekGi-gaPokkb/preview" className={surfaceCss.animation_prop} allow="autoplay"></iframe>
+              <iframe src="https://drive.google.com/file/d/1h4Qm2O1Uxw_6Y3D9HfCEw4gMUALZznwu/preview" className={surfaceCss.animation_prop} width="640" height="480" allow="autoplay"></iframe>
+              {/* <video controls className={surfaceCss.animation_prop}>
                 <source src={surface_video_1} type="video/mp4"/>
-              </video>
+              </video> */}
               {/* <img className={surfaceCss.animation_prop} src={surface_6}></img> */}
               {/* <img className={surfaceCss.animation_prop} src={surface_7}></img> */}
             </div>
