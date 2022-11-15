@@ -110,6 +110,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           flex-direction: column;
           margin-top: .75rem;
           margin-bottom: .75rem;
+          text-align: justify;
         }
       }
 
@@ -187,7 +188,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             margin-bottom: 1.5rem;
             @include sm(){
               position: relative;
-              left: 25%;
+              left: 15%;
               overflow-x: hidden !important;
             }
             .about_self_intro_circle_contents_container{
@@ -244,7 +245,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             .about_self_intro_paragraph_name{
               // opacity: 0;
               width: 25.3rem;
-              font-size: .85rem;
+              font-size: 1.1rem;
               font-weight: 500;
               color: $COLOR_NAME;
               margin: 1rem 0;
@@ -256,10 +257,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               width: 25.3rem;
               display: flex;
               flex-direction: column;
-              font-size: .75rem;
+              font-size: 1rem;
               font-weight: 400;
               color: $COLOR_DESCRIPTION;
-              line-height: 1.7rem;
+              line-height: 2rem;
               @include sm(){
                 width: 85%;
               }
@@ -291,9 +292,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               }
   
               .about_experience_contents_prop{
-                font-size: .75rem;
+                font-size: 1rem;
                 color: $COLOR_EXPERIENCE_TEXT;
-                line-height: 1.4rem;
+                line-height: 1.8rem;
                 margin-left: 2.75rem;
                 opacity: 1;
                 transition: all 1s ease-in-out;
@@ -317,8 +318,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     height: 50vh;
     @include sm(){
       height: 30vh;
-      padding-top: 10vh;
       position: relative;
+      margin-top: 13vh;
     }
     
     .about_special_contents_prop_container{
@@ -418,6 +419,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             margin-left: 2rem;
             text-align: left;
             z-index: 1;
+            @include sm(){
+              margin-left: 1.3rem;
+            }
             &:nth-child(1){
               font-size: .75rem;
             }

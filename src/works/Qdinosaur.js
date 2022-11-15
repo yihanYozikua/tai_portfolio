@@ -17,6 +17,24 @@ import dinasour_4 from '../static/img/works/dinasour_4.png'
 import dinasour_5 from '../static/img/works/dinasour_5.png'
 
 export default function Qdinosaur(){
+  const [width, setWidth] = useState(window.innerWidth);
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+
+  useEffect(() => {
+    if(!isMobile){
+      document.getElementById('design_show_to_reverse').style.flexDirection = 'row-reverse';
+    }
+  }, []);
+
   const FONT_EN = "'Outfit', sans-serif";
   const FONT_JP = "'BIZ UDGothic', sans-serif";
   return(
@@ -27,7 +45,9 @@ export default function Qdinosaur(){
           <ProjectKvLayout 
             kv_column_direction="column-reverse"
             name="Q dinosaur 恐恐龍"
-            type="Line sticker (Side project)" roles={["Design (illustration)"]} date="2020.10-2020.12" tool="Adobe illustratior" url="https://store.line.me/stickershop/product/14468519" urlTitle="sticker page"
+            type="Line sticker (Side project)" roles={["Design (illustration)"]} date="2020.10-2020.12" tool="Adobe illustratior" 
+            url="https://store.line.me/stickershop/product/14468519" 
+            urlTitle="Sticker page"
             bannerImg={banner}/>
         
           <div className={dinasourCss.paragraph_1_container}>
@@ -43,7 +63,12 @@ export default function Qdinosaur(){
           </div>
 
           <div className={dinasourCss.design_intro_container}>
-            <div className={dinasourCss.design_intro_contents_container}>
+            <div id='design_show_to_reverse' className={dinasourCss.design_intro_contents_container}>
+              <div className={dinasourCss.design_intro_description_container}>
+                <div className={dinasourCss.design_intro_description_prop}>恐竜で決めた理由は？</div>
+                <div className={dinasourCss.design_intro_description_prop}>猫や犬など､可愛いらしい動物のスタンプ既にたくさんあります。</div>
+                <div className={dinasourCss.design_intro_description_prop}>印象に残るスタンプを作りたいと思って､あえてマイナーの恐竜を選びました。</div>
+              </div>
               <div className={dinasourCss.design_intro_img_container}>
                 <div className={dinasourCss.design_intro_img_content_container}>
                   <img src={dinasour_2} className={dinasourCss.design_intro_img_prop}></img>
@@ -52,11 +77,7 @@ export default function Qdinosaur(){
                   <img src={dinasour_3} className={dinasourCss.design_intro_img_prop}></img>
                 </div>
               </div>
-              <div className={dinasourCss.design_intro_description_container}>
-                <div className={dinasourCss.design_intro_description_prop}>恐竜で決めた理由は？</div>
-                <div className={dinasourCss.design_intro_description_prop}>猫や犬など､可愛いらしい動物のスタンプ既にたくさんあります。</div>
-                <div className={dinasourCss.design_intro_description_prop}>印象に残るスタンプを作りたいと思って､あえてマイナーの恐竜を選びました。</div>
-              </div>
+              
             </div>
           </div>
 

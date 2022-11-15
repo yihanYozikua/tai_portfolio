@@ -31,6 +31,9 @@ nav{
   font-family: $FONT_EN;
   z-index: 102;
   margin-left: 6vw;
+  @include sm(){
+    margin-left: 0;
+  }
 }
 
 .nav_prop{

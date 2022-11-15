@@ -45,6 +45,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         font-size: 1.5rem;
         color: $COLOR_PARA_TITLE;
         margin: 2rem 0;
+        line-height: 2.5rem;
 
       }
       .paragraph_1_description_container{
@@ -96,10 +97,16 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       justify-content: center;
       align-items: center;
       margin: 3rem 0;
+      @include sm(){
+        margin: 1rem 0;
+        height: 130%;
+      }
       .all_dinasours_prop{
         width: 75%;
+        object-fit: cover;
         @include sm(){
-          width: 90%;
+          width: 100%;
+          height: 37vh;
         }
       }
     }
