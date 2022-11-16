@@ -11,7 +11,12 @@ import PageLayout from './PageLayout';
 export default function WorksBackToAnchor ({prevUrl, nextUrl}){
   return(
     <div id={backAnchorCss.works_back_to_anchor_container}>
-      <div className={backAnchorCss.works_back_to_anchor_contents_container}>
+      <div className={backAnchorCss.works_back_to_anchor_contents_container}
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+        data-aos-duration="300"
+        data-aos-once="false">
         <Link to={prevUrl} className={backAnchorCss.prev_next_container}>
           <img src={arrow_left} className={backAnchorCss.img_prop}></img>
           <div className={backAnchorCss.text_prop}>Prev</div>

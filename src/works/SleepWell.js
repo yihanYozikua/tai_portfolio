@@ -34,7 +34,12 @@ export default function SleepWell(){
             url="http://tuip2t5.weebly.com/" urlTitle="Project site"
             bannerImg={banner}/>
           
-          <div className={sleepCss.paragraph_1_container}>
+          <div className={sleepCss.paragraph_1_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={sleepCss.paragraph_1_title}>今日からぐっすり寝よう</div>
             <div className={sleepCss.paragraph_1_description_container}>
               <div className={sleepCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>は名前の通り、より良い睡眠をとるためにお手伝いする睡眠管理アプリです。</div>
@@ -44,7 +49,12 @@ export default function SleepWell(){
 
 
           <div className={sleepCss.reason_container}>
-            <div className={sleepCss.reason_contents_container}>
+            <div className={sleepCss.reason_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
 
               <div className={sleepCss.reason_contents_each_container}>
                 <div className={sleepCss.reason_title_prop} style={{fontFamily: FONT_EN}}>Why</div>
@@ -76,7 +86,12 @@ export default function SleepWell(){
           </div>
 
           <div className={sleepCss.app_show_container}>
-            <div className={sleepCss.show_container}>
+            <div className={sleepCss.show_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={sleepCss.show_contents_container}>
                 <div className={sleepCss.show_img_container}>
                   <img className={sleepCss.show_img_prop} src={sleep_1} alt="sleep_app_1"></img>
@@ -91,7 +106,12 @@ export default function SleepWell(){
                 </div>
               </div>
             </div>
-            <div className={sleepCss.show_container}>
+            <div className={sleepCss.show_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={sleepCss.show_contents_container}>
                 <div className={sleepCss.show_img_container}>
                   <img className={sleepCss.show_img_prop} src={sleep_3} alt="sleep_app_1"></img>
@@ -105,7 +125,12 @@ export default function SleepWell(){
                 </div>
               </div>
             </div>
-            <div className={sleepCss.show_container}>
+            <div className={sleepCss.show_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={sleepCss.show_contents_container}>
                 <div className={sleepCss.show_img_container}>
                   <img className={sleepCss.show_img_prop} src={sleep_1} alt="sleep_app_5"></img>
@@ -122,14 +147,24 @@ export default function SleepWell(){
           </div>
 
           <div className={sleepCss.prototype_container}>
-            <div className={sleepCss.prototype_contents_container}>
+            <div className={sleepCss.prototype_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={sleepCss.prototype_title_prop}>Prototype</div>
               <iframe className={sleepCss.prototype_prop} width="375" height="667" src="https://xd.adobe.com/embed/c82ed3f5-d277-4d05-8ee5-67f4a493fe9e-9d7d/" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
 
           <div className={sleepCss.postscript_container}>
-            <div className={sleepCss.postscript_contents_container}>
+            <div className={sleepCss.postscript_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={sleepCss.postscript_paragraph_container}>
                 <div className={sleepCss.postscript_paragraph_title_prop}>制作の振り返り</div>
               </div>
@@ -139,7 +174,12 @@ export default function SleepWell(){
                 <div className={sleepCss.postscript_paragraph_prop}>健康と睡眠に意識を向けるつもりなのに、課題や趣味、つい他のことを優先して、睡眠の質が二の次になってしまいます。私たちが抱えた悩みをもとに、同年代の共通課題を洗い出し、それをテーマにして、「<span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>」が生まれた。もしいつかアプリが実際に構築されたら、ぜひ手にとってみてもらえば嬉しいです。</div>
               </div>
             </div>
-            <div className={sleepCss.especially_thanks_container}>
+            <div className={sleepCss.especially_thanks_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={sleepCss.especially_thanks_contents_container}>
                 <div className={sleepCss.especially_thanks_title_prop}>Especially thanks</div>
                 <div className={sleepCss.especially_thanks_description_prop}>Group member</div>

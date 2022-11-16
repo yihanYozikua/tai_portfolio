@@ -30,8 +30,18 @@ export default function EverythinsIsGonnaBeAlright(){
             urlNeed='false'/>
           
           <div className={everythingCss.paragraph_1_container}>
-            <div className={everythingCss.paragraph_1_title}>大丈夫、あなたは一人じゃない。</div>
-            <div className={everythingCss.paragraph_1_description_container}>
+            <div className={everythingCss.paragraph_1_title}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">大丈夫、あなたは一人じゃない。</div>
+            <div className={everythingCss.paragraph_1_description_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={everythingCss.paragraph_1_description_prop}>
                 「 <span style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</span> 」は世の中の人に勇気と支えを与えたいという想いで、
               </div>
@@ -49,7 +59,12 @@ export default function EverythinsIsGonnaBeAlright(){
               <div className={everythingCss.paragraph_1_description_prop}>新年の願いを込めて、この曲で伝えたい「<span style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</span>」</div>
             </div>
             
-            <div className={everythingCss.middleImg}>
+            <div className={everythingCss.middleImg}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <iframe src="https://drive.google.com/file/d/1ZUUAko2XSh4vspxxYAzZTHuM-ZOicqlz/preview" className={everythingCss.all_dinasours_prop} allow="autoplay"></iframe>
               {/* <video controls muted className={everythingCss.all_dinasours_prop}>
                 <source src={mv} type="video/mp4"/>
@@ -58,38 +73,48 @@ export default function EverythinsIsGonnaBeAlright(){
             </div>
 
             <div className={everythingCss.paragraph_2_container}>
-            <div className={everythingCss.paragraph_2_contents_container}>
-              <div className={everythingCss.lyrics_container}>
-                <div className={everythingCss.lyrics_contents_container}>
-                  <div className={everythingCss.lyrics_contents_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
-                  <div className={everythingCss.lyrics_contents_prop}>世界沒有你想的那麼壞</div>
-                  <div className={everythingCss.lyrics_contents_prop}>看著遠方的 neon light</div>
-                  <div className={everythingCss.lyrics_contents_prop}>靠我的肩讓你依賴</div>
-                  <div className={everythingCss.lyrics_contents_prop}>心裡的陰霾 不再存在</div>
+              <div className={everythingCss.paragraph_2_contents_container}
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-offset="0"
+                data-aos-duration="300"
+                data-aos-once="false">
+                <div className={everythingCss.lyrics_container}>
+                  <div className={everythingCss.lyrics_contents_container}>
+                    <div className={everythingCss.lyrics_contents_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
+                    <div className={everythingCss.lyrics_contents_prop}>世界沒有你想的那麼壞</div>
+                    <div className={everythingCss.lyrics_contents_prop}>看著遠方的 neon light</div>
+                    <div className={everythingCss.lyrics_contents_prop}>靠我的肩讓你依賴</div>
+                    <div className={everythingCss.lyrics_contents_prop}>心裡的陰霾 不再存在</div>
+                  </div>
+                  <div className={everythingCss.lyrics_contents_container}>
+                    <div className={everythingCss.lyrics_contents_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
+                    <div className={everythingCss.lyrics_contents_prop}>世界はあなたが思うほど悪くない</div>
+                    <div className={everythingCss.lyrics_contents_prop}>遠く光っているネオンラインを眺めて</div>
+                    <div className={everythingCss.lyrics_contents_prop}>肩に寄りかかってもいいよ、頼りにしてもいい</div>
+                    <div className={everythingCss.lyrics_contents_prop}>心に　二度と傷つかない</div>
+                  </div>
                 </div>
-                <div className={everythingCss.lyrics_contents_container}>
-                  <div className={everythingCss.lyrics_contents_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
-                  <div className={everythingCss.lyrics_contents_prop}>世界はあなたが思うほど悪くない</div>
-                  <div className={everythingCss.lyrics_contents_prop}>遠く光っているネオンラインを眺めて</div>
-                  <div className={everythingCss.lyrics_contents_prop}>肩に寄りかかってもいいよ、頼りにしてもいい</div>
-                  <div className={everythingCss.lyrics_contents_prop}>心に　二度と傷つかない</div>
+                <div className={everythingCss.paragraph_2_description_container}>
+                  <div className={everythingCss.paragraph_2_description_prop}>癒しのある雰囲気が伝わるため、イラストは淡色を使用し、枠線もなるべく細くしました。</div>
+                  <div className={everythingCss.paragraph_2_description_prop}>全体的に薄くなりすぎないように、テクスチャのあるシャドウで立体感を出してみました。</div>
+                  <div className={everythingCss.paragraph_2_description_prop}>動画に出てきた蛇と虫はを象徴します。</div>
+                  <div className={everythingCss.paragraph_2_description_prop}>私たちのそばにいる仲間はスプレーを持ち、パトロールし、脅威を解消してくれます。</div>
+                  <div className={everythingCss.paragraph_2_description_prop}>悩みが出ては消す、出ては消すを繰り返し、時間を重ねていくと、最終的に不安が一掃され、</div>
+                  <div className={everythingCss.paragraph_2_description_prop}>花もすくすく育てました。</div>
                 </div>
-              </div>
-              <div className={everythingCss.paragraph_2_description_container}>
-                <div className={everythingCss.paragraph_2_description_prop}>癒しのある雰囲気が伝わるため、イラストは淡色を使用し、枠線もなるべく細くしました。</div>
-                <div className={everythingCss.paragraph_2_description_prop}>全体的に薄くなりすぎないように、テクスチャのあるシャドウで立体感を出してみました。</div>
-                <div className={everythingCss.paragraph_2_description_prop}>動画に出てきた蛇と虫はを象徴します。</div>
-                <div className={everythingCss.paragraph_2_description_prop}>私たちのそばにいる仲間はスプレーを持ち、パトロールし、脅威を解消してくれます。</div>
-                <div className={everythingCss.paragraph_2_description_prop}>悩みが出ては消す、出ては消すを繰り返し、時間を重ねていくと、最終的に不安が一掃され、</div>
-                <div className={everythingCss.paragraph_2_description_prop}>花もすくすく育てました。</div>
               </div>
             </div>
-          </div>
           </div>
 
 
           <div className={everythingCss.postscript_container}>
-            <div className={everythingCss.postscript_contents_container}>
+            <div className={everythingCss.postscript_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={everythingCss.postscript_paragraph_container}>
                 <div className={everythingCss.postscript_paragraph_title_prop}>制作の振り返り</div>
               </div>
@@ -106,7 +131,12 @@ export default function EverythinsIsGonnaBeAlright(){
                 <div className={everythingCss.postscript_paragraph_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
               </div>
             </div>
-            <div className={everythingCss.especially_thanks_container}>
+            <div className={everythingCss.especially_thanks_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={everythingCss.especially_thanks_contents_container}>
                 <div className={everythingCss.especially_thanks_title_prop}>Especially thanks</div>
                 <div className={everythingCss.author_details_container}>

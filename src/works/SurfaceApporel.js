@@ -36,7 +36,12 @@ export default function SurfaceApporel(){
             bannerImg={banner}
             urlNeed='false'/>
 
-          <div className={surfaceCss.paragraph_1_container}>
+          <div className={surfaceCss.paragraph_1_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={surfaceCss.paragraph_1_title}>サーフィンをはじめ､マリンスポーツのための水着</div>
             <div className={surfaceCss.paragraph_1_description_container}>
               <div className={surfaceCss.paragraph_1_description_prop}>この作品は、<span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION IN TAIWAN 2018</span>で登場したスポーツ水着ブランド<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>のために作られたランウェイ動画です。</div>
@@ -45,7 +50,12 @@ export default function SurfaceApporel(){
           </div>
 
           <div className={surfaceCss.show_project_container}>
-            <div className={surfaceCss.show_project_contents_container}>
+            <div className={surfaceCss.show_project_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={surfaceCss.show_project_row}>
                 <img src={surface_3} className={surfaceCss.show_project_img_prop}></img>
                 <img src={surface_4} className={surfaceCss.show_project_img_prop}></img>
@@ -54,7 +64,12 @@ export default function SurfaceApporel(){
           </div>
 
 
-          <div className={surfaceCss.paragraph_1_container}>
+          <div className={surfaceCss.paragraph_1_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={surfaceCss.paragraph_1_title}>夏の風情が漂う動画に</div>
             <div className={surfaceCss.paragraph_1_description_container}>
               <div className={surfaceCss.paragraph_1_description_prop}>動画ではカラフルな水着を引き立てるために､爽やかな白と水色をメインカラーとして使用しました。海、青い空、砂浜の要素を入れることで夏を連想させ、そこで<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>の水着を着用しているモデルさんが登場し、背景の動画合わせたら、まるで夏の海辺が目の前に広がっているようなステージになりました。</div>
@@ -63,7 +78,12 @@ export default function SurfaceApporel(){
           </div>
 
           <div className={surfaceCss.show_project_container}>
-            <div className={surfaceCss.show_project_contents_container} style={{width:'55%'}}>
+            <div className={surfaceCss.show_project_contents_container} style={{width:'55%'}}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={surfaceCss.show_project_row}>
                 <img src={surface_1} className={surfaceCss.show_project_img_prop}></img>
                 <img src={surface_2} className={surfaceCss.show_project_img_prop}></img>
@@ -72,7 +92,12 @@ export default function SurfaceApporel(){
           </div>
         
           <div className={surfaceCss.animation_container}>
-            <div className={surfaceCss.animation_contents_container}>
+            <div className={surfaceCss.animation_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               {/* <video controls muted className={surfaceCss.animation_prop}>
                 <source src={surface_video_2} type="video/mp4"/>
               </video> */}
@@ -86,12 +111,22 @@ export default function SurfaceApporel(){
             </div>
           </div>
 
-          <div className={surfaceCss.present_img_container}>
+          <div className={surfaceCss.present_img_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <img src={surface_7} alt="SurfAce Present by" className={surfaceCss.pieces_prop}></img>
           </div>
 
           <div className={surfaceCss.present_by_text_container}>
-            <div className={surfaceCss.present_by_text_contents_container}>
+            <div className={surfaceCss.present_by_text_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={surfaceCss.present_by_text_prop}>
                 <span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION</span>は大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部学生が携わるのが特徴で、大阪をはじめ、海外合わせて15都市での開催実績があります。
               </div>
@@ -99,7 +134,12 @@ export default function SurfaceApporel(){
           </div>
 
           <div className={surfaceCss.postscript_container}>
-          <div className={surfaceCss.postscript_contents_container}>
+          <div className={surfaceCss.postscript_contents_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={surfaceCss.postscript_paragraph_container}>
               <div className={surfaceCss.postscript_paragraph_title_prop}>制作の振り返り</div>
             </div>

@@ -21,6 +21,7 @@ import anotheries_photo_3 from '../static/img/works/anotheries_photo_3.png'
 export default function Anotheries() {
     const FONT_EN = "'Outfit', sans-serif";
     const FONT_JP = "'BIZ UDGothic', sans-serif";
+
     window.addEventListener('load', AOS.refresh);
     return (
         <PageLayout>
@@ -35,7 +36,13 @@ export default function Anotheries() {
                         url="https://store.line.me/stickershop/product/14468519" urlTitle="Website"
                         bannerImg={banner} />
 
-                    <div className={anotheriesCss.paragraph_1_container}>
+                    <div className={anotheriesCss.paragraph_1_container}
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="100"
+                        data-aos-offset="0"
+                        data-aos-duration="300"
+                        data-aos-once="false">
                         <div className={anotheriesCss.paragraph_1_title}>思い出からもう一つの旅へ</div>
                         <div className={anotheriesCss.paragraph_1_description_container}>
                             <div className={anotheriesCss.paragraph_1_description_prop}>
@@ -48,9 +55,8 @@ export default function Anotheries() {
                     <div className={anotheriesCss.paragraph_1_container}
                         data-aos="fade-zoom-in"
                         data-aos-easing="ease-in-back"
-                        data-aos-delay="300"
                         data-aos-offset="0"
-                        data-aos-duration="1000"
+                        data-aos-duration="300"
                         data-aos-once="false">
                         <div className={anotheriesCss.paragraph_1_title}>
                             旅行サイトほど情報満載ではないけど、
@@ -64,19 +70,34 @@ export default function Anotheries() {
                         </div>
                     </div>
 
-                    <div className={anotheriesCss.middleImg}>
+                    <div className={anotheriesCss.middleImg}
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-offset="0"
+                        data-aos-duration="300"
+                        data-aos-once="false">
                         <img src={anotheries_1} alt="dinasours" className={anotheriesCss.all_dinasours_prop}></img>
                     </div>
 
 
-                    <div className={anotheriesCss.paragraph_1_container}>
+                    <div className={anotheriesCss.paragraph_1_container}
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-offset="0"
+                        data-aos-duration="300"
+                        data-aos-once="false">
                         <div className={anotheriesCss.paragraph_1_title}>目の前に広がる景色がそのまま</div>
                         <div className={anotheriesCss.paragraph_1_description_container}>
                             <div className={anotheriesCss.paragraph_1_description_prop}>サイトに掲載する写真は全て私たち自ら撮影したものになります。リアルさを伝えつつ、ちゃんとした綺麗な写真を撮ることを心掛けして、主体と周りのバランスを意識しながら、ストーリー性のある構図を考えたり、その場で感じた光や空気感をできるたげ残せるようにレタッチの力加減を調整したり、一枚一枚をしっかりこだわってきました。</div>
                         </div>
                     </div>
 
-                    <div className={anotheriesCss.photo_container}>
+                    <div className={anotheriesCss.photo_container}
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-offset="0"
+                        data-aos-duration="300"
+                        data-aos-once="false">
                         <div className={anotheriesCss.photo_contents_container}>
                             <img src={anotheries_photo_1} className={anotheriesCss.photo_prop}></img>
                             <img src={anotheries_photo_2} className={anotheriesCss.photo_prop}></img>
@@ -88,7 +109,12 @@ export default function Anotheries() {
                     <div className={anotheriesCss.paragraph_2_container}>
                         <div className={anotheriesCss.paragraph_2_contents_container}>
 
-                            <div className={anotheriesCss.paragraph_2_each_container}>
+                            <div className={anotheriesCss.paragraph_2_each_container}
+                                data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-offset="0"
+                                data-aos-duration="300"
+                                data-aos-once="false">
                                 <div className={anotheriesCss.paragraph_2_text_container}>
                                     <div className={anotheriesCss.paragraph_2_title}>写真を際立たせる余白感</div>
                                     <div className={anotheriesCss.paragraph_2_description}>
@@ -104,7 +130,12 @@ export default function Anotheries() {
                                 </div>
                             </div>
 
-                            <div className={anotheriesCss.paragraph_2_each_container}>
+                            <div className={anotheriesCss.paragraph_2_each_container}
+                                data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-offset="0"
+                                data-aos-duration="300"
+                                data-aos-once="false">
                                 <div className={anotheriesCss.paragraph_2_text_container}>
                                     <div className={anotheriesCss.paragraph_2_title}>さりげない遊び心</div>
                                     <div className={anotheriesCss.paragraph_2_description} style={{marginBottom: '2.5rem'}}>
@@ -122,7 +153,12 @@ export default function Anotheries() {
                         </div>
                     </div>
                     
-                    <div className={anotheriesCss.postscript_container}>
+                    <div className={anotheriesCss.postscript_container}
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-offset="0"
+                        data-aos-duration="300"
+                        data-aos-once="false">
                         <div className={anotheriesCss.postscript_contents_container}>
                             <div className={anotheriesCss.postscript_paragraph_container}>
                                 <div className={anotheriesCss.postscript_paragraph_title_prop}>制作の振り返り</div>
@@ -137,7 +173,12 @@ export default function Anotheries() {
                                 <div className={anotheriesCss.postscript_paragraph_prop}>私たちの旅先との出会い、かけがえのない思い出はあなたの素敵な旅のきっかけになりますように。</div>
                             </div>
                         </div>
-                    <div className={anotheriesCss.especially_thanks_container}>
+                    <div className={anotheriesCss.especially_thanks_container}
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-offset="0"
+                        data-aos-duration="300"
+                        data-aos-once="false">
                         <div className={anotheriesCss.especially_thanks_contents_container}>
                             <div className={anotheriesCss.especially_thanks_title_prop}>Especially thanks</div>
                             <div className={anotheriesCss.especially_thanks_description_prop}>Engineering</div>

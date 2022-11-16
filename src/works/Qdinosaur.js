@@ -52,7 +52,12 @@ export default function Qdinosaur(){
             urlTitle="Sticker page"
             bannerImg={banner}/>
         
-          <div className={dinasourCss.paragraph_1_container}>
+          <div className={dinasourCss.paragraph_1_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={dinasourCss.paragraph_1_title} style={{fontFamily: FONT_EN}}>Q dinosaur makes chat room a cozy place</div>
             <div className={dinasourCss.paragraph_1_description_container}>
               <div className={dinasourCss.paragraph_1_description_prop}>「恐恐」は台湾語でちょっと天然バカで愛おしいと思われる人です。</div>
@@ -60,11 +65,21 @@ export default function Qdinosaur(){
             </div>
           </div>
 
-          <div className={dinasourCss.all_dinasours_container}>
+          <div className={dinasourCss.all_dinasours_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <img src={dinasour_1} alt="dinasours" className={dinasourCss.all_dinasours_prop}></img>
           </div>
 
-          <div className={dinasourCss.design_intro_container}>
+          <div className={dinasourCss.design_intro_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div id='design_show_to_reverse' className={dinasourCss.design_intro_contents_container}>
               <div className={dinasourCss.design_intro_description_container}>
                 <div className={dinasourCss.design_intro_description_prop}>恐竜で決めた理由は？</div>
@@ -83,7 +98,12 @@ export default function Qdinosaur(){
             </div>
           </div>
 
-          <div className={dinasourCss.design_intro_container}>
+          <div className={dinasourCss.design_intro_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={dinasourCss.design_intro_contents_container}>
               <div className={dinasourCss.design_intro_description_container}>
                 <div className={dinasourCss.design_intro_description_prop}>おすすめポイントは？</div>
@@ -102,7 +122,12 @@ export default function Qdinosaur(){
           </div>
           
           <div className={dinasourCss.postscript_container}>
-            <div className={dinasourCss.postscript_contents_container}>
+            <div className={dinasourCss.postscript_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <div className={dinasourCss.postscript_paragraph_container}>
                 <div className={dinasourCss.postscript_paragraph_title_prop}>制作の振り返り</div>
               </div>
