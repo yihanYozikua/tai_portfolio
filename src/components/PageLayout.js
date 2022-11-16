@@ -10,7 +10,7 @@ import Footer from '../Footer'
 const PageLayout = ({ children }) => {
   return(
     <ParallaxProvider>
-      <Cursor />
+      {/* <Cursor /> */}
       {children}
       <Footer />
     </ParallaxProvider>
