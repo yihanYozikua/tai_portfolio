@@ -360,6 +360,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         height: 15rem;
         background-color: white;
         box-shadow:-10px 10px 50px -20px rgb(176, 176, 176);
+        transition: all .2s ease-in-out;
+        overflow: hidden;
         @include sm(){
           width: 88vw;
           height: 15rem;
@@ -368,6 +370,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: all .3s ease-in !important;
+          &:hover{
+            transition: all .3s ease-in !important;
+            opacity: .5;
+            transform: scale(1.05);
+          }
         }
       }
     }
