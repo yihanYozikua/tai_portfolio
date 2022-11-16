@@ -150,7 +150,7 @@ export default function Qdinosaur(){
         
           <WorksBackToAnchor 
             prevUrl="/works/anotheries"
-            nextUrl="/works/everything_is_gonna_be_alright"/>
+            nextUrl="/works/sleep_well"/>
         </div>
 
       </section>

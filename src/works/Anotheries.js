@@ -188,7 +188,7 @@ export default function Anotheries() {
                     </div>
 
                     <WorksBackToAnchor 
-                        prevUrl="/works/sleep_well"
+                        prevUrl="/works/surface_apparel"
                         nextUrl="/works/q_dinasour"/>
                 </div>
             </section>

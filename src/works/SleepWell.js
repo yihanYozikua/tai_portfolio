@@ -191,8 +191,8 @@ export default function SleepWell(){
 
         
           <WorksBackToAnchor 
-            prevUrl="/works/organ_voice"
-            nextUrl="/works/anotheries"/>
+            prevUrl="/works/q_dinasour"
+            nextUrl="/works/everything_is_gonna_be_alright"/>
         </div>
 
         
