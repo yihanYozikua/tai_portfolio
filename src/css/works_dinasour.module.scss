@@ -32,6 +32,9 @@ $COLOR_PARA: #282D2F;
       width: 75%;
       // height: 50vh;
       margin: 3rem 0;
+      @include sm(){
+        width: 85%;
+      }
 
       .paragraph_1_title{
         font-family: $FONT_JP;
@@ -69,6 +72,10 @@ $COLOR_PARA: #282D2F;
       }
     }
 
+
+    #design_show_to_reverse{
+
+    }
     .design_intro_container{
       width: 100%;
       display: flex;
@@ -79,11 +86,11 @@ $COLOR_PARA: #282D2F;
       @include sm(){
         margin: 0 0;
       }
-
+      
       .design_intro_contents_container{
         width: 75%;
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
         @include sm(){
           flex-direction: column;
           width: 100%;
@@ -153,7 +160,7 @@ $COLOR_PARA: #282D2F;
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
         @include sm(){
-          padding: 1rem 2.5rem;
+          padding: 3rem 2.5rem;
           width: 70%;
         }
 

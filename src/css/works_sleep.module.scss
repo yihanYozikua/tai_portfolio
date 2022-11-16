@@ -31,6 +31,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      @include sm(){
+        width: 85%;
+      }
 
       .paragraph_1_title{
         font-family: $FONT_JP;
@@ -122,6 +125,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         @include sm(){
           justify-content: center;
           align-items: center;
+          margin: 1rem 0;
         }
   
         .show_contents_container{
@@ -170,6 +174,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            line-height: 1.8rem;
             @include sm(){
               margin: 1rem 0;
               width: 80%;
@@ -211,15 +216,19 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         align-items: center;
 
         .prototype_title_prop{
-          width: 17.4rem;
+          width: 80vw;
           display: flex;
           justify-content: center;
           align-items: center;
+          font-size: 1.2rem;
+          @include sm(){
+            margin-bottom: 2rem;
+          }
 
         }
         .prototype_prop{
-          width: 17.4rem;
-          height: 32.5rem;
+          width: 80vw;
+          height: 80vh;
         }
       }
     }
@@ -246,7 +255,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
         @include sm(){
-          padding: 1rem 2.5rem;
+          padding: 3rem 2.5rem;
           width: 70%;
         }
 

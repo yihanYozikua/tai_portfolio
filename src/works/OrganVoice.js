@@ -20,17 +20,20 @@ import organ_8 from '../static/img/works/organ_8.png'
 import { images } from '../images.ts'
 
 export default function OrganVoice(){
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
   return(
     <PageLayout>
       <section id={organCss.works_organ}>
         <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
         <div className={organCss.kv_container}>
           <ProjectKvLayout 
-            kv_column_direction="column"
+            kv_column_direction="column-reverse"
             name="臓器の夜間問診"
             type="Exhibition (School project)" roles={["Direction, Project Management,", "Design, Photography "]} date="2018.10-2018.12" tool="Illustrator, Photoshop, Lightroom" 
             url="" urlTitle=""
-            bannerImg={banner}/>
+            bannerImg={banner}
+            urlNeed='false'/>
 
 
           <div className={organCss.paragraph_1_container}>
@@ -104,8 +107,8 @@ export default function OrganVoice(){
               <div className={organCss.especially_thanks_container}>
                 <div className={organCss.especially_thanks_contents_container}>
                   <div className={organCss.especially_thanks_title_prop}>Especially thanks</div>
-                  <div className={organCss.especially_thanks_description_prop}>Engineering</div>
-                  <div className={organCss.especially_thanks_description_prop}>Hsiao, Yi-Han</div>
+                  <div className={organCss.especially_thanks_description_prop}>Illustration</div>
+                  <div className={organCss.especially_thanks_description_prop}>Willi</div>
                 </div>
               </div>
             </div>

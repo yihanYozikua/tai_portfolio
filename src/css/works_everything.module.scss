@@ -33,13 +33,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       justify-content: center;
       align-items: flex-start;
       @include sm(){
-        width: 75%;
+        width: 85%;
       }
 
       .paragraph_1_title{
         font-family: $FONT_JP;
         font-weight: 400;
         font-size: 1.5rem;
+        line-height: 2rem;
         color: $COLOR_BLACK;
         margin: 2rem 0;
 
@@ -64,7 +65,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       align-items: center;
       margin: 2rem 0;
       .all_dinasours_prop{
-        width: 80%;
+        width: 30rem;
+        height: 30rem;
+        
+
         @include sm(){
           width: 100%;
         }
@@ -90,6 +94,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           margin: 2rem 0;
           @include sm(){
             flex-direction: column;
+            margin: 1rem 0;
           }
 
           .lyrics_contents_container{
@@ -112,6 +117,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         }
         .paragraph_2_description_container{
           margin: 2rem 0;
+          @include sm(){
+            margin: 1rem 0;
+          }
 
           .paragraph_2_description_prop{
             font-family: $FONT_JP;
@@ -133,7 +141,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       align-items: center;
       margin: 5rem 0;
       @include sm(){
-        margin: 5rem 0;
+        margin: 2rem 0;
       }
       
       .postscript_contents_container{
@@ -146,7 +154,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
         @include sm(){
-          padding: 1rem 2.5rem;
+          padding: 3rem 2.5rem;
           width: 70%;
         }
 

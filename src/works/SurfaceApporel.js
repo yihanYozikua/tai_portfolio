@@ -16,11 +16,13 @@ import surface_4 from '../static/img/works/surface_4.png'
 import surface_5 from '../static/img/works/surface_5.png'
 import surface_6 from '../static/img/works/surface_6.png'
 import surface_7 from '../static/img/works/surface_7.png'
-import surface_video_1 from '../static/img/videos/surface_stage.mp4'
+// import surface_video_1 from '../static/img/videos/surface_stage.mp4'
 // import surface_video_2 from '../static/img/videos/main_comp.mov'
 import { images } from '../images.ts'
 
 export default function SurfaceApporel(){
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
   return(
     <PageLayout>
       <section id={surfaceCss.works_surface}>
@@ -30,13 +32,14 @@ export default function SurfaceApporel(){
             kv_column_direction="column"
             name="SurfAce Apparel"
             type="Runway animation" roles={["Project Management, Design , Animation"]} date="2018.10-2018.12" tool="After Effects, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
-            bannerImg={banner}/>
+            bannerImg={banner}
+            urlNeed='false'/>
 
           <div className={surfaceCss.paragraph_1_container}>
             <div className={surfaceCss.paragraph_1_title}>サーフィンをはじめ､マリンスポーツのための水着</div>
             <div className={surfaceCss.paragraph_1_description_container}>
-              <div className={surfaceCss.paragraph_1_description_prop}>この作品は、CAMPUS COLLECTION IN TAIWAN 2018で登場したスポーツ水着ブランドSurfAce Apparelのために作られたランウェイ動画です。</div>
-              <div className={surfaceCss.paragraph_1_description_prop}>SurfAce Apparelは台湾とスイスのハーフの女の子が立ち上げたブランドで、Surf（サーフィン） + Ace（エース）という意味しています。全ての女の子がきれいな水着を着て、自信満々でサーフィンボードに立てるようにという願いを込めて、機能と安全性を重視しつつ、シンプルのシルエットに鮮やかでカラフルな色みと相まって、海で写真映えする水着が作っておられています。</div>
+              <div className={surfaceCss.paragraph_1_description_prop}>この作品は、<span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION IN TAIWAN 2018</span>で登場したスポーツ水着ブランド<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>のために作られたランウェイ動画です。</div>
+              <div className={surfaceCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>は台湾とスイスのハーフの女の子が立ち上げたブランドで、<span style={{fontFamily: FONT_EN}}>Surf</span>（サーフィン）<span style={{fontFamily: FONT_EN}}> + Ace</span>（エース）という意味しています。全ての女の子がきれいな水着を着て、自信満々でサーフィンボードに立てるようにという願いを込めて、機能と安全性を重視しつつ、シンプルのシルエットに鮮やかでカラフルな色みと相まって、海で写真映えする水着が作っておられています。</div>
             </div>
           </div>
 
@@ -53,7 +56,7 @@ export default function SurfaceApporel(){
           <div className={surfaceCss.paragraph_1_container}>
             <div className={surfaceCss.paragraph_1_title}>夏の風情が漂う動画に</div>
             <div className={surfaceCss.paragraph_1_description_container}>
-              <div className={surfaceCss.paragraph_1_description_prop}>動画ではカラフルな水着を引き立てるために､爽やかな白と水色をメインカラーとして使用しました。海、青い空、砂浜の要素を入れることで夏を連想させ、そこでSurfAce Apparelの水着を着用しているモデルさんが登場し、背景の動画合わせたら、まるで夏の海辺が目の前に広がっているようなステージになりました。</div>
+              <div className={surfaceCss.paragraph_1_description_prop}>動画ではカラフルな水着を引き立てるために､爽やかな白と水色をメインカラーとして使用しました。海、青い空、砂浜の要素を入れることで夏を連想させ、そこで<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>の水着を着用しているモデルさんが登場し、背景の動画合わせたら、まるで夏の海辺が目の前に広がっているようなステージになりました。</div>
               <div className={surfaceCss.paragraph_1_description_prop}>動きにはロゴのデザインに合わせて、手書きのエフェクトと流動性のある波のあしらいを加えました。後半では海で開催される夏の音楽祭をイメージし、オーディオウェブとネオンカラーを使用し、夏ならではの賑やかさを表現しています。</div>
             </div>
           </div>
@@ -72,10 +75,12 @@ export default function SurfaceApporel(){
               {/* <video controls muted className={surfaceCss.animation_prop}>
                 <source src={surface_video_2} type="video/mp4"/>
               </video> */}
-              <video controls className={surfaceCss.animation_prop}>
+              <iframe src="https://drive.google.com/file/d/17pT-U0VNCCBptGg4N-o_ekGi-gaPokkb/preview" className={surfaceCss.animation_prop} allow="autoplay"></iframe>
+              <iframe src="https://drive.google.com/file/d/1h4Qm2O1Uxw_6Y3D9HfCEw4gMUALZznwu/preview" className={surfaceCss.animation_prop} width="640" height="480" allow="autoplay"></iframe>
+              {/* <video controls className={surfaceCss.animation_prop}>
                 <source src={surface_video_1} type="video/mp4"/>
-              </video>
-              <img className={surfaceCss.animation_prop} src={surface_6}></img>
+              </video> */}
+              {/* <img className={surfaceCss.animation_prop} src={surface_6}></img> */}
               {/* <img className={surfaceCss.animation_prop} src={surface_7}></img> */}
             </div>
           </div>
@@ -87,7 +92,7 @@ export default function SurfaceApporel(){
           <div className={surfaceCss.present_by_text_container}>
             <div className={surfaceCss.present_by_text_contents_container}>
               <div className={surfaceCss.present_by_text_prop}>
-                CAMPUS COLLECTIONは大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部学生が携わるのが特徴で、大阪をはじめ、海外合わせて15都市での開催実績があります。
+                <span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION</span>は大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部学生が携わるのが特徴で、大阪をはじめ、海外合わせて15都市での開催実績があります。
               </div>
             </div>
           </div>
@@ -98,16 +103,16 @@ export default function SurfaceApporel(){
               <div className={surfaceCss.postscript_paragraph_title_prop}>制作の振り返り</div>
             </div>
             <div className={surfaceCss.postscript_paragraph_container}>
-              <div className={surfaceCss.postscript_paragraph_prop}>2020年3月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細い気持ちでおうち生活を過ごしました。そんな時に、大学の友人に「聞いてほしい曲があるだけど」と、この曲が送られました。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「あなたは一人じゃない」、どの歌詞も心に刺さる言葉ばかり。この曲に合う愛おしくて、暖かい雰囲気が伝わる動画を作ろうと、友達に提案した。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>中国語では「新年新希望」（新年に新しい希望が与える）という言葉があり、この曲を聞いてくれる人にこれからの日々に希望と期待を感じてもらいたくて公開は新年に合わせました。</div>
+              <div className={surfaceCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>の動画を制作していた日々を思い返せば、ショーで登場されるモデルさんと服の雰囲気の確認しながら、音楽のを聞き倒してリズムを把握し、如何に服、音楽、動画を調和し、このステージを映えさせるのかをひたすら考えて、<span style={{fontFamily: FONT_EN}}>After Effects</span>で秒刻みの手作業をする時間でした。</div>
+              <br></br>
+              <div className={surfaceCss.postscript_paragraph_prop}>イベント当日、ステージはまだ暗いまま音楽が流され、</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>パッと後ろのクリーンに映された動画で会場を照らし、ショーが始まる。</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>なんていう幸せな光景だなあ、その時の感動はきっと一生忘れません。</div>
             </div>
             <br></br>
             <div className={surfaceCss.postscript_paragraph_container}>
-              <div className={surfaceCss.postscript_paragraph_prop}>本当は年が替わっても、生活が大した変わらないと知っていたんげど、</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>君がそばにいるから、少しだけでも良くなると信じたい。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>これからの日々は、もっと素敵なのもでありますように。</div>
-              <div className={surfaceCss.postscript_paragraph_prop}>Everything’s gonna be alright.</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>当時はとても誇らしく、納得した作品だと思いましたが、今見返してみると海と夏だけではなく、もっとブランドのコンセプトに沿って、サーフィンなどマリンスポーツの要素を入れたらいいではないかなど、いくつかの反省点がありました。</div>
+              <div className={surfaceCss.postscript_paragraph_prop}>過去の作品を見ながら「こうすればよかった」「今ならこうもできる」など、ブラッシュアップのアイデアを次々と生み出す。これがものづくりの人たち、誰かも通る道でしょうか。</div>
             </div>
           </div>
         </div>
@@ -119,6 +124,13 @@ export default function SurfaceApporel(){
     </PageLayout>
   );
 }
+
+
+
+
+
+
+
 
 
 

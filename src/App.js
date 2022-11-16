@@ -50,7 +50,7 @@ const App = () => {
         <Route path="/works/organ_voice" element={<><OrganVoice /></>}></Route>
         <Route path="/works/q_dinasour" element={<><Qdinosaur /></>}></Route>
         <Route path="/works/sleep_well" element={<><SleepWell /></>}></Route>
-        <Route path="/works/surface_apporel" element={<><SurfaceApporel /></>}></Route>
+        <Route path="/works/surface_apparel" element={<><SurfaceApporel /></>}></Route>
         
       </Routes>
     </Router>
