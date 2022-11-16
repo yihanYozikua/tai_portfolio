@@ -28,7 +28,7 @@ export default function OrganVoice(){
         <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
         <div className={organCss.kv_container}>
           <ProjectKvLayout 
-            kv_column_direction="column"
+            kv_column_direction="column-reverse"
             name="臓器の夜間問診"
             type="Exhibition (School project)" roles={["Direction, Project Management,", "Design, Photography "]} date="2018.10-2018.12" tool="Illustrator, Photoshop, Lightroom" 
             url="" urlTitle=""

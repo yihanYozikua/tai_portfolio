@@ -46,7 +46,7 @@ export default function SleepWell(){
             <div className={sleepCss.reason_contents_container}>
 
               <div className={sleepCss.reason_contents_each_container}>
-                <div className={sleepCss.reason_title_prop}>Why</div>
+                <div className={sleepCss.reason_title_prop} style={{fontFamily: FONT_EN}}>Why</div>
                 <div className={sleepCss.reason_description_container}>
                   <div className={sleepCss.reason_description_prop}>◆睡眠障害により生活習慣病</div>
                   <div className={sleepCss.reason_description_prop}>◆若者の徹夜問題</div>
@@ -55,7 +55,7 @@ export default function SleepWell(){
               </div>
 
               <div className={sleepCss.reason_contents_each_container}>
-                <div className={sleepCss.reason_title_prop}>What</div>
+                <div className={sleepCss.reason_title_prop} style={{fontFamily: FONT_EN}}>What</div>
                 <div className={sleepCss.reason_description_container}>
                   <div className={sleepCss.reason_description_prop}>◆現行アプリの機能統合</div>
                   <div className={sleepCss.reason_description_prop}>◆データを通して睡眠の質を可視化</div>
@@ -64,7 +64,7 @@ export default function SleepWell(){
               </div>
               
               <div className={sleepCss.reason_contents_each_container}>
-                <div className={sleepCss.reason_title_prop}>Who</div>
+                <div className={sleepCss.reason_title_prop} style={{fontFamily: FONT_EN}}>Who</div>
                 <div className={sleepCss.reason_description_container}>
                   <div className={sleepCss.reason_description_prop}>◆<span style={{fontFamily: FONT_EN}}>15~25</span>歳学生</div>
                   <div className={sleepCss.reason_description_prop}>◆睡眠問題を抱える</div>

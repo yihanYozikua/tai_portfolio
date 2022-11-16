@@ -257,12 +257,13 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               width: 25.3rem;
               display: flex;
               flex-direction: column;
-              font-size: 1rem;
+              font-size: .85rem;
               font-weight: 400;
               color: $COLOR_DESCRIPTION;
               line-height: 2rem;
               @include sm(){
                 width: 85%;
+                font-size: 1rem;
               }
               .about_self_intro_paragraph_description_prop{
                 // opacity: 0;
@@ -292,12 +293,15 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               }
   
               .about_experience_contents_prop{
-                font-size: 1rem;
+                font-size: .85rem;
                 color: $COLOR_EXPERIENCE_TEXT;
                 line-height: 1.8rem;
                 margin-left: 2.75rem;
                 opacity: 1;
                 transition: all 1s ease-in-out;
+                @include sm(){
+                  font-size: 1rem;
+                }
               }
             }
           }
@@ -353,6 +357,11 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         @include sm(){
           width: 88vw;
           height: 15rem;
+        }
+        .special_contents_img_prop{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
     }

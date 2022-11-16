@@ -8,6 +8,7 @@ import PageLayout from './components/PageLayout'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import aboutCss from './css/about.module.scss'
+import specialContentsImg from './static/img/special_contents.png'
 import { images } from './images.ts'
 
 const BG_COLOR_1 = "#F6F6F6"
@@ -351,7 +352,9 @@ export default function About() {
         <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
           <div className={aboutCss.about_special_contents_prop_container}>
             <div className={aboutCss.about_special_contents_title}>Special content</div>
-            <a href="https://yihanyozikua.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}></a>
+            <a href="https://yihanyozikua.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
+              <img src={specialContentsImg} className={aboutCss.special_contents_img_prop}></img>
+            </a>
           </div>
         </div>
 
