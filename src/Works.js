@@ -91,40 +91,46 @@ export default function Works(){
           <div className={worksCss.works_contents_container}>
             <Projects name="Anotheries" type="Website (Side project)" 
                       roles={["Direction, Writing, Project Management,", "Design, Photography"]} 
-                      img={images[2]} imgWidth="29.27rem" imgHeight="18.29rem" 
+                      img={images[2]} 
+                      imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
                       url="/works/anotheries"/>
 
             <Projects name="Q dinosaur" type="Line sticker (Side project)" 
                       roles={["Design (illustration)"]} 
-                      img={images[3]} imgWidth="23.41rem" imgHeight="14.63rem" 
-                      descriptionContainerHeight="14.63rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
+                      img={images[3]}
+                      imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
                       url="/works/q_dinasour"/>
 
             <Projects name="Everything’s Gonna Be Alright" type="Music video" 
                       roles={["Design (illustration), Animation"]} 
-                      img={images[4]} imgWidth="29.27rem" imgHeight="18.29rem" 
+                      img={images[4]} 
+                      imgWidth="29.27rem" imgHeight="18.29rem" 
                       descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
                       url="/works/everything_is_gonna_be_alright"
-                      positionFinTuning="10rem"/>
+                      />
 
             <Projects name="SurfAce Apparel" type="Runway animation" 
                       roles={["Project Management, Animation"]} 
-                      img={images[5]} imgWidth="23.41rem" imgHeight="14.63rem" 
-                      descriptionContainerHeight="14.63rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
+                      img={images[5]} 
+                      imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
                       url="/works/surface_apparel"/>
 
             <Projects name="臓器の夜間問診" type="Exhibition (School project)" 
                       roles={["Direction, Project Management,","Design, Photography "]} 
-                      img={images[6]} imgWidth="29.27rem" imgHeight="18.29rem" 
-                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
+                      img={images[6]} 
+                      imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
                       url="/works/organ_voice"
                       />
 
             <Projects name="SLEEP WELL" type="Application design (School project)" 
                       roles={["Direction, Project Management, Design"]} 
-                      img={images[7]} imgWidth="29.27rem" imgHeight="18.29rem" 
-                      descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_right}`}
+                      img={images[7]} 
+                      imgWidth="29.27rem" imgHeight="18.29rem" 
+                      descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_left}`}
                       url="/works/sleep_well"/>
           </div>
         </div>
