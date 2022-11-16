@@ -7,6 +7,7 @@ import cursorCss from './css/cursor.module.scss'
 export default function Cursor(cursorTypes){
   useEffect(() => {
     console.log(`cursorTypes: ${cursorTypes.cursorTypes}`);
+
     var cursor = document.getElementById(`${cursorCss.cursor}`);
     var cursorinner = document.getElementById(`${cursorCss.cursor2}`);
     var a = document.querySelectorAll('a');
@@ -28,11 +29,12 @@ export default function Cursor(cursorTypes){
         el.addEventListener('mouseover', () => {
           cursor.classList.add(cursorClass);
           cursorinner.classList.add(cursorInnerClass);
-          // 👆
+          document.getElementById(`${cursorCss.cursor}`).innerHTML = '👆';
         });
         el.addEventListener('mouseleave', () => {
           cursor.classList.remove(cursorClass);
           cursorinner.classList.remove(cursorInnerClass);
+          document.getElementById(`${cursorCss.cursor}`).innerHTML = cursorTypes.cursorTypes;
         });
       });
     }
