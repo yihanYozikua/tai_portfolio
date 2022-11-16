@@ -130,7 +130,7 @@ export default function Works(){
                       roles={["Direction, Project Management, Design"]} 
                       img={images[7]} 
                       imgWidth="29.27rem" imgHeight="18.29rem" 
-                      descriptionContainerHeight="unset" descriptionPositonChoice={`${worksCss.project_container_left}`}
+                      descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
                       url="/works/sleep_well"/>
           </div>
         </div>
