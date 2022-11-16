@@ -29,6 +29,7 @@ export default function Cursor(cursorTypes){
         el.addEventListener('mouseover', () => {
           cursor.classList.add(cursorClass);
           cursorinner.classList.add(cursorInnerClass);
+          // 👆
         });
         el.addEventListener('mouseleave', () => {
           cursor.classList.remove(cursorClass);

@@ -159,7 +159,7 @@ export default function SurfaceApporel(){
         </div>
         
           <WorksBackToAnchor 
-              prevUrl="/works/q_dinasour"
+              prevUrl="/works/everything_is_gonna_be_alright"
               nextUrl="/works/organ_voice"/>
         </div>
         
