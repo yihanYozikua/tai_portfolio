@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState }  from 'react'
 import PropTypes from 'prop-types'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom'
+import AOS from 'aos';
+
 
 import Cursor from '../Cursor'
 import Footer from '../Footer'
@@ -30,8 +32,14 @@ export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, 
 
   return(
     <div className={projectKvCss.project_kv}>
-      <BackTo buttonName="Back to list" url="/works"/>
-      <div className={projectKvCss.kv_container} style={{flexDirection: kv_column_direction}}>
+      <BackTo buttonName="Back to list" url="/works" />
+      <div className={projectKvCss.kv_container} style={{flexDirection: kv_column_direction}}
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="100"
+        data-aos-offset="0"
+        data-aos-duration="500"
+        data-aos-once="false">
         <div className={projectKvCss.info_container}>
           <div className={projectKvCss.project_name_prop}>
             { nameEN }

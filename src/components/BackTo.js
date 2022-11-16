@@ -37,7 +37,13 @@ export default function BackTo({buttonName, url}){
 
 
   return(
-    <div className={backCss.back_btn_container}>
+    <div className={backCss.back_btn_container}
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="200"
+      data-aos-offset="0"
+      data-aos-duration="500"
+      data-aos-once="false">
       <Link className={backCss.back_btn_contents_container} to={url}>
         <img className={backCss.arrow_prop} src={arrow}></img>
         <div className={backCss.btn_prop} ref={button_name_ref}>{ buttonName }</div>

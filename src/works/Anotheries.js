@@ -21,6 +21,7 @@ import anotheries_photo_3 from '../static/img/works/anotheries_photo_3.png'
 export default function Anotheries() {
     const FONT_EN = "'Outfit', sans-serif";
     const FONT_JP = "'BIZ UDGothic', sans-serif";
+    window.addEventListener('load', AOS.refresh);
     return (
         <PageLayout>
             <section id={anotheriesCss.works_anotheries}>
@@ -44,7 +45,13 @@ export default function Anotheries() {
                     </div>
 
 
-                    <div className={anotheriesCss.paragraph_1_container}>
+                    <div className={anotheriesCss.paragraph_1_container}
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
                         <div className={anotheriesCss.paragraph_1_title}>
                             旅行サイトほど情報満載ではないけど、
                             <span style={{fontFamily: FONT_EN}}>SNS</span>

@@ -24,7 +24,7 @@ const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text, m
   }
 
   return(
-    <div id={sidebarCss.sidebar} style={{marginTop: marginTopSize}}>
+    <div id={sidebarCss.sidebar} style={{marginTop: marginTopSize}} >
       <div className={sidebarCss.title_prop}>{ sidebarTitle }</div>
       <div className={sidebarCss.emoji_container}>
         <div className={sidebarCss.emoji_prop}>{ emoji_1 }</div>

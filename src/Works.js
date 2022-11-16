@@ -46,9 +46,15 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
 
   return(
     <div className={descriptionPositonChoice} style={{marginLeft: positionFinTuning}}>
-      <div className={worksCss.project_img_and_name_container}>
-        <Link className={worksCss.project_img_container_prop} style={{width: imgWidth, height: imgHeight}} to={url}>
-          <img src={img} className={worksCss.project_img_prop} style={{width: imgWidth, height: imgHeight}} alt={name}></img>
+      <div className={worksCss.project_img_and_name_container} >
+        <Link className={worksCss.project_img_container_prop} style={{width: imgWidth, height: imgHeight}} to={url}
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="1000"
+          data-aos-once="false">
+          <img src={img} className={worksCss.project_img_prop} style={{width: imgWidth, height: imgHeight}} alt={name} ></img>
           <div className={worksCss.bg_white} style={{width: imgWidth, height: imgHeight}}></div>
         </Link>
         <div className={worksCss.project_name} style={{width: imgWidth}}>{ name }</div>
