@@ -49,11 +49,17 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
         @extend .project_container;
         flex-direction: row;
         margin-left: 10vw;
+        @include sm(){
+          margin-left: 0;
+        }
       }
       .project_container_left{
         @extend .project_container;
         flex-direction: row-reverse;
         margin-right: 10vw;
+        @include sm(){
+          margin-right: 0;
+        }
       }
       .project_container_bottom{
         @extend .project_container;

@@ -28,7 +28,7 @@ export default function Anotheries() {
                 <div className={anotheriesCss.kv_container}>
                     <ProjectKvLayout
                         kv_column_direction="column"
-                        name="Anotheries"
+                        nameEN="Anotheries"
                         type="Media site (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2020.10-2020.12" 
                         tool="Adobe illustratior" 
                         url="https://store.line.me/stickershop/product/14468519" urlTitle="Website"

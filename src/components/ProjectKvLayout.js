@@ -9,7 +9,7 @@ import BackTo from './BackTo';
 import projectKvCss from '../css/project_kv_layout.module.scss'
 import arrow from '../static/icons/arrow_up_right.svg'
 
-export default function ProjectKvLayout ({ kv_column_direction, name, type, roles, date, tool, bannerImg, url, urlTitle, urlNeed}){
+export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, url, urlTitle, urlNeed}){
   console.log(kv_column_direction);
   var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
   useEffect(() => {
@@ -25,13 +25,19 @@ export default function ProjectKvLayout ({ kv_column_direction, name, type, role
     }
   }, []);
   
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   return(
     <div className={projectKvCss.project_kv}>
       <BackTo buttonName="Back to list" url="/works"/>
       <div className={projectKvCss.kv_container} style={{flexDirection: kv_column_direction}}>
         <div className={projectKvCss.info_container}>
-          <div className={projectKvCss.project_name_prop}>{ name }</div>
+          <div className={projectKvCss.project_name_prop}>
+            { nameEN }
+            <span style={{fontFamily: FONT_JP}}>{ nameJP }</span>
+            <span style={{fontFamily: FONT_JP, fontSize: '1.5rem'}}>&nbsp;{ nameCN }</span>
+          </div>
           <div className={projectKvCss.detailed_info_container}>
             <div className={projectKvCss.detailed_info_left_container}>
               <div className={projectKvCss.detailed_info_each_container}>
@@ -64,7 +70,7 @@ export default function ProjectKvLayout ({ kv_column_direction, name, type, role
         </div>
         
         <div className={projectKvCss.banner_container}>
-          <img src={ bannerImg } alt={ name } className={projectKvCss.banner_img_prop}></img>
+          <img src={ bannerImg } alt={ nameEN + nameCN + nameJP } className={projectKvCss.banner_img_prop}></img>
         </div>
       </div>
     </div>
