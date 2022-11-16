@@ -75,8 +75,8 @@ export default function SurfaceApporel(){
               {/* <video controls muted className={surfaceCss.animation_prop}>
                 <source src={surface_video_2} type="video/mp4"/>
               </video> */}
-              <iframe src="https://drive.google.com/file/d/17pT-U0VNCCBptGg4N-o_ekGi-gaPokkb/preview" className={surfaceCss.animation_prop} allow="autoplay"></iframe>
-              <iframe src="https://drive.google.com/file/d/1h4Qm2O1Uxw_6Y3D9HfCEw4gMUALZznwu/preview" className={surfaceCss.animation_prop} width="640" height="480" allow="autoplay"></iframe>
+              <iframe src="https://user-images.githubusercontent.com/33646045/202056275-4011be68-167b-4817-966b-af920270d4f0.mp4" className={surfaceCss.animation_prop} ></iframe>
+              <iframe src="" className={surfaceCss.animation_prop} ></iframe>
               {/* <video controls className={surfaceCss.animation_prop}>
                 <source src={surface_video_1} type="video/mp4"/>
               </video> */}
