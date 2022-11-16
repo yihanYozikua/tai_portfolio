@@ -1,0 +1,49 @@
+@import './main.scss';
+
+
+#works_back_to_anchor_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .works_back_to_anchor_contents_container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .prev_next_container{
+      display: flex;
+      flex-direction: row;
+
+      .img_prop{
+      }
+      .text_prop{
+        color: $COLOR_BLACK;
+        transition: all .3s ease-in-out;
+        margin: 0 1rem;
+        font-family: $FONT_EN;
+        font-weight: 400;
+        font-size: 1rem;
+        &:hover{
+          color: $COLOR_GRAY;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+    .back_to_list_prop{
+      color: $COLOR_BLACK;
+      text-decoration: underline;
+      transition: all .3s ease-in-out;
+      font-family: $FONT_EN;
+      font-weight: 400;
+      font-size: .9rem;
+      &:hover{
+        color: $COLOR_GRAY;
+        transition: all .3s ease-in-out;
+      }
+
+    }
+  }
+}

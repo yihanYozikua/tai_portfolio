@@ -5,6 +5,7 @@ import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
 import ProjectKvLayout from '../components/ProjectKvLayout'
+import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import banner from '../static/img/works/cover_organ.png'
@@ -114,6 +115,10 @@ export default function OrganVoice(){
             </div>
 
           </div>
+        
+          <WorksBackToAnchor 
+            prevUrl="/works/everything_is_gonna_be_alright"
+            nextUrl="/works/surface_apparel"/>
         </div>
         
       </section>

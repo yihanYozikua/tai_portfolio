@@ -5,6 +5,7 @@ import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
 import ProjectKvLayout from '../components/ProjectKvLayout'
+import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import dinasourCss from '../css/works_dinasour.module.scss'
@@ -120,6 +121,10 @@ export default function Qdinosaur(){
             </div>
             
           </div>
+        
+          <WorksBackToAnchor 
+            prevUrl="/works/anotheries"
+            nextUrl="/works/everything_is_gonna_be_alright"/>
         </div>
 
       </section>

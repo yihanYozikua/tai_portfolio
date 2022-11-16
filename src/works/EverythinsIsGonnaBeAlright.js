@@ -5,6 +5,7 @@ import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
 import ProjectKvLayout from '../components/ProjectKvLayout'
+import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import banner from '../static/img/works/cover_everything.png'
@@ -126,6 +127,10 @@ export default function EverythinsIsGonnaBeAlright(){
           </div>
 
           
+        
+          <WorksBackToAnchor 
+            prevUrl="/works/q_dinasour"
+            nextUrl="/works/organ_voice"/>
         </div>
         
       </section>

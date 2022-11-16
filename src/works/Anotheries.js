@@ -5,6 +5,7 @@ import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
 import ProjectKvLayout from '../components/ProjectKvLayout'
+import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import anotheriesCss from '../css/works_anotheries.module.scss'
@@ -138,6 +139,9 @@ export default function Anotheries() {
                     </div>
                     </div>
 
+                    <WorksBackToAnchor 
+                        prevUrl="/works/sleep_well"
+                        nextUrl="/works/q_dinasour"/>
                 </div>
             </section>
         </PageLayout>

@@ -46,11 +46,11 @@ const App = () => {
         <Route path="/works" element={<><Works /></>}></Route>
         <Route path="/hashtags" element={<><Hashtags /></>}></Route>
         <Route path="/works/anotheries" element={<><WorksAnotheries /></>}></Route>
+        <Route path="/works/q_dinasour" element={<><Qdinosaur /></>}></Route>
         <Route path="/works/everything_is_gonna_be_alright" element={<><WorksEverythingIsGonnaBeAlright /></>}></Route>
         <Route path="/works/organ_voice" element={<><OrganVoice /></>}></Route>
-        <Route path="/works/q_dinasour" element={<><Qdinosaur /></>}></Route>
-        <Route path="/works/sleep_well" element={<><SleepWell /></>}></Route>
         <Route path="/works/surface_apparel" element={<><SurfaceApporel /></>}></Route>
+        <Route path="/works/sleep_well" element={<><SleepWell /></>}></Route>
         
       </Routes>
     </Router>
