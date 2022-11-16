@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar'
 import worksCss from './css/works.module.scss'
 import { images } from './images.ts'
 
+
 const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionContainerHeight, descriptionPositonChoice, url, positionFinTuning}) => {
   var roleRender = roles.map(item => <div className={worksCss.description_contents_prop}>{item}</div>);
   const description_ref = useRef(null);

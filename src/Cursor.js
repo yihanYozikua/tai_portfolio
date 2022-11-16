@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import cursorCss from './css/cursor.module.scss'
 
 export default function Cursor(cursorTypes){
-  let cursorContent = '';
   useEffect(() => {
     console.log(`cursorTypes: ${cursorTypes.cursorTypes}`);
     var cursor = document.getElementById(`${cursorCss.cursor}`);
@@ -40,8 +39,6 @@ export default function Cursor(cursorTypes){
     cursorLeftRight(a, `${cursorCss.cursor_hover_a}`, `${cursorCss.cursorinnerhover_a}`);
     cursor.classList.add(`${cursorCss.cursor}`);
     cursorinner.classList.add(`${cursorCss.cursor2}`);
-
-    
 
   }, [cursorTypes.cursorTypes])
 
