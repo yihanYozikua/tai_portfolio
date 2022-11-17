@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
+import Footer from '../Footer'
 import Loading from '../components/Loading';
 import ProjectKvLayout from '../components/ProjectKvLayout'
 import WorksBackToAnchor from '../components/WorksBackToAnchor'
@@ -191,6 +192,7 @@ export default function OrganVoice(){
           </div>
           
         </section>
+        <Footer />
       </PageLayout>
     </>
   );

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 
 import Loading from './Loading'
-import Cursor from '../Cursor'
 import Footer from '../Footer'
 
 
@@ -13,7 +12,7 @@ const PageLayout = ({children}) => {
   return(
     <ParallaxProvider>
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </ParallaxProvider>
   )
 };

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from './components/PageLayout'
+import Footer from './Footer'
 import Loading from './components/Loading';
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
@@ -161,6 +162,7 @@ export default function Works(){
             </div>
           </div>
         </section>
+        <Footer/>
       </PageLayout>
     </>
     

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
+import Footer from '../Footer'
 import Loading from '../components/Loading';
 import ProjectKvLayout from '../components/ProjectKvLayout'
 import WorksBackToAnchor from '../components/WorksBackToAnchor'
@@ -37,7 +38,7 @@ export default function Anotheries() {
                             nameEN="Anotheries"
                             type="Media site (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2020.10-2020.12" 
                             tool="Adobe illustratior" 
-                            url="https://store.line.me/stickershop/product/14468519" urlTitle="Website"
+                            url="https://yihanyozikua.github.io/untitled/" urlTitle="Website"
                             bannerImg={banner} />
 
                         <div className={anotheriesCss.paragraph_1_container}
@@ -196,6 +197,7 @@ export default function Anotheries() {
                             nextUrl="/works/q_dinasour"/>
                     </div>
                 </section>
+                <Footer />
             </PageLayout>
         </>
     )

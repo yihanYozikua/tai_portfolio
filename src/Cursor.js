@@ -30,11 +30,13 @@ export default function Cursor(cursorTypes){
           cursor.classList.add(cursorClass);
           cursorinner.classList.add(cursorInnerClass);
           document.getElementById(`${cursorCss.cursor}`).innerHTML = '👆';
+          document.getElementById(`${cursorCss.cursor}`).style.marginTop = '.5rem';
         });
         el.addEventListener('mouseleave', () => {
           cursor.classList.remove(cursorClass);
           cursorinner.classList.remove(cursorInnerClass);
           document.getElementById(`${cursorCss.cursor}`).innerHTML = cursorTypes.cursorTypes;
+          document.getElementById(`${cursorCss.cursor}`).style.marginTop = '0';
         });
       });
     }

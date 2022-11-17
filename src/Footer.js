@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 
 import { images } from './images.ts'
+import Cursor from './Cursor'
 import footerCss from './css/footer.module.scss'
 import mailIcon from './static/icons/envelope.svg'
 import mediumIcon from './static/icons/medium.svg'
