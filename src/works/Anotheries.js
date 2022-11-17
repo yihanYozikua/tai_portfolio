@@ -11,12 +11,12 @@ import Sidebar from '../components/Sidebar'
 import anotheriesCss from '../css/works_anotheries.module.scss'
 import { images } from '../images.ts'
 import banner from '../static/img/works/covers/anotheries.png'
-import anotheries_1 from '../static/img/works/anotheries_1.png'
-import anotheries_2 from '../static/img/works/anotheries_2.png'
-import anotheries_3 from '../static/img/works/anotheries_3.png'
-import anotheries_photo_1 from '../static/img/works/anotheries_photo_1.png'
-import anotheries_photo_2 from '../static/img/works/anotheries_photo_2.png'
-import anotheries_photo_3 from '../static/img/works/anotheries_photo_3.png'
+import anotheries_1 from '../static/img/works/anotheries/anotheries_01.png'
+import anotheries_2 from '../static/img/works/anotheries/anotheries_top.png'
+import anotheries_3 from '../static/img/works/anotheries/anotheries_contact_form.png'
+import anotheries_photo_1 from '../static/img/works/anotheries/anotheries_02.png'
+import anotheries_photo_2 from '../static/img/works/anotheries/anotheries_03.png'
+import anotheries_photo_3 from '../static/img/works/anotheries/anotheries_04.png'
 
 export default function Anotheries() {
     const FONT_EN = "'Outfit', sans-serif";
