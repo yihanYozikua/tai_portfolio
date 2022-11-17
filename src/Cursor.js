@@ -24,7 +24,7 @@ export default function Cursor(cursorTypes){
       cursorinner.style.top = y + 'px';
     });
 
-    function cursorLeftRight(els, cursorClass, cursorInnerClass){
+    function cursorAction(els, cursorClass, cursorInnerClass){
       [].forEach.call(els, function(el){
         el.addEventListener('mouseover', () => {
           cursor.classList.add(cursorClass);
@@ -38,7 +38,7 @@ export default function Cursor(cursorTypes){
         });
       });
     }
-    cursorLeftRight(a, `${cursorCss.cursor_hover_a}`, `${cursorCss.cursorinnerhover_a}`);
+    cursorAction(a, `${cursorCss.cursor_hover_a}`, `${cursorCss.cursorinnerhover_a}`);
     cursor.classList.add(`${cursorCss.cursor}`);
     cursorinner.classList.add(`${cursorCss.cursor2}`);
 
