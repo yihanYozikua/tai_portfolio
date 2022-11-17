@@ -64,6 +64,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       justify-content: flex-start;
       align-items: center;
       margin: 2rem 0;
+      .middleImg_content_container{
+        overflow: hidden;
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
       .all_dinasours_prop{
         width: 30rem;
         height: 30rem;

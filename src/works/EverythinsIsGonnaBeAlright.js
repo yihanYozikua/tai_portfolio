@@ -14,7 +14,7 @@ import banner from '../static/img/works/covers/everything.png'
 import everything_1_anim from '../static/img/works/everything_1_anim.png'
 import everythingCss from '../css/works_everything.module.scss'
 import loadingCss from '../css/loading.module.scss'
-// import mv from '../static/img/videos/Everything_is_gonna_be_alright.mov'
+import mv from '../static/img/videos/everything_igtv.mov'
 import { images } from '../images.ts'
 
 export default function EverythinsIsGonnaBeAlright(){
@@ -70,11 +70,9 @@ export default function EverythinsIsGonnaBeAlright(){
                 data-aos-offset="0"
                 data-aos-duration="300"
                 data-aos-once="false">
-                <iframe src="https://drive.google.com/file/d/1ZUUAko2XSh4vspxxYAzZTHuM-ZOicqlz/preview" className={everythingCss.all_dinasours_prop} allow="autoplay"></iframe>
-                {/* <video controls muted className={everythingCss.all_dinasours_prop}>
+                <video controls className={everythingCss.all_dinasours_prop}>
                   <source src={mv} type="video/mp4"/>
-                </video> */}
-                {/* <img src={everything_1_anim} alt="everything is gonna be alright" className={everythingCss.all_dinasours_prop}></img> */}
+                </video>
               </div>
 
               <div className={everythingCss.paragraph_2_container}>
