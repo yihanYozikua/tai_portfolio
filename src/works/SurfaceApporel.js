@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
+import Cursor from '../Cursor';
 import Footer from '../Footer'
 import Loading from '../components/Loading';
 import ProjectKvLayout from '../components/ProjectKvLayout'
@@ -35,6 +36,7 @@ export default function SurfaceApporel(){
 
   return(
     <>
+      <Cursor cursorTypes='👀' />
       <Loading bg_style={loadingCss.loader_works} />
       <PageLayout>
         <section id={surfaceCss.works_surface}>
@@ -109,12 +111,18 @@ export default function SurfaceApporel(){
                 data-aos-offset="0"
                 data-aos-duration="300"
                 data-aos-once="false">
-                <video controls className={surfaceCss.animation_prop}>
-                  <source src={surface_video_2} type="video/mp4"/>
-                </video>
-                <video controls className={surfaceCss.animation_prop}>
-                  <source src={surface_video_1} type="video/mp4"/>
-                </video>
+                <div className={surfaceCss.video_container}>
+                  <div className={surfaceCss.title_prop}>Full animation</div>
+                  <video controls className={surfaceCss.animation_prop}>
+                    <source src={surface_video_2} type="video/mp4"/>
+                  </video>
+                </div>
+                <div className={surfaceCss.video_container}>
+                  <div className={surfaceCss.title_prop}>SurfAce Apparel stage</div>
+                  <video controls className={surfaceCss.animation_prop}>
+                    <source src={surface_video_1} type="video/mp4"/>
+                  </video>
+                </div>
               </div>
             </div>
 

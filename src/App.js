@@ -37,21 +37,19 @@ const App = () => {
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
   });
-  const CURSOR_VIEW = '👀';
-  const CURSOR_HOVER = '👋';
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<><Cursor cursorTypes={CURSOR_VIEW} /><About /></>}></Route>
-        <Route path="/about" element={<><Cursor cursorTypes={CURSOR_VIEW} /><About /></>}></Route>
-        <Route path="/works" element={<><Cursor cursorTypes={CURSOR_HOVER} /><Works /></>}></Route>
-        <Route path="/works/anotheries" element={<><Cursor cursorTypes={CURSOR_VIEW} /><WorksAnotheries /></>}></Route>
-        <Route path="/works/q_dinasour" element={<><Cursor cursorTypes={CURSOR_VIEW} /><Qdinosaur /></>}></Route>
-        <Route path="/works/everything_is_gonna_be_alright" element={<><Cursor cursorTypes={CURSOR_VIEW} /><WorksEverythingIsGonnaBeAlright /></>}></Route>
-        <Route path="/works/organ_voice" element={<><Cursor cursorTypes={CURSOR_VIEW} /><OrganVoice /></>}></Route>
-        <Route path="/works/surface_apparel" element={<><Cursor cursorTypes={CURSOR_VIEW} /><SurfaceApporel /></>}></Route>
-        <Route path="/works/sleep_well" element={<><Cursor cursorTypes={CURSOR_VIEW} /><SleepWell /></>}></Route>
+        <Route path="/" element={<><About /></>}></Route>
+        <Route path="/about" element={<><About /></>}></Route>
+        <Route path="/works" element={<><Works /></>}></Route>
+        <Route path="/works/anotheries" element={<><WorksAnotheries /></>}></Route>
+        <Route path="/works/q_dinasour" element={<><Qdinosaur /></>}></Route>
+        <Route path="/works/everything_is_gonna_be_alright" element={<><WorksEverythingIsGonnaBeAlright /></>}></Route>
+        <Route path="/works/organ_voice" element={<><OrganVoice /></>}></Route>
+        <Route path="/works/surface_apparel" element={<><SurfaceApporel /></>}></Route>
+        <Route path="/works/sleep_well" element={<><SleepWell /></>}></Route>
         
       </Routes>
     </Router>

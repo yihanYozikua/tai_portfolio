@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
+import Cursor from '../Cursor';
 import Footer from '../Footer'
 import Loading from '../components/Loading';
 import ProjectKvLayout from '../components/ProjectKvLayout'
@@ -35,6 +36,7 @@ export default function Anotheries() {
     window.addEventListener('load', AOS.refresh);
     return (
         <>
+            <Cursor cursorTypes='👀' />
             <Loading bg_style={loadingCss.loader_works} />
             <PageLayout>
                 <section id={anotheriesCss.works_anotheries}>

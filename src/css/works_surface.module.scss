@@ -75,17 +75,31 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         @include sm(){
           width: 100%;
         }
-
-        .animation_prop{
-          width: 40rem;
-          height: 22.5rem;
+        .video_container{
+          width: 100%;
           margin: 2rem 0;
-          @include sm(){
+
+          .title_prop{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-family: $FONT_EN;
+            font-weight: 300;
+          }
+          .animation_prop{
             width: 100%;
-            // width: 40rem;
+            height: auto;
             margin: 1rem 0;
+            @include sm(){
+              width: 100%;
+              // width: 40rem;
+              margin: 1rem 0;
+            }
           }
         }
+
+        
       }
     }
 

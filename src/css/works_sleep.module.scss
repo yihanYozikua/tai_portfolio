@@ -221,6 +221,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           justify-content: center;
           align-items: center;
           font-size: 1.2rem;
+          font-family: $FONT_EN;
+          font-weight: 300;
+          
           @include sm(){
             margin-bottom: 2rem;
           }

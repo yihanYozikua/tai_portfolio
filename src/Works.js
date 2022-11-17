@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from './components/PageLayout'
+import Cursor from './Cursor';
 import Footer from './Footer'
 import Loading from './components/Loading';
 import Navbar from './components/Navbar'
@@ -98,6 +99,7 @@ export default function Works(){
 
   return(
     <>
+      <Cursor cursorTypes='👋' />
       <Loading bg_style={loadingCss.loader_works} />
       <PageLayout>
         <section id={worksCss.works}>

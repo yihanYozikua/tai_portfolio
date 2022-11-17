@@ -7,6 +7,8 @@ import cursorCss from './css/cursor.module.scss'
 export default function Cursor(cursorTypes){
   useEffect(() => {
     console.log(`cursorTypes: ${cursorTypes.cursorTypes}`);
+    document.getElementById(`${cursorCss.cursor}`).innerHTML = cursorTypes.cursorTypes;
+    document.getElementById(`${cursorCss.cursor}`).style.marginTop = '0';
 
     var cursor = document.getElementById(`${cursorCss.cursor}`);
     var cursorinner = document.getElementById(`${cursorCss.cursor2}`);

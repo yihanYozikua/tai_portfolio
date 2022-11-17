@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import AOS from 'aos'
 
 import PageLayout from '../components/PageLayout'
+import Cursor from '../Cursor';
 import Footer from '../Footer'
 import Loading from '../components/Loading';
 import ProjectKvLayout from '../components/ProjectKvLayout'
@@ -36,6 +37,7 @@ export default function OrganVoice(){
 
   return(
     <>
+      <Cursor cursorTypes='👀' />
       <Loading bg_style={loadingCss.loader_works} />
       <PageLayout>
         <section id={organCss.works_organ}>
@@ -197,7 +199,7 @@ export default function OrganVoice(){
             <WorksBackToAnchor 
               prevUrl="/works/everything_is_gonna_be_alright"
               nextUrl="/works/surface_apparel"
-              containerWidth="60%"/>
+              containerWidth="0%"/>
           </div>
           
         </section>

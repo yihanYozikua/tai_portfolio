@@ -5,6 +5,7 @@ import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import AOS from 'aos'
 
 import PageLayout from './components/PageLayout'
+import Cursor from './Cursor';
 import Footer from './Footer'
 import Loading from './components/Loading';
 import Navbar from './components/Navbar'
@@ -301,6 +302,7 @@ export default function About() {
   
   return(
     <>
+      <Cursor cursorTypes='👀' />
       <Loading bg_style={loadingCss.loader_about} />
       <PageLayout>
         <section id={aboutCss.about}>
