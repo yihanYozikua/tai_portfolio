@@ -13,6 +13,7 @@ import aboutCss from './css/about.module.scss'
 import loadingCss from './css/loading.module.scss'
 import specialContentsImg from './static/img/special_contents.png'
 import { images } from './images.ts'
+import avatarImg from './static/img/about_avatar.svg'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -347,7 +348,7 @@ export default function About() {
           <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
             <Parallax className={aboutCss.about_self_intro_contents}>
               <div className={aboutCss.about_self_intro_contents_container}>
-                <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
+                <img src={avatarImg} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
                 <div className={aboutCss.about_self_intro_right_section_container}>
                   <div className={aboutCss.about_self_intro_circle_container}>
                     <div className={aboutCss.about_self_intro_circle_contents_container}>
