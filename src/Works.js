@@ -100,6 +100,14 @@ export default function Works(){
         <Navbar />
         <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" style={{top: '0'}} />
 
+        <div className={worksCss.declaration_container}>
+          <div className={worksCss.declaration_contents_container}>
+            <div className={worksCss.text_prop}>制作会社で勤めた時の実績は契約の関係で掲載できないため、</div>
+            <div className={worksCss.text_prop}>対面にてご説明させていただけたら幸いです。</div>
+          </div>
+        </div>
+        
+
         <div className={worksCss.works_container}>
           <div className={worksCss.works_contents_container}>
             <Projects name="Anotheries" type="Website (Side project)" 
