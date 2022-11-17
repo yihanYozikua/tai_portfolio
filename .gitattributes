@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-.mov filter=lfs diff=lfs merge=lfs -text
-=======
 src/static/img/videos/* filter=lfs diff=lfs merge=lfs -text
 src/static/img/videos/** filter=lfs diff=lfs merge=lfs -text
 src/static/img/videos/surface_stage.mp4 filter=lfs diff=lfs merge=lfs -text
 src/static/img/videos/main_comp.mov filter=lfs diff=lfs merge=lfs -text
->>>>>>> master
