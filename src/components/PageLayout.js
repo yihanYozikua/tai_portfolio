@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 
+import Loading from './Loading'
 import Cursor from '../Cursor'
 import Footer from '../Footer'
 
 
 
-const PageLayout = ({ children }) => {
+const PageLayout = ({ children}) => {
   return(
     <ParallaxProvider>
+      <Loading />
       {/* <Cursor /> */}
       {children}
       <Footer />
@@ -22,7 +24,7 @@ PageLayout.propTypes = {
 }
 
 PageLayout.defaultProps = {
-  bgColor: '',
+  // bgColor: '',
 };
 
 export default PageLayout;
