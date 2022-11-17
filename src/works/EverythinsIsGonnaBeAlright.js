@@ -20,6 +20,14 @@ import { images } from '../images.ts'
 export default function EverythinsIsGonnaBeAlright(){
   const FONT_EN = "'Outfit', sans-serif";
   const FONT_JP = "'BIZ UDGothic', sans-serif";
+  
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  }, []);
+
   return(
     <>
       <Loading bg_style={loadingCss.loader_works} />

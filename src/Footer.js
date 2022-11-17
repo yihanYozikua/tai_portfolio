@@ -67,8 +67,7 @@ export default function Footer(){
       <div className={footerCss.upper_section_container}>
         <div className={footerCss.upper_left_container}>
           <span className={footerCss.upper_left_contents_prop}>After design</span>
-          <span className={footerCss.upper_left_contents_prop}>All will be</span>
-          <span className={footerCss.upper_left_contents_prop}>beautiful days</span>
+          <span className={footerCss.upper_left_contents_prop}>All the best days</span>
         </div>
         <div className={footerCss.upper_right_container}>
           <Link to="/about"><div className={footerCss.upper_right_contents_prop_about}>About</div></Link>

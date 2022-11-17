@@ -10,7 +10,7 @@ const Loading = ({bg_style, onloadComponent}) => {
     document.getElementById(`${bg_style}`).style.opacity = 0;
     document.getElementById(`${bg_style}`).style.zIndex = -10;
     document.getElementById(`${bg_style}`).style.transition = 'all .3s ease-in-out';
-  }, 2000);
+  }, 1000);
   
 
   return(
