@@ -45,7 +45,7 @@ export default function Anotheries() {
                         <ProjectKvLayout
                             kv_column_direction="column"
                             nameEN="Anotheries"
-                            type="Media site (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2020.10-2020.12" 
+                            type="Media site (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2022.08-now" 
                             tool="Adobe illustratior" 
                             url="https://yihanyozikua.github.io/untitled/" urlTitle="Website"
                             bannerImg={banner} />
