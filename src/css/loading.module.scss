@@ -1,27 +1,86 @@
 @import './main.scss';
+$ABOUT_BG_COLOR_1:#F6F6F6;
+$ABOUT_BG_COLOR_2:#DBDEE0;
+$ABOUT_BG_COLOR: linear-gradient(135deg, $ABOUT_BG_COLOR_1, $ABOUT_BG_COLOR_2);
+$WORKS_BG_COLOR_1: #D7D2CC;
+$WORKS_BG_COLOR_2: #304352;
+$WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
 
-#loader{
+#loader_about{
   position: absolute;
-  top: calc(50% - 4em);
-  left: calc(50% - 4em);
-  width: 6em;
-  height: 6em;
-  border: 1.1em solid rgba(0, 0, 0, 0.2);
-  border-left: 1.1em solid #000000;
-  border-radius: 50%;
-  animation: load8 1.1s infinite linear;
-  transition: opacity 0.3s;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+
+  &::before, &::after{
+    content: '';
+    position: fixed;
+    z-index: 1000;
+  }
+  &::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $ABOUT_BG_COLOR;
+  }
+  &::after{
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    opacity: 0.4;
+    background: black;
+    animation: loaderAnim 0.7s linear infinite alternate forwards;
+    z-index: 1100;
+  }
+}
+
+#loader_works{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+
+  &::before, &::after{
+    content: '';
+    position: fixed;
+    z-index: 1000;
+  }
+  &::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $WORK_BG;
+  }
+  &::after{
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    opacity: 0.4;
+    background: black;
+    animation: loaderAnim 0.7s linear infinite alternate forwards;
+    z-index: 1100;
+  }
 }
 
 .loader_hide {
   opacity: 0;
 }
 
-@keyframes load8 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
 }

@@ -8,11 +8,10 @@ import Footer from '../Footer'
 
 
 
-const PageLayout = ({ children}) => {
+const PageLayout = ({children}) => {
+
   return(
     <ParallaxProvider>
-      <Loading />
-      {/* <Cursor /> */}
       {children}
       <Footer />
     </ParallaxProvider>

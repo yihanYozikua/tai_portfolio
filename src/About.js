@@ -5,9 +5,11 @@ import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import AOS from 'aos'
 
 import PageLayout from './components/PageLayout'
+import Loading from './components/Loading';
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import aboutCss from './css/about.module.scss'
+import loadingCss from './css/loading.module.scss'
 import specialContentsImg from './static/img/special_contents.png'
 import { images } from './images.ts'
 
@@ -79,6 +81,30 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
+  // const [loading, setLoading] = useState(true)
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 6000)
+  // }, [])
+  // Set loading state to true initially
+  const [loading, setLoading] = useState(true);
+      
+  useEffect(() => {
+    // Loading function to load data or 
+    // fake it using setTimeout;
+    const loadData = async () => {
+
+      // Wait for two second
+      await new Promise((r) => setTimeout(r, 2000));
+
+      // Toggle loading state
+      setLoading((loading) => !loading);
+    };
+      
+    loadData();
+  }, [])
+
+
+  
   const kv_ref = useRef(null);
   const kv_ref_1 = useRef(null);
   const kv_ref_2 = useRef(null);
@@ -270,107 +296,112 @@ export default function About() {
     }
   }, [])
 
-
+  
   return(
-    <PageLayout>
-      <section id={aboutCss.about}>
-        <Navbar />
+    <>
+      <Loading bg_style={loadingCss.loader_about} />
+      <PageLayout>
+        <section id={aboutCss.about}>
+          <Navbar />
 
-        <div className={aboutCss.about_kv_container}>
-          <div className={aboutCss.about_kv_contents} ref={kv_ref}>
-            <div className={aboutCss.about_kv_contents_prop_container}>
-              <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_1}>All in design</span>
-              <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_2}>All for our beautiful days</span>
+          <div className={aboutCss.about_kv_container}>
+            <div className={aboutCss.about_kv_contents} ref={kv_ref}>
+              <div className={aboutCss.about_kv_contents_prop_container}>
+                <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_1}>All in design</span>
+                <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_2}>All for our beautiful days</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
 
-        <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
-          <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
-            <div className={aboutCss.about_paragragh_contents_sec_container}>
-              <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
-                <span ref={paragraph_anchor_ref}>見慣れていたあのポスターも、</span>
-                <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
-                <span>ビジュアルなもの、そうではないもの、</span>
-                <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
-                <span>実は全てがデザインされています。</span>
-              </div>
-              <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
-                <span>だから私は信じている。</span>
-                <span>物事をデザインするのによって私たちの生活をよくすること。</span>
-              </div>
-              <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
-                <span>だから私は考えている。</span>
-                <span>何かブラッシュアップできることがないか。</span>
-                <span>何か新しいアイデアを生み出せるではないか。</span>
-              </div>
-              <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
-                <span>今までも、これからも、もっとよくなる明日のために、</span>
-                <span>精度と質の高いデザインを追求し続けます。</span>
-              </div>
-            </div>
-            
-          </Parallax>
-        </div>
-
-        <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
-          <Parallax className={aboutCss.about_self_intro_contents}>
-            <div className={aboutCss.about_self_intro_contents_container}>
-              <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
-              <div className={aboutCss.about_self_intro_right_section_container}>
-                <div className={aboutCss.about_self_intro_circle_container}>
-                  <div className={aboutCss.about_self_intro_circle_contents_container}>
-                    <div className={aboutCss.about_self_intro_circle_prop} ref={circle_1_ref}>日本語</div>
-                    <div className={aboutCss.about_self_intro_circle_prop} ref={circle_2_ref}>ものづくり</div>
-                  </div>
+          <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
+            <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
+              <div className={aboutCss.about_paragragh_contents_sec_container}>
+                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
+                  <span ref={paragraph_anchor_ref}>見慣れていたあのポスターも、</span>
+                  <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
+                  <span>ビジュアルなもの、そうではないもの、</span>
+                  <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
+                  <span>実は全てがデザインされています。</span>
                 </div>
-                <div className={aboutCss.about_self_intro_paragraph_container}>
-                  <div className={aboutCss.about_self_intro_paragraph_name} ref={name_ref}>Tai, Tung-En</div>
-                  <div className={aboutCss.about_self_intro_paragraph_description_container}>
-                    <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
-                    <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
-                    <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
-                    <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
-                  </div>
+                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
+                  <span>だから私は信じている。</span>
+                  <span>物事をデザインするのによって私たちの生活をよくすること。</span>
                 </div>
-                <div className={aboutCss.about_underline_div}></div>
-                <div className={aboutCss.about_experience_container} ref={exp_ref}>
-                  <Exp year="2021年" exp_contents={["ウィルスタイル株式会社","Webデザイナー新卒入社"]}/>
-                  <Exp year="2020年" exp_contents={["台湾国立政治大学卒業","広告学科､デジタルコンテンツ学位取得"]}/>
-                  <Exp year="2019年" exp_contents={["京都同志社大学留学"]}/>
-                  <Exp year="2018年" exp_contents={["出版社 ハースト・コーポレーション", "コスモポリタン編集部インターンシップ", <br></br>, "メディア代理店 dentsu X","企画部インターンシップ"]}/>
-                  <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
+                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
+                  <span>だから私は考えている。</span>
+                  <span>何かブラッシュアップできることがないか。</span>
+                  <span>何か新しいアイデアを生み出せるではないか。</span>
+                </div>
+                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
+                  <span>今までも、これからも、もっとよくなる明日のために、</span>
+                  <span>精度と質の高いデザインを追求し続けます。</span>
                 </div>
               </div>
               
-            </div>
-          </Parallax>
-        </div>
-
-        <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
-          <div className={aboutCss.about_special_contents_prop_container}>
-            <div className={aboutCss.about_special_contents_title}>Special content - #hashtags of me</div>
-            <a href="https://yihanyozikua.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
-              <img src={specialContentsImg} className={aboutCss.special_contents_img_prop}></img>
-            </a>
+            </Parallax>
           </div>
-        </div>
 
-        <div className={aboutCss.about_view_my_works_button_container} ref={view_works_ref}>
-          <div className={aboutCss.about_view_my_works_button_prop_container}>
-            <Link to="/works" className={aboutCss.about_view_my_works_button_link}>
-              <div className={aboutCss.about_view_my_works_contents}>
-                <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_1_ref}>Hover to</div>
-                <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_2_ref}>View my Works</div>
+          <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
+            <Parallax className={aboutCss.about_self_intro_contents}>
+              <div className={aboutCss.about_self_intro_contents_container}>
+                <img src={images[0]} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
+                <div className={aboutCss.about_self_intro_right_section_container}>
+                  <div className={aboutCss.about_self_intro_circle_container}>
+                    <div className={aboutCss.about_self_intro_circle_contents_container}>
+                      <div className={aboutCss.about_self_intro_circle_prop} ref={circle_1_ref}>日本語</div>
+                      <div className={aboutCss.about_self_intro_circle_prop} ref={circle_2_ref}>ものづくり</div>
+                    </div>
+                  </div>
+                  <div className={aboutCss.about_self_intro_paragraph_container}>
+                    <div className={aboutCss.about_self_intro_paragraph_name} ref={name_ref}>Tai, Tung-En</div>
+                    <div className={aboutCss.about_self_intro_paragraph_description_container}>
+                      <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
+                      <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
+                      <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
+                      <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
+                    </div>
+                  </div>
+                  <div className={aboutCss.about_underline_div}></div>
+                  <div className={aboutCss.about_experience_container} ref={exp_ref}>
+                    <Exp year="2021年" exp_contents={["ウィルスタイル株式会社","Webデザイナー新卒入社"]}/>
+                    <Exp year="2020年" exp_contents={["台湾国立政治大学卒業","広告学科､デジタルコンテンツ学位取得"]}/>
+                    <Exp year="2019年" exp_contents={["京都同志社大学留学"]}/>
+                    <Exp year="2018年" exp_contents={["出版社 ハースト・コーポレーション", "コスモポリタン編集部インターンシップ", <br></br>, "メディア代理店 dentsu X","企画部インターンシップ"]}/>
+                    <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
+                  </div>
+                </div>
+                
               </div>
-              <div className={aboutCss.about_view_my_works_button_hover_bg} ref={view_works_button_ref}> </div>
-            </Link>
+            </Parallax>
           </div>
-        </div>
 
-      </section>
-    </PageLayout>
+          <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
+            <div className={aboutCss.about_special_contents_prop_container}>
+              <div className={aboutCss.about_special_contents_title}>Special content - #hashtags of me</div>
+              <a href="https://yihanyozikua.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
+                <img src={specialContentsImg} className={aboutCss.special_contents_img_prop}></img>
+              </a>
+            </div>
+          </div>
+
+          <div className={aboutCss.about_view_my_works_button_container} ref={view_works_ref}>
+            <div className={aboutCss.about_view_my_works_button_prop_container}>
+              <Link to="/works" className={aboutCss.about_view_my_works_button_link}>
+                <div className={aboutCss.about_view_my_works_contents}>
+                  <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_1_ref}>Hover to</div>
+                  <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_2_ref}>View my Works</div>
+                </div>
+                <div className={aboutCss.about_view_my_works_button_hover_bg} ref={view_works_button_ref}> </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </PageLayout>
+    </>
+    
   )
+
+  
 }

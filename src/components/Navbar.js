@@ -40,6 +40,7 @@ const Navbar = ({wrapperComponent, ...props}) => {
     }
   }, [location.pathname]);
 
+
   return(
         <Wrapper {...props}>
           <Link to="/about" className={navCss.nav_prop} ref={nav_about_ref}>About</Link>

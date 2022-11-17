@@ -7,7 +7,6 @@ import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import Cursor from './Cursor';
 import About from './About'
 import Works from './Works'
-import Hashtags from './Hashtag';
 import WorksAnotheries from './works/Anotheries'
 import WorksEverythingIsGonnaBeAlright from './works/EverythinsIsGonnaBeAlright'
 import OrganVoice from './works/OrganVoice'
@@ -44,10 +43,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<><About /></>}></Route>
+        <Route path="/" element={<><Cursor cursorTypes={CURSOR_VIEW} /><About /></>}></Route>
         <Route path="/about" element={<><Cursor cursorTypes={CURSOR_VIEW} /><About /></>}></Route>
         <Route path="/works" element={<><Cursor cursorTypes={CURSOR_HOVER} /><Works /></>}></Route>
-        <Route path="/hashtags" element={<><Hashtags /></>}></Route>
         <Route path="/works/anotheries" element={<><Cursor cursorTypes={CURSOR_VIEW} /><WorksAnotheries /></>}></Route>
         <Route path="/works/q_dinasour" element={<><Cursor cursorTypes={CURSOR_VIEW} /><Qdinosaur /></>}></Route>
         <Route path="/works/everything_is_gonna_be_alright" element={<><Cursor cursorTypes={CURSOR_VIEW} /><WorksEverythingIsGonnaBeAlright /></>}></Route>

@@ -4,17 +4,17 @@ import {Route, Link, Routes, useLocation} from 'react-router-dom';
 
 import loadingCss from '../css/loading.module.scss'
 
-const Loading = () => {
+const Loading = ({bg_style, onloadComponent}) => {
 
-  // preloading section
-  const loader = document.getElementById('loader');
-  // if you want to show the loader when React loads data again
-  const showLoader = () => loader.classList.remove('loader_hide');
-  const hideLoader = () => loader.classList.add('loader_hide');
+  setTimeout(() => {
+    document.getElementById(`${bg_style}`).style.opacity = 0;
+    document.getElementById(`${bg_style}`).style.zIndex = -10;
+    document.getElementById(`${bg_style}`).style.transition = 'all .3s ease-in-out';
+  }, 2000);
+  
 
   return(
-    <div id={loadingCss.loader}>
-
+    <div id={bg_style}>
     </div>
   )
   
