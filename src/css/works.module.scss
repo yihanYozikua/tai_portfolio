@@ -86,6 +86,7 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
           .project_img_prop{
             transition: all .3s ease-in !important;
             z-index: 5;
+            object-fit: cover;
             &:hover{
               transition: all .3s ease-in !important;
               opacity: .5;

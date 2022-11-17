@@ -8,7 +8,7 @@ import ProjectKvLayout from '../components/ProjectKvLayout'
 import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import banner from '../static/img/works/cover_surface.png'
+import banner from '../static/img/works/covers/surface.png'
 import surfaceCss from '../css/works_surface.module.scss'
 import surface_1 from '../static/img/works/surface_1.png'
 import surface_2 from '../static/img/works/surface_2.png'
@@ -18,7 +18,7 @@ import surface_5 from '../static/img/works/surface_5.png'
 import surface_6 from '../static/img/works/surface_6.png'
 import surface_7 from '../static/img/works/surface_7.png'
 import surface_video_1 from '../static/img/videos/surface_stage.mp4'
-// import surface_video_2 from '../static/img/videos/main_comp.mov'
+import surface_video_2 from '../static/img/videos/main_comp.mp4'
 import { images } from '../images.ts'
 
 export default function SurfaceApporel(){
@@ -98,14 +98,12 @@ export default function SurfaceApporel(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              {/* <video controls muted className={surfaceCss.animation_prop}>
+              <video controls className={surfaceCss.animation_prop}>
                 <source src={surface_video_2} type="video/mp4"/>
-              </video> */}
+              </video>
               <video controls className={surfaceCss.animation_prop}>
                 <source src={surface_video_1} type="video/mp4"/>
               </video>
-              {/* <img className={surfaceCss.animation_prop} src={surface_6}></img> */}
-              {/* <img className={surfaceCss.animation_prop} src={surface_7}></img> */}
             </div>
           </div>
 
