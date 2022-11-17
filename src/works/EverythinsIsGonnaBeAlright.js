@@ -39,7 +39,7 @@ export default function EverythinsIsGonnaBeAlright(){
               kv_column_direction="column"
               nameEN="Everything’s Gonna Be Alright"
               type="Music video" roles={["Design (illustration), Animation"]} date="2020.03-2020.12" tool="After Effects, Illustrator, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
-              bannerImg={banner}
+              bannerImg={banner} bannerImgPosition="bottom"
               urlNeed='false'/>
             
             <div className={everythingCss.paragraph_1_container}>
@@ -171,7 +171,8 @@ export default function EverythinsIsGonnaBeAlright(){
           
             <WorksBackToAnchor 
               prevUrl="/works/sleep_well"
-              nextUrl="/works/organ_voice"/>
+              nextUrl="/works/organ_voice"
+              containerWidth="50%"/>
           </div>
           
         </section>

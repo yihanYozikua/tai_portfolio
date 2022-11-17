@@ -163,7 +163,8 @@ export default function Qdinosaur(){
           
             <WorksBackToAnchor 
               prevUrl="/works/anotheries"
-              nextUrl="/works/sleep_well"/>
+              nextUrl="/works/sleep_well"
+              containerWidth='50%'/>
           </div>
 
 

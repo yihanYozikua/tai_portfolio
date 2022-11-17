@@ -167,7 +167,8 @@ export default function SurfaceApporel(){
           
             <WorksBackToAnchor 
                 prevUrl="/works/organ_voice"
-                nextUrl="/works/anotheries"/>
+                nextUrl="/works/anotheries"
+                containerWidth="50%"/>
           </div>
           
           

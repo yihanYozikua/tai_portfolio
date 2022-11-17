@@ -11,7 +11,7 @@ import BackTo from './BackTo';
 import projectKvCss from '../css/project_kv_layout.module.scss'
 import arrow from '../static/icons/arrow_up_right.svg'
 
-export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, url, urlTitle, urlNeed}){
+export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, bannerImgPosition, url, urlTitle, urlNeed}){
   console.log(kv_column_direction);
   var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
   useEffect(() => {
@@ -78,7 +78,7 @@ export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, 
         </div>
         
         <div className={projectKvCss.banner_container}>
-          <img src={ bannerImg } alt={ nameEN + nameCN + nameJP } className={projectKvCss.banner_img_prop}></img>
+          <img src={ bannerImg } alt={ nameEN + nameCN + nameJP } className={projectKvCss.banner_img_prop} style={{objectPosition: bannerImgPosition}}></img>
         </div>
       </div>
     </div>

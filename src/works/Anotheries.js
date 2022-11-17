@@ -201,7 +201,8 @@ export default function Anotheries() {
 
                         <WorksBackToAnchor 
                             prevUrl="/works/surface_apparel"
-                            nextUrl="/works/q_dinasour"/>
+                            nextUrl="/works/q_dinasour"
+                            containerWidth="50%"/>
                     </div>
                 </section>
                 <Footer />

@@ -205,7 +205,8 @@ export default function SleepWell(){
           
             <WorksBackToAnchor 
               prevUrl="/works/q_dinasour"
-              nextUrl="/works/everything_is_gonna_be_alright"/>
+              nextUrl="/works/everything_is_gonna_be_alright"
+              containerWidth="50%"/>
           </div>
 
           

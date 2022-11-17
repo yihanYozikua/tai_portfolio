@@ -8,10 +8,11 @@ import arrow_right from '../static/img/works/arrow_right.svg'
 import backAnchorCss from '../css/back_to_anchor.module.scss'
 import PageLayout from './PageLayout';
 
-export default function WorksBackToAnchor ({prevUrl, nextUrl}){
+export default function WorksBackToAnchor ({prevUrl, nextUrl, containerWidth}){
   return(
     <div id={backAnchorCss.works_back_to_anchor_container}>
       <div className={backAnchorCss.works_back_to_anchor_contents_container}
+        style={{width: containerWidth}}
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-offset="0"

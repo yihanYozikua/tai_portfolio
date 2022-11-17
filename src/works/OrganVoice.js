@@ -196,7 +196,8 @@ export default function OrganVoice(){
           
             <WorksBackToAnchor 
               prevUrl="/works/everything_is_gonna_be_alright"
-              nextUrl="/works/surface_apparel"/>
+              nextUrl="/works/surface_apparel"
+              containerWidth="60%"/>
           </div>
           
         </section>
