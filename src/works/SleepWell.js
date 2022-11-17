@@ -10,12 +10,12 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import banner from '../static/img/works/covers/sleep_well.png'
 import sleepCss from '../css/works_sleep.module.scss'
-import sleep_1 from '../static/img/works/sleep_1.png'
-import sleep_2 from '../static/img/works/sleep_2.png'
-import sleep_3 from '../static/img/works/sleep_3.png'
-import sleep_4 from '../static/img/works/sleep_4.png'
-import sleep_5 from '../static/img/works/sleep_5.png'
-import sleep_6 from '../static/img/works/sleep_6.png'
+import sleep_1 from '../static/img/works/sleep_well/sleep_well_01_1.png'
+import sleep_2 from '../static/img/works/sleep_well/sleep_well_01_2.png'
+import sleep_3 from '../static/img/works/sleep_well/sleep_well_02_1.png'
+import sleep_4 from '../static/img/works/sleep_well/sleep_well_02_2.png'
+import sleep_5 from '../static/img/works/sleep_well/sleep_well_03_1.png'
+import sleep_6 from '../static/img/works/sleep_well/sleep_well_03_2.png'
 import { images } from '../images.ts'
 
 export default function SleepWell(){
@@ -133,8 +133,8 @@ export default function SleepWell(){
               data-aos-once="false">
               <div className={sleepCss.show_contents_container}>
                 <div className={sleepCss.show_img_container}>
-                  <img className={sleepCss.show_img_prop} src={sleep_1} alt="sleep_app_5"></img>
-                  <img className={sleepCss.show_img_prop} src={sleep_2} alt="sleep_app_6"></img>
+                  <img className={sleepCss.show_img_prop} src={sleep_5} alt="sleep_app_5"></img>
+                  <img className={sleepCss.show_img_prop} src={sleep_6} alt="sleep_app_6"></img>
                 </div>
                 <div className={sleepCss.show_description_container}>
                   <div className={sleepCss.show_description_title_prop}>朝活任務で早寝早起きの生活に</div>

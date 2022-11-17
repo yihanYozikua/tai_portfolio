@@ -11,11 +11,11 @@ import Sidebar from '../components/Sidebar'
 import dinasourCss from '../css/works_dinasour.module.scss'
 import { images } from '../images.ts'
 import banner from '../static/img/works/covers/dinosaur.png'
-import dinasour_1 from '../static/img/works/dinasour_1.png'
-import dinasour_2 from '../static/img/works/dinasour_2.png'
-import dinasour_3 from '../static/img/works/dinasour_3.png'
-import dinasour_4 from '../static/img/works/dinasour_4.png'
-import dinasour_5 from '../static/img/works/dinasour_5.png'
+import dinasour_1 from '../static/img/works/dinasour/dinosaur_01.png'
+import dinasour_2 from '../static/img/works/dinasour/dinosaur_01_1.png'
+import dinasour_3 from '../static/img/works/dinasour/dinosaur_01_2.png'
+import dinasour_4 from '../static/img/works/dinasour/dinosaur_02_1.png'
+import dinasour_5 from '../static/img/works/dinasour/dinosaur_02_2.png'
 
 export default function Qdinosaur(){
   const [width, setWidth] = useState(window.innerWidth);
