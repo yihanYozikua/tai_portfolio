@@ -58,7 +58,7 @@ export default function EverythinsIsGonnaBeAlright(){
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={everythingCss.paragraph_1_description_prop}>
-                  「 <span style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</span> 」は世の中の人に勇気と支えを与えたいという想いで、
+                  「 <span style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</span>」は世の中の人に勇気と支えを与えたいという想いで、
                 </div>
                 <div className={everythingCss.paragraph_1_description_prop}>大学の友人が書き下ろした曲です。</div>
                 <br></br>
