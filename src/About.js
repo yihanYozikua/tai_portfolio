@@ -303,7 +303,7 @@ export default function About() {
   return(
     <>
       <Cursor cursorTypes='👀' />
-      <Loading bg_style={loadingCss.loader_about} />
+      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='3000' />
       <PageLayout>
         <section id={aboutCss.about}>
           <Navbar />

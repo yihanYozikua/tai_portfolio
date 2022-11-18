@@ -54,7 +54,7 @@ export default function SurfaceApporel(){
   return(
     <>
       <Cursor cursorTypes='👀' />
-      <Loading bg_style={loadingCss.loader_works} />
+      <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section id={surfaceCss.works_surface}>
           <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />

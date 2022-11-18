@@ -4,13 +4,13 @@ import {Route, Link, Routes, useLocation} from 'react-router-dom';
 
 import loadingCss from '../css/loading.module.scss'
 
-const Loading = ({bg_style, onloadComponent}) => {
+const Loading = ({bg_style, loadingTimeControl}) => {
 
   setTimeout(() => {
     document.getElementById(`${bg_style}`).style.opacity = 0;
     document.getElementById(`${bg_style}`).style.zIndex = -10;
     document.getElementById(`${bg_style}`).style.transition = 'all .3s ease-in-out';
-  }, 3000);
+  }, loadingTimeControl);
   
 
   return(

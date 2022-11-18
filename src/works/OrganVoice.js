@@ -55,7 +55,7 @@ export default function OrganVoice(){
   return(
     <>
       <Cursor cursorTypes='👀' />
-      <Loading bg_style={loadingCss.loader_works} />
+      <Loading bg_style={loadingCss.loader_works} loadingTimeControl='loadingTimeControl'/>
       <PageLayout>
         <section id={organCss.works_organ}>
           <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
