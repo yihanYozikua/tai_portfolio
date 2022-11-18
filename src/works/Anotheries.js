@@ -65,6 +65,8 @@ export default function Anotheries() {
                             </div>
                         </div>
 
+                        
+
 
                         <div className={anotheriesCss.paragraph_1_container}
                             data-aos="fade-zoom-in"
@@ -80,9 +82,11 @@ export default function Anotheries() {
                             <div className={anotheriesCss.paragraph_1_description_container}>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>綺麗な景色、美味しいご飯、友達との楽しいお時間、旅行に求めるもの、人それぞれ。</div>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>大事なのは、気持ちを共有すること。</div>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>なので、旅行サイトみたいにアクセスからモデルコースまで詳しく紹介するつもりはないです。でも、自分のSNSのようなただの感想シェアにもなりたくありません。インターネットで載せていない､実際に訪れた人だけ知っていること、試して良かったと思う遊び方など、旅をより一層楽しめるように、私たちの経験談でユーザーにとって有意義の情報も提供したいと思います。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>なので、旅行サイトみたいにアクセスからモデルコースまで詳しく紹介するつもりはないです。でも、自分のSNSのようなただの感想シェアにもなりたくありません。インターネットで載せていない､実際に訪れた私たちだけ知っていること、試して良かったと思う遊び方など、旅をより一層楽しめるように、その経験談からユーザーにとって有意義の情報を提供したいと思います。</div>
                             </div>
                         </div>
+
+
 
                         <div className={anotheriesCss.middleImg}
                             data-aos="fade-zoom-in"
@@ -132,12 +136,7 @@ export default function Anotheries() {
                                     <div className={anotheriesCss.paragraph_2_text_container}>
                                         <div className={anotheriesCss.paragraph_2_title}>写真を際立たせる余白感</div>
                                         <div className={anotheriesCss.paragraph_2_description}>
-                                            写真がメインになるサイトをカラフルで見せる一方、
-                                            ごちゃつきにならないように、サイズ感、
-                                            余白の調整に気をつけなければなりません。
-                                            彩りの写真を際立たせながら、旅の余裕感を感じていただきたいと思い、
-                                            背景色は薄くして、余白も多めに取っております。
-                                        </div>
+                                            写真がメインになるサイトをカラフルで見せる一方、ごちゃつきにならないように、サイズ感、余白の調整に気をつけなければなりません。彩りの写真を際立たせながら、旅の余裕感を感じていただきたいと思い、背景色は薄くして、余白も多めに取っております。</div>
                                     </div>
                                     <div className={anotheriesCss.paragraph_2_img_container}>
                                         <img src={ anotheries_2 } className={anotheriesCss.paragraph_2_img_prop}></img>
