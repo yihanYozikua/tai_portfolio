@@ -25,6 +25,7 @@ import anotheries_photo_3 from '../static/img/works/anotheries/anotheries_04.png
 export default function Anotheries() {
     const FONT_EN = "'Outfit', sans-serif";
     const FONT_JP = "'BIZ UDGothic', sans-serif";
+    let width_worksBackToAnchor = '50%';
 
     useEffect(()=>{
         window.scrollTo({
@@ -32,6 +33,22 @@ export default function Anotheries() {
         behavior: 'smooth'
         });
     }, []);
+
+    // detect device
+    const [width, setWidth] = useState(window.innerWidth);
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+    const isMobile = width <= 768;
+    if(!isMobile){width_worksBackToAnchor = '50%';}
+    else{width_worksBackToAnchor = '80%'}
+
 
     window.addEventListener('load', AOS.refresh);
     return (
@@ -202,7 +219,7 @@ export default function Anotheries() {
                         <WorksBackToAnchor 
                             prevUrl="/works/surface_apparel"
                             nextUrl="/works/q_dinasour"
-                            containerWidth="50%"/>
+                            containerWidth={width_worksBackToAnchor}/>
                     </div>
                 </section>
                 <Footer />

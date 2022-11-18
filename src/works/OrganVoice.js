@@ -27,6 +27,7 @@ import { images } from '../images.ts'
 export default function OrganVoice(){
   const FONT_EN = "'Outfit', sans-serif";
   const FONT_JP = "'BIZ UDGothic', sans-serif";
+  let width_worksBackToAnchor = '50%';
   
   useEffect(()=>{
     window.scrollTo({
@@ -34,6 +35,22 @@ export default function OrganVoice(){
       behavior: 'smooth'
     });
   }, []);
+
+  // detect device
+  const [width, setWidth] = useState(window.innerWidth);
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+  if(!isMobile){width_worksBackToAnchor = '50%';}
+  else{width_worksBackToAnchor = '80%'}
+
 
   return(
     <>
@@ -201,7 +218,7 @@ export default function OrganVoice(){
             <WorksBackToAnchor 
               prevUrl="/works/everything_is_gonna_be_alright"
               nextUrl="/works/surface_apparel"
-              containerWidth="60%"/>
+              containerWidth={width_worksBackToAnchor}/>
           </div>
           
         </section>

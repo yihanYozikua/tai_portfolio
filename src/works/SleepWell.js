@@ -25,6 +25,7 @@ import { images } from '../images.ts'
 export default function SleepWell(){
   const FONT_EN = "'Outfit', sans-serif";
   const FONT_JP = "'BIZ UDGothic', sans-serif";
+  let width_worksBackToAnchor = '50%';
   
   useEffect(()=>{
     window.scrollTo({
@@ -32,6 +33,21 @@ export default function SleepWell(){
       behavior: 'smooth'
     });
   }, []);
+
+  // detect device
+  const [width, setWidth] = useState(window.innerWidth);
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+  if(!isMobile){width_worksBackToAnchor = '50%';}
+  else{width_worksBackToAnchor = '80%'}
 
   return(
     <>
@@ -213,7 +229,7 @@ export default function SleepWell(){
             <WorksBackToAnchor 
               prevUrl="/works/q_dinasour"
               nextUrl="/works/everything_is_gonna_be_alright"
-              containerWidth="50%"/>
+              containerWidth={width_worksBackToAnchor}/>
           </div>
 
           

@@ -26,6 +26,7 @@ import { images } from '../images.ts'
 export default function SurfaceApporel(){
   const FONT_EN = "'Outfit', sans-serif";
   const FONT_JP = "'BIZ UDGothic', sans-serif";
+    let width_worksBackToAnchor = '50%';
   
   useEffect(()=>{
     window.scrollTo({
@@ -33,6 +34,22 @@ export default function SurfaceApporel(){
       behavior: 'smooth'
     });
   }, []);
+
+    // detect device
+    const [width, setWidth] = useState(window.innerWidth);
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+    const isMobile = width <= 768;
+    if(!isMobile){width_worksBackToAnchor = '50%';}
+    else{width_worksBackToAnchor = '80%'}
+
 
   return(
     <>
@@ -178,7 +195,7 @@ export default function SurfaceApporel(){
             <WorksBackToAnchor 
                 prevUrl="/works/organ_voice"
                 nextUrl="/works/anotheries"
-                containerWidth="50%"/>
+                containerWidth={width_worksBackToAnchor}/>
           </div>
           
           

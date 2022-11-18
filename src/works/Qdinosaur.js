@@ -22,6 +22,10 @@ import dinasour_4 from '../static/img/works/dinasour/dinosaur_02_1.png'
 import dinasour_5 from '../static/img/works/dinasour/dinosaur_02_2.png'
 
 export default function Qdinosaur(){
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
+  let width_worksBackToAnchor = '50%';
+
   const [width, setWidth] = useState(window.innerWidth);
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -33,6 +37,8 @@ export default function Qdinosaur(){
       }
   }, []);
   const isMobile = width <= 768;
+  if(!isMobile){width_worksBackToAnchor = '50%';}
+  else{width_worksBackToAnchor = '80%'}
 
   useEffect(() => {
     if(!isMobile){
@@ -40,8 +46,6 @@ export default function Qdinosaur(){
     }
   }, []);
 
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
   
   useEffect(()=>{
     window.scrollTo({
@@ -170,7 +174,7 @@ export default function Qdinosaur(){
             <WorksBackToAnchor 
               prevUrl="/works/anotheries"
               nextUrl="/works/sleep_well"
-              containerWidth='50%'/>
+              containerWidth={width_worksBackToAnchor}/>
           </div>
 
 
