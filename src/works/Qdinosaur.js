@@ -158,7 +158,7 @@ export default function Qdinosaur(){
                 <br></br>
                 <div className={dinasourCss.postscript_paragraph_container}>
                   <div className={dinasourCss.postscript_paragraph_prop}>「こういう時、この表情のスタンプを使いたい！」</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>「32個スタンプの中にどうしても使わないのが入っている」</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>32</span>個スタンプの中にどうしても使わないのが入っている」</div>
                   <div className={dinasourCss.postscript_paragraph_prop}>もっと日常的でかつ無駄のないスタンプを作りたくて、自分的に使いやすそうなものをはじめ、</div>
                   <div className={dinasourCss.postscript_paragraph_prop}>周りの人にスタンプをつけたい会話やタイミングを聞きまくり、「恐恐」を描きました。</div>
                   <div className={dinasourCss.postscript_paragraph_prop}>外国人の友達も使えるように、あえて文字を加えずに、表情と身振りだけで気持ちが伝わることを心がけていました。 </div>

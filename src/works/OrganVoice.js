@@ -167,7 +167,7 @@ export default function OrganVoice(){
                     data-aos-offset="0"
                     data-aos-duration="300"
                     data-aos-once="false">
-                    <div className={organCss.postscript_paragraph_prop}>ちょうど大学2年生の頃、インタネットで「爆肝」という言葉が流行っていました。</div>
+                    <div className={organCss.postscript_paragraph_prop}>ちょうど大学<span style={{fontFamily: FONT_EN}}>2</span>年生の頃、インタネットで「爆肝」という言葉が流行っていました。</div>
                     <div className={organCss.postscript_paragraph_prop}>日本語で訳したら、寝る間も惜しんで、身体を休めずに頑張ったら肝臓が爆発してしまうということ。その時は、徹夜＝夢中になることに頑張っている証で、ポジティブな行為として捉えます。</div>
                     <div className={organCss.postscript_paragraph_prop}>何かに夢中になること、本来はとても素敵なことなのに、笑いながら「昨日爆肝したね」を言う同級生を見て、なんか悲しく感じました。身体を壊したら、元の子もないのに。</div>
                   </div>

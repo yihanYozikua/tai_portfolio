@@ -97,7 +97,7 @@ export default function EverythinsIsGonnaBeAlright(){
                     <div className={everythingCss.lyrics_contents_container}>
                       <div className={everythingCss.lyrics_contents_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
                       <div className={everythingCss.lyrics_contents_prop}>世界沒有你想的那麼壞</div>
-                      <div className={everythingCss.lyrics_contents_prop}>看著遠方的 neon light</div>
+                      <div className={everythingCss.lyrics_contents_prop}>看著遠方的 <span style={{fontFamily: FONT_EN}}>neon light</span></div>
                       <div className={everythingCss.lyrics_contents_prop}>靠我的肩讓你依賴</div>
                       <div className={everythingCss.lyrics_contents_prop}>心裡的陰霾 不再存在</div>
                     </div>
