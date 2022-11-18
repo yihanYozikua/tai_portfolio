@@ -60,9 +60,13 @@ export default function OrganVoice(){
                 data-aos-offset="0"
                 data-aos-duration="300"
                 data-aos-once="false">
-                <div className={organCss.paragraph_1_description_prop}>「臓器の夜間問診」は政治大学デザインサークル「ITLAB」年次展示会で展示した作品です。</div>
+
+
+
+
+                <div className={organCss.paragraph_1_description_prop}>「臓器の夜間問診」は政治大学デザインサークル「<span style={{fontFamily: FONT_EN}}>ITLAB</span>」の年次展示会で展示した作品です。</div>
                 <div className={organCss.paragraph_1_description_prop}>
-                  大学生はよく徹夜や断食ダイエットなど悪い生活習慣で、体調を崩れたりします。「若いから大丈夫！」と言い張って、生活習慣を見直しない人が自分達を含め、周りもたくさんいます。しかし、どんな丈夫な体でも限界があり、耐えられない日があること、同世代の大学生に意識してほしいです。
+                大学生はよく徹夜や断食ダイエットなどの悪い生活習慣で体調を崩れたりします。「若いから大丈夫！」と言い張って、生活習慣を見直そうとしない人が自分達を含め、周りもたくさんいます。しかし、どんな丈夫な体にも限界があり、耐えられない日もいつか来ること、同世代の大学生に意識してほしいと思い、この作品を作りました。
                 </div>
               </div>
               
@@ -81,9 +85,10 @@ export default function OrganVoice(){
                 data-aos-offset="0"
                 data-aos-duration="300"
                 data-aos-once="false">
-                <div className={organCss.paragraph_1_description_prop}>作品は、病みを抱えている臓器たちが人間が眠りにつく間に夜間の問診に行き、本音を吐き出すことをイメージしました。</div>
+
+                <div className={organCss.paragraph_1_description_prop}>病みを抱えている臓器たちは人間が眠りにつく間に夜間の問診に行き、本音を吐き出すというイメージをしました。</div>
                 <div className={organCss.paragraph_1_description_prop}>
-                  徹夜で一番ダメージが与えられる肝臓をはじめ、肺、胃、脳、心臓、五つの臓器はぞれぞれの悩みがあり、私たちに伝えたいことがあります。その本音をユーモアでちょっとした皮肉さのあるポエムで表現し、写真と相まって、印象的な作品を展示しました。
+                徹夜で一番ダメージが与えられる肝臓をはじめ、肺、胃、脳、心臓、五つの臓器はそれぞれの悩みがあり、私たちに伝えたいことがあります。その本音をユーモアでちょっとした皮肉さのあるポエムで表現し、写真と相まって、印象的な作品を展示しました。
                 </div>
               </div>
 
@@ -144,6 +149,7 @@ export default function OrganVoice(){
                   <div className={organCss.description_prop}>「夜間問診」なのでクリニックの雰囲気をより感じていただくため、作品の紹介をクリニックの玄関によく見かける札にして、作品のコンセプトと説明とともに、注射器の開け方、廃棄方法も掲載します。</div>
                 </div>
               </div>
+
 
               <div className={organCss.postscript_container}>
                 <div className={organCss.postscript_contents_container}>
