@@ -57,10 +57,12 @@ export default function SleepWell(){
               data-aos-once="false">
               <div className={sleepCss.paragraph_1_title}>今日からぐっすり寝よう</div>
               <div className={sleepCss.paragraph_1_description_container}>
-                <div className={sleepCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>は名前の通り、より良い睡眠をとるためにお手伝いする睡眠管理アプリです。</div>
-                <div className={sleepCss.paragraph_1_description_prop}>現行他社アプリにすでに提供されているアラーム、データ分析、睡眠サポート、カスタマイズ設定以外、朝活任務、睡眠日記、テーマ変更など、実用かる面白みのある機能も加えることで、アプリの使用意欲を高め、より良い睡眠を取れることに繋がります。</div>
+                <div className={sleepCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>は名前の通り、より良い睡眠を取るためにお手伝いする睡眠管理アプリです。</div>
+                <div className={sleepCss.paragraph_1_description_prop}>現行他社のアプリですでに提供されているアラーム、データ分析、睡眠サポート、カスタマイズ設定以外、朝活任務、睡眠日記、テーマ変更など、実用かつ面白みのある機能を加えることで、アプリの使用意欲を高め、より良い睡眠を取れることに繋がります。</div>
               </div>
             </div>
+            
+
 
 
             <div className={sleepCss.reason_container}>
@@ -74,7 +76,7 @@ export default function SleepWell(){
                 <div className={sleepCss.reason_contents_each_container}>
                   <div className={sleepCss.reason_title_prop} style={{fontFamily: FONT_EN}}>Why</div>
                   <div className={sleepCss.reason_description_container}>
-                    <div className={sleepCss.reason_description_prop}>◆睡眠障害により生活習慣病</div>
+                    <div className={sleepCss.reason_description_prop}>◆睡眠障害による生活習慣病</div>
                     <div className={sleepCss.reason_description_prop}>◆若者の徹夜問題</div>
                     <div className={sleepCss.reason_description_prop}>◆ストレスが睡眠の質に影響を与える</div>
                   </div>
@@ -112,6 +114,7 @@ export default function SleepWell(){
                     <img className={sleepCss.show_img_prop} src={sleep_1} alt="sleep_app_1"></img>
                     <img className={sleepCss.show_img_prop} src={sleep_2} alt="sleep_app_2"></img>
                   </div>
+
                   <div className={sleepCss.show_description_container}>
                     <div className={sleepCss.show_description_title_prop}>わかりやすいデータ分析</div>
                     <div className={sleepCss.show_description_contents_container}>
@@ -135,7 +138,7 @@ export default function SleepWell(){
                   <div className={sleepCss.show_description_container}>
                     <div className={sleepCss.show_description_title_prop}>スマートアラーム</div>
                     <div className={sleepCss.show_description_contents_container}>
-                      <div className={sleepCss.show_description_contents_prop}>音と振動で、睡眠段階を判断し、浅い眠りにアラームを起動させることで、ストレスフリーの起床を実現する。</div>
+                      <div className={sleepCss.show_description_contents_prop}>音と振動で、睡眠段階を判断し、浅い眠りの時間帯にアラームを起動させることで、ストレスフリーの起床を実現します。</div>
                     </div>
                   </div>
                 </div>
@@ -184,10 +187,12 @@ export default function SleepWell(){
                   <div className={sleepCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={sleepCss.postscript_paragraph_container}>
-                  <div className={sleepCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>」は授業の課題で制作した作品ですが、<span style={{fontFamily: FONT_EN}}>Case study</span>をはじめ、<span style={{fontFamily: FONT_EN}}>Functional map、UI flow、Flow chat</span>で情報アーキテクチャを整理し、ワイヤーフレームとモックアップを通してデザインに落とし込み、最後はプロトタイプを使ってターゲットにテストを実施しました。</div>
+                  <div className={sleepCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>」は授業の課題で制作した作品ですが、<span style={{fontFamily: FONT_EN}}>Case study</span>をはじめ、<span style={{fontFamily: FONT_EN}}>Functional map、UI flow、Flow chat</span>で情報アーキテクチャを整理し、ワイヤーフレームとモックアップを通してデザインに落とし込み、最後はプロトタイプを使ってターゲットユーザーにテストを実施しました。</div>
                   <div className={sleepCss.postscript_paragraph_prop}>こうして一連のデザインプロセスをしっかり行い、試行錯誤しながら制作することが私にとってとても貴重な経験であり、サービスデザインの深さと面白さを感じるきっかけになりました。</div>
-                  <div className={sleepCss.postscript_paragraph_prop}>健康と睡眠に意識を向けるつもりなのに、課題や趣味、つい他のことを優先して、睡眠の質が二の次になってしまいます。私たちが抱えた悩みをもとに、同年代の共通課題を洗い出し、それをテーマにして、「<span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>」が生まれた。もしいつかアプリが実際に構築されたら、ぜひ手にとってみてもらえば嬉しいです。</div>
-                </div>
+                  <div className={sleepCss.postscript_paragraph_prop}>健康と睡眠に意識を向けるつもりなのに、課題や趣味、つい他のことを優先して、睡眠の質が二の次になってしまいます。私たちが抱えた悩みをもとに、同年代の共通課題を洗い出し、それをテーマにして、「<span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>」が生まれました。</div>
+                </div>                
+
+
               </div>
               <div className={sleepCss.especially_thanks_container}
                 data-aos="fade-zoom-in"
