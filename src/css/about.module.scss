@@ -271,6 +271,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               }
               .about_self_intro_paragraph_description_prop{
                 // opacity: 0;
+                @include sm(){
+                  font-size: 1rem;
+                  line-height: 2rem;
+                }
               }
             }
           }
@@ -305,6 +309,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                 transition: all 1s ease-in-out;
                 @include sm(){
                   font-size: 1rem;
+                  line-height: 2rem;
                 }
               }
             }
