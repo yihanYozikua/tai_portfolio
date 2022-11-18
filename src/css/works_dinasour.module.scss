@@ -52,6 +52,9 @@ $COLOR_PARA: #282D2F;
           font-size: 1rem;
           color: $COLOR_PARA_DESCIPTION;
           line-height: 2rem;
+          @include sm(){
+            font-size: 1rem;
+          }
 
         }
       }
@@ -122,17 +125,29 @@ $COLOR_PARA: #282D2F;
             width: 78%;
             margin: 2rem 3rem;
           }
+          .design_intro_description_title{
+            font-family: $FONT_JP;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: $COLOR_PARA;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+            @include sm(){
+              margin-top: 2rem;
+            }
+          }
   
           .design_intro_description_prop{
             font-family: $FONT_JP;
             font-weight: 400;
             font-size: 1rem;
             color: $COLOR_PARA;
-            line-height: 1.5rem;
+            line-height: 2rem;
             
             &:nth-child(1){
               font-size: 1rem;
               margin: 1.5rem 0;
+              line-height: 2rem;
             }
             
           }
@@ -175,6 +190,9 @@ $COLOR_PARA: #282D2F;
             font-size: .75rem;
             color: $COLOR_PARA;
             margin: 1rem 0;
+            @include sm(){
+              font-size: 1rem;
+            }
 
           }
           .postscript_paragraph_prop{
@@ -183,6 +201,10 @@ $COLOR_PARA: #282D2F;
             font-size: .75rem;
             color: $COLOR_PARA;
             line-height: 1.5rem;
+            @include sm(){
+              font-size: 1rem;
+              line-height: 2rem;
+            }
 
 
           }

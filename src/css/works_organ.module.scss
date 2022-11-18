@@ -52,6 +52,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           font-size: .85rem;
           color: $COLOR_BLACK;
           line-height: 2rem;
+          @include sm(){
+            font-size: 1rem;
+            line-height: 2rem;
+          }
 
         }
       }
@@ -110,6 +114,8 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           color: $COLOR_BLACK;
           @include sm(){
             width: 100%;
+            font-size: 1rem;
+            line-height: 2rem;
           }
 
         }
@@ -151,6 +157,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             font-size: .75rem;
             color: $COLOR_BLACK;
             margin: 1rem 0;
+            @include sm(){
+              font-size: 1rem;
+            }
 
           }
           .postscript_paragraph_prop{
@@ -159,6 +168,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             font-size: .75rem;
             color: $COLOR_BLACK;
             line-height: 1.5rem;
+            @include sm(){
+              font-size: 1rem;
+              line-height: 2rem;
+            }
 
 
           }

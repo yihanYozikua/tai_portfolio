@@ -105,7 +105,7 @@ export default function Qdinosaur(){
               data-aos-once="false">
               <div id='design_show_to_reverse' className={dinasourCss.design_intro_contents_container}>
                 <div className={dinasourCss.design_intro_description_container}>
-                  <div className={dinasourCss.design_intro_description_prop}>恐竜で決めた理由は？</div>
+                  <div className={dinasourCss.design_intro_description_title}>恐竜で決めた理由は？</div>
                   <div className={dinasourCss.design_intro_description_prop}>猫や犬など､可愛いらしい動物のスタンプは既にたくさんあります。</div>
                   <div className={dinasourCss.design_intro_description_prop}>印象に残るスタンプを作りたいと思い､あえてマイナーの恐竜を選びました。</div>
                 </div>
@@ -130,7 +130,7 @@ export default function Qdinosaur(){
               data-aos-once="false">
               <div className={dinasourCss.design_intro_contents_container}>
                 <div className={dinasourCss.design_intro_description_container}>
-                  <div className={dinasourCss.design_intro_description_prop}>おすすめポイントは？</div>
+                  <div className={dinasourCss.design_intro_description_title}>おすすめポイントは？</div>
                   <div className={dinasourCss.design_intro_description_prop}>可愛いだけではなく実用性も高いところがポイントです。</div>
                   <div className={dinasourCss.design_intro_description_prop}>日常会話はもちろん､今時の流行りを乗りたいや雰囲気を和ませたい時に使えるスタンプも用意したので､どんな場面でも大活躍できて、長く使えるスタンプになります。</div>
                 </div>
