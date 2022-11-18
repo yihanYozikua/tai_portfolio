@@ -114,9 +114,9 @@ a{
         font-size: .7rem;
         transition: all .3s ease-in-out;
         @include hover_footer;
-        &:hover{
-          cursor: pointer;
-        }
+        // &:hover{
+        //   cursor: pointer;
+        // }
         @include sm(){
           position: absolute;
           bottom: 3vh;

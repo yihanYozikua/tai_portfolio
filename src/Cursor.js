@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 
 import cursorCss from './css/cursor.module.scss'
+import footerCss from './css/footer.module.scss'
 
 export default function Cursor(cursorTypes){
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function Cursor(cursorTypes){
       });
     }
     cursorAction(a, `${cursorCss.cursor_hover_a}`, `${cursorCss.cursorinnerhover_a}`);
+    cursorAction(document.getElementsByClassName(`${footerCss.upper_right_contents_prop_back_to_top}`), `${cursorCss.cursor_hover_a}`, `${cursorCss.cursorinnerhover_a}`)
     cursor.classList.add(`${cursorCss.cursor}`);
     cursorinner.classList.add(`${cursorCss.cursor2}`);
 
