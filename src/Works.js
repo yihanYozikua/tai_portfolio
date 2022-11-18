@@ -108,7 +108,7 @@ export default function Works(){
 
           <div className={worksCss.declaration_container}>
             <div className={worksCss.declaration_contents_container}>
-              <div className={worksCss.text_prop}>制作会社で勤めた時の実績は契約の関係で掲載できないため、</div>
+              <div className={worksCss.text_prop}>制作会社に勤めた時の実績は契約の関係で掲載できないので、</div>
               <div className={worksCss.text_prop}>対面にてご説明させていただけたら幸いです。</div>
             </div>
           </div>

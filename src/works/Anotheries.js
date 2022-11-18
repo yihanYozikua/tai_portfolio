@@ -77,8 +77,8 @@ export default function Anotheries() {
                             <div className={anotheriesCss.paragraph_1_title}>思い出からもう一つの旅へ</div>
                             <div className={anotheriesCss.paragraph_1_description_container}>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>
-                                    <span style={{fontFamily: FONT_EN}}>Anotheries</span> は <span style={{fontFamily: FONT_EN}}>Another</span> と <span style={{fontFamily: FONT_EN}}>memories</span> の 意味と合わせた造語です。一つ一つ旅の思い出を集め、「思い出からもう一つの旅へ」をコンセプトに。</div>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>写真を通して私たちが旅先で見たもの・感じたことを共有し、共感を持ってもらい、人々と繋ぎたいと思います。</div>
+                                    <span style={{fontFamily: FONT_EN}}>Anotheries</span>は<span style={{fontFamily: FONT_EN}}>Another</span>と<span style={{fontFamily: FONT_EN}}>memories</span>の意味と合わせた造語です。一つ一つ旅の思い出を集め、「思い出からもう一つの旅へ」をコンセプトに。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>写真と言葉を通して私たちが旅先で見たもの・感じたことを共有し、共感を持ってもらい、人々と繋ぎたいと思います。</div>
                             </div>
                         </div>
 

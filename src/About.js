@@ -323,8 +323,8 @@ export default function About() {
             <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
               <div className={aboutCss.about_paragragh_contents_sec_container}>
                 <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
-                  <span ref={paragraph_anchor_ref}>見慣れていたあのポスターも、</span>
-                  <span>無性に開いて閉じ、閉じて開くあのアプリも。</span>
+                  <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
+                  <span>毎日開いて閉じ、閉じて開くあのアプリも。</span>
                   <span>ビジュアルなもの、そうではないもの、</span>
                   <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
                   <span>実は全てがデザインされています。</span>
@@ -339,7 +339,7 @@ export default function About() {
                   <span>何か新しいアイデアを生み出せるではないか。</span>
                 </div>
                 <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
-                  <span>今までも、これからも、もっとよくなる明日のために、</span>
+                  <span>今までも、これからも、より良い明日のために、</span>
                   <span>精度と質の高いデザインを追求し続けます。</span>
                 </div>
               </div>
@@ -362,7 +362,7 @@ export default function About() {
                     <div className={aboutCss.about_self_intro_paragraph_name} ref={name_ref}>Tai, Tung-En</div>
                     <div className={aboutCss.about_self_intro_paragraph_description_container}>
                       <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
-                      <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる職に就きたいと思い、Webデザイナーとして制作会社へ入社。</span>
+                      <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる仕事をしたいと思い、Webデザイナーとして制作会社へ入社。</span>
                       <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
                       <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
                     </div>
