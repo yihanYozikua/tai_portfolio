@@ -152,10 +152,7 @@ export default function Anotheries() {
                                     <div className={anotheriesCss.paragraph_2_text_container}>
                                         <div className={anotheriesCss.paragraph_2_title}>さりげない遊び心</div>
                                         <div className={anotheriesCss.paragraph_2_description} style={{marginBottom: '2.5rem'}}>
-                                            旅の楽しさ・ワクワク感を伝わるために、
-                                            写真の動きにこだわってデザインする他、
-                                            お問い合わせフォームの写真をサイトに未公開のものにして、
-                                            ユーザーにプレゼントするのは私たちささやかな遊び心です。
+                                            旅の楽しさ・ワクワク感を伝わるために、写真の動きにこだわってデザインする他、お問い合わせフォームの写真をサイトに未公開のものにして、ユーザーにプレゼントするのは私たちささやかな遊び心です。
                                         </div>
                                     </div>
                                     <div className={anotheriesCss.paragraph_2_img_container}>
