@@ -55,10 +55,10 @@ export default function SurfaceApporel(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <div className={surfaceCss.paragraph_1_title}>サーフィンをはじめ､マリンスポーツのための水着</div>
+              <div className={surfaceCss.paragraph_1_title}>サーフィンをはじめ､マリンスポーツするための水着</div>
               <div className={surfaceCss.paragraph_1_description_container}>
                 <div className={surfaceCss.paragraph_1_description_prop}>この作品は、<span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION IN TAIWAN 2018</span>で登場したスポーツ水着ブランド<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>のために作られたランウェイ動画です。</div>
-                <div className={surfaceCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>は台湾とスイスのハーフの女の子が立ち上げたブランドで、<span style={{fontFamily: FONT_EN}}>Surf</span>（サーフィン）<span style={{fontFamily: FONT_EN}}> + Ace</span>（エース）という意味しています。全ての女の子がきれいな水着を着て、自信満々でサーフィンボードに立てるようにという願いを込めて、機能と安全性を重視しつつ、シンプルのシルエットに鮮やかでカラフルな色みと相まって、海で写真映えする水着が作っておられています。</div>
+                <div className={surfaceCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>は台湾とスイスのハーフの女の子が立ち上げたブランドで、<span style={{fontFamily: FONT_EN}}>Surf</span>（サーフィン）<span style={{fontFamily: FONT_EN}}> + Ace</span>（エース）という意味しています。全ての女の子がきれいな水着を着て、自信満々でサーフィンボードに立てるという願いを込めて、機能と安全性を重視しつつ、シンプルのシルエットに鮮やかでカラフルな色みと相まって、海で写真映えする水着が作っておられています。</div>
               </div>
             </div>
 
@@ -84,6 +84,7 @@ export default function SurfaceApporel(){
               data-aos-duration="300"
               data-aos-once="false">
               <div className={surfaceCss.paragraph_1_title}>夏の風情が漂う動画に</div>
+
               <div className={surfaceCss.paragraph_1_description_container}>
                 <div className={surfaceCss.paragraph_1_description_prop}>動画ではカラフルな水着を引き立てるために､爽やかな白と水色をメインカラーとして使用しました。海、青い空、砂浜の要素を入れることで夏を連想させ、そこで<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>の水着を着用しているモデルさんが登場し、背景の動画合わせたら、まるで夏の海辺が目の前に広がっているようなステージになりました。</div>
                 <div className={surfaceCss.paragraph_1_description_prop}>動きにはロゴのデザインに合わせて、手書きのエフェクトと流動性のある波のあしらいを加えました。後半では海で開催される夏の音楽祭をイメージし、オーディオウェブとネオンカラーを使用し、夏ならではの賑やかさを表現しています。</div>
@@ -143,7 +144,7 @@ export default function SurfaceApporel(){
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={surfaceCss.present_by_text_prop}>
-                  <span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION</span>は大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部学生が携わるのが特徴で、大阪をはじめ、海外合わせて15都市での開催実績があります。
+                  <span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION</span>は大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部学生が携わるのが特徴で、大阪をはじめ、海外を含めて15都市での開催実績があります。
                 </div>
               </div>
             </div>
@@ -155,6 +156,7 @@ export default function SurfaceApporel(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
+
               <div className={surfaceCss.postscript_paragraph_container}>
                 <div className={surfaceCss.postscript_paragraph_title_prop}>制作の振り返り</div>
               </div>
@@ -163,12 +165,12 @@ export default function SurfaceApporel(){
                 <br></br>
                 <div className={surfaceCss.postscript_paragraph_prop}>イベント当日、ステージはまだ暗いまま音楽が流され、</div>
                 <div className={surfaceCss.postscript_paragraph_prop}>パッと後ろのクリーンに映された動画で会場を照らし、ショーが始まる。</div>
-                <div className={surfaceCss.postscript_paragraph_prop}>なんていう幸せな光景だなあ、その時の感動はきっと一生忘れません。</div>
+                <div className={surfaceCss.postscript_paragraph_prop}>なんていう幸せな光景だなあ、その時の感動は一生忘れません。</div>
               </div>
               <br></br>
               <div className={surfaceCss.postscript_paragraph_container}>
-                <div className={surfaceCss.postscript_paragraph_prop}>当時はとても誇らしく、納得した作品だと思いましたが、今見返してみると海と夏だけではなく、もっとブランドのコンセプトに沿って、サーフィンなどマリンスポーツの要素を入れたらいいではないかなど、いくつかの反省点がありました。</div>
-                <div className={surfaceCss.postscript_paragraph_prop}>過去の作品を見ながら「こうすればよかった」「今ならこうもできる」など、ブラッシュアップのアイデアを次々と生み出す。これがものづくりの人たち、誰かも通る道でしょうか。</div>
+                <div className={surfaceCss.postscript_paragraph_prop}>当時はとても誇らしく、納得した作品だと思いましたが、今見返してみると海と夏だけではなく、もっとブランドのコンセプトに沿って、サーフィンなどマリンスポーツの要素を入れたらより良いかと、いくつかの反省点がありました。</div>
+                <div className={surfaceCss.postscript_paragraph_prop}>過去の作品を見ながら「こうすればよかった」「今ならこうもできる」など、ブラッシュアップのアイデアを次々と生み出します。これがものづくりの人たち、誰かも通る道でしょうか。</div>
               </div>
             </div>
           </div>
