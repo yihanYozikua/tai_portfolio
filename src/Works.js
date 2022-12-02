@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from './firebase';
 
 import PageLayout from './components/PageLayout'
 import Cursor from './Cursor';
@@ -97,6 +100,15 @@ export default function Works(){
   }, []);
 
 
+  const navigate = useNavigate();
+  onAuthStateChanged(auth, (user) => {
+    if(user){
+      console.log("user log in: " + user.uid);
+    }
+    else{
+      navigate("/login");
+    }
+  })
 
   return(
     <>

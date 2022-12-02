@@ -91,7 +91,6 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
-  const navigate = useNavigate();
 
   // const [loading, setLoading] = useState(true)
   // useEffect(() => {
@@ -385,7 +384,7 @@ export default function About() {
     console.log('Finished loading');
   }
 
-  let isLogin = false;
+  const navigate = useNavigate();
   onAuthStateChanged(auth, (user) => {
     if(user){
       console.log("user log in: " + user.uid);

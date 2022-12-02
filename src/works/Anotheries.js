@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
-// import Protect from 'react-app-protect'
-// import 'react-app-protect/dist/index.css'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from '../firebase';
 
 import PageLayout from '../components/PageLayout'
 import Cursor from '../Cursor';
@@ -67,6 +68,15 @@ export default function Anotheries() {
     }
 
 
+    const navigate = useNavigate();
+    onAuthStateChanged(auth, (user) => {
+        if(user){
+        console.log("user log in: " + user.uid);
+        }
+        else{
+        navigate("/login");
+        }
+    })
     window.addEventListener('load', AOS.refresh);
     return (
         <>
