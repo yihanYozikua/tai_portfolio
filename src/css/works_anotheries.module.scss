@@ -13,14 +13,14 @@ $COLOR_PARA_DESCIPTION: #282D2F;
   justify-content: flex-end;
   background: $COLOR_BG;
   @include sm(){
-    padding-bottom: 3rem;
-  }
-
-  @include sm(){
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3rem;
+  }
+  @include md(){
+    padding-bottom: 10rem;
   }
 
 
@@ -33,7 +33,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
     .paragraph_1_container{
       width: 75%;
-      margin: 2rem 0;
+      margin: 3.5rem 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -41,13 +41,16 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       @include sm(){
         width: 85%;
       }
+      @include md(){
+        width: 75%;
+      }
 
       .paragraph_1_title{
         font-family: $FONT_JP;
         font-weight: 400;
         font-size: 1.5rem;
         color: $COLOR_PARA_TITLE;
-        margin: 2rem 0;
+        margin: 1.5rem 0;
         line-height: 2.5rem;
 
       }
@@ -61,6 +64,14 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           line-height: 2rem;
           @include sm(){
             font-size: 1rem;
+            @include sm_content_font;
+          }
+          @include md(){
+            font-size: 1rem;
+            @include md_content_font;
+          }
+          @include lg(){
+            @include lg_content_font;
           }
 
         }
@@ -80,6 +91,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin: 1.5rem 0;
         @include sm(){
           flex-direction: column;
           width: 100%;
@@ -122,7 +134,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 4rem;
+      margin-top: 0;
 
       .paragraph_2_contents_container{
         width: 75%;
@@ -162,12 +174,17 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
           .paragraph_2_text_container{
             width: 100%;
-            // height: 20vh;
             margin-bottom: 2.5rem;
             @include sm(){
               width: 90%;
               margin-bottom: 1.5rem;
               height: unset;
+            }
+            @include md(){
+              height: 25vh;
+            }
+            @include lg(){
+              height: 40vh;
             }
 
             .paragraph_2_title{
@@ -176,7 +193,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               font-size: 1.2rem;
               color: $COLOR_BLACK;
               line-height: 3rem;
-              margin: 1rem 0;
+              margin: 1.5rem 0;
             }
             .paragraph_2_description{
               font-family: $FONT_JP;
@@ -184,10 +201,15 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               font-size: .75rem;
               color: $COLOR_BLACK;
               line-height: 1.5rem;
-              margin-bottom: 1rem;
+              // margin-bottom: 2rem;
               @include sm(){
-                font-size: 1rem;
-                line-height: 2rem;
+                @include sm_content_font;
+              }
+              @include md(){
+                @include md_content_font;
+              }
+              @include lg(){
+                @include lg_content_font;
               }
             }
           }
@@ -197,6 +219,40 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               width: 100%;
               
             }
+          }
+        }
+      }
+    }
+
+    .show_page_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+      .show_page_contents_container{
+        width: 94%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        @include sm(){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        @include md(){
+          width: 82%;
+        }
+        @include lg(){
+          width: 80%;
+        }
+
+        .show_page_prop{
+          width: 20%;
+          @include sm(){
+            width: 100%;
+            margin: 1rem 0;
           }
         }
       }
@@ -226,6 +282,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           padding: 3rem 2.5rem;
           width: 70%;
         }
+        @include md(){
+          width: 60%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
@@ -238,7 +297,13 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             color: $COLOR_BLACK;
             margin: 1rem 0;
             @include sm(){
-              font-size: 1rem;
+              @include sm_content_font;
+            }
+            @include md(){
+              @include md_content_font;
+            }
+            @include lg(){
+              @include lg_content_font;
             }
 
           }
@@ -249,11 +314,14 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             color: $COLOR_BLACK;
             line-height: 1.5rem;
             @include sm(){
-              font-size: 1rem;
-              line-height: 2rem;
+              @include sm_content_font;
             }
-
-
+            @include md(){
+              @include md_content_font;
+            }
+            @include lg(){
+              @include lg_content_font;
+            }
           }
         }
       }
@@ -266,7 +334,10 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       align-items: center;
       .especially_thanks_contents_container{
         width: calc(40% + 8rem);
-        margin: 2rem 0;
+        margin: 3.5rem 0;
+        @include md(){
+          width: calc(60% + 8rem);
+        }
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;

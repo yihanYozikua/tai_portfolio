@@ -13,19 +13,36 @@ html{
   }
 }
 
-$threshold-width: 768px;
 @mixin sm(){
-  @media all and (max-width: $threshold-width){
+  @media all and (max-width: 768px){
+    @content;
+  }
+}
+
+@mixin md {
+  @media all and (min-width: 768px){
     @content;
   }
 }
 
 @mixin lg(){
-  @media all and (min-width: $threshold-width){
+  @media all and (min-width: 992px){
     @content;
   }
 }
 
+@mixin sm_content_font{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+@mixin md_content_font{
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+@mixin lg_content_font{
+  font-size: .85rem;
+  line-height: 2rem;
+}
 
 html, body{
   // font-family: 'Outfit', sans-serif; //$FONT_EN
@@ -34,6 +51,7 @@ html, body{
     width: 100%;
     overflow-x: hidden;
   }
+  
 }
 
 @keyframes fadein{

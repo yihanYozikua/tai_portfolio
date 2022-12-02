@@ -75,6 +75,17 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
           justify-content: center;
           align-items: center;
         }
+        @include md(){
+          width: 100%;
+          flex-direction: column !important;
+          justify-content: center;
+          align-items: center;
+        }
+        @include lg(){
+          width: 75%;
+          justify-content: unset;
+          align-items: unset;
+        }
 
       }
       .project_container_right{
@@ -84,6 +95,13 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
         @include sm(){
           margin-left: 0;
         }
+        @include md(){
+          margin-left: 0;
+        }
+        @include lg(){
+          margin-left: 10vw;
+          flex-direction: row !important;
+        }
       }
       .project_container_left{
         @extend .project_container;
@@ -91,6 +109,13 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
         margin-right: 10vw;
         @include sm(){
           margin-right: 0;
+        }
+        @include md(){
+          margin-right: 0;
+        }
+        @include lg(){
+          flex-direction: row-reverse !important;
+          margin-right: 10vw;
         }
       }
       .project_container_bottom{
@@ -158,6 +183,18 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
           width: 50%;
           height: unset !important;
           margin: 1rem 0;
+        }
+        @include md(){
+          opacity: 1;
+          width: 50%;
+          height: unset !important;
+          margin: 1rem 0;
+        }
+        @include lg(){
+          opacity: 0;
+          width: unset;
+          height: unset;
+          margin: unset;
         }
   
         .decription_contents_container{

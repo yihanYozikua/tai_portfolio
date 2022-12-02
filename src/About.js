@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import AOS from 'aos'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from './firebase';
 
 import PageLayout from './components/PageLayout'
 import Cursor from './Cursor';
@@ -14,7 +16,11 @@ import aboutCss from './css/about.module.scss'
 import loadingCss from './css/loading.module.scss'
 import specialContentsImg from './static/img/special_contents.png'
 import { images } from './images.ts'
-import avatarImg from './static/img/about_avatar.svg'
+import avatarImg from './static/img/about_avatar.jpg'
+// import avatarImg from './static/img/about_avatar-min.png'
+import hashImg_6 from './static/img/hashtags/hashtag_6.png'
+import hashImg_9 from './static/img/hashtags/hashtag_9.png'
+import hashImg_13 from './static/img/hashtags/hashtag_13.png'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -84,6 +90,7 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
+
   // const [loading, setLoading] = useState(true)
   // useEffect(() => {
   //   setTimeout(() => setLoading(false), 6000)
@@ -130,15 +137,20 @@ export default function About() {
   const view_works_button_ref = useRef(null);
   const view_works_button_text_1_ref = useRef(null);
   const view_works_button_text_2_ref = useRef(null);
+  const learn_me_by_hashtag_text_ref = useRef(null);
+  const learn_me_by_hashtag_button_ref = useRef(null);
+  const loading_ref = useRef(null);
 
   const self_intro_ref = useRef(null);
   const special_contents_ref = useRef(null);
   const view_works_ref = useRef(null);
+  const learn_me_by_hashtag_ref = useRef(null);
   let isFirstScrollDown = true;
 
   const [width, setWidth] = useState(window.innerWidth);
   const [kvParallax, setKvParallax] = useState([0, 0]);
   const [footerParallax, setFooterParallax] = useState([0, 0]);
+
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -150,14 +162,62 @@ export default function About() {
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
 
-  useEffect(()=>{
-    if(!isMobile){
-      console.log('PC');
-      setKvParallax([0, -500]);
+  const TopParagraph = () => {
+    if(isMobile){
+      return(
+        <div className={aboutCss.about_paragragh_contents_sec_container}>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
+            <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
+            <span>毎日開いては閉じてのあのアプリも。</span>
+            <span>ビジュアル的なもの、そうではないもの、私たちの行動や体験、あたりまえに繰り返している日常、実は全てがデザインされています。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
+            <span>だから私は信じている。</span>
+            <span>物事をデザインするのによって私たちの生活をよくすること。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
+            <span>だから私は考えている。</span>
+            <span>何かブラッシュアップできることがないか。何か新しいアイデアを生み出せるではないか。今までも、これからも、もっとよくなる明日のために、クオリティの高いデザインを追求し続けます。</span>
+          </div>
+        </div>
+      )
     }else{
+      return(
+        <div className={aboutCss.about_paragragh_contents_sec_container}>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
+            <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
+            <span>毎日開いては閉じてのあのアプリも。</span>
+            <span>ビジュアル的なもの、そうではないもの、</span>
+            <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
+            <span>実は全てがデザインされています。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
+            <span>だから私は信じている。</span>
+            <span>物事をデザインするのによって私たちの生活をよくすること。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
+            <span>だから私は考えている。</span>
+            <span>何かブラッシュアップできることがないか。</span>
+            <span>何か新しいアイデアを生み出せるではないか。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
+            <span>今までも、これからも、もっとよくなる明日のために、</span>
+            <span>クオリティの高いデザインを追求し続けます。</span>
+          </div>
+        </div>
+      )
+    }
+  }
+  
+  useEffect(()=>{
+    if(isMobile){
       console.log('mobile');
       setKvParallax([0, 0]);
+    }else{
+      console.log('PC');
+      setKvParallax([0, -500]);
     }
   }, [])
 
@@ -188,10 +248,13 @@ export default function About() {
     const view_works_button_bg = view_works_button_ref.current
     const view_works_button_text_1 = view_works_button_text_1_ref.current
     const view_works_button_text_2 = view_works_button_text_2_ref.current
+    const learn_me_by_hashtag_text = learn_me_by_hashtag_text_ref.current
+    const learn_me_by_hashtag_button_bg = learn_me_by_hashtag_button_ref.current
 
     const self_intro = self_intro_ref.current
     const special_contents = special_contents_ref.current
     const view_works = view_works_ref.current
+    const learn_me_by_hashtag = learn_me_by_hashtag_ref.current
 
     // ========== view my works button animation =========
     document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseover', ()=>{
@@ -207,6 +270,20 @@ export default function About() {
       view_works_button_text_1.style.color = '#282D2F';
       view_works_button_text_2.style.color = '#282D2F';
       view_works_button_bg.style.transition = 'all .4s ease-in-out'
+    })
+
+    // ========== learn me by hashtags =========
+    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener('mouseover', ()=>{
+      learn_me_by_hashtag_button_bg.style.width = '12.3rem';
+      learn_me_by_hashtag_button_bg.style.height = '2.3rem';
+      learn_me_by_hashtag_text.style.color = 'white';
+      learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
+    })
+    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener('mouseleave', ()=>{
+      learn_me_by_hashtag_button_bg.style.width = '0rem';
+      learn_me_by_hashtag_button_bg.style.height = '0rem';
+      learn_me_by_hashtag_text.style.color = '#282D2F';
+      learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
     })
 
     // ========== paragraph scroll to animation ==========
@@ -297,13 +374,28 @@ export default function About() {
         exp_anchor.style.transition = 'all .7s ease-in-out';
       }
     }
+    
   }, [])
-
   
+  const loading_anchor = loading_ref.current;
+
+  function handleImageLoaded(){
+    console.log('Finished loading');
+  }
+
+  let isLogin = false;
+  onAuthStateChanged(auth, (user) => {
+    if(user){
+      console.log("user log in: " + user.uid);
+    }
+    else{
+    }
+  })
   return(
     <>
+    
       <Cursor cursorTypes='👀' />
-      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='3000' />
+      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='1000' ref={loading_ref}/>
       <PageLayout>
         <section id={aboutCss.about}>
           <Navbar />
@@ -321,36 +413,14 @@ export default function About() {
 
           <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
             <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
-              <div className={aboutCss.about_paragragh_contents_sec_container}>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
-                  <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
-                  <span>毎日開いて閉じ、閉じて開くあのアプリも。</span>
-                  <span>ビジュアルなもの、そうではないもの、</span>
-                  <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
-                  <span>実は全てがデザインされています。</span>
-                </div>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
-                  <span>だから私は信じている。</span>
-                  <span>物事をデザインするのによって私たちの生活をよくすること。</span>
-                </div>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
-                  <span>だから私は考えている。</span>
-                  <span>何かブラッシュアップできることがないか。</span>
-                  <span>何か新しいアイデアを生み出せるではないか。</span>
-                </div>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
-                  <span>今までも、これからも、より良い明日のために、</span>
-                  <span>精度と質の高いデザインを追求し続けます。</span>
-                </div>
-              </div>
-              
+              <TopParagraph />
             </Parallax>
           </div>
 
           <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
             <Parallax className={aboutCss.about_self_intro_contents}>
               <div className={aboutCss.about_self_intro_contents_container}>
-                <img src={avatarImg} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
+                <img src={avatarImg} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref} onLoad = {handleImageLoaded()}></img>
                 <div className={aboutCss.about_self_intro_right_section_container}>
                   <div className={aboutCss.about_self_intro_circle_container}>
                     <div className={aboutCss.about_self_intro_circle_contents_container}>
@@ -376,20 +446,61 @@ export default function About() {
                     <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
                   </div>
                 </div>
-                
               </div>
             </Parallax>
           </div>
 
           <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
             <div className={aboutCss.about_special_contents_prop_container}>
-              <div className={aboutCss.about_special_contents_title}>Special content - #hashtags of me</div>
-              <a href="https://yihanyozikua.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
-                <img src={specialContentsImg} className={aboutCss.special_contents_img_prop}></img>
-              </a>
+              <div className={aboutCss.about_special_contents_title}>Special content</div>
+              <div className={aboutCss.about_special_contents_img_container}>
+                <div className={aboutCss.about_special_contents_img_middle_container}>
+                  <img src={ hashImg_6 } className={aboutCss.about_special_contents_img_prop}
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="0"
+                    data-aos-offset="10"
+                    data-aos-duration="1000"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom"></img>
+                </div>
+                <div className={aboutCss.about_special_contents_img_upper_container}>
+                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
+                    <img src={ hashImg_9 } className={aboutCss.about_special_contents_upper_img_prop}
+                      data-aos="fade-up-left"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="600"
+                      data-aos-offset="10"
+                      data-aos-duration="1000"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"></img>
+                  </div>
+                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
+                    <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
+                      data-aos="fade-up-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="300"
+                      data-aos-offset="10"
+                      data-aos-duration="1000"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"></img>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
+          <div className={aboutCss.about_learn_me_by_hashtags_button_container} ref={learn_me_by_hashtag_ref}>
+            <div className={aboutCss.about_learn_me_by_hashtags_button_prop_container}>
+              <a href='https://tai-tung-en.github.io/tai_portfolio_hashtags/' className={aboutCss.about_learn_me_by_hashtags_button_link}>
+                <div className={aboutCss.about_learn_me_by_hashtags_contents}>
+                  <div className={aboutCss.about_learn_me_by_hashtags_contents_prop} ref={learn_me_by_hashtag_text_ref}>Learn my by #hashtags</div>
+                </div>
+                <div className={aboutCss.about_learn_me_by_hashtags_button_hover_bg} ref={learn_me_by_hashtag_button_ref}> </div>
+              </a>
+            </div>
+          </div>
+          
           <div className={aboutCss.about_view_my_works_button_container} ref={view_works_ref}>
             <div className={aboutCss.about_view_my_works_button_prop_container}>
               <Link to="/works" className={aboutCss.about_view_my_works_button_link}>

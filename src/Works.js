@@ -35,6 +35,7 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
 
   useEffect(() => {
     const len = document.getElementsByClassName(`${worksCss.project_img_prop}`).length;
@@ -100,7 +101,7 @@ export default function Works(){
   return(
     <>
       <Cursor cursorTypes='👋' />
-      <Loading bg_style={loadingCss.loader_works} loadingTimeControl='3000'/>
+      <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1500'/>
       <PageLayout>
         <section id={worksCss.works}>
           <Navbar />
@@ -108,7 +109,7 @@ export default function Works(){
 
           <div className={worksCss.declaration_container}>
             <div className={worksCss.declaration_contents_container}>
-              <div className={worksCss.text_prop}>制作会社に勤めた時の実績は契約の関係で掲載できないので、</div>
+              <div className={worksCss.text_prop}>制作会社に在職中の実績は契約の関係で掲載できないので、</div>
               <div className={worksCss.text_prop}>対面にてご説明させていただけたら幸いです。</div>
             </div>
           </div>
