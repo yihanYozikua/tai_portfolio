@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
+import { NavLink, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { auth } from './firebase';
@@ -90,6 +91,7 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
+  const navigate = useNavigate();
 
   // const [loading, setLoading] = useState(true)
   // useEffect(() => {
@@ -389,11 +391,11 @@ export default function About() {
       console.log("user log in: " + user.uid);
     }
     else{
+      navigate("/login");
     }
   })
   return(
     <>
-    
       <Cursor cursorTypes='👀' />
       <Loading bg_style={loadingCss.loader_about} loadingTimeControl='1000' ref={loading_ref}/>
       <PageLayout>
