@@ -96,6 +96,39 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       }
     }
 
+    .show_design_draft_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+      @include sm(){
+        margin: 1rem 0;
+        height: 130%;
+      }
+      .show_design_draft_contents_container{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .show_design_draft_upper_img_prop{
+          object-fit: cover;
+          &:nth-child(1){
+            width: 60%;
+          }
+          &:nth-child(2){
+            width: 20%;
+          }
+        }
+        .show_design_draft_bottom_img_prop{
+          object-fit: cover;
+          width: 45%;
+        }
+      }
+    }
+
 
     .postscript_container{
       width: 100%;

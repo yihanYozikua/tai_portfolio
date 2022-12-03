@@ -17,6 +17,10 @@ import loadingCss from '../css/loading.module.scss'
 import nishikageCss from '../css/works_nishikage.module.scss'
 import banner from '../static/img/works/covers/nishikage.png'
 import nishikage_1 from '../static/img/works/nishikage/nishikage_01.png'
+import nishikage_2 from '../static/img/works/nishikage/nishikage_02.png'
+import nishikage_3 from '../static/img/works/nishikage/nishikage_03.png'
+import nishikage_4 from '../static/img/works/nishikage/nishikage_04.png'
+import nishikage_5 from '../static/img/works/nishikage/nishikage_05.png'
 
 export default function Nishikage() {
   const FONT_EN = "'Outfit', sans-serif";
@@ -120,6 +124,12 @@ export default function Nishikage() {
               </div>
             </div>
 
+            <div className={nishikageCss.show_design_draft_container}>
+              <div className={nishikageCss.show_design_draft_contents_container}>
+                <img src={ nishikage_2 } className={nishikageCss.show_design_draft_upper_img_prop}></img>
+                <img src={ nishikage_3 } className={nishikageCss.show_design_draft_upper_img_prop}></img>
+              </div>
+            </div>
 
             <div className={nishikageCss.paragraph_1_container}
               data-aos="fade-zoom-in"
@@ -135,6 +145,15 @@ export default function Nishikage() {
                 <div className={nishikageCss.paragraph_1_description_prop}>本サイトでは「診療内容」と「医院案内」の大枠を作り、それぞれの詳細ページはタブ切り替えの仕様にしております。同じページでタブ切り替えをすることで、どんな情報があるのを一目瞭然で、前のベージに戻る手間も省け、知りたい情報にスムーズにたどり着けるようにしております。</div>
               </div>
             </div>
+
+            <div className={nishikageCss.show_design_draft_container}>
+              <div className={nishikageCss.show_design_draft_contents_container}>
+                <img src={ nishikage_4 } className={nishikageCss.show_design_draft_bottom_img_prop}></img>
+                <img src={ nishikage_5 } className={nishikageCss.show_design_draft_bottom_img_prop}></img>
+              </div>
+            </div>
+
+            
 
 
 
