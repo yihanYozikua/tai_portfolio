@@ -137,21 +137,21 @@ export default function Works(){
                         img={index_nishikage}
                         imgWidth="29.27rem" imgHeight="18.29rem" 
                         descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
-                        url="/works/q_dinasour"/>
+                        url="/works/nishikage"/>
 
               <Projects name="株式会社じょぶ" type="Website (Client project with willstyle)" 
                         roles={["Design"]} 
                         img={index_job_homes} 
                         imgWidth="29.27rem" imgHeight="18.29rem" 
                         descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
-                        url="/works/sleep_well"/>
+                        url="/works/job_homes"/>
 
               <Projects name="株式会社MOTENA-Sea" type="Website (Client project with willstyle)" 
                         roles={["Direction, Design, Photography"]} 
                         img={index_motena_sea} 
                         imgWidth="29.27rem" imgHeight="18.29rem" 
                         descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
-                        url="/works/everything_is_gonna_be_alright"
+                        url="/works/motenaSea"
                         />
               <Projects name="Anotheries" type="Website (Side project)" 
                         roles={["Direction, Writing, Project Management,", "Design, Photography"]} 
