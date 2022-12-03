@@ -14,7 +14,7 @@ import ProjectKvLayout from '../components/ProjectKvLayout'
 import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Sidebar from '../components/Sidebar'
 import loadingCss from '../css/loading.module.scss'
-import jobHomesCss from '../css/job_homes.module.scss'
+import jobHomesCss from '../css/works_job_homes.module.scss'
 import banner from '../static/img/works/covers/job_homes.png'
 
 export default function JobHomes() {

@@ -14,7 +14,7 @@ import ProjectKvLayout from '../components/ProjectKvLayout'
 import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Sidebar from '../components/Sidebar'
 import loadingCss from '../css/loading.module.scss'
-import motenaSeaCss from '../css/motena_sea.module.scss'
+import motenaSeaCss from '../css/works_motena_sea.module.scss'
 import banner from '../static/img/works/covers/motena_sea.png'
 
 export default function MotenaSea() {

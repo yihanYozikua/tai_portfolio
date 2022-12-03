@@ -14,7 +14,7 @@ import ProjectKvLayout from '../components/ProjectKvLayout'
 import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Sidebar from '../components/Sidebar'
 import loadingCss from '../css/loading.module.scss'
-import nishikageCss from '../css/nishikage.module.scss'
+import nishikageCss from '../css/works_nishikage.module.scss'
 import banner from '../static/img/works/covers/nishikage.png'
 
 export default function Nishikage() {
