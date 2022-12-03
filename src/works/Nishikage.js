@@ -121,6 +121,23 @@ export default function Nishikage() {
             </div>
 
 
+            <div className={nishikageCss.paragraph_1_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="100"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <div className={nishikageCss.paragraph_1_title}>情報探しをスムーズになるタブ切り替え</div>
+              <div className={nishikageCss.paragraph_1_description_container}>
+                <div className={nishikageCss.paragraph_1_description_prop}>今回サイト制作の課題の一つは情報を整理すること。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>診療科目ごとの詳細内容や注意事項、医師のごあいさつと紹介、クリニックの診療時間とアクセス、クリニックのサイトにはたくさんの情報が溢れています。如何に情報を整理、分類することはデザインを起こす前にとても大切な工程です。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>本サイトでは「診療内容」と「医院案内」の大枠を作り、それぞれの詳細ページはタブ切り替えの仕様にしております。同じページでタブ切り替えをすることで、どんな情報があるのを一目瞭然で、前のベージに戻る手間も省け、知りたい情報にスムーズにたどり着けるようにしております。</div>
+              </div>
+            </div>
+
+
+
             <div className={nishikageCss.postscript_container}>
               <div className={nishikageCss.postscript_contents_container}
                 data-aos="fade-zoom-in"
