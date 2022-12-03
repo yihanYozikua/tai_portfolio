@@ -132,16 +132,15 @@ export default function Nishikage() {
                   <div className={nishikageCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={nishikageCss.postscript_paragraph_container}>
-                  <div className={nishikageCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2020</span>年<span style={{fontFamily: FONT_EN}}>3</span>月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細くおうち生活を過ごしていました。そんな時に、大学の友人から「聞いてほしい曲がある」と、この曲が送られてきました。</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「ここに悲しみがない」、歌詞に心に刺さる言葉ばかり。より多くの人に聞いてほしいと思い、この曲に合う動画を作って、<span style={{fontFamily: FONT_EN}}>SNS</span>でシェアしようと、友達に提案した。</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>中国語では「新年新希望」（新年に新しい希望が与える）という言葉があり、この曲を聞いてくれる人にこれからの日々に希望と期待を感じてもらいたくて、公開は大晦日に合わせました。</div>
-                </div>
-                <br></br>
-                <div className={nishikageCss.postscript_paragraph_container}>
-                  <div className={nishikageCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2</span>年後の今でも私はよくこの曲を聞いています。しかし、動画を見返してみると、一つ反省点がありました。ループ動画とはいえ、<span style={{fontFamily: FONT_EN}}>4</span>分ほどの尺で全く同じ画面が続いて、少し単調だと感じます。「あなたを支える人がずっとそばにいます」のコンセプトに合わせて、時間の流れを感じられる背景や色味の変化を加えたらいいと思います。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>私自身、子供の頃からよく病院のお世話になっている人です。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>行く前に口コミ調べたり、サイトを見たり、「ここに行って大丈夫かな」と不安になったり。大した病気ではなくても、体のことだから多少神経質になってしまうところもある。そういうシーンは日本に来てからも多く経験しました。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>患者さんにとって、大事な判断材料になる<span style={{fontFamily: FONT_EN}}>Web</span>サイト。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>不安することなく、知りたい情報を明確に掲載し、スムーズにたどり着けるように、</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>行く前に写真でスタッフさんとクリニックの雰囲気を掴めますように、</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>そういう思いを込めて、このサイトを制作いたしました。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>サイト公開後、院長から「分かりやすかった」と満足している声をいただいた時、本当に心の底から嬉しいと思います。<span style={{fontFamily: FONT_EN}}>Web</span>サイトを通して、患者さんは安心してご来院いただけますよう、少しでも力添えできたら幸いです。</div>
                 </div>
               </div>
-
 
               <div className={nishikageCss.especially_thanks_container}
                 data-aos="fade-zoom-in"
