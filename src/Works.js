@@ -20,6 +20,9 @@ import index_organ from './static/img/works/indexs/organ_voice.JPG'
 import index_dinasour from './static/img/works/indexs/dinosaur.png'
 import index_sleep from './static/img/works/indexs/sleep_well.png'
 import index_surface from './static/img/works/indexs/surface.png'
+import index_nishikage from './static/img/works/indexs/nishikage.png'
+import index_job_homes from './static/img/works/indexs/job_homes.png'
+import index_motena_sea from './static/img/works/indexs/motena_sea.png'
 
 
 const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionContainerHeight, descriptionPositonChoice, url, positionFinTuning}) => {
@@ -119,16 +122,37 @@ export default function Works(){
           <Navbar />
           <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" style={{top: '0'}} />
 
-          <div className={worksCss.declaration_container}>
+          {/* <div className={worksCss.declaration_container}>
             <div className={worksCss.declaration_contents_container}>
               <div className={worksCss.text_prop}>制作会社に在職中の実績は契約の関係で掲載できないので、</div>
               <div className={worksCss.text_prop}>対面にてご説明させていただけたら幸いです。</div>
             </div>
-          </div>
+          </div> */}
           
 
           <div className={worksCss.works_container}>
             <div className={worksCss.works_contents_container}>
+              <Projects name="にしかげクリニック アネックス" type="Website (Client project with willstyle)" 
+                        roles={["Design"]} 
+                        img={index_nishikage}
+                        imgWidth="29.27rem" imgHeight="18.29rem" 
+                        descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
+                        url="/works/q_dinasour"/>
+
+              <Projects name="株式会社じょぶ" type="Website (Client project with willstyle)" 
+                        roles={["Design"]} 
+                        img={index_job_homes} 
+                        imgWidth="29.27rem" imgHeight="18.29rem" 
+                        descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
+                        url="/works/sleep_well"/>
+
+              <Projects name="株式会社MOTENA-Sea" type="Website (Client project with willstyle)" 
+                        roles={["Direction, Design, Photography"]} 
+                        img={index_motena_sea} 
+                        imgWidth="29.27rem" imgHeight="18.29rem" 
+                        descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_left}`}
+                        url="/works/everything_is_gonna_be_alright"
+                        />
               <Projects name="Anotheries" type="Website (Side project)" 
                         roles={["Direction, Writing, Project Management,", "Design, Photography"]} 
                         img={index_anotheries} 
