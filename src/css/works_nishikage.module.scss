@@ -178,7 +178,8 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       align-items: center;
       .especially_thanks_contents_container{
         width: calc(40% + 8rem);
-        margin: 2rem 0;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px $COLOR_GRAY solid;
         @include md(){
           width: calc(60% + 8rem);
         }
@@ -205,6 +206,43 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           }
         }
         
+      }
+    }
+
+    .shared_gallery_conatiner{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .shared_gallery_contents_conatiner{
+        width: calc(40% + 8rem);
+        padding-bottom: 1.5rem;
+        @include md(){
+          width: calc(60% + 8rem);
+        }
+
+        .shared_gallery_title_prop{
+          color: $COLOR_BLACK;
+          font-family: $FONT_EN;
+          font-weight: 400;
+          font-size: 1rem;
+          margin: 2rem 0;
+        }
+        .website_details_container{
+          margin: 1rem 0;
+          .website_details_description_prop{
+            color: $COLOR_GRAY;
+            font-family: $FONT_EN;
+            font-weight: 400;
+            font-size: .7rem;
+            line-height: 1.2rem;
+            &:nth-child(1){
+              font-weight: 600;
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
   }

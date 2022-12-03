@@ -173,6 +173,20 @@ export default function Nishikage() {
                   </div>
                 </div>
               </div>
+
+              <div className={nishikageCss.shared_gallery_conatiner}
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-offset="0"
+                data-aos-duration="300"
+                data-aos-once="false">
+                <div className={nishikageCss.shared_gallery_contents_conatiner}>
+                  <div className={nishikageCss.shared_gallery_title_prop}>Be shared on the gallery site</div>
+                  <div className={nishikageCss.website_details_container}>
+                    <a className={nishikageCss.website_details_description_prop} href="https://webdesignclip.com/nishikage-anex/" target="_blank">Web Design Clip</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             
