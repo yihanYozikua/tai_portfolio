@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tai_portfolio/static/css/main.0f10f93a.css",
-    "main.js": "/tai_portfolio/static/js/main.074e71b0.js",
+    "main.js": "/tai_portfolio/static/js/main.3e09c5ec.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/everything_igtv.mov": "/tai_portfolio/static/media/everything_igtv.cbfa70016865fceb6013.mov",
     "static/media/stage.mp4": "/tai_portfolio/static/media/stage.e1ff05b0303c120e3816.mp4",
@@ -28,9 +28,12 @@
     "static/media/organ_voice_04.jpg": "/tai_portfolio/static/media/organ_voice_04.13c291c4018c0efc433d.jpg",
     "static/media/organ_voice_03.jpg": "/tai_portfolio/static/media/organ_voice_03.ba96c14a3ed453356263.jpg",
     "static/media/organ_voice_05.jpg": "/tai_portfolio/static/media/organ_voice_05.ff533abe5cb4081b124f.jpg",
+    "static/media/job_homes.png": "/tai_portfolio/static/media/job_homes.85b8f82f135b9aad2614.png",
     "static/media/organ_voice_02.jpg": "/tai_portfolio/static/media/organ_voice_02.f1b962a681d1412f36eb.jpg",
     "static/media/about_avatar.jpg": "/tai_portfolio/static/media/about_avatar.98b634a61965de9738ea.jpg",
     "static/media/anotheries_02.png": "/tai_portfolio/static/media/anotheries_02.d3b2dec12fe81be8a3ce.png",
+    "static/media/motena_sea.png": "/tai_portfolio/static/media/motena_sea.0d9db20e672842c8a9e3.png",
+    "static/media/nishikage.png": "/tai_portfolio/static/media/nishikage.e1272652d86ba3e50b7e.png",
     "static/media/anotheries_04.png": "/tai_portfolio/static/media/anotheries_04.be6e04fb374c7e85d00e.png",
     "static/media/dinosaur.png": "/tai_portfolio/static/media/dinosaur.6a07140ce9b623d5e203.png",
     "static/media/everything.png": "/tai_portfolio/static/media/everything.4c401df885f77ad4f4e1.png",
@@ -66,11 +69,11 @@
     "static/media/arrow_right.svg": "/tai_portfolio/static/media/arrow_right.3687a61f714499d60826e72733e92fc9.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
     "main.0f10f93a.css.map": "/tai_portfolio/static/css/main.0f10f93a.css.map",
-    "main.074e71b0.js.map": "/tai_portfolio/static/js/main.074e71b0.js.map",
+    "main.3e09c5ec.js.map": "/tai_portfolio/static/js/main.3e09c5ec.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f10f93a.css",
-    "static/js/main.074e71b0.js"
+    "static/js/main.3e09c5ec.js"
   ]
 }
