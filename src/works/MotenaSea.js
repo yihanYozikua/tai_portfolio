@@ -59,6 +59,7 @@ export default function MotenaSea() {
       }
   })
 
+  window.addEventListener('load', AOS.refresh);
   return(
     <>
       <Cursor cursorTypes='👀' />

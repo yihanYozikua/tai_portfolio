@@ -59,6 +59,7 @@ export default function JobHomes() {
       }
   })
 
+  window.addEventListener('load', AOS.refresh);
   return(
     <>
       <Cursor cursorTypes='👀' />
