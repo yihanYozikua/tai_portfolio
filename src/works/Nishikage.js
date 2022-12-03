@@ -213,6 +213,7 @@ export default function Nishikage() {
               containerWidth={width_worksBackToAnchor}/>
           </div>
         </section>
+        <Footer />
       </PageLayout>
     </>
   )

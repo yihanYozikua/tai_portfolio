@@ -152,6 +152,7 @@ export default function MotenaSea() {
           </div>
 
         </section>
+        <Footer />
       </PageLayout>
     </>
   )

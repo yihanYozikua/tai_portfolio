@@ -151,6 +151,7 @@ export default function JobHomes() {
               containerWidth={width_worksBackToAnchor}/>
           </div>
         </section>
+        <Footer />
       </PageLayout>
     </>
   )
