@@ -15,6 +15,7 @@ import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Sidebar from '../components/Sidebar'
 import loadingCss from '../css/loading.module.scss'
 import nishikageCss from '../css/nishikage.module.scss'
+import banner from '../static/img/works/covers/nishikage.png'
 
 export default function Nishikage() {
   const FONT_EN = "'Outfit', sans-serif";
@@ -64,7 +65,22 @@ export default function Nishikage() {
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section>
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <div className={nishikageCss.kv_container}>
+            <ProjectKvLayout 
+              kv_column_direction="column"
+              nameJP="にしかげクリニック　アネックス"
+              type="Website (Client project with willstyle)" roles={["Design"]} date="2022.10" tool="Adobe XD, Lightroom, Photoshop" 
+              url="https://nishikage-anex.jp/" 
+              urlTitle="Website"
+              bannerImg={banner}
+              />
 
+            <WorksBackToAnchor 
+              prevUrl="/works/surface_apparel"
+              nextUrl="/works/job_homes"
+              containerWidth={width_worksBackToAnchor}/>
+          </div>
         </section>
       </PageLayout>
     </>

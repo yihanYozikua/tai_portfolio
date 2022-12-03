@@ -275,7 +275,7 @@ export default function Anotheries() {
                         </div>
 
                         <WorksBackToAnchor 
-                            prevUrl="/works/surface_apparel"
+                            prevUrl="/works/motenaSea"
                             nextUrl="/works/q_dinasour"
                             containerWidth={width_worksBackToAnchor}/>
                     </div>
