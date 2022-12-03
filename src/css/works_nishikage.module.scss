@@ -112,19 +112,33 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: flex-start;
+        @include sm(){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
         .show_design_draft_upper_img_prop{
           object-fit: cover;
           &:nth-child(1){
             width: 60%;
+            @include sm(){
+              width: 100%;
+            }
           }
           &:nth-child(2){
             width: 20%;
+            @include sm(){
+              width: 100%;
+            }
           }
         }
         .show_design_draft_bottom_img_prop{
           object-fit: cover;
           width: 45%;
+          @include sm(){
+            width: 100%;
+          }
         }
       }
     }
