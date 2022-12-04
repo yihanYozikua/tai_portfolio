@@ -218,7 +218,7 @@ export default function Nishikage() {
                     <div className={nishikageCss.especially_thanks_description_prop}>Project organizer</div>
                     <div className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>ウィルスタイル株式会社</div>
                     <br></br>
-                    <div className={nishikageCss.especially_thanks_description_prop}>ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>デザイナーとして、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>Account Director : Kousuke Sakaguchi</div>
