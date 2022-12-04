@@ -21,7 +21,7 @@ import avatarImg from './static/img/about_avatar.jpg'
 // import avatarImg from './static/img/about_avatar-min.png'
 import hashImg_6 from './static/img/hashtags/hashtag_6.png'
 import hashImg_9 from './static/img/hashtags/hashtag_9.png'
-import hashImg_13 from './static/img/hashtags/hashtag_13.png'
+import hashImg_13 from './static/img/hashtags/hashtag_13.jpeg'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"

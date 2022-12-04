@@ -132,9 +132,10 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             }
           }
           &:nth-child(2){
-            width: 25%;
+            width: 35%;
             @include sm(){
               width: 100%;
+              margin-top: 2rem;
             }
           }
         }
