@@ -117,7 +117,7 @@ export default function Nishikage() {
               data-aos-once="false">
               <div className={nishikageCss.paragraph_1_title}>患者さんに寄り添うデザイン</div>
               <div className={nishikageCss.paragraph_1_description_container}>
-                <div className={nishikageCss.paragraph_1_description_prop}>クリニックのWebサイトをデザインする上で大切にしているのは、不安と疑問を感じさせてないこと。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>クリニックの<span style={{fontFamily: FONT_EN}}>Web</span>サイトをデザインする上で大切にしているのは、不安と疑問を感じさせてないこと。</div>
                 <div className={nishikageCss.paragraph_1_description_prop}>コンテンツの配置はできるだけ分かりやすくし、全体的に柔らかい雰囲気が伝わるように、写真選びや色使い、サイトのあしらいに工夫しております。</div>
                 <br></br>
                 <div className={nishikageCss.paragraph_1_description_prop}>まず、今回は新しく開院されたこともあり、スタッフさんとクリニックの雰囲気を掴んでいただけるような写真をキービジュアルで使用することで、安心感、信頼感を演出。そして色は本院のにしかげ内科のテイストを踏まえ、ベースカラーが明るめの水色に。メインターゲットである近隣地域の患者さんはお年寄りの方が多くいらっしゃることで、アイコンを加えたり、フォントサイズも大きめに調整しました。また、より親和性を感じていただくため、ボタンのデザインは錠剤シートから薬を押し出すイメージをしており、ニューモーフィズムのデザインにしております。</div>
@@ -126,8 +126,22 @@ export default function Nishikage() {
 
             <div className={nishikageCss.show_design_draft_container}>
               <div className={nishikageCss.show_design_draft_contents_container}>
-                <img src={ nishikage_2 } className={nishikageCss.show_design_draft_upper_img_prop}></img>
-                <img src={ nishikage_3 } className={nishikageCss.show_design_draft_upper_img_prop}></img>
+                <img src={ nishikage_2 } className={nishikageCss.show_design_draft_upper_img_prop}
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="100"
+                  data-aos-offset="0"
+                  data-aos-duration="300"
+                  data-aos-once="false"
+                ></img>
+                <img src={ nishikage_3 } className={nishikageCss.show_design_draft_upper_img_prop}
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="100"
+                  data-aos-offset="0"
+                  data-aos-duration="300"
+                  data-aos-once="false"
+                ></img>
               </div>
             </div>
 
@@ -148,8 +162,22 @@ export default function Nishikage() {
 
             <div className={nishikageCss.show_design_draft_container}>
               <div className={nishikageCss.show_design_draft_contents_container}>
-                <img src={ nishikage_4 } className={nishikageCss.show_design_draft_bottom_img_prop}></img>
-                <img src={ nishikage_5 } className={nishikageCss.show_design_draft_bottom_img_prop}></img>
+                <img src={ nishikage_4 } className={nishikageCss.show_design_draft_bottom_img_prop}
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="100"
+                  data-aos-offset="0"
+                  data-aos-duration="300"
+                  data-aos-once="false"
+                ></img>
+                <img src={ nishikage_5 } className={nishikageCss.show_design_draft_bottom_img_prop}
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="100"
+                  data-aos-offset="0"
+                  data-aos-duration="300"
+                  data-aos-once="false"
+                ></img>
               </div>
             </div>
 
@@ -217,7 +245,7 @@ export default function Nishikage() {
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={nishikageCss.shared_gallery_contents_conatiner}>
-                  <div className={nishikageCss.shared_gallery_title_prop}>Be shared on the gallery site</div>
+                  <div className={nishikageCss.shared_gallery_title_prop}>Thanks for sharing</div>
                   <div className={nishikageCss.website_details_container}>
                     <a className={nishikageCss.website_details_description_prop} href="https://webdesignclip.com/nishikage-anex/" target="_blank">Web Design Clip</a>
                   </div>
