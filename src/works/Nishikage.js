@@ -228,7 +228,7 @@ export default function Nishikage() {
                   </div>
                   <br></br>
                   <div className={nishikageCss.author_details_container}>
-                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
+                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Photography</div>
                     <a className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</a>
                     <br></br>
                     <div className={nishikageCss.especially_thanks_description_prop}>今回の撮影には株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様（以下、「<span style={{fontFamily: FONT_EN}}>KNOT</span>様」）にご協力いただきました。</div>
