@@ -227,13 +227,10 @@ export default function JobHomes() {
                   <div className={jobHomesCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={jobHomesCss.postscript_paragraph_container}>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>私自身、子供の頃からよく病院のお世話になっている人です。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>行く前に口コミ調べたり、サイトを見たり、「ここに行って大丈夫かな」と不安になったり。大した病気ではなくても、体のことだから多少神経質になってしまうところもある。そういうシーンは日本に来てからも多く経験しました。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>患者さんにとって、大事な判断材料になる<span style={{fontFamily: FONT_EN}}>Web</span>サイト。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>不安することなく、知りたい情報を明確に掲載し、スムーズにたどり着けるように、</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>行く前に写真でスタッフさんとクリニックの雰囲気を掴めますように、</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>そういう思いを込めて、このサイトを制作いたしました。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>サイト公開後、院長から「分かりやすかった」と満足している声をいただいた時、本当に心の底から嬉しいと思います。<span style={{fontFamily: FONT_EN}}>Web</span>サイトを通して、患者さんは安心してご来院いただけますよう、少しでも力添えできたら幸いです。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>このプロジェクトに参加した時に、私はまだコロナで日本に入国できず、台湾でテレワークをしていました。制作期間で直接お会いできないことに残念な気持ちがいっぱいですが、オンライン打ち合わせを通して、お客様にアイデアを提案したり、意見をすり合わせしたり、撮影をご担当くださったパートナー様と写真のイメージをご共有したりすること、私にとってはとても貴重な体験になりました。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>日本に入国後、サイト公開後のごあいさつで初めて事務所にお伺いました。こだわりの内装と家具、デザインされた動線、お家づくりする上で大切にされているポイントがそのまま。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>そして、スタッフの皆様に暖かく接していただき、「素敵なホームページをありがとう」と言っていただいた時、とても嬉しくて、仕事のやり甲斐を感じた瞬間でした。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>どうか読み手にとっても株式会社じょぶ様の家づくりのこだわり、お優しい人柄が伝わるWebサイトでありますように。</div>
                 </div>
               </div>
               
@@ -246,24 +243,24 @@ export default function JobHomes() {
                 <div className={jobHomesCss.especially_thanks_contents_container}>
                   <div className={jobHomesCss.especially_thanks_title_prop}>Project credits</div>
                   <div className={jobHomesCss.author_details_container}>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>Project organizer</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>ウィルスタイル株式会社</div>
                     <br></br>
                     <div className={jobHomesCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>デザイナーとして、トップと下層ページのデザインを担当させていただきました。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>Account Director : Kousuke Sakaguchi</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>Designer : Tai,tung-en</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>Director : Mariko Nishizawa</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Account Director : Kousuke Sakaguchi</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Designer : Tai,tung-en</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Director : Mariko Nishizawa</div>
                   </div>
                   <br></br>
                   <div className={jobHomesCss.author_details_container}>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>Project organizer</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</div>
                     <br></br>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>今回の撮影には株式会社KNOT様（以下、「KNOT様」）にご協力いただきました。</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>KNOT様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>今回の撮影には株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様（以下、「<span style={{fontFamily: FONT_EN}}>KNOT</span>様」）にご協力いただきました。</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}><span style={{fontFamily: FONT_EN}}>KNOT</span>様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>ウィルスタイル株式会社のパートナー様として撮影をご担当いただきました。</div>
                   </div>
                 </div>

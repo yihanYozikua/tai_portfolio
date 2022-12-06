@@ -16,6 +16,9 @@ import Sidebar from '../components/Sidebar'
 import loadingCss from '../css/loading.module.scss'
 import motenaSeaCss from '../css/works_motena_sea.module.scss'
 import banner from '../static/img/works/covers/motena_sea.png'
+import motena_sea_1 from '../static/img/works/motena_sea/motena_sea_01.png'
+import motena_sea_2 from '../static/img/works/motena_sea/motena_sea_02.png'
+
 
 export default function MotenaSea() {
   const FONT_EN = "'Outfit', sans-serif";
@@ -76,6 +79,51 @@ export default function MotenaSea() {
               urlTitle="Website"
               bannerImg={banner}
               />
+            
+            <div className={motenaSeaCss.paragraph_1_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="100"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <div className={motenaSeaCss.paragraph_1_title}>未来のために</div>
+              <div className={motenaSeaCss.paragraph_1_description_container}>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>株式会社<span style={{fontFamily: FONT_EN}}>MOTENA-Sea</span>は水素とバイオ燃料を利用した水素燃料電池船の活用から、パートナー企業と産官学連携のもと、新たなマリンビジネスの在り方を社会に提案していく会社です。事業にまつわるポイントは二つあります。一つは、水素を燃料として使用することで温室効果ガスの排出を大幅に削減し、環境に優しくてサステナビリティを実現すること。そしてもう一つは、従来の客船のイメージを超え、水素燃料電池船を通して新しい事業を提供し人々、社会を繋げていくこと。</div>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>官公庁や地方企業・大学との提携も行われますので、事業と会社について紹介し、情報を発信することをメインの目的とし、新規サイト制作させていただく運びになりました。</div>
+              </div>
+            </div>
+            
+            <div className={motenaSeaCss.middleImg}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <img src={motena_sea_1} alt="dinasours" className={motenaSeaCss.all_dinasours_prop}></img>
+            </div>
+
+            <div className={motenaSeaCss.paragraph_1_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="100"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <div className={motenaSeaCss.paragraph_1_title}>サイトを育てていくためのブログシステム</div>
+              <div className={motenaSeaCss.paragraph_1_description_container}>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>事業の展開と伴い、よく出張しにいかれることをお聞きして、現地でステークホルダーの方とのコミュニケーションや事業に興味を持っている方の声、出張先の出来事など、サイトで発信できるコンテンツもおありとのことなので、今回はお客様が気軽に更新することができるブログシステム（<span style={{fontFamily: FONT_EN}}>WordPress</span>）を導入いたしました。サイト公開後はブログを活用くださっており、事業のきっかけと水素のご紹介をはじめ、現在取り組まれていることについてなどを投稿されています。</div>
+              </div>
+            </div>
+
+            <div className={motenaSeaCss.middleImg}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <img src={motena_sea_2} alt="dinasours" className={motenaSeaCss.all_dinasours_prop}></img>
+            </div>
 
             <div className={motenaSeaCss.postscript_container}>
               <div className={motenaSeaCss.postscript_contents_container}
@@ -88,13 +136,9 @@ export default function MotenaSea() {
                   <div className={motenaSeaCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={motenaSeaCss.postscript_paragraph_container}>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>私自身、子供の頃からよく病院のお世話になっている人です。</div>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>行く前に口コミ調べたり、サイトを見たり、「ここに行って大丈夫かな」と不安になったり。大した病気ではなくても、体のことだから多少神経質になってしまうところもある。そういうシーンは日本に来てからも多く経験しました。</div>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>患者さんにとって、大事な判断材料になる<span style={{fontFamily: FONT_EN}}>Web</span>サイト。</div>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>不安することなく、知りたい情報を明確に掲載し、スムーズにたどり着けるように、</div>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>行く前に写真でスタッフさんとクリニックの雰囲気を掴めますように、</div>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>そういう思いを込めて、このサイトを制作いたしました。</div>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>サイト公開後、院長から「分かりやすかった」と満足している声をいただいた時、本当に心の底から嬉しいと思います。<span style={{fontFamily: FONT_EN}}>Web</span>サイトを通して、患者さんは安心してご来院いただけますよう、少しでも力添えできたら幸いです。</div>
+                  <div className={motenaSeaCss.postscript_paragraph_prop}>株式会社<span style={{fontFamily: FONT_EN}}>MOTENA-Sea</span>様のサイトでは、自分がディレクションとデザイン両方担当させていただきました。契約まわりをはじめ、キャッチコピーとコンセプト作り､スケジュール管理など、まだまだ不慣れなことばかりでしたが、サイト制作の難しさと楽しさについて認識をより一層深めることができ、大変勉強させていただいたプロジェクトになりました。</div>
+                  <div className={motenaSeaCss.postscript_paragraph_prop}>新しい分野での新しいチャレンジ。お客様が語った事業に対する想い､海の未来へ大きな抱負に感銘を受け、私自身海が大好きこともあり､終始ワクワクな気持ちで制作させていただきました。</div>
+                  <div className={motenaSeaCss.postscript_paragraph_prop}>短納期のプロジェクトではありますが、素材のご提供やデザインのご確認など、いつも迅速にご対応いただいたおかげて、無事に公開まで運ぶことができました。これからもサイトを通じて、株式会社<span style={{fontFamily: FONT_EN}}>MOTENA-Sea</span>の事業と海運業界のご発展に少しお力添えできれば嬉しいです。</div>
                 </div>
               </div>
 
@@ -107,24 +151,24 @@ export default function MotenaSea() {
                 <div className={motenaSeaCss.especially_thanks_contents_container}>
                   <div className={motenaSeaCss.especially_thanks_title_prop}>Project credits</div>
                   <div className={motenaSeaCss.author_details_container}>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Project organizer</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>ウィルスタイル株式会社</div>
                     <br></br>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>ディレクターとデザイナーとして、英語のキャッチコピーとコンセプト作り、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Account Director : Kousuke Sakaguchi</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Designer : Tai,tung-en</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Engineer : Mineo Okuda</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Director : Tai,tung-en</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Account Director : Kousuke Sakaguchi</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Designer : Tai,tung-en</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Engineer : Mineo Okuda</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Director : Tai,tung-en</div>
                   </div>
                   <br></br>
                   <div className={motenaSeaCss.author_details_container}>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Project organizer</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</div>
                     <br></br>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>今回の撮影には株式会社KNOT様（以下、「KNOT様」）にご協力いただきました。</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>KNOT様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>今回の撮影には株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様（以下、「<span style={{fontFamily: FONT_EN}}>KNOT</span>様」）にご協力いただきました。</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}><span style={{fontFamily: FONT_EN}}>KNOT</span>様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>ウィルスタイル株式会社のパートナー様として撮影をご担当いただきました。</div>
                   </div>
                 </div>

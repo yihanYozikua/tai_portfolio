@@ -60,6 +60,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           font-size: .85rem;
           color: $COLOR_PARA_DESCIPTION;
           line-height: 2rem;
+          text-align: justify;
           @include sm(){
             font-size: 1rem;
             @include sm_content_font;
@@ -102,6 +103,8 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         font-size: 1rem;
       }
     }
+
+
 
     .postscript_container{
       width: 100%;
