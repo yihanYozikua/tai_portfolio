@@ -138,8 +138,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     width: 100vw;
     display: flex;
     justify-content: flex-end;
-    margin-top: 3rem;
-    margin-bottom: 7rem;
+    margin: 3rem 0;
 
     .design_principle_contents_container{
       width: 94%;
@@ -166,7 +165,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
   
           }
           .design_principle_title_underline{
-  
+            width: 1rem;
+            border-top: 1px $COLOR_GRAY solid;
+            margin-top: .8rem;
           }
         }
         .design_principle_lists_container{
@@ -187,6 +188,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               font-family: $FONT_EN;
               text-align: justify;
               margin-right: 1rem;
+              font-weight: 500;
             }
           }
         }
@@ -195,27 +197,59 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
   }
 
   .design_approach_container{
+    width: 100vw;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: flex-end;
 
     .design_approach_contents_container{
+      width: 94%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      .design_approach_title_container{
+      .design_approach_contents_shell{
+        width: calc(21.2rem + 30rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
 
-        .design_approach_title_prop{
+        .design_approach_title_container{
+          margin-bottom: 2.2rem;
 
+          .design_approach_title_prop{
+            font-family: $FONT_EN;
+            font-weight: 500;
+            font-size: 1rem;
+            color: $COLOR_GRAY;
+            letter-spacing: 0.05em;
+          }
+          .design_approach_title_underline{
+            width: 1rem;
+            border-top: 1px $COLOR_GRAY solid;
+            margin-top: .8rem;
+          }
         }
-        .design_approach_title_underline{
-
+        .design_approach_description_container{
+          margin-bottom: 2.2rem;
+          .design_approach_description_prop{
+            font-family: $FONT_JP;
+            font-size: .85rem;
+            font-weight: 400;
+            color: $COLOR_DESCRIPTION;
+            line-height: 1.6rem;
+            text-align: justify;
+          }
         }
-      }
-      .design_approach_description_container{
-        .design_approach_description_prop{
-
-        }
-      }
-      .design_approach_img_container{
-        
-        .design_approach_img_prop{
-
+        .design_approach_img_container{
+          width: 100%;
+          
+          .design_approach_img_prop{
+            width: 100%;
+            object-fit: cover;
+  
+          }
         }
       }
     }

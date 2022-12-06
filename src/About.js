@@ -421,7 +421,13 @@ export default function About() {
             </Parallax>
           </div>
           
-          <div className={aboutCss.design_principle_container}>
+          <div className={aboutCss.design_principle_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="100"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={aboutCss.design_principle_contents_container}>
               <div className={aboutCss.design_principle_contents_shell}>
                 <div className={aboutCss.design_principle_title_container}>
@@ -446,22 +452,30 @@ export default function About() {
             </div>
           </div>
 
-          {/* <div className={aboutCss.design_approach_container}>
+          <div className={aboutCss.design_approach_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="100"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
             <div className={aboutCss.design_approach_contents_container}>
-              <div className={aboutCss.design_approach_title_container}>
-                <div className={aboutCss.design_approach_title_prop}>Approach</div>
-                <div className={aboutCss.design_approach_title_underline}></div>
-              </div>
-              <div className={aboutCss.design_approach_description_container}>
-                <div className={aboutCss.design_approach_description_prop}>
-                  デザインのあり方は多様で、色味や余白、ボタンの場所一つとっても100％の正解はありません。けれど、それぞれの理由はあるはずだと思います。これは誰に、何を見せて、どうなってもらうためのデザインなのか、自信を持って説明できるように、デザインを起こす前に課題と目的を再確認し、ターゲットと競合について調べます。その結果に基づきデザインの方向性を提案したり、ワイヤーフレームを通してイメージをすり合わせしたりしております。ロジックを重ねて、試行錯誤しながら、根拠のあるデザインを作る。これは、私がデザインする上で大切にしていること。
+              <div className={aboutCss.design_approach_contents_shell}>
+                <div className={aboutCss.design_approach_title_container}>
+                  <div className={aboutCss.design_approach_title_prop}>Approach</div>
+                  <div className={aboutCss.design_approach_title_underline}></div>
+                </div>
+                <div className={aboutCss.design_approach_description_container}>
+                  <div className={aboutCss.design_approach_description_prop}>
+                    デザインのあり方は多様で、色味や余白、ボタンの場所一つとっても100％の正解はありません。けれど、それぞれの理由はあるはずだと思います。これは誰に、何を見せて、どうなってもらうためのデザインなのか、自信を持って説明できるように、デザインを起こす前に課題と目的を再確認し、ターゲットと競合について調べます。その結果に基づきデザインの方向性を提案したり、ワイヤーフレームを通してイメージをすり合わせしたりしております。ロジックを重ねて、試行錯誤しながら、根拠のあるデザインを作る。これは、私がデザインする上で大切にしていること。
+                  </div>
+                </div>
+                <div className={aboutCss.design_approach_img_container}>
+                  <img src={ wireframe } className={aboutCss.design_approach_img_prop}></img>
                 </div>
               </div>
-              <div className={aboutCss.design_approach_img_container}>
-                <img src={ wireframe } className={aboutCss.design_approach_img_prop}></img>
-              </div>
             </div>
-          </div> */}
+          </div>
 
           <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
             <Parallax className={aboutCss.about_self_intro_contents}>
