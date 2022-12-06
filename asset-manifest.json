@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tai_portfolio/static/css/main.9eb5b0f2.css",
-    "main.js": "/tai_portfolio/static/js/main.9bee3000.js",
+    "main.css": "/tai_portfolio/static/css/main.9c6dd552.css",
+    "main.js": "/tai_portfolio/static/js/main.e3988469.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/everything_igtv.mov": "/tai_portfolio/static/media/everything_igtv.cbfa70016865fceb6013.mov",
     "static/media/stage.mp4": "/tai_portfolio/static/media/stage.e1ff05b0303c120e3816.mp4",
@@ -36,6 +36,7 @@
     "static/media/anotheries_02.png": "/tai_portfolio/static/media/anotheries_02.d3b2dec12fe81be8a3ce.png",
     "static/media/nishikage.png": "/tai_portfolio/static/media/nishikage.e1272652d86ba3e50b7e.png",
     "static/media/job_homes_01.png": "/tai_portfolio/static/media/job_homes_01.b74b724d2369ad114f92.png",
+    "static/media/motena_sea_01.png": "/tai_portfolio/static/media/motena_sea_01.4ef6ce4f4ce604db35bd.png",
     "static/media/nishikage_05.png": "/tai_portfolio/static/media/nishikage_05.9b99e5a0da9720ec89ba.png",
     "static/media/anotheries_04.png": "/tai_portfolio/static/media/anotheries_04.be6e04fb374c7e85d00e.png",
     "static/media/nishikage_01.png": "/tai_portfolio/static/media/nishikage_01.73048629050ccedcd6a3.png",
@@ -53,6 +54,7 @@
     "static/media/job_homes.png": "/tai_portfolio/static/media/job_homes.6bdbbb61182042c89ccb.png",
     "static/media/organ_voice_07.jpg": "/tai_portfolio/static/media/organ_voice_07.f701494413a384ab5668.jpg",
     "static/media/footer_bg-min.png": "/tai_portfolio/static/media/footer_bg-min.6a6dcc34574e12933f60.png",
+    "static/media/motena_sea_02.png": "/tai_portfolio/static/media/motena_sea_02.be19d4b33191a7ac1d2b.png",
     "static/media/motena_sea.png": "/tai_portfolio/static/media/motena_sea.5f64d162c3b79e1d7d28.png",
     "static/media/organ_voice.JPG": "/tai_portfolio/static/media/organ_voice.74bd60e82e62f47da35b.JPG",
     "static/media/organ_voice_01.JPG": "/tai_portfolio/static/media/organ_voice_01.9a860a99727e85b80850.JPG",
@@ -84,12 +86,12 @@
     "static/media/arrow_up_right.svg": "/tai_portfolio/static/media/arrow_up_right.554b974330100dbaca9bf273829f16ec.svg",
     "static/media/arrow_right.svg": "/tai_portfolio/static/media/arrow_right.3687a61f714499d60826e72733e92fc9.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
-    "main.9eb5b0f2.css.map": "/tai_portfolio/static/css/main.9eb5b0f2.css.map",
-    "main.9bee3000.js.map": "/tai_portfolio/static/js/main.9bee3000.js.map",
+    "main.9c6dd552.css.map": "/tai_portfolio/static/css/main.9c6dd552.css.map",
+    "main.e3988469.js.map": "/tai_portfolio/static/js/main.e3988469.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9eb5b0f2.css",
-    "static/js/main.9bee3000.js"
+    "static/css/main.9c6dd552.css",
+    "static/js/main.e3988469.js"
   ]
 }
