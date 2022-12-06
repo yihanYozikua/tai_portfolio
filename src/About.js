@@ -22,6 +22,7 @@ import avatarImg from './static/img/about_avatar.jpg'
 import hashImg_6 from './static/img/hashtags/hashtag_6.png'
 import hashImg_9 from './static/img/hashtags/hashtag_9.png'
 import hashImg_13 from './static/img/hashtags/hashtag_13.jpeg'
+import wireframe from './static/img/about_wireframe.png'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -91,6 +92,8 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   // const [loading, setLoading] = useState(true)
   // useEffect(() => {
@@ -417,6 +420,48 @@ export default function About() {
               <TopParagraph />
             </Parallax>
           </div>
+          
+          <div className={aboutCss.design_principle_container}>
+            <div className={aboutCss.design_principle_contents_container}>
+              <div className={aboutCss.design_principle_contents_shell}>
+                <div className={aboutCss.design_principle_title_container}>
+                  <div className={aboutCss.design_principle_title_prop}>Design principle</div>
+                  <div className={aboutCss.design_principle_title_underline}></div>
+                </div>
+                <div className={aboutCss.design_principle_lists_container}>
+                  <div className={aboutCss.design_principle_lists_prop}>
+                    <span className={aboutCss.index_prop}>01</span>
+                    <span>疑いと検証を繰り返す。</span>
+                  </div>
+                  <div className={aboutCss.design_principle_lists_prop}>
+                    <span className={aboutCss.index_prop}>02</span>
+                    <span>試行錯誤を恐れずに踏み出す。</span>
+                  </div>
+                  <div className={aboutCss.design_principle_lists_prop}>
+                    <span className={aboutCss.index_prop}>03</span>
+                    <span>根拠に基づきデザインを起こす。</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className={aboutCss.design_approach_container}>
+            <div className={aboutCss.design_approach_contents_container}>
+              <div className={aboutCss.design_approach_title_container}>
+                <div className={aboutCss.design_approach_title_prop}>Approach</div>
+                <div className={aboutCss.design_approach_title_underline}></div>
+              </div>
+              <div className={aboutCss.design_approach_description_container}>
+                <div className={aboutCss.design_approach_description_prop}>
+                  デザインのあり方は多様で、色味や余白、ボタンの場所一つとっても100％の正解はありません。けれど、それぞれの理由はあるはずだと思います。これは誰に、何を見せて、どうなってもらうためのデザインなのか、自信を持って説明できるように、デザインを起こす前に課題と目的を再確認し、ターゲットと競合について調べます。その結果に基づきデザインの方向性を提案したり、ワイヤーフレームを通してイメージをすり合わせしたりしております。ロジックを重ねて、試行錯誤しながら、根拠のあるデザインを作る。これは、私がデザインする上で大切にしていること。
+                </div>
+              </div>
+              <div className={aboutCss.design_approach_img_container}>
+                <img src={ wireframe } className={aboutCss.design_approach_img_prop}></img>
+              </div>
+            </div>
+          </div> */}
 
           <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
             <Parallax className={aboutCss.about_self_intro_contents}>
