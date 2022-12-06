@@ -31,7 +31,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
     .paragraph_1_container{
       width: 75%;
-      margin: 3.5rem 0;
+      margin: 2rem 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -79,6 +79,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
     .middleImg{
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 3rem 0;
@@ -94,8 +95,98 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           height: 37vh;
         }
       }
+      .img_description_prop{
+        margin-top: 1.5rem;
+        color: $COLOR_BLACK;
+        font-family: $FONT_JP;
+        font-weight: 400;
+        font-size: 1rem;
+      }
     }
 
+    .show_design_draft_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+      @include sm(){
+        margin: 1rem 0;
+        height: 130%;
+      }
+      .show_design_draft_contents_container{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        @include sm(){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .show_design_draft_upper_img_prop{
+          object-fit: cover;
+          margin: 0 1rem;
+          &:nth-child(1){
+            width: 65%;
+            @include sm(){
+              width: 100%;
+            }
+          }
+          &:nth-child(2){
+            width: 20%;
+            @include sm(){
+              width: 100%;
+              margin-top: 2rem;
+            }
+          }
+        }
+        .show_design_draft_bottom_img_prop{
+          object-fit: cover;
+          width: 45%;
+          margin: 0 1rem;
+          @include sm(){
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .show_page_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+      .show_page_contents_container{
+        width: 94%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        @include sm(){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        @include md(){
+          width: 82%;
+        }
+        @include lg(){
+          width: 78%;
+        }
+
+        .show_page_prop{
+          width: 23%;
+          @include sm(){
+            width: 100%;
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
 
     .postscript_container{
       width: 100%;
@@ -125,7 +216,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           width: 60%;
         }
         @include lg(){
-          width: 40%;
+          width: 55%;
         }
 
         .postscript_paragraph_container{
@@ -183,22 +274,26 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         @include md(){
           width: calc(60% + 8rem);
         }
+        @include lg(){
+          width: calc(55% + 8rem);
+        }
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;
           font-family: $FONT_EN;
           font-weight: 400;
           font-size: 1rem;
-          margin: 2rem 0;
+          margin-top: 2.3rem;
+          margin-bottom: 1rem;
         }
         .author_details_container{
           margin: 1rem 0;
           .especially_thanks_description_prop{
             color: $COLOR_GRAY;
-            font-family: $FONT_EN;
+            font-family: $FONT_JP;
             font-weight: 400;
-            font-size: .7rem;
-            line-height: 1.2rem;
+            font-size: .8rem;
+            line-height: 1.3rem;
 
             &:nth-child(1){
               font-weight: 600;
@@ -221,6 +316,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         @include md(){
           width: calc(60% + 8rem);
         }
+        @include lg(){
+          width: calc(55% + 8rem);
+        }
 
         .shared_gallery_title_prop{
           color: $COLOR_BLACK;
@@ -228,6 +326,8 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           font-weight: 400;
           font-size: 1rem;
           margin: 2rem 0;
+          margin-top: 2.3rem;
+          margin-bottom: 1rem;
         }
         .website_details_container{
           margin: 1rem 0;
@@ -235,7 +335,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             color: $COLOR_GRAY;
             font-family: $FONT_EN;
             font-weight: 400;
-            font-size: .7rem;
+            font-size: .8rem;
             line-height: 1.2rem;
             &:nth-child(1){
               font-weight: 600;

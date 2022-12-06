@@ -46,7 +46,7 @@ export default function MotenaSea() {
   } else if(isPad){
     width_worksBackToAnchor = '75%'
   } else{
-    width_worksBackToAnchor = '70%'
+    width_worksBackToAnchor = '66%'
   }
 
   const navigate = useNavigate();
@@ -72,7 +72,7 @@ export default function MotenaSea() {
               kv_column_direction="column"
               nameJP="にしかげクリニック　アネックス"
               type="Website (Client project with willstyle)" roles={["Design"]} date="2022.10" tool="Adobe XD, Lightroom, Photoshop" 
-              url="https://nishikage-anex.jp/" 
+              url="https://motena-sea.co.jp/" 
               urlTitle="Website"
               bannerImg={banner}
               />
@@ -110,13 +110,13 @@ export default function MotenaSea() {
                     <div className={motenaSeaCss.especially_thanks_description_prop}>Project organizer</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>ウィルスタイル株式会社</div>
                     <br></br>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>デザイナーとして、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>ディレクターとデザイナーとして、英語のキャッチコピーとコンセプト作り、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>Account Director : Kousuke Sakaguchi</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>Designer : Tai,tung-en</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>Director : Yuki Ikezoe</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>Engineer : Mineo Okuda</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>Director : Tai,tung-en</div>
                   </div>
                   <br></br>
                   <div className={motenaSeaCss.author_details_container}>
@@ -139,7 +139,7 @@ export default function MotenaSea() {
                 <div className={motenaSeaCss.shared_gallery_contents_conatiner}>
                   <div className={motenaSeaCss.shared_gallery_title_prop}>Be shared on the gallery site</div>
                   <div className={motenaSeaCss.website_details_container}>
-                    <a className={motenaSeaCss.website_details_description_prop} href="https://webdesignclip.com/nishikage-anex/" target="_blank">Web Design Clip</a>
+                    <a className={motenaSeaCss.website_details_description_prop} href="https://webdesignclip.com/motena-sea/" target="_blank">Web Design Clip</a>
                   </div>
                 </div>
               </div>

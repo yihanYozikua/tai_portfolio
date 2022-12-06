@@ -51,7 +51,7 @@ export default function Nishikage() {
   } else if(isPad){
     width_worksBackToAnchor = '75%'
   } else{
-    width_worksBackToAnchor = '70%'
+    width_worksBackToAnchor = '66%'
   }
 
   const navigate = useNavigate();
@@ -180,10 +180,6 @@ export default function Nishikage() {
                 ></img>
               </div>
             </div>
-
-            
-
-
 
             <div className={nishikageCss.postscript_container}>
               <div className={nishikageCss.postscript_contents_container}
