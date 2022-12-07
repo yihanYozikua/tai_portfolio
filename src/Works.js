@@ -20,7 +20,7 @@ import index_organ from './static/img/works/indexs/organ_voice.JPG'
 import index_dinasour from './static/img/works/indexs/dinosaur.png'
 import index_sleep from './static/img/works/indexs/sleep_well.png'
 import index_surface from './static/img/works/indexs/surface.png'
-import index_nishikage from './static/img/works/indexs/nishikage.png'
+import index_nishikage from './static/img/works/indexs/nishikage.jpg'
 import index_job_homes from './static/img/works/indexs/job_homes.png'
 import index_motena_sea from './static/img/works/indexs/motena_sea.png'
 

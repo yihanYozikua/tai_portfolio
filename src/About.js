@@ -523,6 +523,14 @@ export default function About() {
                     data-aos-duration="1000"
                     data-aos-once="false"
                     data-aos-anchor-placement="top-bottom"></img>
+                  <div className={aboutCss.special_contents_bottom_words_prop}
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="0"
+                    data-aos-offset="10"
+                    data-aos-duration="1000"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>カメラ女子</div>
                 </div>
                 <div className={aboutCss.about_special_contents_img_upper_container}>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
@@ -534,6 +542,14 @@ export default function About() {
                       data-aos-duration="1000"
                       data-aos-once="false"
                       data-aos-anchor-placement="top-bottom"></img>
+                    <div className={aboutCss.special_contents_bottom_words_prop}
+                      data-aos="fade-up-left"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="300"
+                      data-aos-offset="10"
+                      data-aos-duration="1000"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>コピー本が好き</div>
                   </div>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
                     <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
@@ -544,6 +560,14 @@ export default function About() {
                       data-aos-duration="1000"
                       data-aos-once="false"
                       data-aos-anchor-placement="top-bottom"></img>
+                    <div className={aboutCss.special_contents_bottom_words_prop}
+                      data-aos="fade-up-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="150"
+                      data-aos-offset="10"
+                      data-aos-duration="1000"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>ヨーグルト妖怪</div>
                   </div>
                 </div>
               </div>

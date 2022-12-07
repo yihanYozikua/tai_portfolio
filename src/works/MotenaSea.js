@@ -18,6 +18,8 @@ import motenaSeaCss from '../css/works_motena_sea.module.scss'
 import banner from '../static/img/works/covers/motena_sea.png'
 import motena_sea_1 from '../static/img/works/motena_sea/motena_sea_01.png'
 import motena_sea_2 from '../static/img/works/motena_sea/motena_sea_02.png'
+import motenaSeaVideo from '../static/img/works/motena_sea/demo02.mp4'
+
 
 
 export default function MotenaSea() {
@@ -122,7 +124,10 @@ export default function MotenaSea() {
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <img src={motena_sea_2} alt="dinasours" className={motenaSeaCss.all_dinasours_prop}></img>
+              {/* <img src={motena_sea_2} alt="dinasours" className={motenaSeaCss.all_dinasours_prop}></img> */}
+              <video controls className={motenaSeaCss.all_dinasours_prop} autoPlay loop>
+                <source src={motenaSeaVideo} type="video/mp4"/>
+              </video>
             </div>
 
             <div className={motenaSeaCss.postscript_container}>

@@ -526,6 +526,15 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           align-items: center;
         }
 
+        .special_contents_bottom_words_prop{
+          margin-top: .7rem;
+          width: 14rem;
+          text-align: center;
+          font-family: $FONT_JP;
+          font-weight: 400;
+          font-size: .85rem;
+          color: $COLOR_GRAY;
+        }
         .about_special_contents_img_prop{
           object-fit: cover;
           width: 14rem;
