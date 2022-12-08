@@ -152,6 +152,15 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
+        @include sm(){
+
+        }
+        @include md(){
+          padding: 0 2rem;
+        }
+        @include lg(){
+          padding: 0 0rem;
+        }
 
         .design_principle_title_container{
           width: 50%;
@@ -215,6 +224,15 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        @include sm(){
+
+        }
+        @include md(){
+          padding: 0 2rem;
+        }
+        @include lg(){
+          padding: 0 0rem;
+        }
 
         .design_approach_title_container{
           margin-bottom: 2.2rem;
@@ -363,6 +381,17 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                     margin-left: -3rem;
                   }
                 }
+                @include sm(){
+
+                }
+                @include md(){
+                  width: 18rem;
+                  height: 18rem;
+                }
+                @include lg(){
+                  width: 21rem;
+                  height: 21rem;
+                }
               }
             }
   
@@ -375,12 +404,19 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             flex-direction: column;
             margin-left: 2.75rem;
             padding-right: 5rem;
-
             @include sm(){
               margin-left: 0;
               width: 100%;
               justify-content: center;
               align-items: center;
+            }
+            @include md(){
+              width: unset;
+              padding-right: 2rem;
+            }
+            @include lg(){
+              width: 100%;
+              padding-right: 5rem;
             }
     
             .about_self_intro_paragraph_name{
@@ -406,6 +442,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               @include sm(){
                 width: 85%;
                 text-align: justify;
+              }
+              @include md(){
+                width: 23rem;
+              }
+              @include lg(){
+                width: 28rem;
               }
               .about_self_intro_paragraph_description_prop{
                 font-size: 1rem;
@@ -536,13 +578,34 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           font-weight: 400;
           font-size: $FONT_14;
           color: $COLOR_GRAY;
+          @include sm(){
+
+          }
+          @include md(){
+            width: 17rem;
+          }
+          @include lg(){
+            width: 22rem;
+          }
         }
         .about_special_contents_img_prop{
           object-fit: cover;
           width: 22rem;
           height: 16rem;
           box-shadow:-10px 10px 50px -25px gray;
+          @include sm(){
+
+          }
+          @include md(){
+            width: 17rem;
+            height: 11rem;
+          }
+          @include lg(){
+            width: 22rem;
+            height: 16rem;
+          }
         }
+        
         .about_special_contents_img_middle_container{
           position: relative;
           z-index: 1;
