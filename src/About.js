@@ -549,7 +549,7 @@ export default function About() {
                       data-aos-offset="10"
                       data-aos-duration="1000"
                       data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>コピー本が好き</div>
+                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>ヨーグルト妖怪</div>
                   </div>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
                     <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
@@ -567,7 +567,7 @@ export default function About() {
                       data-aos-offset="10"
                       data-aos-duration="1000"
                       data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>ヨーグルト妖怪</div>
+                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>コピー本が好き</div>
                   </div>
                 </div>
               </div>

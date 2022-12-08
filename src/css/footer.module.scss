@@ -115,7 +115,6 @@ a{
       }
 
       .upper_right_contents_prop_about{
-        font-size: 1.2rem;
         color: white;
         font-size: 1.1rem;
         margin-bottom: .6rem;
@@ -128,7 +127,7 @@ a{
           font-size: 1.3rem;
         }
         @include md(){
-          font-size: 1.1rem;
+          font-size: $FONT_30;
         }
       }
       .upper_right_contents_prop_hashtag{
@@ -145,8 +144,8 @@ a{
           font-size: 1rem;
           margin-bottom: 4.5rem;
         }
-        @include md(){
-          font-size: .7rem;
+        @include lg(){
+          font-size: $FONT_16;
           margin-bottom: 1.5rem;
         }
       }
@@ -163,13 +162,13 @@ a{
           font-size: 1.3rem;
         }
         @include md(){
-          font-size: 1.1rem;
+          font-size: $FONT_30;
         }
       }
       .upper_right_contents_prop_back_to_top{
         color: white;
         text-decoration: underline;
-        font-size: .7rem;
+        font-size: $FONT_16;
         transition: all .3s ease-in-out;
         @include hover_footer;
         // &:hover{
@@ -195,7 +194,8 @@ a{
   }
 
   .underline_prop{
-    margin: 3rem 0;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
     border-bottom: 1px $COLOR_UNDERLINE solid;
     width: 65%;
     @include sm(){
@@ -232,7 +232,7 @@ a{
     }
 
     .copyright_prop{
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       font-weight: 400;
       color: $COLOR_BOTTOM_TEXT;
       font-family: $FONT_EN;
@@ -254,6 +254,7 @@ a{
         width: 70%;
         bottom: unset;
         left: unset;
+        margin: 1rem 0;
       }
     }
     .bottom_right_container{

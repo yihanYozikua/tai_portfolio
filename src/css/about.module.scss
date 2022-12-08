@@ -105,7 +105,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       height: 100%;
       font-family: $FONT_JP;
       font-weight: 400;
-      font-size: 1.3rem;
+      font-size: $FONT_24;
       color: $COLOR_PARAGRAPH_TEXT;
       line-height: 2.5rem;
       @include sm(){
@@ -159,7 +159,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           .design_principle_title_prop{
             font-family: $FONT_EN;
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: $FONT_20;
             color: $COLOR_GRAY;
             letter-spacing: 0.05em;
   
@@ -177,7 +177,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             width: 100%;
             font-family: $FONT_JP;
             font-weight: 400;
-            font-size: 1rem;
+            font-size: $FONT_16;
             color: $COLOR_BLACK;
             letter-spacing: 0.03em;
             line-height: 2.3rem;
@@ -222,7 +222,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           .design_approach_title_prop{
             font-family: $FONT_EN;
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: $FONT_20;
             color: $COLOR_GRAY;
             letter-spacing: 0.05em;
           }
@@ -236,7 +236,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           margin-bottom: 2.2rem;
           .design_approach_description_prop{
             font-family: $FONT_JP;
-            font-size: .85rem;
+            font-size: $FONT_15;
             font-weight: 400;
             color: $COLOR_DESCRIPTION;
             line-height: 1.7rem;
@@ -339,7 +339,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: .7rem;
+                font-size: $FONT_14;
                 color: $COLOR_CIRCLE_TEXT;
                 width: 21rem;
                 height: 21rem;
@@ -386,7 +386,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             .about_self_intro_paragraph_name{
               // opacity: 0;
               width: 25.3rem;
-              font-size: 1.1rem;
+              font-size: $FONT_18;
               font-weight: 500;
               color: $COLOR_NAME;
               margin: 1rem 0;
@@ -398,7 +398,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               width: 28rem;
               display: flex;
               flex-direction: column;
-              font-size: .85rem;
+              font-size: $FONT_15;
               font-weight: 400;
               color: $COLOR_DESCRIPTION;
               line-height: 1.8rem;
@@ -411,14 +411,14 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                 font-size: 1rem;
                 // opacity: 0;
                 @include sm(){
-                  font-size: 1rem !important;
+                  font-size: $FONT_15 !important;
                   line-height: 2rem;
                 }
                 @include md(){
-                  font-size: 1rem;
+                  font-size: $FONT_15;
                 }
                 @include lg(){
-                  font-size: 1rem;
+                  font-size: $FONT_15;
                 }
               }
             }
@@ -453,7 +453,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                 opacity: 1;
                 transition: all 1s ease-in-out;
                 @include sm(){
-                  font-size: 1rem;
+                  font-size: $FONT_16;
                   line-height: 2rem;
                 }
               }
@@ -498,7 +498,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         font-weight: 500;
         width: 60%;
         color: $COLOR_SPECIAL_CONTENT_TITLE;
-        font-size: 1.3rem;
+        font-size: $FONT_24;
         margin-bottom: .75rem;
         margin-top: 1rem;
         @include sm(){
@@ -534,7 +534,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           text-align: center;
           font-family: $FONT_JP;
           font-weight: 400;
-          font-size: .85rem;
+          font-size: $FONT_14;
           color: $COLOR_GRAY;
         }
         .about_special_contents_img_prop{
