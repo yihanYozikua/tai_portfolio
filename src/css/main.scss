@@ -12,6 +12,7 @@ $FONT_16: 1rem;
 $FONT_15: .9rem;
 $FONT_14: .8rem;
 $FONT_13: .7rem;
+$LINE_HEIGHT_28: 1.7rem;
 
 html{
   font-size: calc(12px + 0.37vw);
@@ -48,8 +49,8 @@ html{
   line-height: 1.8rem;
 }
 @mixin lg_content_font{
-  font-size: .85rem;
-  line-height: 2rem;
+  font-size: $FONT_15;
+  line-height: $LINE_HEIGHT_28;
 }
 
 html, body{
