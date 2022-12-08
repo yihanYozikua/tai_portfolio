@@ -16,13 +16,18 @@
   //   padding: .5rem 1.5rem;
   // }
   button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     border-color: transparent;
     background-color: white;
     border-radius: 100px;
-    padding: .5rem 1.5rem;
+    padding: .5rem .8rem;
     cursor: not-allowed;
     margin-left: 9rem;
+    margin-top: 2rem;
     font-family: $FONT_EN;
     font-size: $FONT_16;
     font-weight: 400;
@@ -31,6 +36,10 @@
       background-color: $COLOR_GRAY;
       color: white;
     }
+  }
+  .img_prop{
+    margin-left: .5rem;
+    width: 15%;
   }
 
   width: 100vw;

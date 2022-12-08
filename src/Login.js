@@ -3,6 +3,7 @@ import {  signInWithEmailAndPassword   } from 'firebase/auth';
 import { auth } from './firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
 import loginCss from './css/login.module.scss'
+import arrow_right from './static/img/works/arrow_right.svg'
 
 
 const Login = () => {
@@ -78,7 +79,8 @@ const Login = () => {
               onClick={onLogin}                                        
               style={{cursor: isDoubleCheckDisabled}}
             >      
-              Get start 🧐                                                         
+              <span>Get start 🧐</span>
+              <img src={arrow_right} className={loginCss.img_prop}></img>                                                   
             </button>
           </div>                               
         </form>
