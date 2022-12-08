@@ -167,15 +167,6 @@ export default function MotenaSea() {
                     <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Engineer : Mineo Okuda</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Director : Tai,tung-en</div>
                   </div>
-                  <br></br>
-                  <div className={motenaSeaCss.author_details_container}>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</div>
-                    <br></br>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>今回の撮影には株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様（以下、「<span style={{fontFamily: FONT_EN}}>KNOT</span>様」）にご協力いただきました。</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}><span style={{fontFamily: FONT_EN}}>KNOT</span>様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop}>ウィルスタイル株式会社のパートナー様として撮影をご担当いただきました。</div>
-                  </div>
                 </div>
               </div>
 
