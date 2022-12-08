@@ -382,7 +382,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                   }
                 }
                 @include sm(){
-
+                  width: 18rem;
+                  height: 18rem;
                 }
                 @include md(){
                   width: 18rem;
@@ -517,9 +518,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     width: 100vw;
     // height: 50vh;
     @include sm(){
-      height: 80vh;
       position: relative;
-      margin-top: 7rem;
+      margin-top: 1rem;
     }
     
     .about_special_contents_prop_container{
