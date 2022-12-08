@@ -90,7 +90,7 @@ export default function Footer(){
           <div className={footerCss.author_container}>
             <div className={footerCss.responsibility_prop}>Presented by</div>
             <div className={footerCss.author_contents}>
-              <span className={footerCss.author_emoji}>🤭</span>
+              <span className={footerCss.author_emoji}>☺️</span>
               <span className={footerCss.author_name}>Tai, Tung-En (Direction/Design)</span>
               <Mailto email="chloe981219@gmail.com" subject="Greetings from {Please Enter Your Name Here}" body=""><img src={mailIcon} alt="" className={footerCss.author_img}></img></Mailto>
               <OpenExternalLink url="https://chloe981219.medium.com/"><img src={mediumIcon} alt="" className={footerCss.author_img}></img></OpenExternalLink>

@@ -169,7 +169,7 @@ export default function JobHomes() {
               <div className={jobHomesCss.paragraph_1_description_container}>
                 <div className={jobHomesCss.paragraph_1_description_prop}>株式会社じょぶのもう一つの強みは、「女性建築士による奥様目線の家づくり」です。使い勝手の良い家事動線や子育てしやすい間取りを実現、株式会社じょぶのスタッフだからこそできること。また、技術面以外、優しいお人柄もよく称賛されたようで、今回のサイトリニューアルにあたって、「人」をアピールしたいというご要望がありました。</div>
                 <br></br>
-                <div className={jobHomesCss.paragraph_1_description_prop}>今後スタッフさんの入れ替わりを配慮し、お客様が気軽に更新することができるシステム（WordPress）を導入しております。スタッフさん家づくりに対する想いはもちろん、手がけた実績とブログも合わせてご紹介できるよう、該当記事と紐つける仕様になっております。また、お人柄を感じていただくため、コンテンツに暮らしのこだわりと趣味の追加することをご提案いたしました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>今後スタッフさんの入れ替わりを配慮し、お客様が気軽に更新することができるシステム（<span style={{fontFamily: FONT_EN}}>WordPress</span>）を導入しております。スタッフさん家づくりに対する想いはもちろん、手がけた実績とブログも合わせてご紹介できるよう、該当記事と紐つける仕様になっております。また、お人柄を感じていただくため、コンテンツに暮らしのこだわりと趣味の追加することをご提案いたしました。</div>
               </div>
             </div>
 
@@ -203,7 +203,7 @@ export default function JobHomes() {
               data-aos-once="false">
               <div className={jobHomesCss.paragraph_1_title}>目的別のお問い合わせフォーム</div>
               <div className={jobHomesCss.paragraph_1_description_container}>
-                <div className={jobHomesCss.paragraph_1_description_prop}>住宅のご依頼を検討されている方、情報収集したい方、お家を建てられた方、サイトに訪れた方々ニーズに沿って、それぞれお問い合わせフォームを用意いたしました。フォームは４つもありますので、サイト内でごちゃつきにならないように、一つのページにまとめております。より分かりやすくするため、手順は2ステップに分けて、お問い合わせ項目を選んだら該当フォームに遷移させ、内容をご記入いただく仕様になっております。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>住宅のご依頼を検討されている方、情報収集したい方、お家を建てられた方、サイトに訪れた方々ニーズに沿って、それぞれお問い合わせフォームを用意いたしました。フォームは<span style={{fontFamily: FONT_EN}}>4</span>つもありますので、サイト内でごちゃつきにならないように、一つのページにまとめております。より分かりやすくするため、手順は2ステップに分けて、お問い合わせ項目を選んだら該当フォームに遷移させ、内容をご記入いただく仕様になっております。</div>
               </div>
             </div>
 
