@@ -1,6 +1,9 @@
 @import './main.scss';
 
 #login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url("../static/img/works/login_bg.png");
   background-size: cover;
   
@@ -52,6 +55,9 @@
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+    @include sm(){
+      width: 90%;
+    }
     .login_title_prop{
       font-family: $FONT_EN;
       font-weight: 400;
