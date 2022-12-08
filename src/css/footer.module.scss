@@ -226,7 +226,7 @@ a{
       width: 80%;
       flex-direction: column-reverse;
     }
-    @include md(){
+    @include lg(){
       width: 65%;
       flex-direction: row;
     }
