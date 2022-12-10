@@ -36,9 +36,15 @@
     font-weight: 400;
     color: $COLOR_BLACK;
     &:hover{
-      background-color: $COLOR_GRAY;
+      background-color: $COLOR_BLACK;
       color: white;
     }
+  }
+  .button_inside_prop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .img_prop{
     margin-left: .5rem;

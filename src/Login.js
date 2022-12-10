@@ -4,7 +4,7 @@ import { auth } from './firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
 import loginCss from './css/login.module.scss'
 import arrow_right from './static/img/works/arrow_right.svg'
-
+import { HiArrowLongRight } from "react-icons/hi2"
 
 const Login = () => {
   var isDoubleCheckDisabled = 'not-allowed';
@@ -79,8 +79,7 @@ const Login = () => {
               onClick={onLogin}                                        
               style={{cursor: isDoubleCheckDisabled}}
             >      
-              <span>Get start 🧐</span>
-              <img src={arrow_right} className={loginCss.img_prop}></img>                                                   
+              <span className={loginCss.button_inside_prop}>Get start 🧐&ensp;<HiArrowLongRight/> </span>
             </button>
           </div>                               
         </form>
