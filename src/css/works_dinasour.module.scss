@@ -20,6 +20,12 @@ $COLOR_PARA: #282D2F;
     align-items: center;
     padding-bottom: 3rem;
   }
+  @include md(){
+    padding-bottom: 10rem;
+  }
+  @include lg(){
+    padding-bottom: 12rem;
+  }
 
   .kv_container{
     width: 94%;

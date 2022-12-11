@@ -15,7 +15,7 @@ import WorksBackToAnchor from '../components/WorksBackToAnchor'
 import Sidebar from '../components/Sidebar'
 import loadingCss from '../css/loading.module.scss'
 import nishikageCss from '../css/works_nishikage.module.scss'
-import banner from '../static/img/works/covers/nishikage.jpg'
+import banner from '../static/img/works/covers/nishikage_photo.jpg'
 import nishikage_1 from '../static/img/works/nishikage/nishikage_01.png'
 import nishikage_2 from '../static/img/works/nishikage/nishikage_02.png'
 import nishikage_3 from '../static/img/works/nishikage/nishikage_03.png'
@@ -91,7 +91,7 @@ export default function Nishikage() {
               data-aos-once="false">
               <div className={nishikageCss.paragraph_1_title}>地域のかかりつけ医として</div>
               <div className={nishikageCss.paragraph_1_description_container}>
-                <div className={nishikageCss.paragraph_1_description_prop}>にしかげ内科クリニックは神戸市垂水区の内科、糖尿病、腎臓病の専門医で、「患者さんに納得していただける医療」をモットーに、地域に根ざした医療に取り組まれています。今回は分院として新しく開院した「にしかげクリニック アネックス」のWebサイトを作成させていただきました。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>にしかげ内科クリニックは神戸市垂水区の内科、糖尿病、腎臓病の専門医で、「患者さんに納得していただける医療」をモットーに、地域に根ざした医療に取り組まれています。今回は分院として新しく開院した「にしかげクリニック アネックス」の<span style={{fontFamily: FONT_EN}}>Web</span>サイトを作成させていただきました。</div>
                 <br></br>
                 <div className={nishikageCss.paragraph_1_description_prop}>看板に「糖尿病、腎透析」を書かれており、一見専門クリニックと思われますが、実際にヒアリングさせていただいたところ、診療設備の導入や個室の用意など、人工透析に力を入れるのはもちろんですが、もう一つの想いは、地域のかかりつけ医でありたいこと。</div>
                 <div className={nishikageCss.paragraph_1_description_prop}>「体に気になるところがあったらまずご相談を。」「電話やネットで予約しなくてもいいからまず来院してもらいたい。」</div>
@@ -212,7 +212,7 @@ export default function Nishikage() {
                   <div className={nishikageCss.especially_thanks_title_prop}>Project credits</div>
                   <div className={nishikageCss.author_details_container}>
                     <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
-                    <a className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://www.willstyle.co.jp/works/" target="_blank">ウィルスタイル株式会社</a>
+                    <a className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://www.willstyle.co.jp" target="_blank">ウィルスタイル株式会社</a>
                     <br></br>
                     <div className={nishikageCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>デザイナーとして、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>

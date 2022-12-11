@@ -7,7 +7,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
 #works_nishikage{
   width: 100vw;
-  padding-bottom: 8rem;
+  padding-bottom: 12rem;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
@@ -20,6 +20,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
   }
   @include md(){
     padding-bottom: 10rem;
+  }
+  @include lg(){
+    padding-bottom: 12rem;
   }
 
   .kv_container{

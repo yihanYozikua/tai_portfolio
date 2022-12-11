@@ -157,7 +157,7 @@ export default function MotenaSea() {
                   <div className={motenaSeaCss.especially_thanks_title_prop}>Project credits</div>
                   <div className={motenaSeaCss.author_details_container}>
                     <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}}>ウィルスタイル株式会社</div>
+                    <a className={motenaSeaCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://www.willstyle.co.jp" target="_blank">ウィルスタイル株式会社</a>
                     <br></br>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>ディレクターとデザイナーとして、英語のキャッチコピーとコンセプト作り、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>

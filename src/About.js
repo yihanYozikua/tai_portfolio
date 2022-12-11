@@ -528,7 +528,7 @@ export default function About() {
                     data-aos-easing="ease-in-out"
                     data-aos-delay="0"
                     data-aos-offset="10"
-                    data-aos-duration="1000"
+                    data-aos-duration="700"
                     data-aos-once="false"
                     data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>カメラ女子</div>
                 </div>
@@ -547,7 +547,7 @@ export default function About() {
                       data-aos-easing="ease-in-out"
                       data-aos-delay="300"
                       data-aos-offset="10"
-                      data-aos-duration="1000"
+                      data-aos-duration="700"
                       data-aos-once="false"
                       data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>ヨーグルト妖怪</div>
                   </div>
@@ -565,7 +565,7 @@ export default function About() {
                       data-aos-easing="ease-in-out"
                       data-aos-delay="150"
                       data-aos-offset="10"
-                      data-aos-duration="1000"
+                      data-aos-duration="700"
                       data-aos-once="false"
                       data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>コピー本が好き</div>
                   </div>
