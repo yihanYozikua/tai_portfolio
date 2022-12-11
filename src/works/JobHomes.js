@@ -245,7 +245,6 @@ export default function JobHomes() {
                   <div className={jobHomesCss.author_details_container}>
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
                     <a className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://www.willstyle.co.jp" target="_blank">ウィルスタイル株式会社</a>
-                    <br></br>
                     <div className={jobHomesCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>デザイナーとして、トップと下層ページのデザインを担当させていただきました。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
@@ -258,7 +257,6 @@ export default function JobHomes() {
                   <div className={jobHomesCss.author_details_container}>
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
                     <a className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</a>
-                    <br></br>
                     <div className={jobHomesCss.especially_thanks_description_prop}>今回の撮影には株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様（以下、「<span style={{fontFamily: FONT_EN}}>KNOT</span>様」）にご協力いただきました。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}><span style={{fontFamily: FONT_EN}}>KNOT</span>様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>ウィルスタイル株式会社のパートナー様として撮影をご担当いただきました。</div>

@@ -258,9 +258,13 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             font-weight: 400;
             font-size: .8rem;
             line-height: 1.3rem;
+            display: flex;
 
             &:nth-child(1){
               font-weight: 600;
+            }
+            &:nth-child(2){
+              margin-bottom: 1rem;
             }
           }
         }
