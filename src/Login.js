@@ -37,7 +37,7 @@ const Login = () => {
   return(
     <div id={loginCss.login}>
       <div className={loginCss.login_container}>                                            
-        <p className={loginCss.login_title_prop}> Hello, welcome to Tai, Tung-En’s portofolio. </p>                       
+        <p className={loginCss.login_title_prop}> Hello, welcome to Tai, Tung-En’s portfolio. </p>                       
         <div className={loginCss.login_description_container}>
           <span className={loginCss.login_description_prop}>ポートフォリオをご覧いただきありがとうございます。</span>
           <span className={loginCss.login_description_prop}>事前に提示されたメールアドレスとパスワードをご記入ください。</span>
@@ -52,7 +52,6 @@ const Login = () => {
               name="email"
               type="email"                                    
               required                                                                                
-              // placeholder="Email address"
               onChange={(e)=>setEmail(e.target.value)}
               className={loginCss.input_field_prop}
             />
@@ -75,7 +74,7 @@ const Login = () => {
                                 
           <div className={loginCss.warning_prop}>{ warning }</div>
           <div>
-            <button                                    
+            <button
               onClick={onLogin}                                        
               style={{cursor: isDoubleCheckDisabled}}
             >      

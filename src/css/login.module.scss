@@ -97,10 +97,12 @@
         color: $COLOR_BLACK;
       }
       .input_field_prop{
+        padding-left: 1rem;
+        padding-right: 1rem;
         background-color: white;
         border: 1px solid #3F729B;
         border-radius: 10px;
-        font-size: $FONT_20;
+        font-size: $FONT_16;
         width: 50%;
         height: 2rem;
       }
