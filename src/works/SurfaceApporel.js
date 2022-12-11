@@ -56,7 +56,7 @@ export default function SurfaceApporel(){
     } else if(isPad){
       width_worksBackToAnchor = '75%'
     } else{
-      width_worksBackToAnchor = '70%'
+      width_worksBackToAnchor = 'calc(60% + 8rem)'
     }
 
 

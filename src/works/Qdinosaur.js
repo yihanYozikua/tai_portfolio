@@ -44,9 +44,9 @@ export default function Qdinosaur(){
   if(isMobile){
     width_worksBackToAnchor = '80%'
   } else if(isPad){
-    width_worksBackToAnchor = '75%'
+    width_worksBackToAnchor = '60%'
   } else{
-    width_worksBackToAnchor = '70%'
+    width_worksBackToAnchor = 'calc(60% + 8rem)'
   }
 
   useEffect(() => {

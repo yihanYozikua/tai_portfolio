@@ -341,6 +341,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         @include md(){
           width: calc(60% + 8rem);
         }
+        @include lg(){
+          width: calc(60% + 8rem);
+        }
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;

@@ -32,7 +32,7 @@ import show_page_4 from '../static/img/works/anotheries/show_page_4.png'
 export default function Anotheries() {
     const FONT_EN = "'Outfit', sans-serif";
     const FONT_JP = "'BIZ UDGothic', sans-serif";
-    let width_worksBackToAnchor = '50%';
+    let width_worksBackToAnchor = 'calc(60% + 8rem)';
 
     useEffect(()=>{
         window.scrollTo({
@@ -63,7 +63,7 @@ export default function Anotheries() {
         width_worksBackToAnchor = '75%'
         paragraphTwoDescriptionMargin = '1rem';
     } else{
-        width_worksBackToAnchor = '50%'
+        width_worksBackToAnchor = 'calc(60% + 8rem)'
         paragraphTwoDescriptionMargin = '3rem'
     }
 
