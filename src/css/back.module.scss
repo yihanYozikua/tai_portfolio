@@ -14,9 +14,11 @@
     padding: .7rem 1rem;
     box-shadow:-3px 4px 100px -11px grey;
     color: $COLOR_BLACK;
+    transition: all .3s ease-in-out;
     &:hover{
       background-color: $COLOR_BLACK;
       color: white;
+      transition: all .3s ease-in-out;
     }
     @include sm(){
       box-shadow: -3px 4px 37px -10px grey;

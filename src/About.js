@@ -578,9 +578,8 @@ export default function About() {
             <div className={aboutCss.about_learn_me_by_hashtags_button_prop_container}>
               <a href='https://tai-tung-en.github.io/tai_portfolio_hashtags/' className={aboutCss.about_learn_me_by_hashtags_button_link}>
                 <div className={aboutCss.about_learn_me_by_hashtags_contents}>
-                  <div className={aboutCss.about_learn_me_by_hashtags_contents_prop} ref={learn_me_by_hashtag_text_ref}>Learn me by #hashtags</div>
+                  Learn me by #hashtags
                 </div>
-                <div className={aboutCss.about_learn_me_by_hashtags_button_hover_bg} ref={learn_me_by_hashtag_button_ref}> </div>
               </a>
             </div>
           </div>

@@ -741,15 +741,15 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           width: 13rem;
           height: 3rem;
           background-color: white;
+          color: $COLOR_BLACK;
           border-radius: 500px;
-          .about_learn_me_by_hashtags_hover_section{
-            position: absolute;
-            width: 13rem;
-            height: 13rem;
-            background-color: transparent;
-            
+          transition: all .3s ease-in-out;
+          &:hover{
+            background-color: $COLOR_BLACK;
+            color: white;
+            transition: all .3s ease-in-out;
           }
-    
+
           .about_learn_me_by_hashtags_contents_prop{
             color: black;
             width: 10rem;
